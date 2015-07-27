@@ -44,9 +44,6 @@ class Porcupine: Character {
             gameplayScene?.gameOver()
         }
         
-        // test
-        println(verticalState.rawValue)
-        
     }
     
     

@@ -14,6 +14,8 @@
 		334356EC1B65AD950083FB51 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334356EB1B65AD950083FB51 /* Character.swift */; };
 		334356EE1B65B05E0083FB51 /* GameOverScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334356ED1B65B05E0083FB51 /* GameOverScreen.swift */; };
 		334356F01B65B0650083FB51 /* GameWonScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334356EF1B65B0650083FB51 /* GameWonScreen.swift */; };
+		334D75B71B66A6AE00EA3733 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334D75B61B66A6AE00EA3733 /* Screen.swift */; };
+		334D75BB1B66A71900EA3733 /* Collectible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334D75BA1B66A71900EA3733 /* Collectible.swift */; };
 		5B121030197484FA004C1E1D /* ProjectProcupineActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B12102F197484FA004C1E1D /* ProjectProcupineActivity.m */; };
 		5B121038197487F2004C1E1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B737893E1807617C0076A88C /* AppDelegate.m */; };
 		7A046D7919E84ED5004C4763 /* MainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A046D7519E84C36004C4763 /* MainScene.swift */; };
@@ -162,6 +164,8 @@
 		334356EB1B65AD950083FB51 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		334356ED1B65B05E0083FB51 /* GameOverScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverScreen.swift; sourceTree = "<group>"; };
 		334356EF1B65B0650083FB51 /* GameWonScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameWonScreen.swift; sourceTree = "<group>"; };
+		334D75B61B66A6AE00EA3733 /* Screen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
+		334D75BA1B66A71900EA3733 /* Collectible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collectible.swift; sourceTree = "<group>"; };
 		5B12100919748273004C1E1D /* libEGL.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libEGL.so; path = /usr/lib/armv7a/libEGL.so; sourceTree = SDKROOT; };
 		5B12100F197483EE004C1E1D /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
 		5B121011197483EE004C1E1D /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
@@ -313,10 +317,19 @@
 		334356F11B65B06A0083FB51 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				334D75B61B66A6AE00EA3733 /* Screen.swift */,
 				334356ED1B65B05E0083FB51 /* GameOverScreen.swift */,
 				334356EF1B65B0650083FB51 /* GameWonScreen.swift */,
 			);
 			name = Screens;
+			sourceTree = "<group>";
+		};
+		334D75BC1B66A71E00EA3733 /* Collectible */ = {
+			isa = PBXGroup;
+			children = (
+				334D75BA1B66A71900EA3733 /* Collectible.swift */,
+			);
+			name = Collectible;
 			sourceTree = "<group>";
 		};
 		5B12100D197483EE004C1E1D /* res */ = {
@@ -487,6 +500,7 @@
 				334356D21B6584040083FB51 /* Gameplay.swift */,
 				334356F11B65B06A0083FB51 /* Screens */,
 				334356EA1B65AA460083FB51 /* Controls */,
+				334D75BC1B66A71E00EA3733 /* Collectible */,
 				334356E31B6586C20083FB51 /* Characters */,
 				334356E01B6585370083FB51 /* Level */,
 				D352B48019EC608A00829775 /* MetalShaders */,
@@ -867,8 +881,10 @@
 			files = (
 				334356EE1B65B05E0083FB51 /* GameOverScreen.swift in Sources */,
 				334356E91B65AA430083FB51 /* Joystick.swift in Sources */,
+				334D75BB1B66A71900EA3733 /* Collectible.swift in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
 				334356D31B6584040083FB51 /* Gameplay.swift in Sources */,
+				334D75B71B66A6AE00EA3733 /* Screen.swift in Sources */,
 				7A046D7919E84ED5004C4763 /* MainScene.swift in Sources */,
 				334356E21B6586BE0083FB51 /* Porcupine.swift in Sources */,
 				334356DF1B6585320083FB51 /* Level.swift in Sources */,

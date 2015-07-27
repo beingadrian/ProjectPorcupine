@@ -710,7 +710,7 @@
 						<key>value</key>
 						<array>
 							<string>retryGame</string>
-							<integer>2</integer>
+							<integer>1</integer>
 						</array>
 					</dict>
 					<dict>

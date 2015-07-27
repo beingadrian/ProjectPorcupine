@@ -7,8 +7,7 @@
 //
 
 
-class GameWonScreen: CCNode {
-
+class GameWonScreen: Screen {
     
     
 }

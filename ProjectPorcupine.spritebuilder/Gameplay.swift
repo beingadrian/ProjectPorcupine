@@ -152,7 +152,7 @@ class Gameplay: CCScene {
     func gameOver() {
         
         paused = true
-        let gameOverScreen = CCBReader.load("Screens/GameOverScreen") as! GameOverScreen
+        let gameOverScreen = CCBReader.load("Screens/GameOverScreen", owner: self)
         addChild(gameOverScreen)
         
     }
@@ -160,7 +160,7 @@ class Gameplay: CCScene {
     func gameWon() {
         
         paused = true
-        let gameWonScreen = CCBReader.load("Screens/GameWonScreen") as! GameWonScreen
+        let gameWonScreen = CCBReader.load("Screens/GameWonScreen", owner: self) as! GameWonScreen
         addChild(gameWonScreen)
         
     }
@@ -184,6 +184,16 @@ extension Gameplay: CCPhysicsCollisionDelegate {
     func ccPhysicsCollisionSeparate(pair: CCPhysicsCollisionPair!, porcupinePhysicsBody: Porcupine!, ground: CCNode!) {
         
         porcupine.verticalState = .Airborne
+        
+    }
+    
+    // MARK: - Collectible collisions
+    
+    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, porcupinePhysicsBody: Porcupine!, moon: CCNode!) -> Bool {
+        
+        moon.removeFromParent()
+        
+        return true
         
     }
     
