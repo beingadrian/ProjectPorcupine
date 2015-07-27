@@ -173,7 +173,7 @@ extension Gameplay: CCPhysicsCollisionDelegate {
     
     // MARK: - Ground collisions
     
-    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, porcupinePhysicsBody: Porcupine!, ground: CCNode!) -> Bool {
+    func ccPhysicsCollisionPreSolve(pair: CCPhysicsCollisionPair!, porcupinePhysicsBody: Porcupine!, ground: CCNode!) -> Bool {
         
         porcupine.verticalState = .Ground
         
