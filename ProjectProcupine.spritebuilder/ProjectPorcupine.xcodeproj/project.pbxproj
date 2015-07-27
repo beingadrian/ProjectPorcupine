@@ -10,6 +10,10 @@
 		334356D31B6584040083FB51 /* Gameplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334356D21B6584040083FB51 /* Gameplay.swift */; };
 		334356DF1B6585320083FB51 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334356DE1B6585320083FB51 /* Level.swift */; };
 		334356E21B6586BE0083FB51 /* Porcupine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334356E11B6586BE0083FB51 /* Porcupine.swift */; };
+		334356E91B65AA430083FB51 /* Joystick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334356E81B65AA430083FB51 /* Joystick.swift */; };
+		334356EC1B65AD950083FB51 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334356EB1B65AD950083FB51 /* Character.swift */; };
+		334356EE1B65B05E0083FB51 /* GameOverScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334356ED1B65B05E0083FB51 /* GameOverScreen.swift */; };
+		334356F01B65B0650083FB51 /* GameWonScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334356EF1B65B0650083FB51 /* GameWonScreen.swift */; };
 		5B121030197484FA004C1E1D /* ProjectProcupineActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B12102F197484FA004C1E1D /* ProjectProcupineActivity.m */; };
 		5B121038197487F2004C1E1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B737893E1807617C0076A88C /* AppDelegate.m */; };
 		7A046D7919E84ED5004C4763 /* MainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A046D7519E84C36004C4763 /* MainScene.swift */; };
@@ -154,6 +158,10 @@
 		334356D21B6584040083FB51 /* Gameplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gameplay.swift; sourceTree = "<group>"; };
 		334356DE1B6585320083FB51 /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
 		334356E11B6586BE0083FB51 /* Porcupine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Porcupine.swift; sourceTree = "<group>"; };
+		334356E81B65AA430083FB51 /* Joystick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Joystick.swift; sourceTree = "<group>"; };
+		334356EB1B65AD950083FB51 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		334356ED1B65B05E0083FB51 /* GameOverScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverScreen.swift; sourceTree = "<group>"; };
+		334356EF1B65B0650083FB51 /* GameWonScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameWonScreen.swift; sourceTree = "<group>"; };
 		5B12100919748273004C1E1D /* libEGL.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libEGL.so; path = /usr/lib/armv7a/libEGL.so; sourceTree = SDKROOT; };
 		5B12100F197483EE004C1E1D /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
 		5B121011197483EE004C1E1D /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
@@ -165,7 +173,7 @@
 		5B121034197485FE004C1E1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Platforms/iOS/Info.plist; sourceTree = "<group>"; };
 		5BA4619E1974C88900785744 /* AndroidManifest.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = AndroidManifest.xml; path = Platforms/Android/AndroidManifest.xml; sourceTree = "<group>"; };
 		7A046D7519E84C36004C4763 /* MainScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainScene.swift; path = Source/MainScene.swift; sourceTree = "<group>"; };
-		7A4035FF19DDEE84007B6E8F /* ProjectProcupine Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ProjectProcupine Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A4035FF19DDEE84007B6E8F /* ProjectPorcupine Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ProjectPorcupine Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A40360219DDEE84007B6E8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Platforms/Mac/Info.plist; sourceTree = "<group>"; };
 		7A40360319DDEE84007B6E8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Source/Platforms/Mac/main.m; sourceTree = "<group>"; };
 		7A40360519DDEE84007B6E8F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Source/Platforms/Mac/AppDelegate.h; sourceTree = "<group>"; };
@@ -178,7 +186,7 @@
 		7AFCD5DD19E9BDC200BCCCDA /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "Source/Bridging-Header.h"; sourceTree = "<group>"; };
 		7BF6AF9F1A425F9800FFF9BA /* JavaFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaFoundation.framework; path = "../../../../../../../Library/SBAndroid/Application Support/Developer/Shared/Xcode/Platforms/Android.platform/Developer/SDKs/SBAndroid.sdk/System/Library/Frameworks/JavaFoundation.framework"; sourceTree = "<group>"; };
 		8392007918EE8E3300B6C429 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
-		927F61BF196C771E000F43EF /* ProjectProcupine Android.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ProjectProcupine Android.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		927F61BF196C771E000F43EF /* ProjectPorcupine Android.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ProjectPorcupine Android.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B71F5907188484E7003F4D28 /* iPad-old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old.png"; path = "Icons/iPad-old.png"; sourceTree = "<group>"; };
 		B71F5908188484E7003F4D28 /* iPad-old@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old@2x.png"; path = "Icons/iPad-old@2x.png"; sourceTree = "<group>"; };
 		B71F5909188484E7003F4D28 /* iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iPad.png; path = Icons/iPad.png; sourceTree = "<group>"; };
@@ -199,7 +207,7 @@
 		B737896E180762440076A88C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Source/Resources/Default@2x.png"; sourceTree = SOURCE_ROOT; };
 		B73789851807631A0076A88C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Source/Platforms/iOS/main.m; sourceTree = SOURCE_ROOT; };
 		B73789861807631A0076A88C /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = Source/Prefix.pch; sourceTree = SOURCE_ROOT; };
-		B77F1B2E17B978D7009739AE /* ProjectProcupine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectProcupine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B77F1B2E17B978D7009739AE /* ProjectPorcupine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectPorcupine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77F1B3117B978D7009739AE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B77F1B3317B978D7009739AE /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		B77F1B3517B978D7009739AE /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -289,8 +297,26 @@
 			isa = PBXGroup;
 			children = (
 				334356E11B6586BE0083FB51 /* Porcupine.swift */,
+				334356EB1B65AD950083FB51 /* Character.swift */,
 			);
 			name = Characters;
+			sourceTree = "<group>";
+		};
+		334356EA1B65AA460083FB51 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				334356E81B65AA430083FB51 /* Joystick.swift */,
+			);
+			name = Controls;
+			sourceTree = "<group>";
+		};
+		334356F11B65B06A0083FB51 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				334356ED1B65B05E0083FB51 /* GameOverScreen.swift */,
+				334356EF1B65B0650083FB51 /* GameWonScreen.swift */,
+			);
+			name = Screens;
 			sourceTree = "<group>";
 		};
 		5B12100D197483EE004C1E1D /* res */ = {
@@ -459,6 +485,8 @@
 				7A40362019DDEF0D007B6E8F /* Platforms */,
 				7A046D7519E84C36004C4763 /* MainScene.swift */,
 				334356D21B6584040083FB51 /* Gameplay.swift */,
+				334356F11B65B06A0083FB51 /* Screens */,
+				334356EA1B65AA460083FB51 /* Controls */,
 				334356E31B6586C20083FB51 /* Characters */,
 				334356E01B6585370083FB51 /* Level */,
 				D352B48019EC608A00829775 /* MetalShaders */,
@@ -502,9 +530,9 @@
 		B77F1B2F17B978D7009739AE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B77F1B2E17B978D7009739AE /* ProjectProcupine.app */,
-				927F61BF196C771E000F43EF /* ProjectProcupine Android.app */,
-				7A4035FF19DDEE84007B6E8F /* ProjectProcupine Mac.app */,
+				B77F1B2E17B978D7009739AE /* ProjectPorcupine.app */,
+				927F61BF196C771E000F43EF /* ProjectPorcupine Android.app */,
+				7A4035FF19DDEE84007B6E8F /* ProjectPorcupine Mac.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -564,9 +592,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7A4035FE19DDEE84007B6E8F /* ProjectProcupine Mac */ = {
+		7A4035FE19DDEE84007B6E8F /* ProjectPorcupine Mac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7A40361E19DDEE84007B6E8F /* Build configuration list for PBXNativeTarget "ProjectProcupine Mac" */;
+			buildConfigurationList = 7A40361E19DDEE84007B6E8F /* Build configuration list for PBXNativeTarget "ProjectPorcupine Mac" */;
 			buildPhases = (
 				7A4035FB19DDEE84007B6E8F /* Sources */,
 				7A4035FC19DDEE84007B6E8F /* Frameworks */,
@@ -577,14 +605,14 @@
 			dependencies = (
 				7A97911619E631A1001FFC4D /* PBXTargetDependency */,
 			);
-			name = "ProjectProcupine Mac";
+			name = "ProjectPorcupine Mac";
 			productName = "ProjectProcupine Mac";
-			productReference = 7A4035FF19DDEE84007B6E8F /* ProjectProcupine Mac.app */;
+			productReference = 7A4035FF19DDEE84007B6E8F /* ProjectPorcupine Mac.app */;
 			productType = "com.apple.product-type.application";
 		};
-		927F6198196C771E000F43EF /* ProjectProcupine Android */ = {
+		927F6198196C771E000F43EF /* ProjectPorcupine Android */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 927F61BC196C771E000F43EF /* Build configuration list for PBXNativeTarget "ProjectProcupine Android" */;
+			buildConfigurationList = 927F61BC196C771E000F43EF /* Build configuration list for PBXNativeTarget "ProjectPorcupine Android" */;
 			buildPhases = (
 				927F619B196C771E000F43EF /* Run Script */,
 				927F619C196C771E000F43EF /* Sources */,
@@ -596,14 +624,14 @@
 			dependencies = (
 				7A97912219E6321C001FFC4D /* PBXTargetDependency */,
 			);
-			name = "ProjectProcupine Android";
+			name = "ProjectPorcupine Android";
 			productName = Example;
-			productReference = 927F61BF196C771E000F43EF /* ProjectProcupine Android.app */;
+			productReference = 927F61BF196C771E000F43EF /* ProjectPorcupine Android.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B77F1B2D17B978D7009739AE /* ProjectProcupine iOS */ = {
+		B77F1B2D17B978D7009739AE /* ProjectPorcupine iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B77F1CDE17B978D8009739AE /* Build configuration list for PBXNativeTarget "ProjectProcupine iOS" */;
+			buildConfigurationList = B77F1CDE17B978D8009739AE /* Build configuration list for PBXNativeTarget "ProjectPorcupine iOS" */;
 			buildPhases = (
 				D2E0167A18D782EC00927430 /* Run Script */,
 				B77F1B2A17B978D7009739AE /* Sources */,
@@ -616,9 +644,9 @@
 			dependencies = (
 				7A97911019E6319A001FFC4D /* PBXTargetDependency */,
 			);
-			name = "ProjectProcupine iOS";
+			name = "ProjectPorcupine iOS";
 			productName = Example;
-			productReference = B77F1B2E17B978D7009739AE /* ProjectProcupine.app */;
+			productReference = B77F1B2E17B978D7009739AE /* ProjectPorcupine.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -642,7 +670,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B77F1B2917B978D7009739AE /* Build configuration list for PBXProject "ProjectProcupine" */;
+			buildConfigurationList = B77F1B2917B978D7009739AE /* Build configuration list for PBXProject "ProjectPorcupine" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -661,9 +689,9 @@
 			);
 			projectRoot = "";
 			targets = (
-				B77F1B2D17B978D7009739AE /* ProjectProcupine iOS */,
-				927F6198196C771E000F43EF /* ProjectProcupine Android */,
-				7A4035FE19DDEE84007B6E8F /* ProjectProcupine Mac */,
+				B77F1B2D17B978D7009739AE /* ProjectPorcupine iOS */,
+				927F6198196C771E000F43EF /* ProjectPorcupine Android */,
+				7A4035FE19DDEE84007B6E8F /* ProjectPorcupine Mac */,
 			);
 		};
 /* End PBXProject section */
@@ -837,12 +865,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				334356EE1B65B05E0083FB51 /* GameOverScreen.swift in Sources */,
+				334356E91B65AA430083FB51 /* Joystick.swift in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
 				334356D31B6584040083FB51 /* Gameplay.swift in Sources */,
 				7A046D7919E84ED5004C4763 /* MainScene.swift in Sources */,
 				334356E21B6586BE0083FB51 /* Porcupine.swift in Sources */,
 				334356DF1B6585320083FB51 /* Level.swift in Sources */,
 				5B121038197487F2004C1E1D /* AppDelegate.m in Sources */,
+				334356F01B65B0650083FB51 /* GameWonScreen.swift in Sources */,
+				334356EC1B65AD950083FB51 /* Character.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -907,7 +939,7 @@
 					"-lz",
 				);
 				PRODUCT_MODULE_NAME = ProjectProcupine;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "ProjectPorcupine Mac";
 				SDKROOT = macosx;
 				SWIFT_OBJC_BRIDGING_HEADER = "Source/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -951,7 +983,7 @@
 					"-lz",
 				);
 				PRODUCT_MODULE_NAME = ProjectProcupine;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "ProjectPorcupine Mac";
 				SDKROOT = macosx;
 				SWIFT_OBJC_BRIDGING_HEADER = "Source/Bridging-Header.h";
 			};
@@ -999,7 +1031,7 @@
 					"-landroid",
 				);
 				PRODUCT_MODULE_NAME = ProjectProcupine;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "ProjectPorcupine Android";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = sbandroid;
 				WRAPPER_EXTENSION = app;
@@ -1047,7 +1079,7 @@
 					"-landroid",
 				);
 				PRODUCT_MODULE_NAME = ProjectProcupine;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "ProjectPorcupine Android";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = sbandroid;
 				VALIDATE_PRODUCT = YES;
@@ -1146,7 +1178,7 @@
 					"-lz",
 					"-ObjC",
 				);
-				PRODUCT_NAME = ProjectProcupine;
+				PRODUCT_NAME = ProjectPorcupine;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Source/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1179,7 +1211,7 @@
 					"-lz",
 					"-ObjC",
 				);
-				PRODUCT_NAME = ProjectProcupine;
+				PRODUCT_NAME = ProjectPorcupine;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Source/Bridging-Header.h";
 				VALIDATE_PRODUCT = YES;
@@ -1190,7 +1222,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7A40361E19DDEE84007B6E8F /* Build configuration list for PBXNativeTarget "ProjectProcupine Mac" */ = {
+		7A40361E19DDEE84007B6E8F /* Build configuration list for PBXNativeTarget "ProjectPorcupine Mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7A40361919DDEE84007B6E8F /* Debug */,
@@ -1199,7 +1231,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		927F61BC196C771E000F43EF /* Build configuration list for PBXNativeTarget "ProjectProcupine Android" */ = {
+		927F61BC196C771E000F43EF /* Build configuration list for PBXNativeTarget "ProjectPorcupine Android" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				927F61BD196C771E000F43EF /* Debug */,
@@ -1208,7 +1240,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B77F1B2917B978D7009739AE /* Build configuration list for PBXProject "ProjectProcupine" */ = {
+		B77F1B2917B978D7009739AE /* Build configuration list for PBXProject "ProjectPorcupine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B77F1CDC17B978D8009739AE /* Debug */,
@@ -1217,7 +1249,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B77F1CDE17B978D8009739AE /* Build configuration list for PBXNativeTarget "ProjectProcupine iOS" */ = {
+		B77F1CDE17B978D8009739AE /* Build configuration list for PBXNativeTarget "ProjectPorcupine iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B77F1CDF17B978D8009739AE /* Debug */,

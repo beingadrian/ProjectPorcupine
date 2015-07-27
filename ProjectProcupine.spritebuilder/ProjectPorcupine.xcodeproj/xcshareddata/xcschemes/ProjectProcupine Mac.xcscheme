@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B77F1B2D17B978D7009739AE"
-               BuildableName = "ProjectProcupine.app"
-               BlueprintName = "ProjectProcupine iOS"
-               ReferencedContainer = "container:ProjectProcupine.xcodeproj">
+               BlueprintIdentifier = "7A4035FE19DDEE84007B6E8F"
+               BuildableName = "ProjectPorcupine Mac.app"
+               BlueprintName = "ProjectPorcupine Mac"
+               ReferencedContainer = "container:ProjectPorcupine.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B77F1B2D17B978D7009739AE"
-            BuildableName = "ProjectProcupine.app"
-            BlueprintName = "ProjectProcupine iOS"
-            ReferencedContainer = "container:ProjectProcupine.xcodeproj">
+            BlueprintIdentifier = "7A4035FE19DDEE84007B6E8F"
+            BuildableName = "ProjectPorcupine Mac.app"
+            BlueprintName = "ProjectPorcupine Mac"
+            ReferencedContainer = "container:ProjectPorcupine.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -48,13 +48,14 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B77F1B2D17B978D7009739AE"
-            BuildableName = "ProjectProcupine.app"
-            BlueprintName = "ProjectProcupine iOS"
-            ReferencedContainer = "container:ProjectProcupine.xcodeproj">
+            BlueprintIdentifier = "7A4035FE19DDEE84007B6E8F"
+            BuildableName = "ProjectPorcupine Mac.app"
+            BlueprintName = "ProjectPorcupine Mac"
+            ReferencedContainer = "container:ProjectPorcupine.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -66,13 +67,14 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B77F1B2D17B978D7009739AE"
-            BuildableName = "ProjectProcupine.app"
-            BlueprintName = "ProjectProcupine iOS"
-            ReferencedContainer = "container:ProjectProcupine.xcodeproj">
+            BlueprintIdentifier = "7A4035FE19DDEE84007B6E8F"
+            BuildableName = "ProjectPorcupine Mac.app"
+            BlueprintName = "ProjectPorcupine Mac"
+            ReferencedContainer = "container:ProjectPorcupine.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
