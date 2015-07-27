@@ -8,5 +8,13 @@
 
 
 class GameOverScreen: CCNode {
-   
+    
+    // buttons
+    func retryGame() {
+        
+        let gameplayScene = CCBReader.loadAsScene("Gameplay")
+        CCDirector.sharedDirector().presentScene(gameplayScene)
+        
+    }
+    
 }

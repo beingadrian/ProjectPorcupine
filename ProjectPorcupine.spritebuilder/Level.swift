@@ -6,10 +6,10 @@
 //  Copyright (c) 2015 Apportable. All rights reserved.
 //
 
-import UIKit
 
 class Level: CCNode {
    
     weak var startingPoint: CCNode!
+    weak var worldBoundary: CCNode!
     
 }

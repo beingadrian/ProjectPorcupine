@@ -6,7 +6,6 @@ class MainScene: CCNode {
         let gameplayScene = CCBReader.loadAsScene("Gameplay")
         CCDirector.sharedDirector().presentScene(gameplayScene)
         
-    }
-    
+    }    
     
 }

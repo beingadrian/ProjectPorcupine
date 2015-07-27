@@ -48,6 +48,14 @@ class Character: CCNode {
     
     // MARK: - Character movements
     
+    func jump() {
+        
+        if self.verticalState == .Ground {
+            physicsBody.applyImpulse(CGPoint(x: 0, y: 500))
+        }
+        
+    }
+    
     func stop() {
         
         physicsBody.surfaceVelocity.x = 0

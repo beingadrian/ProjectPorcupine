@@ -16,6 +16,7 @@ class Gameplay: CCScene {
     var porcupine: Porcupine!
     
     // controls
+    weak var jumpButton: CCButton!
     var joystick: Joystick?
     var touchPosition: CGPoint?
     
@@ -35,12 +36,34 @@ class Gameplay: CCScene {
         
         // touch settings
         userInteractionEnabled = true
+        jumpButton.exclusiveTouch = false
         
         gamePhysicsNode.debugDraw = false
         
         gamePhysicsNode.collisionDelegate = self
         
         loadLevel()
+        
+    }
+    
+    // MARK: - Update function
+    override func update(delta: CCTime) {
+        
+        // camera follow (position override)
+        let worldBoundaryRect = level.worldBoundary.boundingBox()
+        let actionCameraFollow = CCActionFollow(target: porcupine, worldBoundary: worldBoundaryRect)
+        gamePhysicsNode.runAction(actionCameraFollow)
+        
+        // check for game over
+        if porcupine.position.y < -200 {
+            gameOver()
+        }
+        
+        // jump button (instantaneous)
+        if jumpButton.highlighted == true {
+            jump()
+            jumpButton.highlighted = false
+        }
         
     }
     
@@ -117,11 +140,18 @@ class Gameplay: CCScene {
         
     }
     
+    func jump() {
+        
+        porcupine.jump()
+        
+    }
+    
+    
     // MARK: - Game ends
     func gameOver() {
         
         paused = true
-        let gameOverScreen = CCBReader.load("GameOverScreen", owner: self) as! GameOverScreen
+        let gameOverScreen = CCBReader.load("Screens/GameOverScreen") as! GameOverScreen
         addChild(gameOverScreen)
         
     }
@@ -129,15 +159,30 @@ class Gameplay: CCScene {
     func gameWon() {
         
         paused = true
-        let winningScreen = CCBReader.load("GameWonScreen", owner: self)  as! GameWonScreen
-        addChild(winningScreen)
+        let gameWonScreen = CCBReader.load("Screens/GameWonScreen") as! GameWonScreen
+        addChild(gameWonScreen)
         
     }
     
-    func retryGame() {
+}
+
+// MARK: -
+
+extension Gameplay: CCPhysicsCollisionDelegate {
+    
+    // MARK: - Ground collisions
+    
+    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, porcupinePhysicsBody: Porcupine!, ground: CCNode!) -> Bool {
         
-        let gameplayScene = CCBReader.loadAsScene("Gameplay")
-        CCDirector.sharedDirector().presentScene(gameplayScene)
+        porcupine.verticalState = .Ground
+        
+        return true
+        
+    }
+    
+    func ccPhysicsCollisionSeparate(pair: CCPhysicsCollisionPair!, porcupinePhysicsBody: Porcupine!, ground: CCNode!) {
+        
+        porcupine.verticalState = .Airborne
         
     }
     

@@ -10,11 +10,18 @@ class Porcupine: Character {
    
     // constants
     let angularVelocityConstant: CGFloat = 50
+    let maxSurfaceVelocityX: Float = 200
     
     // controls refrence
     var baseJoystickPosition: CGPoint?
     var topJoystickPosition: CGPoint?
     
+    
+    func didLoadFromCCB() {
+        
+        horizontalVelocity = 300
+        
+    }
     
     // MARK: - Update function
     
@@ -49,7 +56,7 @@ class Porcupine: Character {
             // joystick calculations
             let distance = Float(ccpDistance(baseJoystickPosition!, topJoystickPosition!))
             let clampedDistance = CGFloat(clampf(distance, 0, 50))
-            velocityMultiplier = clampedDistance / 50
+            velocityMultiplier = exponentialFunction(joystickDistance: clampedDistance) / 50
             
             if topJoystickPosition!.x > baseJoystickPosition!.x {
                 // right
@@ -64,6 +71,15 @@ class Porcupine: Character {
             }
             
         }
+        
+    }
+    
+    // returns modified output distance
+    func exponentialFunction(joystickDistance d: CGFloat) -> CGFloat {
+        
+        let outputDistance: CGFloat = pow(1.1, (0.7*d - 3))
+        
+        return outputDistance
         
     }
     

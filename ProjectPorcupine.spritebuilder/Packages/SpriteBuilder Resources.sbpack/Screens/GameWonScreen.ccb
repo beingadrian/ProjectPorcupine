@@ -208,7 +208,7 @@
 						<string>Text</string>
 						<key>value</key>
 						<array>
-							<string>GAME OVER</string>
+							<string>YOU WIN</string>
 							<false/>
 						</array>
 					</dict>
@@ -516,7 +516,7 @@
 						<key>type</key>
 						<string>Float</string>
 						<key>value</key>
-						<real>0.0</real>
+						<real>0.86666667461395264</real>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -528,7 +528,7 @@
 							<real>1</real>
 							<real>1</real>
 							<real>1</real>
-							<real>0.0</real>
+							<real>0.86666667461395264</real>
 						</array>
 					</dict>
 					<dict>
@@ -710,7 +710,7 @@
 						<key>value</key>
 						<array>
 							<string>retryGame</string>
-							<integer>1</integer>
+							<integer>2</integer>
 						</array>
 					</dict>
 					<dict>
@@ -964,10 +964,12 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
-		<string></string>
+		<string>GameWonScreen</string>
 		<key>displayName</key>
 		<string>CCNode</string>
 		<key>memberVarAssignmentName</key>
@@ -1091,7 +1093,7 @@
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>1</real>
+			<real>0.43333333730697632</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
