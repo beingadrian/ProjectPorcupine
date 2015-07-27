@@ -38,11 +38,13 @@ class Gameplay: CCScene {
         userInteractionEnabled = true
         jumpButton.exclusiveTouch = false
         
-        gamePhysicsNode.debugDraw = false
+//        gamePhysicsNode.debugDraw = true
         
         gamePhysicsNode.collisionDelegate = self
         
         loadLevel()
+        
+        gamePhysicsNode.space.damping = 1.0
         
     }
     

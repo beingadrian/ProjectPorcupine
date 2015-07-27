@@ -21,6 +21,24 @@ class Porcupine: Character {
         
         horizontalVelocity = 250
         
+        setCustomPhysicsBody()
+        
+    }
+    
+    // MARK: - Custom physics body
+    
+    func setCustomPhysicsBody() {
+        
+        // main circular body
+        let mainBodyCirclePos = CGPoint(x: boundingBox().width/2, y: boundingBox().height/2)
+        let mainBodyCircle = CCPhysicsShape(circleShapeWithRadius: 20, center: mainBodyCirclePos)
+        mainBodyCircle.collisionType = "porcupinePhysicsBody"
+        
+        let customPhysicsBody = CCPhysicsBody(shapes: [mainBodyCircle])
+        physicsBody = customPhysicsBody
+        physicsBody.friction = 1.0
+        
+        
     }
     
     // MARK: - Update function
@@ -43,6 +61,12 @@ class Porcupine: Character {
             let gameplayScene = parent.parent as? Gameplay
             gameplayScene?.gameOver()
         }
+        
+        // override velocity to damp
+        if verticalState == .Ground {
+            physicsBody.velocity.x = 0.95 * physicsBody.velocity.x            
+        }
+
         
     }
     
