@@ -54,15 +54,15 @@ class Gameplay: CCScene {
         let actionCameraFollow = CCActionFollow(target: porcupine, worldBoundary: worldBoundaryRect)
         gamePhysicsNode.runAction(actionCameraFollow)
         
-        // check for game over
-        if porcupine.position.y < -200 {
-            gameOver()
-        }
-        
         // jump button (instantaneous)
         if jumpButton.highlighted == true {
             jump()
             jumpButton.highlighted = false
+        }
+        
+        // check for game over
+        if porcupine.position.y < -200 {
+            gameOver()
         }
         
     }
@@ -77,6 +77,7 @@ class Gameplay: CCScene {
         porcupine = CCBReader.load("Entities/Characters/Porcupine") as! Porcupine
         gamePhysicsNode.addChild(porcupine)
         porcupine.position = level.startingPoint.position
+        
         
     }
     
@@ -186,6 +187,16 @@ extension Gameplay: CCPhysicsCollisionDelegate {
         
     }
     
+    // MARK: - End goal collision
     
+    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, porcupinePhysicsBody: Porcupine!, endGoal: CCNode!) -> Bool {
+        
+        endGoal.removeFromParent()
+        
+        gameWon()
+        
+        return true
+        
+    }
     
 }

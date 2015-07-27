@@ -11,5 +11,13 @@ class Level: CCNode {
    
     weak var startingPoint: CCNode!
     weak var worldBoundary: CCNode!
+    weak var endGoal: CCNodeGradient!
+    
+    
+    func didLoadFromCCB() {
+        
+        endGoal.physicsBody.sensor = true
+        
+    }
     
 }
