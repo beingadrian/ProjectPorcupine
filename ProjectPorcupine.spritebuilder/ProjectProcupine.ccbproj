@@ -78,6 +78,33 @@
 			<key>previewFolderHidden</key>
 			<true/>
 		</dict>
+		<key>Assets/Controls</key>
+		<dict>
+			<key>isSmartSpriteSheet</key>
+			<true/>
+		</dict>
+		<key>Assets/Levels</key>
+		<dict>
+			<key>isDirty</key>
+			<true/>
+		</dict>
+		<key>Assets/Levels/Level1</key>
+		<dict/>
+		<key>Assets/Levels/Level1/Level1-Layer1.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>4</integer>
+		</dict>
+		<key>Assets/Levels/Level1/Level1-Layer2.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>4</integer>
+		</dict>
+		<key>Assets/Porcupine</key>
+		<dict>
+			<key>isSmartSpriteSheet</key>
+			<true/>
+		</dict>
 		<key>Sprites</key>
 		<dict/>
 	</dict>

@@ -19,7 +19,7 @@ class Porcupine: Character {
     
     func didLoadFromCCB() {
         
-        horizontalVelocity = 300
+        horizontalVelocity = 250
         
     }
     
