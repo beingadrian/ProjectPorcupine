@@ -38,13 +38,11 @@ class Gameplay: CCScene {
         userInteractionEnabled = true
         jumpButton.exclusiveTouch = false
         
-//        gamePhysicsNode.debugDraw = true
+        gamePhysicsNode.debugDraw = true
         
         gamePhysicsNode.collisionDelegate = self
         
         loadLevel()
-        
-        gamePhysicsNode.space.damping = 1.0
         
     }
     
@@ -79,7 +77,6 @@ class Gameplay: CCScene {
         porcupine = CCBReader.load("Entities/Characters/Porcupine") as! Porcupine
         gamePhysicsNode.addChild(porcupine)
         porcupine.position = level.startingPoint.position
-        
         
     }
     
@@ -151,6 +148,7 @@ class Gameplay: CCScene {
     
     
     // MARK: - Game ends
+    
     func gameOver() {
         
         paused = true

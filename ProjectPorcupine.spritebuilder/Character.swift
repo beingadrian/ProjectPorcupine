@@ -27,6 +27,11 @@ class Character: CCNode {
     }
     var verticalState: VerticalState = .Airborne
     
+    enum MovementDirection {
+        case Left, Right, None
+    }
+    var movementDirection: MovementDirection = .None
+    
     // running animation
     var runningSequenceName: String?
     
@@ -51,7 +56,7 @@ class Character: CCNode {
     func jump() {
         
         if self.verticalState == .Ground {
-            physicsBody.applyImpulse(CGPoint(x: 0, y: 500))
+            physicsBody.applyImpulse(CGPoint(x: 0, y: 350))
         }
         
     }

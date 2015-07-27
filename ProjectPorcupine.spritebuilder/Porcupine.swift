@@ -7,10 +7,10 @@
 //
 
 class Porcupine: Character {
-   
+    
     // constants
     let angularVelocityConstant: CGFloat = 50
-    let maxSurfaceVelocityX: Float = 200
+    let airborneForce: CGFloat = 250
     
     // controls refrence
     var baseJoystickPosition: CGPoint?
@@ -38,7 +38,6 @@ class Porcupine: Character {
         physicsBody = customPhysicsBody
         physicsBody.friction = 1.0
         
-        
     }
     
     // MARK: - Update function
@@ -64,7 +63,7 @@ class Porcupine: Character {
         
         // override velocity to damp
         if verticalState == .Ground {
-            physicsBody.velocity.x = 0.95 * physicsBody.velocity.x            
+            physicsBody.velocity.x = 0.95 * physicsBody.velocity.x
         }
 
         
@@ -82,17 +81,63 @@ class Porcupine: Character {
             let clampedDistance = CGFloat(clampf(distance, 0, 50))
             velocityMultiplier = exponentialFunction(joystickDistance: clampedDistance) / 50
             
+            // left or right adjustments
             if topJoystickPosition!.x > baseJoystickPosition!.x {
-                // right
-                physicsBody.angularVelocity = -angularVelocityConstant * velocityMultiplier
-                physicsBody.surfaceVelocity.x = -horizontalVelocity * velocityMultiplier
+                movementDirection = .Right
             } else if topJoystickPosition!.x < baseJoystickPosition!.x {
-                // left
-                physicsBody.angularVelocity =  angularVelocityConstant * velocityMultiplier
-                physicsBody.surfaceVelocity.x = horizontalVelocity * velocityMultiplier
+                movementDirection = .Left
             } else {
-                physicsBody.angularVelocity = 0
+                movementDirection = .None
             }
+            
+            switch verticalState {
+                
+                case .Ground:
+                    
+                    switch movementDirection {
+                        case .Left:
+                            // left
+                            physicsBody.angularVelocity =  angularVelocityConstant * velocityMultiplier
+                            physicsBody.surfaceVelocity.x = horizontalVelocity * velocityMultiplier
+                        case .Right:
+                            // right
+                            physicsBody.angularVelocity = -angularVelocityConstant * velocityMultiplier
+                            physicsBody.surfaceVelocity.x = -horizontalVelocity * velocityMultiplier
+                        case .None:
+                            physicsBody.angularVelocity = 0
+                        default:
+                            break
+                    }
+
+                case .Airborne:
+                    jumpMove()
+                
+                default:
+                    break
+            }
+            
+        }
+        
+    }
+    
+    func jumpMove() {
+        
+        func applyHorizontalForce(force: CGFloat) {
+            
+            physicsBody.applyForce(CGPoint(x: force, y: 0))
+            
+        }
+        
+        switch movementDirection {
+    
+            case .Left:
+                applyHorizontalForce(-airborneForce)
+            case .Right:
+                applyHorizontalForce(airborneForce)
+            case .None:
+                stop()
+            default:
+                break
             
         }
         
