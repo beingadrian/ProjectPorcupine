@@ -18,9 +18,7 @@ class Armadillo: Character {
     
     func didLoadFromCCB() {
         
-        horizontalVelocity = 250
-        
-//        setCustomPhysicsBody()
+        horizontalVelocity = 1000
         
         setSoftPhysicsBody()
         
@@ -28,72 +26,64 @@ class Armadillo: Character {
     
     // MARK: - Custom physics body
     
-    func setCustomPhysicsBody() {
-        
-        // main circular body
-        let mainBodyCircle = CCPhysicsShape(circleShapeWithRadius: 20, center: adjustedPos(x: 0, y: 0))
-        mainBodyCircle.collisionType = "armadilloPhysicsBody"
-        
-        let customPhysicsBody = CCPhysicsBody(shapes: [mainBodyCircle])
-        physicsBody = customPhysicsBody
-        physicsBody.friction = 1.0
-        physicsBody.density = 1
-        
-    }
-    
     func setSoftPhysicsBody() {
         
-        let numSegments = 10
-        let physicsBodyRadius: CGFloat = 4
+        // center
+        let center = CCPhysicsBody(circleOfRadius: 5, andCenter: adjustedPos(x: 0, y: 0))
+        
+        // constants
+        let totalSegments = 12
+        let childRadius: CGFloat = 5
+        let mainRadius: CGFloat = 30
         let innerStiffness: CGFloat = 1500
         let innerDamping: CGFloat = 50
+        let outerRestLength: CGFloat = 15
         let outerStiffness: CGFloat = 1000
         let outerDamping: CGFloat = 50
+        let childDist: CGFloat = mainRadius - childRadius
+        let childDist2: CGFloat = childDist * 2*CGFloat(M_PI)/CGFloat(totalSegments)
         
-        // bubble radius is the texture half-width
-        let bubbleRadius = self.contentSize.width/2
-        
-        // main body at the center of the bubble
-        self.physicsBody = CCPhysicsBody(circleOfRadius: physicsBodyRadius, andCenter: ccp(bubbleRadius, bubbleRadius))
-        self.physicsBody.allowsRotation = false
-        
-        // distance between main body and outer children
-        let childDist = bubbleRadius - physicsBodyRadius
-        
-        // create child bodies connected to the main body with inner springs
-        for index in 1...numSegments {
+        // set inner stuff
+        for i in 0..<totalSegments {
             
-            let childAngle = CGFloat(index * 2 * Int(M_PI)/numSegments)
+            // set angle
+            let angle = CGFloat(i) * (2 * CGFloat(M_PI))/CGFloat(totalSegments)
             
+            // create children
             let child = CCNode()
-            child.physicsBody = CCPhysicsBody(circleOfRadius: physicsBodyRadius, andCenter: CGPointZero)
-            child.physicsBody.allowsRotation = false
-            child.physicsBody.affectedByGravity = false
-            let posX = bubbleRadius + childDist * cos(childAngle)
-            let posY = bubbleRadius + childDist * sin(childAngle)
-            child.position = ccp(posX, posY)
             self.addChild(child)
+            child.name = String(i)
+            child.position = ccp(mainRadius * cos(angle), mainRadius * sin(angle))
+            child.physicsBody = CCPhysicsBody(circleOfRadius: childRadius, andCenter: adjustedPos(x: 0, y: 0))
+            child.physicsBody.friction = 1
+            child.physicsBody.collisionType = "armadilloPhysicsBody"
             
-            CCPhysicsJoint(springJointWithBodyA: self.physicsBody, bodyB: child.physicsBody, anchorA: ccp(bubbleRadius, bubbleRadius), anchorB: CGPointZero, restLength: childDist, stiffness: innerStiffness, damping: innerDamping)
+            // create inner springs
+            CCPhysicsJoint(springJointWithBodyA: center, bodyB: child.physicsBody, anchorA: adjustedPos(x: 0, y: 0), anchorB: adjustedPos(x: 0, y: 0), restLength: childDist, stiffness: innerStiffness, damping: innerDamping)
+         
+        }
+        
+        // create outer springs
+        
+        for i in 0..<totalSegments {
+            
+            let currentChild: CCNode = self.children[i] as! CCNode
+            var nextChild: CCNode = {
+               
+                if (i + 1) != 12 {
+                    return self.children[i + 1] as! CCNode
+                } else {
+                    return self.children[0] as! CCNode
+                }
+
+            }()
+
+            CCPhysicsJoint(springJointWithBodyA: currentChild.physicsBody, bodyB: nextChild.physicsBody, anchorA: adjustedPos(x: 0, y: 0), anchorB: adjustedPos(x: 0, y: 0), restLength: childDist2, stiffness: outerStiffness, damping: outerDamping)
             
         }
         
-        // connect child bodies together with outer springs
-        for index in 1...numSegments {
-            
-            let previous: CCNode = (index == 0 ? self.children[numSegments - 1] : self.children[index - 1]) as! CCNode
-            let child: CCNode = self.children[1] as! CCNode
-            
-            let restLength = childDist * 2 * CGFloat(Int(M_PI)/numSegments)
-            CCPhysicsJoint(springJointWithBodyA: child.physicsBody, bodyB: previous.physicsBody, anchorA: CGPointZero, anchorB: CGPointZero, restLength: restLength, stiffness: outerStiffness, damping: outerDamping)
-            
-        }
-        
-        
-        // test
-        physicsBody.velocity.x = 200
-        physicsBody.affectedByGravity = false
-        
+        physicsBody = center
+        physicsBody.collisionType = "armadilloPhysicsBody"
         
     }
     
@@ -129,7 +119,7 @@ class Armadillo: Character {
         
         // override velocity to damp
         if verticalState == .Ground {
-            physicsBody.velocity.x = 0.95 * physicsBody.velocity.x
+            physicsBody.velocity.x = 0.5 * physicsBody.velocity.x
         }
         
     }
