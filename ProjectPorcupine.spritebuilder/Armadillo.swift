@@ -68,7 +68,7 @@ class Armadillo: Character {
         
         // override velocity to damp
         if verticalState == .Ground {
-            physicsBody.velocity.x = 0.9 * physicsBody.velocity.x
+            physicsBody.velocity.x = 0.95 * physicsBody.velocity.x
         }
         
     }
@@ -99,13 +99,13 @@ class Armadillo: Character {
                     
                     switch movementDirection {
                         case .Left:
-                            // left
+                            // left5
                             physicsBody.angularVelocity = angularVelocityConstant * velocityMultiplier
-                            physicsBody.velocity.x = -horizontalVelocity * velocityMultiplier
+                            physicsBody.surfaceVelocity.x = horizontalVelocity * velocityMultiplier
                         case .Right:
                             // right
                             physicsBody.angularVelocity = -angularVelocityConstant * velocityMultiplier
-                            physicsBody.velocity.x = horizontalVelocity * velocityMultiplier
+                            physicsBody.surfaceVelocity.x = -horizontalVelocity * velocityMultiplier
                         case .None:
                             physicsBody.velocity.x = 0
                         default:
