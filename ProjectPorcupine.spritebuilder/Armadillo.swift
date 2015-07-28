@@ -1,42 +1,75 @@
 //
-//  Porcupine.swift
+//  Armadillo.swift
 //  ProjectProcupine
 //
 //  Created by Adrian Wisaksana on 7/26/15.
 //  Copyright (c) 2015 Apportable. All rights reserved.
 //
 
-class Porcupine: Character {
+class Armadillo: Character {
+    
+    weak var mainBody: CCSprite!
     
     // constants
     let angularVelocityConstant: CGFloat = 50
-    let airborneForce: CGFloat = 250
+    let airborneForce: CGFloat = 200
     
     // controls refrence
     var baseJoystickPosition: CGPoint?
     var topJoystickPosition: CGPoint?
     
+    // form states
+    enum FormState: String {
+        case Ball = "Ball", Normal = "Normal"
+    }
+    var formState: FormState = .Normal
     
     func didLoadFromCCB() {
         
         horizontalVelocity = 250
         
-        setCustomPhysicsBody()
+        setCircularPhysicsBody()
         
     }
     
     // MARK: - Custom physics body
     
-    func setCustomPhysicsBody() {
+    func setCircularPhysicsBody() {
         
         // main circular body
-        let mainBodyCirclePos = CGPoint(x: boundingBox().width/2, y: boundingBox().height/2)
-        let mainBodyCircle = CCPhysicsShape(circleShapeWithRadius: 20, center: mainBodyCirclePos)
-        mainBodyCircle.collisionType = "porcupinePhysicsBody"
+        let mainBodyCircle = CCPhysicsShape(circleShapeWithRadius: 20, center: adjustedPos(x: 0, y: 0))
+        mainBodyCircle.collisionType = "armadilloPhysicsBody"
         
         let customPhysicsBody = CCPhysicsBody(shapes: [mainBodyCircle])
         physicsBody = customPhysicsBody
         physicsBody.friction = 1.0
+        physicsBody.density = 1
+        
+        formState = .Ball
+        
+    }
+    
+    func setNormalPhysicsBody() {
+        
+        let mainBodyNormal = CCPhysicsShape(pillShapeFrom: ccp(0, 0), to: ccp(40, 0), cornerRadius: 5)
+        mainBodyNormal.collisionType = "armadilloPhysicsBody"
+        
+        // use points array
+        
+        let customPhysicsBody = CCPhysicsBody(shapes: [mainBodyNormal])
+        physicsBody = customPhysicsBody
+        physicsBody.friction = 1.0
+        
+        formState = .Normal
+        
+    }
+    
+    func adjustedPos(#x: CGFloat, y: CGFloat) -> CGPoint {
+        
+        let adjustedX = x + boundingBox().width/2
+        let adjustedY = y + boundingBox().height/2
+        
+        return CGPoint(x: adjustedX, y: adjustedY)
         
     }
     
@@ -65,12 +98,26 @@ class Porcupine: Character {
         if verticalState == .Ground {
             physicsBody.velocity.x = 0.95 * physicsBody.velocity.x
         }
-
+        
+    }
+    
+    // MARK: - Armadillo transform
+    
+    func transform() {
+        
+        switch formState {
+            case .Normal:
+                setCircularPhysicsBody()
+            case .Ball:
+                setNormalPhysicsBody()
+            default:
+                break
+        }
         
     }
     
     
-    // MARK - Porcupine movements
+    // MARK: - Armadillo movements
     
     func move() {
         
@@ -123,13 +170,10 @@ class Porcupine: Character {
     func jumpMove() {
         
         func applyHorizontalForce(force: CGFloat) {
-            
             physicsBody.applyForce(CGPoint(x: force, y: 0))
-            
         }
         
         switch movementDirection {
-    
             case .Left:
                 applyHorizontalForce(-airborneForce)
             case .Right:
@@ -138,7 +182,6 @@ class Porcupine: Character {
                 stop()
             default:
                 break
-            
         }
         
     }

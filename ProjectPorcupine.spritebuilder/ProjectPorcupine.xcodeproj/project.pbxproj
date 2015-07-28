@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		334356D31B6584040083FB51 /* Gameplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334356D21B6584040083FB51 /* Gameplay.swift */; };
 		334356DF1B6585320083FB51 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334356DE1B6585320083FB51 /* Level.swift */; };
-		334356E21B6586BE0083FB51 /* Porcupine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334356E11B6586BE0083FB51 /* Porcupine.swift */; };
+		334356E21B6586BE0083FB51 /* Armadillo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334356E11B6586BE0083FB51 /* Armadillo.swift */; };
 		334356E91B65AA430083FB51 /* Joystick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334356E81B65AA430083FB51 /* Joystick.swift */; };
 		334356EC1B65AD950083FB51 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334356EB1B65AD950083FB51 /* Character.swift */; };
 		334356EE1B65B05E0083FB51 /* GameOverScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334356ED1B65B05E0083FB51 /* GameOverScreen.swift */; };
@@ -159,7 +159,7 @@
 /* Begin PBXFileReference section */
 		334356D21B6584040083FB51 /* Gameplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gameplay.swift; sourceTree = "<group>"; };
 		334356DE1B6585320083FB51 /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
-		334356E11B6586BE0083FB51 /* Porcupine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Porcupine.swift; sourceTree = "<group>"; };
+		334356E11B6586BE0083FB51 /* Armadillo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Armadillo.swift; sourceTree = "<group>"; };
 		334356E81B65AA430083FB51 /* Joystick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Joystick.swift; sourceTree = "<group>"; };
 		334356EB1B65AD950083FB51 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		334356ED1B65B05E0083FB51 /* GameOverScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverScreen.swift; sourceTree = "<group>"; };
@@ -300,7 +300,7 @@
 		334356E31B6586C20083FB51 /* Characters */ = {
 			isa = PBXGroup;
 			children = (
-				334356E11B6586BE0083FB51 /* Porcupine.swift */,
+				334356E11B6586BE0083FB51 /* Armadillo.swift */,
 				334356EB1B65AD950083FB51 /* Character.swift */,
 			);
 			name = Characters;
@@ -886,7 +886,7 @@
 				334356D31B6584040083FB51 /* Gameplay.swift in Sources */,
 				334D75B71B66A6AE00EA3733 /* Screen.swift in Sources */,
 				7A046D7919E84ED5004C4763 /* MainScene.swift in Sources */,
-				334356E21B6586BE0083FB51 /* Porcupine.swift in Sources */,
+				334356E21B6586BE0083FB51 /* Armadillo.swift in Sources */,
 				334356DF1B6585320083FB51 /* Level.swift in Sources */,
 				5B121038197487F2004C1E1D /* AppDelegate.m in Sources */,
 				334356F01B65B0650083FB51 /* GameWonScreen.swift in Sources */,

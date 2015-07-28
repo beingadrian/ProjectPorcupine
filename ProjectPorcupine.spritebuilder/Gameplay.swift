@@ -12,8 +12,8 @@ class Gameplay: CCScene {
     weak var gamePhysicsNode: CCPhysicsNode!
     weak var levelNode: CCNode!
     
-    // porcupine
-    var porcupine: Porcupine!
+    // armadillo
+    var armadillo: Armadillo!
     
     // controls
     weak var jumpButton: CCButton!
@@ -47,11 +47,12 @@ class Gameplay: CCScene {
     }
     
     // MARK: - Update function
+    
     override func update(delta: CCTime) {
         
         // camera follow (position override)
         let worldBoundaryRect = level.worldBoundary.boundingBox()
-        let actionCameraFollow = CCActionFollow(target: porcupine, worldBoundary: worldBoundaryRect)
+        let actionCameraFollow = CCActionFollow(target: armadillo, worldBoundary: worldBoundaryRect)
         gamePhysicsNode.runAction(actionCameraFollow)
         
         // jump button (instantaneous)
@@ -61,7 +62,7 @@ class Gameplay: CCScene {
         }
         
         // check for game over
-        if porcupine.position.y < -200 {
+        if armadillo.position.y < -200 {
             gameOver()
         }
         
@@ -73,10 +74,10 @@ class Gameplay: CCScene {
         level = CCBReader.load(currentLevelPath) as! Level
         levelNode.addChild(level)
         
-        // load porcupine
-        porcupine = CCBReader.load("Entities/Characters/Porcupine") as! Porcupine
-        gamePhysicsNode.addChild(porcupine)
-        porcupine.position = level.startingPoint.position
+        // load armadillo
+        armadillo = CCBReader.load("Entities/Characters/armadillo") as! Armadillo
+        gamePhysicsNode.addChild(armadillo)
+        armadillo.position = level.startingPoint.position
         
     }
     
@@ -87,7 +88,7 @@ class Gameplay: CCScene {
         touchPosition = touch.locationInWorld()
         
         createJoystick()
-        porcupine.baseJoystickPosition = joystick!.convertToNodeSpace(touchPosition!)
+        armadillo.baseJoystickPosition = joystick!.convertToNodeSpace(touchPosition!)
         
     }
     
@@ -98,8 +99,8 @@ class Gameplay: CCScene {
         // move top joystick
         if let joystick = joystick {
             
-            porcupine.topJoystickPosition = joystick.convertToNodeSpace(touchPosition!)
-            joystick.joystickTop.positionInPoints = porcupine.topJoystickPosition!
+            armadillo.topJoystickPosition = joystick.convertToNodeSpace(touchPosition!)
+            joystick.joystickTop.positionInPoints = armadillo.topJoystickPosition!
             
         }
         
@@ -134,15 +135,24 @@ class Gameplay: CCScene {
     func removeJoystick() {
         
         if var joystick = joystick {
-            porcupine.topJoystickPosition = nil
+            armadillo.topJoystickPosition = nil
             joystick.removeFromParent()
         }
         
     }
     
+    // jump button
     func jump() {
         
-        porcupine.jump()
+        armadillo.jump()
+        
+    }
+    
+    // transform buton
+    func transformArmadillo() {
+        
+        armadillo.transform()
+        println(armadillo.formState.rawValue)
         
     }
     
@@ -173,23 +183,23 @@ extension Gameplay: CCPhysicsCollisionDelegate {
     
     // MARK: - Ground collisions
     
-    func ccPhysicsCollisionPreSolve(pair: CCPhysicsCollisionPair!, porcupinePhysicsBody: Porcupine!, ground: CCNode!) -> Bool {
+    func ccPhysicsCollisionPreSolve(pair: CCPhysicsCollisionPair!, armadilloPhysicsBody: Armadillo!, ground: CCNode!) -> Bool {
         
-        porcupine.verticalState = .Ground
+        armadillo.verticalState = .Ground
         
         return true
         
     }
     
-    func ccPhysicsCollisionSeparate(pair: CCPhysicsCollisionPair!, porcupinePhysicsBody: Porcupine!, ground: CCNode!) {
+    func ccPhysicsCollisionSeparate(pair: CCPhysicsCollisionPair!, armadilloPhysicsBody: Armadillo!, ground: CCNode!) {
         
-        porcupine.verticalState = .Airborne
+        armadillo.verticalState = .Airborne
         
     }
     
     // MARK: - Collectible collisions
     
-    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, porcupinePhysicsBody: Porcupine!, moon: CCNode!) -> Bool {
+    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, armadilloPhysicsBody: Armadillo!, moon: CCNode!) -> Bool {
         
         moon.removeFromParent()
         
@@ -199,7 +209,7 @@ extension Gameplay: CCPhysicsCollisionDelegate {
     
     // MARK: - End goal collision
     
-    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, porcupinePhysicsBody: Porcupine!, endGoal: CCNode!) -> Bool {
+    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, armadilloPhysicsBody: Armadillo!, endGoal: CCNode!) -> Bool {
         
         endGoal.removeFromParent()
         
