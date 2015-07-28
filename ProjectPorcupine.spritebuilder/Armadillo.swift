@@ -18,23 +18,17 @@ class Armadillo: Character {
     var baseJoystickPosition: CGPoint?
     var topJoystickPosition: CGPoint?
     
-    // form states
-    enum FormState: String {
-        case Ball = "Ball", Normal = "Normal"
-    }
-    var formState: FormState = .Normal
-    
     func didLoadFromCCB() {
         
         horizontalVelocity = 250
         
-        setCircularPhysicsBody()
+        setCustomPhysicsBody()
         
     }
     
     // MARK: - Custom physics body
     
-    func setCircularPhysicsBody() {
+    func setCustomPhysicsBody() {
         
         // main circular body
         let mainBodyCircle = CCPhysicsShape(circleShapeWithRadius: 20, center: adjustedPos(x: 0, y: 0))
@@ -44,23 +38,6 @@ class Armadillo: Character {
         physicsBody = customPhysicsBody
         physicsBody.friction = 1.0
         physicsBody.density = 1
-        
-        formState = .Ball
-        
-    }
-    
-    func setNormalPhysicsBody() {
-        
-        let mainBodyNormal = CCPhysicsShape(pillShapeFrom: ccp(0, 0), to: ccp(40, 0), cornerRadius: 5)
-        mainBodyNormal.collisionType = "armadilloPhysicsBody"
-        
-        // use points array
-        
-        let customPhysicsBody = CCPhysicsBody(shapes: [mainBodyNormal])
-        physicsBody = customPhysicsBody
-        physicsBody.friction = 1.0
-        
-        formState = .Normal
         
     }
     
@@ -100,22 +77,6 @@ class Armadillo: Character {
         }
         
     }
-    
-    // MARK: - Armadillo transform
-    
-    func transform() {
-        
-        switch formState {
-            case .Normal:
-                setCircularPhysicsBody()
-            case .Ball:
-                setNormalPhysicsBody()
-            default:
-                break
-        }
-        
-    }
-    
     
     // MARK: - Armadillo movements
     

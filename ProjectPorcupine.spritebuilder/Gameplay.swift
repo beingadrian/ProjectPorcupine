@@ -75,7 +75,7 @@ class Gameplay: CCScene {
         levelNode.addChild(level)
         
         // load armadillo
-        armadillo = CCBReader.load("Entities/Characters/armadillo") as! Armadillo
+        armadillo = CCBReader.load("Entities/Characters/Armadillo") as! Armadillo
         gamePhysicsNode.addChild(armadillo)
         armadillo.position = level.startingPoint.position
         
@@ -147,15 +147,6 @@ class Gameplay: CCScene {
         armadillo.jump()
         
     }
-    
-    // transform buton
-    func transformArmadillo() {
-        
-        armadillo.transform()
-        println(armadillo.formState.rawValue)
-        
-    }
-    
     
     // MARK: - Game ends
     
