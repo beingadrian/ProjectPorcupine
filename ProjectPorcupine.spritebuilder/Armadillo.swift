@@ -37,7 +37,6 @@ class Armadillo: Character {
         let mainRadius: CGFloat = 30
         let innerStiffness: CGFloat = 1500
         let innerDamping: CGFloat = 50
-        let outerRestLength: CGFloat = 15
         let outerStiffness: CGFloat = 1000
         let outerDamping: CGFloat = 50
         let childDist: CGFloat = mainRadius - childRadius
@@ -64,7 +63,6 @@ class Armadillo: Character {
         }
         
         // create outer springs
-        
         for i in 0..<totalSegments {
             
             let currentChild: CCNode = self.children[i] as! CCNode
@@ -152,11 +150,11 @@ class Armadillo: Character {
                         case .Left:
                             // left
                             physicsBody.angularVelocity =  angularVelocityConstant * velocityMultiplier
-                            physicsBody.surfaceVelocity.x = horizontalVelocity * velocityMultiplier
+                            physicsBody.velocity.x = -horizontalVelocity * velocityMultiplier
                         case .Right:
                             // right
                             physicsBody.angularVelocity = -angularVelocityConstant * velocityMultiplier
-                            physicsBody.surfaceVelocity.x = -horizontalVelocity * velocityMultiplier
+                            physicsBody.velocity.x = +horizontalVelocity * velocityMultiplier
                         case .None:
                             physicsBody.angularVelocity = 0
                         default:

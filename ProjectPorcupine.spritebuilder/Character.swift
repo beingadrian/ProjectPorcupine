@@ -12,6 +12,7 @@ class Character: CCNode {
     var horizontalVelocity: CGFloat = 150
     var horizontalForce: CGFloat = 60
     var velocityMultiplier: CGFloat = 1
+    var jumpPower: CGFloat = 350
     
     // health
     var hitPoints: CGFloat = 100
@@ -56,7 +57,7 @@ class Character: CCNode {
     func jump() {
         
         if self.verticalState == .Ground {
-            physicsBody.applyImpulse(CGPoint(x: 0, y: 350))
+            physicsBody.applyImpulse(CGPoint(x: 0, y: jumpPower))
         }
         
     }

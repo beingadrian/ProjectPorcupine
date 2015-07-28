@@ -174,15 +174,16 @@ extension Gameplay: CCPhysicsCollisionDelegate {
     
     // MARK: - Ground collisions
     
-    func ccPhysicsCollisionPreSolve(pair: CCPhysicsCollisionPair!, armadilloPhysicsBody: Armadillo!, ground: CCNode!) -> Bool {
+    func ccPhysicsCollisionPreSolve(pair: CCPhysicsCollisionPair!, armadilloPhysicsBody: CCNode!, ground: CCNode!) -> Bool {
         
         armadillo.verticalState = .Ground
+        println("Grounded")
         
         return true
         
     }
     
-    func ccPhysicsCollisionSeparate(pair: CCPhysicsCollisionPair!, armadilloPhysicsBody: Armadillo!, ground: CCNode!) {
+    func ccPhysicsCollisionSeparate(pair: CCPhysicsCollisionPair!, armadilloPhysicsBody: CCNode!, ground: CCNode!) {
         
         armadillo.verticalState = .Airborne
         
@@ -190,7 +191,7 @@ extension Gameplay: CCPhysicsCollisionDelegate {
     
     // MARK: - Collectible collisions
     
-    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, armadilloPhysicsBody: Armadillo!, moon: CCNode!) -> Bool {
+    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, armadilloPhysicsBody: CCNode!, moon: CCNode!) -> Bool {
         
         moon.removeFromParent()
         
@@ -200,7 +201,7 @@ extension Gameplay: CCPhysicsCollisionDelegate {
     
     // MARK: - End goal collision
     
-    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, armadilloPhysicsBody: Armadillo!, endGoal: CCNode!) -> Bool {
+    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, armadilloPhysicsBody: CCNode!, endGoal: CCNodeGradient!) -> Bool {
         
         endGoal.removeFromParent()
         
