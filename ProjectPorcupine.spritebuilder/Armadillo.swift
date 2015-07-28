@@ -18,70 +18,43 @@ class Armadillo: Character {
     
     func didLoadFromCCB() {
         
-        horizontalVelocity = 1000
-        
-        setSoftPhysicsBody()
+        horizontalVelocity = 350
+        setCustomPhysicsBody()
         
     }
     
     // MARK: - Custom physics body
     
-    func setSoftPhysicsBody() {
+    func setCustomPhysicsBody() {
+        
+        let pointZero = adjustedPos(x: 0, y: 0)
         
         // center
-        let center = CCPhysicsBody(circleOfRadius: 5, andCenter: adjustedPos(x: 0, y: 0))
-        
-        // constants
-        let totalSegments = 12
-        let childRadius: CGFloat = 5
-        let mainRadius: CGFloat = 30
-        let innerStiffness: CGFloat = 1500
-        let innerDamping: CGFloat = 50
-        let outerStiffness: CGFloat = 1000
-        let outerDamping: CGFloat = 50
-        let childDist: CGFloat = mainRadius - childRadius
-        let childDist2: CGFloat = childDist * 2*CGFloat(M_PI)/CGFloat(totalSegments)
-        
-        // set inner stuff
-        for i in 0..<totalSegments {
-            
-            // set angle
-            let angle = CGFloat(i) * (2 * CGFloat(M_PI))/CGFloat(totalSegments)
-            
-            // create children
-            let child = CCNode()
-            self.addChild(child)
-            child.name = String(i)
-            child.position = ccp(mainRadius * cos(angle), mainRadius * sin(angle))
-            child.physicsBody = CCPhysicsBody(circleOfRadius: childRadius, andCenter: adjustedPos(x: 0, y: 0))
-            child.physicsBody.friction = 1
-            child.physicsBody.collisionType = "armadilloPhysicsBody"
-            
-            // create inner springs
-            CCPhysicsJoint(springJointWithBodyA: center, bodyB: child.physicsBody, anchorA: adjustedPos(x: 0, y: 0), anchorB: adjustedPos(x: 0, y: 0), restLength: childDist, stiffness: innerStiffness, damping: innerDamping)
-         
-        }
-        
-        // create outer springs
-        for i in 0..<totalSegments {
-            
-            let currentChild: CCNode = self.children[i] as! CCNode
-            var nextChild: CCNode = {
-               
-                if (i + 1) != 12 {
-                    return self.children[i + 1] as! CCNode
-                } else {
-                    return self.children[0] as! CCNode
-                }
-
-            }()
-
-            CCPhysicsJoint(springJointWithBodyA: currentChild.physicsBody, bodyB: nextChild.physicsBody, anchorA: adjustedPos(x: 0, y: 0), anchorB: adjustedPos(x: 0, y: 0), restLength: childDist2, stiffness: outerStiffness, damping: outerDamping)
-            
-        }
-        
+        let mainBodyRadius: CGFloat = 20
+        let center = CCPhysicsBody(circleOfRadius: mainBodyRadius, andCenter: pointZero)
         physicsBody = center
         physicsBody.collisionType = "armadilloPhysicsBody"
+        physicsBody.affectedByGravity = false
+        
+        // spikes
+        let totalSpikes = 12
+        
+        for i in 0..<totalSpikes {
+            
+            let spike = CCNode()
+            self.addChild(spike)
+            spike.physicsBody = CCPhysicsBody(circleOfRadius: 5, andCenter: pointZero)
+            spike.physicsBody.affectedByGravity = false
+            
+            let angle = CGFloat(i) * CGFloat(2*M_PI)/CGFloat(totalSpikes)
+            let spikePosX = 25 * cos(angle)
+            let spikePosY = 25 * sin(angle)
+            spike.position = CGPoint(x: spikePosX, y: spikePosY)
+            
+            // create pivot
+            CCPhysicsJoint(pivotJointWithBodyA: center, bodyB: spike.physicsBody, anchorA: adjustedPos(x: spikePosX, y: spikePosY))
+    
+        }
         
     }
     
@@ -117,7 +90,7 @@ class Armadillo: Character {
         
         // override velocity to damp
         if verticalState == .Ground {
-            physicsBody.velocity.x = 0.5 * physicsBody.velocity.x
+            physicsBody.velocity.x = 0.9 * physicsBody.velocity.x
         }
         
     }
