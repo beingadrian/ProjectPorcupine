@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>70</integer>
+	<integer>80</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -71,8 +71,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>139.56832885742188</real>
-							<real>878.342041015625</real>
+							<real>274.56832885742188</real>
+							<real>857.7010498046875</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -313,7 +313,7 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>990.89862060546875</real>
+							<real>1112.309326171875</real>
 							<real>0.0</real>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -415,8 +415,6 @@
 				<string></string>
 				<key>displayName</key>
 				<string>Level1-Layer2</string>
-				<key>locked</key>
-				<true/>
 				<key>memberVarAssignmentName</key>
 				<string></string>
 				<key>memberVarAssignmentType</key>
@@ -438,7 +436,7 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>-204.97137451171875</real>
+							<real>-69.97137451171875</real>
 							<real>0.0</real>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -566,8 +564,6 @@
 				<string></string>
 				<key>displayName</key>
 				<string>Level1-Layer1</string>
-				<key>locked</key>
-				<true/>
 				<key>memberVarAssignmentName</key>
 				<string></string>
 				<key>memberVarAssignmentType</key>
@@ -589,8 +585,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>376.02862548828125</real>
-							<real>478</real>
+							<real>511.02862548828125</real>
+							<real>0.0</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -604,7 +600,7 @@
 						<key>value</key>
 						<array>
 							<real>0.5</real>
-							<real>0.5</real>
+							<real>0.0</real>
 						</array>
 					</dict>
 					<dict>
@@ -1260,7 +1256,7 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>0.0</real>
+							<real>135</real>
 							<real>0.0</real>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -1338,8 +1334,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>427.75833129882812</real>
-							<real>797</real>
+							<real>568</real>
+							<real>779.82794189453125</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -1367,8 +1363,6 @@
 						<string>Entities/Collectibles/Moon.ccb</string>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>

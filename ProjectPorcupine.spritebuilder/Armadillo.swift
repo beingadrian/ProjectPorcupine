@@ -18,7 +18,7 @@ class Armadillo: Character {
     
     func didLoadFromCCB() {
         
-        horizontalVelocity = 350
+        horizontalVelocity = 400
         
         setCustomBodyPhysics()
         
@@ -56,8 +56,11 @@ class Armadillo: Character {
         }
         
         // clamp horizontal velocity
-        let clampValue = clampf(Float(physicsBody.velocity.x), Float(-horizontalVelocity), Float(horizontalVelocity))
-        physicsBody.velocity.x = CGFloat(clampValue)
+        let clampValue = clampf(Float(physicsBody.surfaceVelocity.x), Float(-horizontalVelocity), Float(horizontalVelocity))
+        physicsBody.surfaceVelocity.x = CGFloat(clampValue)
+        
+        let velocityClamp = clampf(Float(physicsBody.velocity.x), -Float(horizontalVelocity), Float(horizontalVelocity))
+        physicsBody.velocity.x = CGFloat(velocityClamp)
         
         // character death
         if hitPoints <= 0 && livingState == .Alive {
@@ -68,7 +71,7 @@ class Armadillo: Character {
         
         // override velocity to damp
         if verticalState == .Ground {
-            physicsBody.velocity.x = 0.9 * physicsBody.velocity.x
+            physicsBody.velocity.x = 0.95 * physicsBody.velocity.x
         }
         
     }
@@ -101,13 +104,13 @@ class Armadillo: Character {
                         case .Left:
                             // left
                             physicsBody.angularVelocity = angularVelocityConstant * velocityMultiplier
-                            physicsBody.velocity.x = -horizontalVelocity * velocityMultiplier
+                            physicsBody.surfaceVelocity.x = -horizontalVelocity * velocityMultiplier
                         case .Right:
                             // right
                             physicsBody.angularVelocity = -angularVelocityConstant * velocityMultiplier
-                            physicsBody.velocity.x = horizontalVelocity * velocityMultiplier
+                            physicsBody.surfaceVelocity.x = horizontalVelocity * velocityMultiplier
                         case .None:
-                            physicsBody.velocity.x = 0
+                            physicsBody.surfaceVelocity.x = 0
                         default:
                             break
                     }

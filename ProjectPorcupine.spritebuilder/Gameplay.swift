@@ -46,6 +46,19 @@ class Gameplay: CCScene {
         
     }
     
+    func loadLevel() {
+        
+        // load level and add to levelNode
+        level = CCBReader.load(currentLevelPath) as! Level
+        levelNode.addChild(level)
+        
+        // load armadillo
+        armadillo = CCBReader.load("Entities/Characters/Armadillo") as! Armadillo
+        gamePhysicsNode.addChild(armadillo)
+        armadillo.position = level.startingPoint.position
+        
+    }
+    
     // MARK: - Update function
     
     override func update(delta: CCTime) {
@@ -65,19 +78,6 @@ class Gameplay: CCScene {
         if armadillo.position.y < -200 {
             gameOver()
         }
-        
-    }
-    
-    func loadLevel() {
-        
-        // load level and add to levelNode
-        level = CCBReader.load(currentLevelPath) as! Level
-        levelNode.addChild(level)
-        
-        // load armadillo
-        armadillo = CCBReader.load("Entities/Characters/Armadillo") as! Armadillo
-        gamePhysicsNode.addChild(armadillo)
-        armadillo.position = level.startingPoint.position
         
     }
     
@@ -153,7 +153,7 @@ class Gameplay: CCScene {
     func gameOver() {
         
         paused = true
-        let gameOverScreen = CCBReader.load("Screens/GameOverScreen", owner: self)
+        let gameOverScreen = CCBReader.load("Screens/GameOverScreen", owner: self) as! GameOverScreen
         addChild(gameOverScreen)
         
     }
@@ -177,7 +177,6 @@ extension Gameplay: CCPhysicsCollisionDelegate {
     func ccPhysicsCollisionPreSolve(pair: CCPhysicsCollisionPair!, armadilloPhysicsBody: CCNode!, ground: CCNode!) -> Bool {
         
         armadillo.verticalState = .Ground
-        println("Grounded")
         
         return true
         
