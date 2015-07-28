@@ -18,7 +18,7 @@ class Armadillo: Character {
     
     func didLoadFromCCB() {
         
-        horizontalVelocity = 1000
+        horizontalVelocity = 350
         
         setSoftPhysicsBody()
         
@@ -29,20 +29,23 @@ class Armadillo: Character {
     func setSoftPhysicsBody() {
         
         // center
-        let center = CCPhysicsBody(circleOfRadius: 5, andCenter: adjustedPos(x: 0, y: 0))
+        let center = CCPhysicsBody(circleOfRadius: 15, andCenter: adjustedPos(x: 0, y: 0))
+        physicsBody = center
+        physicsBody.affectedByGravity = true
+        physicsBody.collisionType = "armadilloPhysicsBody"
         
         // constants
         let totalSegments = 12
         let childRadius: CGFloat = 5
         let mainRadius: CGFloat = 30
-        let innerStiffness: CGFloat = 1500
+        let innerStiffness: CGFloat = 2000
         let innerDamping: CGFloat = 50
-        let outerStiffness: CGFloat = 1000
+        let outerStiffness: CGFloat = 3000
         let outerDamping: CGFloat = 50
         let childDist: CGFloat = mainRadius - childRadius
         let childDist2: CGFloat = childDist * 2*CGFloat(M_PI)/CGFloat(totalSegments)
         
-        // set inner stuff
+        // set inner spring
         for i in 0..<totalSegments {
             
             // set angle
@@ -56,6 +59,7 @@ class Armadillo: Character {
             child.physicsBody = CCPhysicsBody(circleOfRadius: childRadius, andCenter: adjustedPos(x: 0, y: 0))
             child.physicsBody.friction = 1
             child.physicsBody.collisionType = "armadilloPhysicsBody"
+            child.physicsBody.affectedByGravity = true
             
             // create inner springs
             CCPhysicsJoint(springJointWithBodyA: center, bodyB: child.physicsBody, anchorA: adjustedPos(x: 0, y: 0), anchorB: adjustedPos(x: 0, y: 0), restLength: childDist, stiffness: innerStiffness, damping: innerDamping)
@@ -79,9 +83,6 @@ class Armadillo: Character {
             CCPhysicsJoint(springJointWithBodyA: currentChild.physicsBody, bodyB: nextChild.physicsBody, anchorA: adjustedPos(x: 0, y: 0), anchorB: adjustedPos(x: 0, y: 0), restLength: childDist2, stiffness: outerStiffness, damping: outerDamping)
             
         }
-        
-        physicsBody = center
-        physicsBody.collisionType = "armadilloPhysicsBody"
         
     }
     
@@ -149,14 +150,12 @@ class Armadillo: Character {
                     switch movementDirection {
                         case .Left:
                             // left
-                            physicsBody.angularVelocity =  angularVelocityConstant * velocityMultiplier
                             physicsBody.velocity.x = -horizontalVelocity * velocityMultiplier
                         case .Right:
                             // right
-                            physicsBody.angularVelocity = -angularVelocityConstant * velocityMultiplier
-                            physicsBody.velocity.x = +horizontalVelocity * velocityMultiplier
+                            physicsBody.velocity.x = horizontalVelocity * velocityMultiplier
                         case .None:
-                            physicsBody.angularVelocity = 0
+                            physicsBody.velocity.x = 0
                         default:
                             break
                     }
