@@ -12,7 +12,7 @@ class Character: CCNode {
     var horizontalVelocity: CGFloat = 150
     var horizontalForce: CGFloat = 60
     var velocityMultiplier: CGFloat = 1
-    var jumpPower: CGFloat = 350
+    var jumpPower: CGFloat = 450
     
     // health
     var hitPoints: CGFloat = 100

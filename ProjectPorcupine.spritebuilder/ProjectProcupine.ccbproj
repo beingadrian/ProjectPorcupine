@@ -78,6 +78,16 @@
 			<key>previewFolderHidden</key>
 			<true/>
 		</dict>
+		<key>Assets/Armadillo</key>
+		<dict>
+			<key>isSmartSpriteSheet</key>
+			<true/>
+		</dict>
+		<key>Assets/Armadillo/body.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>4</integer>
+		</dict>
 		<key>Assets/Collectibles</key>
 		<dict>
 			<key>isSmartSpriteSheet</key>
@@ -96,7 +106,10 @@
 		<key>Assets/Levels</key>
 		<dict/>
 		<key>Assets/Levels/Level1</key>
-		<dict/>
+		<dict>
+			<key>trimSprites</key>
+			<true/>
+		</dict>
 		<key>Assets/Levels/Level1/Level1-Layer1.png</key>
 		<dict>
 			<key>scaleFrom</key>

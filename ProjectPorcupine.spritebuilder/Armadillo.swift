@@ -9,7 +9,7 @@
 class Armadillo: Character {
     
     // constants
-    let angularVelocityConstant: CGFloat = 50
+    let angularVelocityConstant: CGFloat = 75
     let airborneForce: CGFloat = 200
     
     // controls refrence
@@ -18,7 +18,7 @@ class Armadillo: Character {
     
     func didLoadFromCCB() {
         
-        horizontalVelocity = 400
+        horizontalVelocity = 500
         
         setCustomBodyPhysics()
         
@@ -71,7 +71,8 @@ class Armadillo: Character {
         
         // override velocity to damp
         if verticalState == .Ground {
-            physicsBody.velocity.x = 0.95 * physicsBody.velocity.x
+            physicsBody.velocity.x = 0.90 * physicsBody.velocity.x
+            physicsBody.surfaceVelocity.x = 0.5 * physicsBody.surfaceVelocity.x
         }
         
     }
@@ -80,10 +81,12 @@ class Armadillo: Character {
     
     func move() {
         
+        var distance: Float = 0
+        
         if baseJoystickPosition != nil && topJoystickPosition != nil {
             
             // joystick calculations
-            let distance = Float(ccpDistance(baseJoystickPosition!, topJoystickPosition!))
+            distance = Float(ccpDistance(baseJoystickPosition!, topJoystickPosition!))
             let clampedDistance = CGFloat(clampf(distance, 0, 50))
             velocityMultiplier = exponentialFunction(joystickDistance: clampedDistance) / 50
             
@@ -101,18 +104,21 @@ class Armadillo: Character {
                 case .Ground:
                     
                     switch movementDirection {
-                        case .Left:
-                            // left
-                            physicsBody.angularVelocity = angularVelocityConstant * velocityMultiplier
-                            physicsBody.surfaceVelocity.x = -horizontalVelocity * velocityMultiplier
-                        case .Right:
-                            // right
-                            physicsBody.angularVelocity = -angularVelocityConstant * velocityMultiplier
-                            physicsBody.surfaceVelocity.x = horizontalVelocity * velocityMultiplier
-                        case .None:
-                            physicsBody.surfaceVelocity.x = 0
-                        default:
-                            break
+                    case .Left:
+                        // left
+                        physicsBody.angularVelocity = angularVelocityConstant * velocityMultiplier
+//                        physicsBody.surfaceVelocity.x = horizontalVelocity * velocityMultiplier
+                        physicsBody.applyForce(ccp(-1000, 0))
+                    
+                    case .Right:
+                        // right
+                        physicsBody.angularVelocity = -angularVelocityConstant * velocityMultiplier
+//                        physicsBody.surfaceVelocity.x = -horizontalVelocity * velocityMultiplier
+                        physicsBody.applyForce(ccp(1000, 0))
+                    case .None:
+                        physicsBody.surfaceVelocity.x = 0
+                    default:
+                        break
                     }
 
                 case .Airborne:

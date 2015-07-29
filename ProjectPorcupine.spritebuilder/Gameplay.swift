@@ -38,7 +38,7 @@ class Gameplay: CCScene {
         userInteractionEnabled = true
         jumpButton.exclusiveTouch = false
         
-        gamePhysicsNode.debugDraw = true
+        gamePhysicsNode.debugDraw = false
         
         gamePhysicsNode.collisionDelegate = self
         
