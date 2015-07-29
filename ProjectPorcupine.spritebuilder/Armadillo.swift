@@ -76,9 +76,6 @@ class Armadillo: Character {
             physicsBody.velocity.x = 0.90 * physicsBody.velocity.x
         }
         
-        // test buffer
-        println(verticalState.rawValue)
-        
     }
     
     // MARK: - Armadillo movements

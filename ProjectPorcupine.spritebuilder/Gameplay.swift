@@ -191,9 +191,17 @@ extension Gameplay: CCPhysicsCollisionDelegate {
     
     // MARK: - Collectible collisions
     
-    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, armadilloPhysicsBody: CCNode!, moon: CCNode!) -> Bool {
+    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, armadilloPhysicsBody: CCNode!, collectible: Collectible!) -> Bool {
         
-        moon.removeFromParent()
+        // moon collectible
+        if let moon = collectible as? Moon {
+            moon.removeFromParent()
+        }
+        
+        // star collectible
+        if let star = collectible as? Star {
+            star.removeFromParent()
+        }
         
         return true
         

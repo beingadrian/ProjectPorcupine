@@ -110,16 +110,6 @@
 			<key>trimSprites</key>
 			<true/>
 		</dict>
-		<key>Assets/Levels/Level1/Level1-Layer1.png</key>
-		<dict>
-			<key>scaleFrom</key>
-			<integer>4</integer>
-		</dict>
-		<key>Assets/Levels/Level1/Level1-Layer2.png</key>
-		<dict>
-			<key>scaleFrom</key>
-			<integer>4</integer>
-		</dict>
 		<key>Assets/Porcupine</key>
 		<dict>
 			<key>isSmartSpriteSheet</key>

@@ -16,6 +16,8 @@
 		334356F01B65B0650083FB51 /* GameWonScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334356EF1B65B0650083FB51 /* GameWonScreen.swift */; };
 		334D75B71B66A6AE00EA3733 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334D75B61B66A6AE00EA3733 /* Screen.swift */; };
 		334D75BB1B66A71900EA3733 /* Collectible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334D75BA1B66A71900EA3733 /* Collectible.swift */; };
+		33F951351B69869E004D1042 /* Moon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F951341B69869E004D1042 /* Moon.swift */; };
+		33F951391B6987F4004D1042 /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F951381B6987F4004D1042 /* Star.swift */; };
 		5B121030197484FA004C1E1D /* ProjectProcupineActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B12102F197484FA004C1E1D /* ProjectProcupineActivity.m */; };
 		5B121038197487F2004C1E1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B737893E1807617C0076A88C /* AppDelegate.m */; };
 		7A046D7919E84ED5004C4763 /* MainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A046D7519E84C36004C4763 /* MainScene.swift */; };
@@ -166,6 +168,8 @@
 		334356EF1B65B0650083FB51 /* GameWonScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameWonScreen.swift; sourceTree = "<group>"; };
 		334D75B61B66A6AE00EA3733 /* Screen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
 		334D75BA1B66A71900EA3733 /* Collectible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collectible.swift; sourceTree = "<group>"; };
+		33F951341B69869E004D1042 /* Moon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Moon.swift; sourceTree = "<group>"; };
+		33F951381B6987F4004D1042 /* Star.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
 		5B12100919748273004C1E1D /* libEGL.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libEGL.so; path = /usr/lib/armv7a/libEGL.so; sourceTree = SDKROOT; };
 		5B12100F197483EE004C1E1D /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
 		5B121011197483EE004C1E1D /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
@@ -328,6 +332,8 @@
 			isa = PBXGroup;
 			children = (
 				334D75BA1B66A71900EA3733 /* Collectible.swift */,
+				33F951381B6987F4004D1042 /* Star.swift */,
+				33F951341B69869E004D1042 /* Moon.swift */,
 			);
 			name = Collectible;
 			sourceTree = "<group>";
@@ -882,9 +888,11 @@
 				334356EE1B65B05E0083FB51 /* GameOverScreen.swift in Sources */,
 				334356E91B65AA430083FB51 /* Joystick.swift in Sources */,
 				334D75BB1B66A71900EA3733 /* Collectible.swift in Sources */,
+				33F951391B6987F4004D1042 /* Star.swift in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
 				334356D31B6584040083FB51 /* Gameplay.swift in Sources */,
 				334D75B71B66A6AE00EA3733 /* Screen.swift in Sources */,
+				33F951351B69869E004D1042 /* Moon.swift in Sources */,
 				7A046D7919E84ED5004C4763 /* MainScene.swift in Sources */,
 				334356E21B6586BE0083FB51 /* Armadillo.swift in Sources */,
 				334356DF1B6585320083FB51 /* Level.swift in Sources */,
