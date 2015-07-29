@@ -98,14 +98,6 @@ class Character: CCNode {
         
     }
     
-    // MARK: –– Jump buffer
-    func isAirborne() {
-        
-        verticalState = .Airborne
-        
-    }
-    
-    
     // MARK: –– Body flips
     
     func flipBodyRight(body: CCNode) {
