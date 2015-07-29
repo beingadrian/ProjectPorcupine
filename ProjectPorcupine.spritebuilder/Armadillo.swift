@@ -10,6 +10,7 @@ class Armadillo: Character {
     
     // constants
     let angularVelocityConstant: CGFloat = 75
+    let groundForce: CGFloat = 1000
     let airborneForce: CGFloat = 200
     
     // controls refrence
@@ -107,14 +108,12 @@ class Armadillo: Character {
                     case .Left:
                         // left
                         physicsBody.angularVelocity = angularVelocityConstant * velocityMultiplier
-//                        physicsBody.surfaceVelocity.x = horizontalVelocity * velocityMultiplier
-                        physicsBody.applyForce(ccp(-1000, 0))
+                        physicsBody.applyForce(ccp(-groundForce, 0))
                     
                     case .Right:
                         // right
                         physicsBody.angularVelocity = -angularVelocityConstant * velocityMultiplier
-//                        physicsBody.surfaceVelocity.x = -horizontalVelocity * velocityMultiplier
-                        physicsBody.applyForce(ccp(1000, 0))
+                        physicsBody.applyForce(ccp(groundForce, 0))
                     case .None:
                         physicsBody.surfaceVelocity.x = 0
                     default:
@@ -159,8 +158,6 @@ class Armadillo: Character {
         return outputDistance
         
     }
-    
-    
     
     
 }
