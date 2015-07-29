@@ -184,7 +184,8 @@ extension Gameplay: CCPhysicsCollisionDelegate {
     
     func ccPhysicsCollisionSeparate(pair: CCPhysicsCollisionPair!, armadilloPhysicsBody: CCNode!, ground: CCNode!) {
         
-        armadillo.verticalState = .Airborne
+        // jump buffer
+        armadillo.scheduleOnce("isAirborne", delay: 0.05)
         
     }
     

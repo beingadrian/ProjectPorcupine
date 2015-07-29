@@ -8,18 +8,18 @@
 
 class Armadillo: Character {
     
-    // constants
-    let angularVelocityConstant: CGFloat = 75
-    let groundForce: CGFloat = 1000
-    let airborneForce: CGFloat = 200
-    
     // controls refrence
     var baseJoystickPosition: CGPoint?
     var topJoystickPosition: CGPoint?
     
     func didLoadFromCCB() {
         
-        horizontalVelocity = 500
+        // constants
+        maxHorizontalVelocity = 500
+        maxVerticalVelocity = 600
+        angularVelocityConstant = 75
+        groundForce = 1000
+        airborneHorizontalForce = 300
         
         setCustomBodyPhysics()
         
@@ -57,11 +57,12 @@ class Armadillo: Character {
         }
         
         // clamp horizontal velocity
-        let clampValue = clampf(Float(physicsBody.surfaceVelocity.x), Float(-horizontalVelocity), Float(horizontalVelocity))
-        physicsBody.surfaceVelocity.x = CGFloat(clampValue)
+        let horizontalVelocityClamp = clampf(Float(physicsBody.velocity.x), -Float(maxHorizontalVelocity), Float(maxHorizontalVelocity))
+        physicsBody.velocity.x = CGFloat(horizontalVelocityClamp)
         
-        let velocityClamp = clampf(Float(physicsBody.velocity.x), -Float(horizontalVelocity), Float(horizontalVelocity))
-        physicsBody.velocity.x = CGFloat(velocityClamp)
+        // clamp vertical velocity 
+        let verticalVelocityClamp = clampf(Float(physicsBody.velocity.y), -Float(maxVerticalVelocity), Float(maxVerticalVelocity))
+        physicsBody.velocity.y = CGFloat(verticalVelocityClamp)
         
         // character death
         if hitPoints <= 0 && livingState == .Alive {
@@ -73,8 +74,10 @@ class Armadillo: Character {
         // override velocity to damp
         if verticalState == .Ground {
             physicsBody.velocity.x = 0.90 * physicsBody.velocity.x
-            physicsBody.surfaceVelocity.x = 0.5 * physicsBody.surfaceVelocity.x
         }
+        
+        // test buffer
+        println(verticalState.rawValue)
         
     }
     
@@ -107,15 +110,15 @@ class Armadillo: Character {
                     switch movementDirection {
                     case .Left:
                         // left
-                        physicsBody.angularVelocity = angularVelocityConstant * velocityMultiplier
-                        physicsBody.applyForce(ccp(-groundForce, 0))
+                        applyGroundAngularVelocity(magnitude: -angularVelocityConstant, multiplier: velocityMultiplier)
+                        applyGroundForce(-groundForce)
                     
                     case .Right:
                         // right
-                        physicsBody.angularVelocity = -angularVelocityConstant * velocityMultiplier
-                        physicsBody.applyForce(ccp(groundForce, 0))
+                        applyGroundAngularVelocity(magnitude: angularVelocityConstant, multiplier: velocityMultiplier)
+                        applyGroundForce(groundForce)
                     case .None:
-                        physicsBody.surfaceVelocity.x = 0
+                        physicsBody.velocity.x = 0
                     default:
                         break
                     }
@@ -127,25 +130,6 @@ class Armadillo: Character {
                     break
             }
             
-        }
-        
-    }
-    
-    func jumpMove() {
-        
-        func applyHorizontalForce(force: CGFloat) {
-            physicsBody.applyForce(CGPoint(x: force, y: 0))
-        }
-        
-        switch movementDirection {
-            case .Left:
-                applyHorizontalForce(-airborneForce)
-            case .Right:
-                applyHorizontalForce(airborneForce)
-            case .None:
-                stop()
-            default:
-                break
         }
         
     }

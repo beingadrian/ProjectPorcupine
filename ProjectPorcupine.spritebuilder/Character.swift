@@ -9,9 +9,12 @@
 class Character: CCNode {
    
     // constants
-    var horizontalVelocity: CGFloat = 150
-    var horizontalForce: CGFloat = 60
+    var maxHorizontalVelocity: CGFloat = 150
+    var maxVerticalVelocity: CGFloat = 300
+    var angularVelocityConstant: CGFloat = 75
+    var groundForce: CGFloat = 1000
     var velocityMultiplier: CGFloat = 1
+    var airborneHorizontalForce: CGFloat = 200
     var jumpPower: CGFloat = 450
     
     // health
@@ -54,6 +57,22 @@ class Character: CCNode {
     
     // MARK: - Character movements
     
+    // MARK: –– Horizontal movements
+    
+    func applyGroundForce(force: CGFloat) {
+        
+        physicsBody.applyForce(CGPoint(x: force, y: 0))
+        
+    }
+    
+    func applyGroundAngularVelocity(#magnitude: CGFloat, multiplier: CGFloat) {
+        
+        physicsBody.angularVelocity = -magnitude * multiplier
+        
+    }
+    
+    // MARK: –– Jumping
+    
     func jump() {
         
         if self.verticalState == .Ground {
@@ -62,11 +81,32 @@ class Character: CCNode {
         
     }
     
-    func stop() {
+    func jumpMove() {
         
-        physicsBody.surfaceVelocity.x = 0
+        func applyHorizontalForce(force: CGFloat) {
+            physicsBody.applyForce(CGPoint(x: force, y: 0))
+        }
+        
+        switch movementDirection {
+        case .Left:
+            applyHorizontalForce(-airborneHorizontalForce)
+        case .Right:
+            applyHorizontalForce(airborneHorizontalForce)
+        default:
+            break
+        }
         
     }
+    
+    // MARK: –– Jump buffer
+    func isAirborne() {
+        
+        verticalState = .Airborne
+        
+    }
+    
+    
+    // MARK: –– Body flips
     
     func flipBodyRight(body: CCNode) {
         
@@ -86,7 +126,6 @@ class Character: CCNode {
         animationManager.runAnimationsForSequenceNamed(animation)
         
     }
-    
     
     
 }
