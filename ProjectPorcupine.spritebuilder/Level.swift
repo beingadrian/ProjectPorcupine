@@ -12,12 +12,23 @@ class Level: CCNode {
     weak var startingPoint: CCNode!
     weak var worldBoundary: CCNode!
     weak var endGoal: CCNodeGradient!
+    weak var collectibles: CCNode!
     
+    var totalMoonCount = 0
     
     func didLoadFromCCB() {
         
         endGoal.physicsBody.sensor = true
         
+        // set moon count
+        for child in collectibles.children {
+            
+            if let moon = child as? Moon {
+                totalMoonCount++
+            }
+            
+        }
+
     }
     
 }

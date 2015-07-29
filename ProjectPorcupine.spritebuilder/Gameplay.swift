@@ -20,6 +20,14 @@ class Gameplay: CCScene {
     var joystick: Joystick?
     var touchPosition: CGPoint?
     
+    // hub display
+    weak var moonCountLabel: CCLabelTTF!
+    var moonCount = 0 {
+        didSet {
+            moonCountLabel.string = "\(moonCount)/\(level.totalMoonCount)"
+        }
+    }
+    
     // level
     var level: Level!
     var currentLevel: Int = 1
@@ -56,6 +64,9 @@ class Gameplay: CCScene {
         armadillo = CCBReader.load("Entities/Characters/Armadillo") as! Armadillo
         gamePhysicsNode.addChild(armadillo)
         armadillo.position = level.startingPoint.position
+        
+        // update moon count label
+        moonCountLabel.string = "\(moonCount)/\(level.totalMoonCount)"
         
     }
     
@@ -196,6 +207,7 @@ extension Gameplay: CCPhysicsCollisionDelegate {
         // moon collectible
         if let moon = collectible as? Moon {
             moon.removeFromParent()
+            moonCount++
         }
         
         // star collectible
