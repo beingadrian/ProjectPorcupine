@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		332CD6B51B6AD9D400F1E49E /* Trap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332CD6B41B6AD9D400F1E49E /* Trap.swift */; };
+		332CD6BA1B6ADDEA00F1E49E /* GravityStone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332CD6B91B6ADDEA00F1E49E /* GravityStone.swift */; };
 		334356D31B6584040083FB51 /* Gameplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334356D21B6584040083FB51 /* Gameplay.swift */; };
 		334356DF1B6585320083FB51 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334356DE1B6585320083FB51 /* Level.swift */; };
 		334356E21B6586BE0083FB51 /* Armadillo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334356E11B6586BE0083FB51 /* Armadillo.swift */; };
@@ -161,6 +163,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		332CD6B41B6AD9D400F1E49E /* Trap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trap.swift; sourceTree = "<group>"; };
+		332CD6B91B6ADDEA00F1E49E /* GravityStone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GravityStone.swift; sourceTree = "<group>"; };
 		334356D21B6584040083FB51 /* Gameplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gameplay.swift; sourceTree = "<group>"; };
 		334356DE1B6585320083FB51 /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
 		334356E11B6586BE0083FB51 /* Armadillo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Armadillo.swift; sourceTree = "<group>"; };
@@ -297,6 +301,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		332CD6B81B6AD9D900F1E49E /* Traps */ = {
+			isa = PBXGroup;
+			children = (
+				332CD6B41B6AD9D400F1E49E /* Trap.swift */,
+			);
+			name = Traps;
+			sourceTree = "<group>";
+		};
 		334356E01B6585370083FB51 /* Level */ = {
 			isa = PBXGroup;
 			children = (
@@ -337,6 +349,7 @@
 			children = (
 				334D75BA1B66A71900EA3733 /* Collectible.swift */,
 				33F9513A1B69A31D004D1042 /* EndGoal.swift */,
+				332CD6B91B6ADDEA00F1E49E /* GravityStone.swift */,
 				33F951381B6987F4004D1042 /* Star.swift */,
 				33F951341B69869E004D1042 /* Moon.swift */,
 			);
@@ -521,6 +534,7 @@
 				334356F11B65B06A0083FB51 /* Screens */,
 				334356EA1B65AA460083FB51 /* Controls */,
 				334D75BC1B66A71E00EA3733 /* Collectible */,
+				332CD6B81B6AD9D900F1E49E /* Traps */,
 				334356E31B6586C20083FB51 /* Characters */,
 				334356E01B6585370083FB51 /* Level */,
 				D352B48019EC608A00829775 /* MetalShaders */,
@@ -901,6 +915,7 @@
 			files = (
 				33F9513F1B69F6D9004D1042 /* HubDisplay.swift in Sources */,
 				334356EE1B65B05E0083FB51 /* GameOverScreen.swift in Sources */,
+				332CD6BA1B6ADDEA00F1E49E /* GravityStone.swift in Sources */,
 				334356E91B65AA430083FB51 /* Joystick.swift in Sources */,
 				334D75BB1B66A71900EA3733 /* Collectible.swift in Sources */,
 				33F951391B6987F4004D1042 /* Star.swift in Sources */,
@@ -908,6 +923,7 @@
 				334356D31B6584040083FB51 /* Gameplay.swift in Sources */,
 				334D75B71B66A6AE00EA3733 /* Screen.swift in Sources */,
 				33F951351B69869E004D1042 /* Moon.swift in Sources */,
+				332CD6B51B6AD9D400F1E49E /* Trap.swift in Sources */,
 				7A046D7919E84ED5004C4763 /* MainScene.swift in Sources */,
 				334356E21B6586BE0083FB51 /* Armadillo.swift in Sources */,
 				334356DF1B6585320083FB51 /* Level.swift in Sources */,

@@ -162,6 +162,22 @@ class Gameplay: CCScene {
         
     }
     
+    // MARK: - Gravity manipulation
+    
+    func initiateGravityManipulation() {
+        
+        // change gravity
+        gamePhysicsNode.gravity.y = -300
+        
+    }
+    
+    func finishGravityManipulation() {
+        
+        // return to original gravity value
+        gamePhysicsNode.gravity.y = -1000
+        
+    }
+    
     // MARK: - Pause screen
     
     func pauseGame() {
@@ -230,10 +246,28 @@ extension Gameplay: CCPhysicsCollisionDelegate {
             star.removeFromParent()
         }
         
+        // gravity stone
+        if let gravityStone = collectible as? GravityStone {
+            // trigger gravity
+            initiateGravityManipulation()
+            
+            gravityStone.removeFromParent()
+        }
+        
         // end goal
         if let endGoal = collectible as? EndGoal {
             endGoal.animationManager.runAnimationsForSequenceNamed("FadeOut")
         }
+        
+        return true
+        
+    }
+    
+    // MARK: - Trap collisions
+    
+    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, armadilloPhysicsBody: CCNode!, trap: CCNode!) -> Bool {
+        
+        gameOver()
         
         return true
         

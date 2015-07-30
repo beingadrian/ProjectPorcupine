@@ -112,13 +112,18 @@
 		</dict>
 		<key>Assets/Levels/Level2</key>
 		<dict>
-			<key>isDirty</key>
-			<true/>
 			<key>trimSprites</key>
 			<true/>
 		</dict>
 		<key>Assets/Porcupine</key>
 		<dict>
+			<key>isSmartSpriteSheet</key>
+			<true/>
+		</dict>
+		<key>Assets/Traps</key>
+		<dict>
+			<key>isDirty</key>
+			<true/>
 			<key>isSmartSpriteSheet</key>
 			<true/>
 		</dict>
