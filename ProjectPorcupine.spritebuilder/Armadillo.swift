@@ -15,10 +15,10 @@ class Armadillo: Character {
     func didLoadFromCCB() {
         
         // constants
-        maxHorizontalVelocity = 500
+        maxHorizontalVelocity = 400
         maxVerticalVelocity = 600
         angularVelocityConstant = 75
-        groundForce = 1000
+        groundForce = 1200
         airborneHorizontalForce = 300
         
         setCustomBodyPhysics()
@@ -69,10 +69,6 @@ class Armadillo: Character {
         // clamp horizontal velocity
         let horizontalVelocityClamp = clampf(Float(physicsBody.velocity.x), -Float(maxHorizontalVelocity), Float(maxHorizontalVelocity))
         physicsBody.velocity.x = CGFloat(horizontalVelocityClamp)
-        
-        // clamp vertical velocity 
-        let verticalVelocityClamp = clampf(Float(physicsBody.velocity.y), -Float(maxVerticalVelocity), Float(maxVerticalVelocity))
-        physicsBody.velocity.y = CGFloat(verticalVelocityClamp)
         
         // character death
         if hitPoints <= 0 && livingState == .Alive {
@@ -138,6 +134,10 @@ class Armadillo: Character {
             }
             
         }
+        
+        // clamp vertical velocity
+        let verticalVelocityClamp = clampf(Float(physicsBody.velocity.y), -Float(maxVerticalVelocity), Float(maxVerticalVelocity))
+        physicsBody.velocity.y = CGFloat(verticalVelocityClamp)
         
     }
     

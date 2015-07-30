@@ -107,6 +107,11 @@
 		<dict/>
 		<key>Assets/Levels/Level1</key>
 		<dict>
+			<key>trimSprites</key>
+			<true/>
+		</dict>
+		<key>Assets/Levels/Level2</key>
+		<dict>
 			<key>isDirty</key>
 			<true/>
 			<key>trimSprites</key>

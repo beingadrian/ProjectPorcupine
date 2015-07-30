@@ -33,7 +33,7 @@ class Gameplay: CCScene {
     
     // level
     var level: Level!
-    var currentLevel: Int = 1
+    var currentLevel: Int = 2
     var currentLevelPath: String {
         return "Levels/Level\(currentLevel)"
     }
@@ -49,7 +49,7 @@ class Gameplay: CCScene {
         userInteractionEnabled = true
         jumpButton.exclusiveTouch = false
         
-        gamePhysicsNode.debugDraw = true
+        gamePhysicsNode.debugDraw = false
         
         gamePhysicsNode.collisionDelegate = self
         
