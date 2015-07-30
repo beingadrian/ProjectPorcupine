@@ -49,7 +49,7 @@ class Gameplay: CCScene {
         userInteractionEnabled = true
         jumpButton.exclusiveTouch = false
         
-        gamePhysicsNode.debugDraw = false
+        gamePhysicsNode.debugDraw = true
         
         gamePhysicsNode.collisionDelegate = self
         
@@ -200,7 +200,7 @@ extension Gameplay: CCPhysicsCollisionDelegate {
     
     // MARK: - Ground collisions
     
-    func ccPhysicsCollisionPreSolve(pair: CCPhysicsCollisionPair!, armadilloPhysicsBody: CCNode!, ground: CCNode!) -> Bool {
+    func ccPhysicsCollisionPreSolve(pair: CCPhysicsCollisionPair!, jumpSensor: CCNode!, ground: CCNode!) -> Bool {
         
         armadillo.verticalState = .Ground
         
@@ -208,7 +208,7 @@ extension Gameplay: CCPhysicsCollisionDelegate {
         
     }
     
-    func ccPhysicsCollisionSeparate(pair: CCPhysicsCollisionPair!, armadilloPhysicsBody: CCNode!, ground: CCNode!) {
+    func ccPhysicsCollisionSeparate(pair: CCPhysicsCollisionPair!, jumpSensor: CCNode!, ground: CCNode!) {
         
         // jump buffer
         armadillo.verticalState = .Airborne

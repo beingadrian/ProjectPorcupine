@@ -29,11 +29,21 @@ class Armadillo: Character {
     
     func setCustomBodyPhysics() {
         
+        let adjustedPointZero = adjustedPos(x: 0, y: 0)
+        
         // mainBody
-        physicsBody = CCPhysicsBody(circleOfRadius: 20, andCenter: adjustedPos(x: 0, y: 0))
-        physicsBody.collisionType = "armadilloPhysicsBody"
-        physicsBody.density = 1
-        physicsBody.friction = 1
+        let mainBodyShape = CCPhysicsShape(circleShapeWithRadius: 20, center: adjustedPointZero)
+        mainBodyShape.collisionType = "armadilloPhysicsBody"
+        mainBodyShape.density = 1
+        mainBodyShape.friction = 1
+        
+        // jump sensor body
+        let jumpSensorBodyShape = CCPhysicsShape(circleShapeWithRadius: 25, center: adjustedPointZero)
+        jumpSensorBodyShape.sensor = true
+        jumpSensorBodyShape.density = 0
+        jumpSensorBodyShape.collisionType = "jumpSensor"
+        
+        physicsBody = CCPhysicsBody(shapes: [mainBodyShape, jumpSensorBodyShape])
         
     }
     
@@ -75,9 +85,6 @@ class Armadillo: Character {
         if verticalState == .Ground {
             physicsBody.velocity.x = 0.90 * physicsBody.velocity.x
         }
-        
-        // test
-        println(verticalState.rawValue)
         
     }
     
