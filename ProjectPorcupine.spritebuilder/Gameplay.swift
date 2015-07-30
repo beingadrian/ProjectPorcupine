@@ -215,20 +215,14 @@ extension Gameplay: CCPhysicsCollisionDelegate {
             star.removeFromParent()
         }
         
-        return true
-        
-    }
-    
-    // MARK: - End goal collision
-    
-    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, armadilloPhysicsBody: CCNode!, endGoal: CCNodeGradient!) -> Bool {
-        
-        endGoal.removeFromParent()
-        
-        gameWon()
+        // end goal
+        if let endGoal = collectible as? EndGoal {
+            endGoal.animationManager.runAnimationsForSequenceNamed("FadeOut")
+        }
         
         return true
         
     }
+    
     
 }

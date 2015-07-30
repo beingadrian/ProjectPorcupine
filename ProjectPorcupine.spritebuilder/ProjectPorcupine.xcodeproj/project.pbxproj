@@ -18,6 +18,7 @@
 		334D75BB1B66A71900EA3733 /* Collectible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334D75BA1B66A71900EA3733 /* Collectible.swift */; };
 		33F951351B69869E004D1042 /* Moon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F951341B69869E004D1042 /* Moon.swift */; };
 		33F951391B6987F4004D1042 /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F951381B6987F4004D1042 /* Star.swift */; };
+		33F9513B1B69A31D004D1042 /* EndGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F9513A1B69A31D004D1042 /* EndGoal.swift */; };
 		5B121030197484FA004C1E1D /* ProjectProcupineActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B12102F197484FA004C1E1D /* ProjectProcupineActivity.m */; };
 		5B121038197487F2004C1E1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B737893E1807617C0076A88C /* AppDelegate.m */; };
 		7A046D7919E84ED5004C4763 /* MainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A046D7519E84C36004C4763 /* MainScene.swift */; };
@@ -170,6 +171,7 @@
 		334D75BA1B66A71900EA3733 /* Collectible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collectible.swift; sourceTree = "<group>"; };
 		33F951341B69869E004D1042 /* Moon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Moon.swift; sourceTree = "<group>"; };
 		33F951381B6987F4004D1042 /* Star.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
+		33F9513A1B69A31D004D1042 /* EndGoal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndGoal.swift; sourceTree = "<group>"; };
 		5B12100919748273004C1E1D /* libEGL.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libEGL.so; path = /usr/lib/armv7a/libEGL.so; sourceTree = SDKROOT; };
 		5B12100F197483EE004C1E1D /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
 		5B121011197483EE004C1E1D /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
@@ -332,6 +334,7 @@
 			isa = PBXGroup;
 			children = (
 				334D75BA1B66A71900EA3733 /* Collectible.swift */,
+				33F9513A1B69A31D004D1042 /* EndGoal.swift */,
 				33F951381B6987F4004D1042 /* Star.swift */,
 				33F951341B69869E004D1042 /* Moon.swift */,
 			);
@@ -899,6 +902,7 @@
 				5B121038197487F2004C1E1D /* AppDelegate.m in Sources */,
 				334356F01B65B0650083FB51 /* GameWonScreen.swift in Sources */,
 				334356EC1B65AD950083FB51 /* Character.swift in Sources */,
+				33F9513B1B69A31D004D1042 /* EndGoal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
