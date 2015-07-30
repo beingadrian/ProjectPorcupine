@@ -19,6 +19,7 @@
 		33F951351B69869E004D1042 /* Moon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F951341B69869E004D1042 /* Moon.swift */; };
 		33F951391B6987F4004D1042 /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F951381B6987F4004D1042 /* Star.swift */; };
 		33F9513B1B69A31D004D1042 /* EndGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F9513A1B69A31D004D1042 /* EndGoal.swift */; };
+		33F9513F1B69F6D9004D1042 /* HubDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F9513E1B69F6D9004D1042 /* HubDisplay.swift */; };
 		5B121030197484FA004C1E1D /* ProjectProcupineActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B12102F197484FA004C1E1D /* ProjectProcupineActivity.m */; };
 		5B121038197487F2004C1E1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B737893E1807617C0076A88C /* AppDelegate.m */; };
 		7A046D7919E84ED5004C4763 /* MainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A046D7519E84C36004C4763 /* MainScene.swift */; };
@@ -172,6 +173,7 @@
 		33F951341B69869E004D1042 /* Moon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Moon.swift; sourceTree = "<group>"; };
 		33F951381B6987F4004D1042 /* Star.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
 		33F9513A1B69A31D004D1042 /* EndGoal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndGoal.swift; sourceTree = "<group>"; };
+		33F9513E1B69F6D9004D1042 /* HubDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubDisplay.swift; sourceTree = "<group>"; };
 		5B12100919748273004C1E1D /* libEGL.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libEGL.so; path = /usr/lib/armv7a/libEGL.so; sourceTree = SDKROOT; };
 		5B12100F197483EE004C1E1D /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
 		5B121011197483EE004C1E1D /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
@@ -183,7 +185,7 @@
 		5B121034197485FE004C1E1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Platforms/iOS/Info.plist; sourceTree = "<group>"; };
 		5BA4619E1974C88900785744 /* AndroidManifest.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = AndroidManifest.xml; path = Platforms/Android/AndroidManifest.xml; sourceTree = "<group>"; };
 		7A046D7519E84C36004C4763 /* MainScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainScene.swift; path = Source/MainScene.swift; sourceTree = "<group>"; };
-		7A4035FF19DDEE84007B6E8F /* ProjectPorcupine Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ProjectPorcupine Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A4035FF19DDEE84007B6E8F /* ProjectArmadillo Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ProjectArmadillo Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A40360219DDEE84007B6E8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Platforms/Mac/Info.plist; sourceTree = "<group>"; };
 		7A40360319DDEE84007B6E8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Source/Platforms/Mac/main.m; sourceTree = "<group>"; };
 		7A40360519DDEE84007B6E8F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Source/Platforms/Mac/AppDelegate.h; sourceTree = "<group>"; };
@@ -196,7 +198,7 @@
 		7AFCD5DD19E9BDC200BCCCDA /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "Source/Bridging-Header.h"; sourceTree = "<group>"; };
 		7BF6AF9F1A425F9800FFF9BA /* JavaFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaFoundation.framework; path = "../../../../../../../Library/SBAndroid/Application Support/Developer/Shared/Xcode/Platforms/Android.platform/Developer/SDKs/SBAndroid.sdk/System/Library/Frameworks/JavaFoundation.framework"; sourceTree = "<group>"; };
 		8392007918EE8E3300B6C429 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
-		927F61BF196C771E000F43EF /* ProjectPorcupine Android.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ProjectPorcupine Android.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		927F61BF196C771E000F43EF /* ProjectArmadillo Android.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ProjectArmadillo Android.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B71F5907188484E7003F4D28 /* iPad-old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old.png"; path = "Icons/iPad-old.png"; sourceTree = "<group>"; };
 		B71F5908188484E7003F4D28 /* iPad-old@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old@2x.png"; path = "Icons/iPad-old@2x.png"; sourceTree = "<group>"; };
 		B71F5909188484E7003F4D28 /* iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iPad.png; path = Icons/iPad.png; sourceTree = "<group>"; };
@@ -217,7 +219,7 @@
 		B737896E180762440076A88C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Source/Resources/Default@2x.png"; sourceTree = SOURCE_ROOT; };
 		B73789851807631A0076A88C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Source/Platforms/iOS/main.m; sourceTree = SOURCE_ROOT; };
 		B73789861807631A0076A88C /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = Source/Prefix.pch; sourceTree = SOURCE_ROOT; };
-		B77F1B2E17B978D7009739AE /* ProjectPorcupine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectPorcupine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B77F1B2E17B978D7009739AE /* ProjectArmadillo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectArmadillo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77F1B3117B978D7009739AE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B77F1B3317B978D7009739AE /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		B77F1B3517B978D7009739AE /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -339,6 +341,14 @@
 				33F951341B69869E004D1042 /* Moon.swift */,
 			);
 			name = Collectible;
+			sourceTree = "<group>";
+		};
+		33F951401B69F6E1004D1042 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				33F9513E1B69F6D9004D1042 /* HubDisplay.swift */,
+			);
+			name = UI;
 			sourceTree = "<group>";
 		};
 		5B12100D197483EE004C1E1D /* res */ = {
@@ -507,6 +517,7 @@
 				7A40362019DDEF0D007B6E8F /* Platforms */,
 				7A046D7519E84C36004C4763 /* MainScene.swift */,
 				334356D21B6584040083FB51 /* Gameplay.swift */,
+				33F951401B69F6E1004D1042 /* UI */,
 				334356F11B65B06A0083FB51 /* Screens */,
 				334356EA1B65AA460083FB51 /* Controls */,
 				334D75BC1B66A71E00EA3733 /* Collectible */,
@@ -553,9 +564,9 @@
 		B77F1B2F17B978D7009739AE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B77F1B2E17B978D7009739AE /* ProjectPorcupine.app */,
-				927F61BF196C771E000F43EF /* ProjectPorcupine Android.app */,
-				7A4035FF19DDEE84007B6E8F /* ProjectPorcupine Mac.app */,
+				B77F1B2E17B978D7009739AE /* ProjectArmadillo.app */,
+				927F61BF196C771E000F43EF /* ProjectArmadillo Android.app */,
+				7A4035FF19DDEE84007B6E8F /* ProjectArmadillo Mac.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -615,9 +626,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7A4035FE19DDEE84007B6E8F /* ProjectPorcupine Mac */ = {
+		7A4035FE19DDEE84007B6E8F /* ProjectArmadillo Mac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7A40361E19DDEE84007B6E8F /* Build configuration list for PBXNativeTarget "ProjectPorcupine Mac" */;
+			buildConfigurationList = 7A40361E19DDEE84007B6E8F /* Build configuration list for PBXNativeTarget "ProjectArmadillo Mac" */;
 			buildPhases = (
 				7A4035FB19DDEE84007B6E8F /* Sources */,
 				7A4035FC19DDEE84007B6E8F /* Frameworks */,
@@ -628,14 +639,14 @@
 			dependencies = (
 				7A97911619E631A1001FFC4D /* PBXTargetDependency */,
 			);
-			name = "ProjectPorcupine Mac";
+			name = "ProjectArmadillo Mac";
 			productName = "ProjectProcupine Mac";
-			productReference = 7A4035FF19DDEE84007B6E8F /* ProjectPorcupine Mac.app */;
+			productReference = 7A4035FF19DDEE84007B6E8F /* ProjectArmadillo Mac.app */;
 			productType = "com.apple.product-type.application";
 		};
-		927F6198196C771E000F43EF /* ProjectPorcupine Android */ = {
+		927F6198196C771E000F43EF /* ProjectArmadillo Android */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 927F61BC196C771E000F43EF /* Build configuration list for PBXNativeTarget "ProjectPorcupine Android" */;
+			buildConfigurationList = 927F61BC196C771E000F43EF /* Build configuration list for PBXNativeTarget "ProjectArmadillo Android" */;
 			buildPhases = (
 				927F619B196C771E000F43EF /* Run Script */,
 				927F619C196C771E000F43EF /* Sources */,
@@ -647,14 +658,14 @@
 			dependencies = (
 				7A97912219E6321C001FFC4D /* PBXTargetDependency */,
 			);
-			name = "ProjectPorcupine Android";
+			name = "ProjectArmadillo Android";
 			productName = Example;
-			productReference = 927F61BF196C771E000F43EF /* ProjectPorcupine Android.app */;
+			productReference = 927F61BF196C771E000F43EF /* ProjectArmadillo Android.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B77F1B2D17B978D7009739AE /* ProjectPorcupine iOS */ = {
+		B77F1B2D17B978D7009739AE /* ProjectArmadillo iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B77F1CDE17B978D8009739AE /* Build configuration list for PBXNativeTarget "ProjectPorcupine iOS" */;
+			buildConfigurationList = B77F1CDE17B978D8009739AE /* Build configuration list for PBXNativeTarget "ProjectArmadillo iOS" */;
 			buildPhases = (
 				D2E0167A18D782EC00927430 /* Run Script */,
 				B77F1B2A17B978D7009739AE /* Sources */,
@@ -667,9 +678,9 @@
 			dependencies = (
 				7A97911019E6319A001FFC4D /* PBXTargetDependency */,
 			);
-			name = "ProjectPorcupine iOS";
+			name = "ProjectArmadillo iOS";
 			productName = Example;
-			productReference = B77F1B2E17B978D7009739AE /* ProjectPorcupine.app */;
+			productReference = B77F1B2E17B978D7009739AE /* ProjectArmadillo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -693,7 +704,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B77F1B2917B978D7009739AE /* Build configuration list for PBXProject "ProjectPorcupine" */;
+			buildConfigurationList = B77F1B2917B978D7009739AE /* Build configuration list for PBXProject "ProjectArmadillo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -712,9 +723,9 @@
 			);
 			projectRoot = "";
 			targets = (
-				B77F1B2D17B978D7009739AE /* ProjectPorcupine iOS */,
-				927F6198196C771E000F43EF /* ProjectPorcupine Android */,
-				7A4035FE19DDEE84007B6E8F /* ProjectPorcupine Mac */,
+				B77F1B2D17B978D7009739AE /* ProjectArmadillo iOS */,
+				927F6198196C771E000F43EF /* ProjectArmadillo Android */,
+				7A4035FE19DDEE84007B6E8F /* ProjectArmadillo Mac */,
 			);
 		};
 /* End PBXProject section */
@@ -888,6 +899,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33F9513F1B69F6D9004D1042 /* HubDisplay.swift in Sources */,
 				334356EE1B65B05E0083FB51 /* GameOverScreen.swift in Sources */,
 				334356E91B65AA430083FB51 /* Joystick.swift in Sources */,
 				334D75BB1B66A71900EA3733 /* Collectible.swift in Sources */,
@@ -967,7 +979,7 @@
 					"-lz",
 				);
 				PRODUCT_MODULE_NAME = ProjectProcupine;
-				PRODUCT_NAME = "ProjectPorcupine Mac";
+				PRODUCT_NAME = "ProjectArmadillo Mac";
 				SDKROOT = macosx;
 				SWIFT_OBJC_BRIDGING_HEADER = "Source/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1011,7 +1023,7 @@
 					"-lz",
 				);
 				PRODUCT_MODULE_NAME = ProjectProcupine;
-				PRODUCT_NAME = "ProjectPorcupine Mac";
+				PRODUCT_NAME = "ProjectArmadillo Mac";
 				SDKROOT = macosx;
 				SWIFT_OBJC_BRIDGING_HEADER = "Source/Bridging-Header.h";
 			};
@@ -1059,7 +1071,7 @@
 					"-landroid",
 				);
 				PRODUCT_MODULE_NAME = ProjectProcupine;
-				PRODUCT_NAME = "ProjectPorcupine Android";
+				PRODUCT_NAME = "ProjectArmadillo Android";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = sbandroid;
 				WRAPPER_EXTENSION = app;
@@ -1107,7 +1119,7 @@
 					"-landroid",
 				);
 				PRODUCT_MODULE_NAME = ProjectProcupine;
-				PRODUCT_NAME = "ProjectPorcupine Android";
+				PRODUCT_NAME = "ProjectArmadillo Android";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = sbandroid;
 				VALIDATE_PRODUCT = YES;
@@ -1206,7 +1218,7 @@
 					"-lz",
 					"-ObjC",
 				);
-				PRODUCT_NAME = ProjectPorcupine;
+				PRODUCT_NAME = ProjectArmadillo;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Source/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1239,7 +1251,7 @@
 					"-lz",
 					"-ObjC",
 				);
-				PRODUCT_NAME = ProjectPorcupine;
+				PRODUCT_NAME = ProjectArmadillo;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Source/Bridging-Header.h";
 				VALIDATE_PRODUCT = YES;
@@ -1250,7 +1262,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7A40361E19DDEE84007B6E8F /* Build configuration list for PBXNativeTarget "ProjectPorcupine Mac" */ = {
+		7A40361E19DDEE84007B6E8F /* Build configuration list for PBXNativeTarget "ProjectArmadillo Mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7A40361919DDEE84007B6E8F /* Debug */,
@@ -1259,7 +1271,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		927F61BC196C771E000F43EF /* Build configuration list for PBXNativeTarget "ProjectPorcupine Android" */ = {
+		927F61BC196C771E000F43EF /* Build configuration list for PBXNativeTarget "ProjectArmadillo Android" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				927F61BD196C771E000F43EF /* Debug */,
@@ -1268,7 +1280,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B77F1B2917B978D7009739AE /* Build configuration list for PBXProject "ProjectPorcupine" */ = {
+		B77F1B2917B978D7009739AE /* Build configuration list for PBXProject "ProjectArmadillo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B77F1CDC17B978D8009739AE /* Debug */,
@@ -1277,7 +1289,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B77F1CDE17B978D8009739AE /* Build configuration list for PBXNativeTarget "ProjectPorcupine iOS" */ = {
+		B77F1CDE17B978D8009739AE /* Build configuration list for PBXNativeTarget "ProjectArmadillo iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B77F1CDF17B978D8009739AE /* Debug */,

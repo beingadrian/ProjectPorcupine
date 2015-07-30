@@ -117,10 +117,18 @@
 		</dict>
 		<key>Assets/UI</key>
 		<dict>
-			<key>isDirty</key>
-			<true/>
 			<key>isSmartSpriteSheet</key>
 			<true/>
+		</dict>
+		<key>Assets/UI/pause_button.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>4</integer>
+		</dict>
+		<key>Assets/UI/play_button.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>4</integer>
 		</dict>
 		<key>Sprites</key>
 		<dict/>

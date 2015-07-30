@@ -21,13 +21,13 @@ class Gameplay: CCScene {
     var touchPosition: CGPoint?
     
     // UI
-    weak var pauseButton: CCButton!
+    weak var hubDisplay: HubDisplay!
     
     // hub display
-    weak var moonCountLabel: CCLabelTTF!
     var moonCount = 0 {
         didSet {
-            moonCountLabel.string = "\(moonCount)/\(level.totalMoonCount)"
+            hubDisplay.moonCountLabel.string = "\(moonCount)/\(level.totalMoonCount)"
+            hubDisplay.moonCountLabel.animationManager.runAnimationsForSequenceNamed("IncreasedCount")
         }
     }
     
@@ -69,7 +69,7 @@ class Gameplay: CCScene {
         armadillo.position = level.startingPoint.position
         
         // update moon count label
-        moonCountLabel.string = "\(moonCount)/\(level.totalMoonCount)"
+        hubDisplay.moonCountLabel.string = "\(moonCount)/\(level.totalMoonCount)"
         
     }
     
