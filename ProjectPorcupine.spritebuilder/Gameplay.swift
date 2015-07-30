@@ -20,6 +20,9 @@ class Gameplay: CCScene {
     var joystick: Joystick?
     var touchPosition: CGPoint?
     
+    // UI
+    weak var pauseButton: CCButton!
+    
     // hub display
     weak var moonCountLabel: CCLabelTTF!
     var moonCount = 0 {
@@ -156,6 +159,18 @@ class Gameplay: CCScene {
     func jump() {
         
         armadillo.jump()
+        
+    }
+    
+    // MARK: - Pause screen
+    
+    func pauseGame() {
+        
+        if (paused == false) {
+            paused = true
+        } else {
+            paused = false
+        }
         
     }
     
