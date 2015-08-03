@@ -10,7 +10,7 @@ class GameManager {
 
     static let sharedInstance = GameManager()
     
-    var currentLevel = 0
+    var currentLevel = 3
 
 }
 
