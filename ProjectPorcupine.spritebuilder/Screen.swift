@@ -10,7 +10,7 @@
 class Screen: CCNode {
    
     // buttons
-    func retryGame() {
+    func loadGame() {
         
         let gameplayScene = CCBReader.loadAsScene("Gameplay")
         CCDirector.sharedDirector().presentScene(gameplayScene)

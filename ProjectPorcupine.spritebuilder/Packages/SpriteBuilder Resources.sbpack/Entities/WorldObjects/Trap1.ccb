@@ -149,7 +149,7 @@
 			</dict>
 		</array>
 		<key>customClass</key>
-		<string>Trap</string>
+		<string>DeadlyObstacle</string>
 		<key>displayName</key>
 		<string>CCNode</string>
 		<key>memberVarAssignmentName</key>
@@ -169,7 +169,7 @@
 			<key>collisionMask</key>
 			<array/>
 			<key>collisionType</key>
-			<string>trap</string>
+			<string></string>
 			<key>cornerRadius</key>
 			<real>0.0</real>
 			<key>density</key>

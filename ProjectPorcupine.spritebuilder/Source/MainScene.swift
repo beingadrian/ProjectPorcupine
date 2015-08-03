@@ -1,11 +1,11 @@
+
 class MainScene: CCNode {
 
-    // start game selector
-    func start() {
+    func showLevelScreen() {
         
-        let gameplayScene = CCBReader.loadAsScene("Gameplay")
-        CCDirector.sharedDirector().presentScene(gameplayScene)
+        let levelScreen = CCBReader.load("LevelScreen") as! LevelScreen
+        addChild(levelScreen)
         
-    }    
+    }
     
 }

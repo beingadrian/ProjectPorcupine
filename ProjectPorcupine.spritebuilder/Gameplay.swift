@@ -18,10 +18,13 @@ class Gameplay: CCScene {
     // controls
     weak var jumpButton: CCButton!
     var joystick: Joystick?
+    var joystickEnabled = true
     var touchPosition: CGPoint?
     
     // UI
     weak var hubDisplay: HubDisplay!
+    weak var gravityTimer: GravityTimer!
+    weak var hurtLayer: CCNode!
     
     // hub display
     var moonCount = 0 {
@@ -33,7 +36,7 @@ class Gameplay: CCScene {
     
     // level
     var level: Level!
-    var currentLevel: Int = 2
+    var currentLevel: Int = GameManager.sharedInstance.currentLevel
     var currentLevelPath: String {
         return "Levels/Level\(currentLevel)"
     }
@@ -43,7 +46,7 @@ class Gameplay: CCScene {
     func didLoadFromCCB() {
         
         // display FPS
-        CCDirector.sharedDirector().displayStats = true
+        CCDirector.sharedDirector().displayStats = false
         
         // touch settings
         userInteractionEnabled = true
@@ -136,7 +139,7 @@ class Gameplay: CCScene {
     
     func createJoystick() {
         
-        if touchPosition!.x < (boundingBox().width / 2) {
+        if touchPosition!.x < (boundingBox().width / 2) && joystickEnabled {
             
             joystick = CCBReader.load("Controls/Joystick") as? Joystick
             addChild(joystick)
@@ -169,9 +172,19 @@ class Gameplay: CCScene {
         // change gravity
         gamePhysicsNode.gravity.y = -300
         
+        // set timer
+        gravityTimer.startTimer()
+        
+        // return to normal gravity
+        let totalSecondsCCTime = CCTime(gravityTimer.totalSeconds)
+        self.scheduleOnce("finishGravityManipulation", delay: totalSecondsCCTime)
+        
     }
     
     func finishGravityManipulation() {
+        
+        // unscheduling
+        gravityTimer.stopTimer()
         
         // return to original gravity value
         gamePhysicsNode.gravity.y = -1000
@@ -182,11 +195,10 @@ class Gameplay: CCScene {
     
     func pauseGame() {
         
-        if (paused == false) {
-            paused = true
-        } else {
-            paused = false
-        }
+        paused = true
+        joystickEnabled = false
+        let pauseScreen = CCBReader.load("PauseScreen") as! PauseScreen
+        addChild(pauseScreen)
         
     }
     
@@ -195,9 +207,14 @@ class Gameplay: CCScene {
     func gameOver() {
         
         paused = true
-        let gameOverScreen = CCBReader.load("Screens/GameOverScreen", owner: self) as! GameOverScreen
-        addChild(gameOverScreen)
+        animationManager.runAnimationsForSequenceNamed("GameOver")
         
+    }
+    
+    func retryGame() {
+        
+        let gameplayScene = CCBReader.loadAsScene("Gameplay")
+        CCDirector.sharedDirector().presentScene(gameplayScene)
     }
     
     func gameWon() {
@@ -265,9 +282,15 @@ extension Gameplay: CCPhysicsCollisionDelegate {
     
     // MARK: - Trap collisions
     
-    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, armadilloPhysicsBody: CCNode!, trap: CCNode!) -> Bool {
+    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, armadilloPhysicsBody: CCNode!, obstacle: Obstacle!) -> Bool {
         
-        gameOver()
+        if let deadlyObstacle = obstacle as? DeadlyObstacle {
+            gameOver()
+        }
+        
+        if let lightObstacle = obstacle as? LightObstacle {
+            hurtLayer.animationManager.runAnimationsForSequenceNamed("Hurt")
+        }
         
         return true
         

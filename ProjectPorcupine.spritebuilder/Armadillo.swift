@@ -38,7 +38,7 @@ class Armadillo: Character {
         mainBodyShape.friction = 1
         
         // jump sensor body
-        let jumpSensorBodyShape = CCPhysicsShape(circleShapeWithRadius: 30, center: adjustedPointZero)
+        let jumpSensorBodyShape = CCPhysicsShape(circleShapeWithRadius: 35, center: adjustedPointZero)
         jumpSensorBodyShape.sensor = true
         jumpSensorBodyShape.density = 0
         jumpSensorBodyShape.collisionType = "jumpSensor"

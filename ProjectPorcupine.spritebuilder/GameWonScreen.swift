@@ -9,6 +9,12 @@
 
 class GameWonScreen: Screen {
     
+    func goToNextLevel() {
+        
+        GameManager.sharedInstance.currentLevel++
+        loadGame()
+    
+    }
     
 }
 

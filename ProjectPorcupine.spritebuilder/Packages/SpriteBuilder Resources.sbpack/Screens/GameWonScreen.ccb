@@ -709,7 +709,7 @@
 						<string>Block</string>
 						<key>value</key>
 						<array>
-							<string>retryGame</string>
+							<string>goToNextLevel</string>
 							<integer>1</integer>
 						</array>
 					</dict>
