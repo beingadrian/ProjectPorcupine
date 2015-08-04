@@ -17,7 +17,15 @@ class Level: CCNode {
     
     func didLoadFromCCB() {
         
-        // set moon count
+        // set total moon count
+        countMoons()
+        
+        appendToLevelDictionary()
+        
+    }
+    
+    func countMoons() {
+        
         for child in collectibles.children {
             
             if let moon = child as? Moon {
@@ -25,7 +33,16 @@ class Level: CCNode {
             }
             
         }
-
+        
+    }
+    
+    func appendToLevelDictionary() {
+        
+        if GameManager.sharedInstance.levelDictionary[self.name] == nil {
+            let selfDictionary = ["isCompleted": 0, "totalMoonCount": totalMoonCount, "totalStarsAwarded": 0]
+            GameManager.sharedInstance.levelDictionary[self.name] = selfDictionary
+        }
+        
     }
     
 }

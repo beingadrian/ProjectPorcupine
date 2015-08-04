@@ -1992,8 +1992,6 @@
 		<string>Level</string>
 		<key>displayName</key>
 		<string>CCNode</string>
-		<key>locked</key>
-		<true/>
 		<key>memberVarAssignmentName</key>
 		<string></string>
 		<key>memberVarAssignmentType</key>
@@ -2006,7 +2004,7 @@
 				<key>type</key>
 				<string>StringSimple</string>
 				<key>value</key>
-				<string></string>
+				<string>2</string>
 			</dict>
 			<dict>
 				<key>name</key>
@@ -2060,6 +2058,8 @@
 				</array>
 			</dict>
 		</array>
+		<key>selected</key>
+		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>

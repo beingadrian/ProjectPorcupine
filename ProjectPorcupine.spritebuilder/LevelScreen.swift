@@ -9,16 +9,35 @@
 
 class LevelScreen: CCNode {
     
-    func hideLevelScreen() {
+    func backButtonPressed() {
         
+        // enable play button back
+        
+        animationManager.runAnimationsForSequenceNamed("ExitAnimation")
+        // exit animation has a callback that triggers goBackToMenu()
+        
+    }
+    
+    func goBackToMenu() {
+        
+        parent.animationManager.runAnimationsForSequenceNamed("StartAnimation")
         self.removeFromParent()
         
     }
     
-    func changeLevel(levelButton: CCNode) {
+    func selectLevel(levelButton: CCNode) {
         
-        let level = levelButton.name.toInt()
-        GameManager.sharedInstance.currentLevel = level!
+        levelButton.userInteractionEnabled = false
+        
+        let levelInt = levelButton.name.toInt()!
+        GameManager.sharedInstance.currentLevel = levelInt
+        
+        animationManager.runAnimationsForSequenceNamed("LevelSelectedAnimation")
+        // callback calls changeLevel once animation ends
+        
+    }
+    
+    func changeLevel() {
         
         let gameplayScene = CCBReader.loadAsScene("Gameplay")
         CCDirector.sharedDirector().presentScene(gameplayScene)

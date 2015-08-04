@@ -25,6 +25,7 @@ class Gameplay: CCScene {
     weak var hubDisplay: HubDisplay!
     weak var gravityTimer: GravityTimer!
     weak var hurtLayer: CCNode!
+    weak var pauseButton: CCButton!
     
     // hub display
     var moonCount = 0 {
@@ -40,6 +41,7 @@ class Gameplay: CCScene {
     var currentLevelPath: String {
         return "Levels/Level\(currentLevel)"
     }
+    var totalStarsAwarded = 0
     
     // MARK: - DidLoadFromCCB
     
@@ -220,8 +222,42 @@ class Gameplay: CCScene {
     func gameWon() {
         
         paused = true
+        
+        updateLevelDict()
+        
+        // hide pause button
+        
+        
+        // calculate stars
+        switch moonCount {
+        case 0...(level.totalMoonCount/3):
+            totalStarsAwarded = 1
+        case 0...(level.totalMoonCount/3*2):
+            totalStarsAwarded = 2
+        case 0...(level.totalMoonCount):
+            totalStarsAwarded = 3
+            
+        default:
+            break
+        }
+        
         let gameWonScreen = CCBReader.load("Screens/GameWonScreen", owner: self) as! GameWonScreen
+        gameWonScreen.totalStarsAwarded = totalStarsAwarded
+        gameWonScreen.displayStars()
         addChild(gameWonScreen)
+        gameWonScreen.positionInPoints = CGPoint(x: boundingBox().width/2, y: boundingBox().height/2)
+        
+    }
+    
+    func updateLevelDict() {
+        
+        GameManager.sharedInstance.levelDictionary[level.name]!["isCompleted"] = 1
+        
+        let currentStarsAwarded = GameManager.sharedInstance.levelDictionary[level.name]!["totalStarsAwarded"]
+
+        if moonCount > currentStarsAwarded {
+            GameManager.sharedInstance.levelDictionary[level.name]!["totalStarsAwarded"] = totalStarsAwarded
+        }
         
     }
     

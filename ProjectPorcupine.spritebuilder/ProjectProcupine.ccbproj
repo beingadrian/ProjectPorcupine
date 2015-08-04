@@ -106,10 +106,7 @@
 		<key>Assets/Levels</key>
 		<dict/>
 		<key>Assets/Levels/Level3</key>
-		<dict>
-			<key>isDirty</key>
-			<true/>
-		</dict>
+		<dict/>
 		<key>Assets/Levels/Level70</key>
 		<dict>
 			<key>trimSprites</key>
@@ -118,6 +115,13 @@
 		<key>Assets/Levels/Level80</key>
 		<dict>
 			<key>trimSprites</key>
+			<true/>
+		</dict>
+		<key>Assets/Menu</key>
+		<dict>
+			<key>isDirty</key>
+			<true/>
+			<key>isSmartSpriteSheet</key>
 			<true/>
 		</dict>
 		<key>Assets/Porcupine</key>

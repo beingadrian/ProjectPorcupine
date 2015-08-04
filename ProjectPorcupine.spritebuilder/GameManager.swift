@@ -11,6 +11,8 @@ class GameManager {
     static let sharedInstance = GameManager()
     
     var currentLevel = 0
+    
+    var levelDictionary: [String: [String: Int]] = [:]
 
 }
 

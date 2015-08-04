@@ -16,13 +16,13 @@
 		334356E91B65AA430083FB51 /* Joystick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334356E81B65AA430083FB51 /* Joystick.swift */; };
 		334356EC1B65AD950083FB51 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334356EB1B65AD950083FB51 /* Character.swift */; };
 		334356F01B65B0650083FB51 /* GameWonScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334356EF1B65B0650083FB51 /* GameWonScreen.swift */; };
-		334D75B71B66A6AE00EA3733 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334D75B61B66A6AE00EA3733 /* Screen.swift */; };
 		334D75BB1B66A71900EA3733 /* Collectible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334D75BA1B66A71900EA3733 /* Collectible.swift */; };
 		33BFB5821B6BE244009369E7 /* DeadlyObstacle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BFB5811B6BE244009369E7 /* DeadlyObstacle.swift */; };
 		33BFB5861B6BE338009369E7 /* LightObstacle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BFB5851B6BE338009369E7 /* LightObstacle.swift */; };
 		33BFB5881B6C2031009369E7 /* LevelScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BFB5871B6C2031009369E7 /* LevelScreen.swift */; };
 		33BFB58A1B6C2983009369E7 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BFB5891B6C2983009369E7 /* GameManager.swift */; };
 		33BFB58C1B6C3471009369E7 /* PauseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BFB58B1B6C3471009369E7 /* PauseScreen.swift */; };
+		33C249511B714CE800C16800 /* LevelCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C249501B714CE800C16800 /* LevelCard.swift */; };
 		33F951351B69869E004D1042 /* Moon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F951341B69869E004D1042 /* Moon.swift */; };
 		33F951391B6987F4004D1042 /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F951381B6987F4004D1042 /* Star.swift */; };
 		33F9513B1B69A31D004D1042 /* EndGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F9513A1B69A31D004D1042 /* EndGoal.swift */; };
@@ -177,13 +177,13 @@
 		334356E81B65AA430083FB51 /* Joystick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Joystick.swift; sourceTree = "<group>"; };
 		334356EB1B65AD950083FB51 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		334356EF1B65B0650083FB51 /* GameWonScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameWonScreen.swift; sourceTree = "<group>"; };
-		334D75B61B66A6AE00EA3733 /* Screen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
 		334D75BA1B66A71900EA3733 /* Collectible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collectible.swift; sourceTree = "<group>"; };
 		33BFB5811B6BE244009369E7 /* DeadlyObstacle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeadlyObstacle.swift; sourceTree = "<group>"; };
 		33BFB5851B6BE338009369E7 /* LightObstacle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightObstacle.swift; sourceTree = "<group>"; };
 		33BFB5871B6C2031009369E7 /* LevelScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelScreen.swift; sourceTree = "<group>"; };
 		33BFB5891B6C2983009369E7 /* GameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
 		33BFB58B1B6C3471009369E7 /* PauseScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PauseScreen.swift; sourceTree = "<group>"; };
+		33C249501B714CE800C16800 /* LevelCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelCard.swift; sourceTree = "<group>"; };
 		33F951341B69869E004D1042 /* Moon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Moon.swift; sourceTree = "<group>"; };
 		33F951381B6987F4004D1042 /* Star.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
 		33F9513A1B69A31D004D1042 /* EndGoal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndGoal.swift; sourceTree = "<group>"; };
@@ -349,7 +349,8 @@
 		334356F11B65B06A0083FB51 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				334D75B61B66A6AE00EA3733 /* Screen.swift */,
+				33BFB5871B6C2031009369E7 /* LevelScreen.swift */,
+				33BFB58B1B6C3471009369E7 /* PauseScreen.swift */,
 				334356EF1B65B0650083FB51 /* GameWonScreen.swift */,
 			);
 			name = Screens;
@@ -542,11 +543,10 @@
 				7A40362019DDEF0D007B6E8F /* Platforms */,
 				7A046D7519E84C36004C4763 /* MainScene.swift */,
 				33BFB5891B6C2983009369E7 /* GameManager.swift */,
-				33BFB5871B6C2031009369E7 /* LevelScreen.swift */,
-				33BFB58B1B6C3471009369E7 /* PauseScreen.swift */,
+				33C249501B714CE800C16800 /* LevelCard.swift */,
 				334356D21B6584040083FB51 /* Gameplay.swift */,
-				33F951401B69F6E1004D1042 /* UI */,
 				334356F11B65B06A0083FB51 /* Screens */,
+				33F951401B69F6E1004D1042 /* UI */,
 				334356EA1B65AA460083FB51 /* Controls */,
 				334D75BC1B66A71E00EA3733 /* Collectible */,
 				332CD6B81B6AD9D900F1E49E /* Obstacle */,
@@ -935,7 +935,6 @@
 				33F951391B6987F4004D1042 /* Star.swift in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
 				334356D31B6584040083FB51 /* Gameplay.swift in Sources */,
-				334D75B71B66A6AE00EA3733 /* Screen.swift in Sources */,
 				33F951351B69869E004D1042 /* Moon.swift in Sources */,
 				33BFB58C1B6C3471009369E7 /* PauseScreen.swift in Sources */,
 				332CD6B51B6AD9D400F1E49E /* Obstacle.swift in Sources */,
@@ -948,6 +947,7 @@
 				334356DF1B6585320083FB51 /* Level.swift in Sources */,
 				5B121038197487F2004C1E1D /* AppDelegate.m in Sources */,
 				33BFB5881B6C2031009369E7 /* LevelScreen.swift in Sources */,
+				33C249511B714CE800C16800 /* LevelCard.swift in Sources */,
 				334356F01B65B0650083FB51 /* GameWonScreen.swift in Sources */,
 				334356EC1B65AD950083FB51 /* Character.swift in Sources */,
 				33F9513B1B69A31D004D1042 /* EndGoal.swift in Sources */,
