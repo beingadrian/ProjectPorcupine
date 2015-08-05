@@ -46,6 +46,9 @@ class Gameplay: CCScene {
     
     func didLoadFromCCB() {
         
+        // remove previous textures to free up memory
+        CCTextureCache.sharedTextureCache().removeAllTextures()
+        
         // display FPS
         CCDirector.sharedDirector().displayStats = false
         
@@ -58,7 +61,7 @@ class Gameplay: CCScene {
         gamePhysicsNode.collisionDelegate = self
         
         loadLevel()
-        
+
     }
     
     func loadLevel() {

@@ -80,33 +80,164 @@
 		</dict>
 		<key>Assets/Armadillo</key>
 		<dict>
-			<key>isSmartSpriteSheet</key>
+			<key>isDirty</key>
 			<true/>
 		</dict>
 		<key>Assets/Armadillo/body.png</key>
 		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
 			<key>scaleFrom</key>
 			<integer>4</integer>
 		</dict>
+		<key>Assets/Armadillo/head.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
+		<key>Assets/Armadillo/tail.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Collectibles</key>
 		<dict>
-			<key>isSmartSpriteSheet</key>
+			<key>isDirty</key>
 			<true/>
+		</dict>
+		<key>Assets/Collectibles/end_goal.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
+		<key>Assets/Collectibles/gravity_stone.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
+		<key>Assets/Collectibles/moon.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
+		<key>Assets/Collectibles/star.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
 		</dict>
 		<key>Assets/Controls</key>
 		<dict>
-			<key>isSmartSpriteSheet</key>
+			<key>isDirty</key>
 			<true/>
+		</dict>
+		<key>Assets/Controls/baseJoystick.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
+		<key>Assets/Controls/topJoystick.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
 		</dict>
 		<key>Assets/Controls/transform_button.png</key>
 		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
 			<key>scaleFrom</key>
 			<integer>2</integer>
 		</dict>
 		<key>Assets/Levels</key>
 		<dict/>
+		<key>Assets/Levels/Level1</key>
+		<dict/>
+		<key>Assets/Levels/Level1/base.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
+		<key>Assets/Levels/Level1/grass.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
+		<key>Assets/Levels/Level1/trees.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
+		<key>Assets/Levels/Level2/left.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
+		<key>Assets/Levels/Level2/right.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Levels/Level3</key>
 		<dict/>
+		<key>Assets/Levels/Level3/grass_left.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
+		<key>Assets/Levels/Level3/grass_right.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
+		<key>Assets/Levels/Level3/left.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
+		<key>Assets/Levels/Level3/right.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
+		<key>Assets/Levels/Level4/base_left.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
+		<key>Assets/Levels/Level4/base_right.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
+		<key>Assets/Levels/Level4/grass_left.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
+		<key>Assets/Levels/Level4/grass_right.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
+		<key>Assets/Levels/Level5/base_left.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
+		<key>Assets/Levels/Level5/base_right.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
+		<key>Assets/Levels/Level5/grass_left.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
+		<key>Assets/Levels/Level5/grass_right.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Levels/Level70</key>
 		<dict>
 			<key>trimSprites</key>
@@ -118,43 +249,106 @@
 			<true/>
 		</dict>
 		<key>Assets/Menu</key>
+		<dict/>
+		<key>Assets/Menu/armadillo.png</key>
 		<dict>
-			<key>isDirty</key>
-			<true/>
-			<key>isSmartSpriteSheet</key>
-			<true/>
+			<key>format_ios</key>
+			<integer>3</integer>
 		</dict>
-		<key>Assets/Porcupine</key>
+		<key>Assets/Menu/back_btn.png</key>
 		<dict>
-			<key>isSmartSpriteSheet</key>
-			<true/>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
+		<key>Assets/Menu/background.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>2</integer>
+		</dict>
+		<key>Assets/Menu/base.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
+		<key>Assets/Menu/play_btn.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
+		<key>Assets/Menu/tree_1.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
+		<key>Assets/Menu/tree_2.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
 		</dict>
 		<key>Assets/Stars</key>
 		<dict>
 			<key>isDirty</key>
 			<true/>
-			<key>isSmartSpriteSheet</key>
-			<true/>
+		</dict>
+		<key>Assets/Stars/star_full.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Assets/Stars/stars.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+			<key>scaleFrom</key>
+			<integer>2</integer>
 		</dict>
 		<key>Assets/Traps</key>
 		<dict>
-			<key>isSmartSpriteSheet</key>
+			<key>isDirty</key>
 			<true/>
+		</dict>
+		<key>Assets/Traps/trap1.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
 		</dict>
 		<key>Assets/UI</key>
 		<dict>
-			<key>isSmartSpriteSheet</key>
+			<key>isDirty</key>
 			<true/>
+		</dict>
+		<key>Assets/UI/home_btn.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
+		<key>Assets/UI/info_btn.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+			<key>scaleFrom</key>
+			<integer>2</integer>
 		</dict>
 		<key>Assets/UI/pause_button.png</key>
 		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
 			<key>scaleFrom</key>
 			<integer>4</integer>
 		</dict>
 		<key>Assets/UI/play_button.png</key>
 		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
 			<key>scaleFrom</key>
 			<integer>4</integer>
+		</dict>
+		<key>Assets/UI/retry_btn.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
 		</dict>
 		<key>Sprites</key>
 		<dict/>

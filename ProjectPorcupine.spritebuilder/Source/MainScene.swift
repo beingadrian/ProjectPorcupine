@@ -17,6 +17,9 @@ class MainScene: CCNode {
 
         }
         
+        // texture memory info
+        CCTextureCache.sharedTextureCache().dumpCachedTextureInfo()
+        
     }
     
     func animationDidFinish() {
