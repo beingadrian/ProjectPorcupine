@@ -15,7 +15,6 @@ class MainScene: CCNode {
                 GameManager.sharedInstance.levelDictionary[String(i)] = levelDict
             }
 
-            
         }
         
     }

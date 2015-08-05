@@ -25,8 +25,6 @@ class LevelScreen: CCNode {
         
     }
     
-
-    
     func changeLevel() {
         
         let gameplayScene = CCBReader.loadAsScene("Gameplay")
