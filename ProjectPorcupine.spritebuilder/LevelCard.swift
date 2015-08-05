@@ -8,18 +8,57 @@
 
 class LevelCard: CCNode {
     
+    weak var starSet: CCNode!
+    weak var levelButton: CCButton!
+    
+    weak var star1: CCSprite!
+    weak var star2: CCSprite!
+    weak var star3: CCSprite!
+    
+    var starArray: [CCSprite] = []
+    var totalStarsAwarded = 0
+    
+    
     func didLoadFromCCB() {
         
-        for child in children {
-            
-            if let button = child as? CCButton {
-                button.userInteractionEnabled = true
-            }
-            
-        }
+        levelButton.name = self.name
+        levelButton.title = "Level \(self.name.toInt()!)"
+        
+        starArray = [star1, star2, star3]
+        
+        totalStarsAwarded = GameManager.sharedInstance.levelDictionary[self.name]!["totalStarsAwarded"]!
+        
+        showStars()
+        
+    }
+    
+    func selectLevel(button: CCNode) {
+        
+        button.userInteractionEnabled = false
+        
+        animationManager.runAnimationsForSequenceNamed("ExitAnimation")
+        
+        let levelInt = levelButton.name.toInt()!
+        GameManager.sharedInstance.currentLevel = levelInt
+        
+    }
+    
+    func performDarkAnimation() {
+        
+        // callback calls changeLevel once animation ends
+        parent.animationManager.runAnimationsForSequenceNamed("LevelSelectedAnimation")
         
     }
     
     // stars
+    func showStars() {
+        
+        for i in 0..<(totalStarsAwarded) {
+            
+            starArray[i].opacity = 1.0
+            
+        }
+        
+    }
     
 }

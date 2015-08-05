@@ -12,7 +12,7 @@ class GameManager {
     
     var currentLevel = 0
     
-    var levelDictionary: [String: [String: Int]] = [:]
-
+    var levelDictionary: [String: [String: Int]] = [:]    
+    
 }
 

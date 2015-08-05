@@ -232,19 +232,6 @@ class Gameplay: CCScene {
     
     func showWinningScreen() {
         
-        // calculate stars
-        switch moonCount {
-        case 0...(level.totalMoonCount/3):
-            totalStarsAwarded = 1
-        case 0...(level.totalMoonCount/3*2):
-            totalStarsAwarded = 2
-        case 0...(level.totalMoonCount):
-            totalStarsAwarded = 3
-            
-        default:
-            break
-        }
-        
         let gameWonScreen = CCBReader.load("Screens/GameWonScreen", owner: self) as! GameWonScreen
         gameWonScreen.totalStarsAwarded = totalStarsAwarded
         gameWonScreen.displayStars()
@@ -254,6 +241,18 @@ class Gameplay: CCScene {
     }
     
     func updateLevelDict() {
+        
+        // calculate stars
+        switch moonCount {
+        case 0...(level.totalMoonCount/3):
+            totalStarsAwarded = 1
+        case 0...(level.totalMoonCount/3*2):
+            totalStarsAwarded = 2
+        case 0...(level.totalMoonCount):
+            totalStarsAwarded = 3
+        default:
+            break
+        }
         
         GameManager.sharedInstance.levelDictionary[level.name]!["isCompleted"] = 1
         

@@ -25,17 +25,7 @@ class LevelScreen: CCNode {
         
     }
     
-    func selectLevel(levelButton: CCNode) {
-        
-        levelButton.userInteractionEnabled = false
-        
-        let levelInt = levelButton.name.toInt()!
-        GameManager.sharedInstance.currentLevel = levelInt
-        
-        animationManager.runAnimationsForSequenceNamed("LevelSelectedAnimation")
-        // callback calls changeLevel once animation ends
-        
-    }
+
     
     func changeLevel() {
         
