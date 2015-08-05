@@ -16,7 +16,7 @@
 	<key>currentResolution</key>
 	<integer>0</integer>
 	<key>currentSequenceId</key>
-	<integer>0</integer>
+	<integer>2</integer>
 	<key>docDimensionsType</key>
 	<integer>0</integer>
 	<key>fileType</key>
@@ -1055,6 +1055,58 @@
 			<dict>
 				<key>UUID</key>
 				<integer>16</integer>
+				<key>animatedProperties</key>
+				<dict>
+					<key>2</key>
+					<dict>
+						<key>position</key>
+						<dict>
+							<key>keyframes</key>
+							<array>
+								<dict>
+									<key>easing</key>
+									<dict>
+										<key>type</key>
+										<integer>11</integer>
+									</dict>
+									<key>name</key>
+									<string>position</string>
+									<key>time</key>
+									<real>0.0</real>
+									<key>type</key>
+									<integer>3</integer>
+									<key>value</key>
+									<array>
+										<real>20</real>
+										<real>15</real>
+									</array>
+								</dict>
+								<dict>
+									<key>easing</key>
+									<dict>
+										<key>type</key>
+										<integer>1</integer>
+									</dict>
+									<key>name</key>
+									<string>position</string>
+									<key>time</key>
+									<real>0.5</real>
+									<key>type</key>
+									<integer>3</integer>
+									<key>value</key>
+									<array>
+										<real>20</real>
+										<real>-50</real>
+									</array>
+								</dict>
+							</array>
+							<key>name</key>
+							<string>position</string>
+							<key>type</key>
+							<integer>3</integer>
+						</dict>
+					</dict>
+				</dict>
 				<key>baseClass</key>
 				<string>CCBFile</string>
 				<key>children</key>
@@ -1078,6 +1130,11 @@
 						<string></string>
 					</dict>
 					<dict>
+						<key>baseValue</key>
+						<array>
+							<real>20</real>
+							<real>15</real>
+						</array>
 						<key>name</key>
 						<string>position</string>
 						<key>type</key>
@@ -1085,7 +1142,7 @@
 						<key>value</key>
 						<array>
 							<real>20</real>
-							<real>15</real>
+							<real>-50</real>
 							<integer>2</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -1113,10 +1170,64 @@
 						<string>UI/HubDisplay.ccb</string>
 					</dict>
 				</array>
+				<key>seqExpanded</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
 				<integer>19</integer>
+				<key>animatedProperties</key>
+				<dict>
+					<key>2</key>
+					<dict>
+						<key>position</key>
+						<dict>
+							<key>keyframes</key>
+							<array>
+								<dict>
+									<key>easing</key>
+									<dict>
+										<key>type</key>
+										<integer>11</integer>
+									</dict>
+									<key>name</key>
+									<string>position</string>
+									<key>time</key>
+									<real>0.0</real>
+									<key>type</key>
+									<integer>3</integer>
+									<key>value</key>
+									<array>
+										<real>30</real>
+										<real>25</real>
+									</array>
+								</dict>
+								<dict>
+									<key>easing</key>
+									<dict>
+										<key>type</key>
+										<integer>1</integer>
+									</dict>
+									<key>name</key>
+									<string>position</string>
+									<key>time</key>
+									<real>0.5</real>
+									<key>type</key>
+									<integer>3</integer>
+									<key>value</key>
+									<array>
+										<real>30</real>
+										<real>-30</real>
+									</array>
+								</dict>
+							</array>
+							<key>name</key>
+							<string>position</string>
+							<key>type</key>
+							<integer>3</integer>
+						</dict>
+					</dict>
+				</dict>
 				<key>baseClass</key>
 				<string>CCBFile</string>
 				<key>children</key>
@@ -1140,6 +1251,11 @@
 						<string></string>
 					</dict>
 					<dict>
+						<key>baseValue</key>
+						<array>
+							<real>30</real>
+							<real>25</real>
+						</array>
 						<key>name</key>
 						<string>position</string>
 						<key>type</key>
@@ -1147,7 +1263,7 @@
 						<key>value</key>
 						<array>
 							<real>30</real>
-							<real>25</real>
+							<real>-30</real>
 							<integer>3</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -1175,6 +1291,8 @@
 						<string>UI/GravityTimer.ccb</string>
 					</dict>
 				</array>
+				<key>seqExpanded</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -1371,6 +1489,58 @@
 			<dict>
 				<key>UUID</key>
 				<integer>17</integer>
+				<key>animatedProperties</key>
+				<dict>
+					<key>2</key>
+					<dict>
+						<key>position</key>
+						<dict>
+							<key>keyframes</key>
+							<array>
+								<dict>
+									<key>easing</key>
+									<dict>
+										<key>type</key>
+										<integer>11</integer>
+									</dict>
+									<key>name</key>
+									<string>position</string>
+									<key>time</key>
+									<real>0.0</real>
+									<key>type</key>
+									<integer>3</integer>
+									<key>value</key>
+									<array>
+										<real>20</real>
+										<real>15</real>
+									</array>
+								</dict>
+								<dict>
+									<key>easing</key>
+									<dict>
+										<key>type</key>
+										<integer>1</integer>
+									</dict>
+									<key>name</key>
+									<string>position</string>
+									<key>time</key>
+									<real>0.5</real>
+									<key>type</key>
+									<integer>3</integer>
+									<key>value</key>
+									<array>
+										<real>20</real>
+										<real>-50</real>
+									</array>
+								</dict>
+							</array>
+							<key>name</key>
+							<string>position</string>
+							<key>type</key>
+							<integer>3</integer>
+						</dict>
+					</dict>
+				</dict>
 				<key>baseClass</key>
 				<string>CCButton</string>
 				<key>children</key>
@@ -1380,7 +1550,7 @@
 				<key>displayName</key>
 				<string>pauseButton</string>
 				<key>memberVarAssignmentName</key>
-				<string>pauseButton</string>
+				<string></string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>properties</key>
@@ -1394,6 +1564,11 @@
 						<string></string>
 					</dict>
 					<dict>
+						<key>baseValue</key>
+						<array>
+							<real>20</real>
+							<real>15</real>
+						</array>
 						<key>name</key>
 						<string>position</string>
 						<key>type</key>
@@ -1401,7 +1576,7 @@
 						<key>value</key>
 						<array>
 							<real>20</real>
-							<real>15</real>
+							<real>-50</real>
 							<integer>1</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -1709,7 +1884,7 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
+				<key>seqExpanded</key>
 				<true/>
 			</dict>
 		</array>
@@ -1852,7 +2027,7 @@
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>1</real>
+			<real>0.0</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
@@ -1912,6 +2087,42 @@
 			<real>128</real>
 			<key>sequenceId</key>
 			<integer>1</integer>
+			<key>soundChannel</key>
+			<dict>
+				<key>isExpanded</key>
+				<false/>
+				<key>keyframes</key>
+				<array/>
+				<key>type</key>
+				<integer>11</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>autoPlay</key>
+			<false/>
+			<key>callbackChannel</key>
+			<dict>
+				<key>keyframes</key>
+				<array/>
+				<key>type</key>
+				<integer>12</integer>
+			</dict>
+			<key>chainedSequenceId</key>
+			<integer>-1</integer>
+			<key>length</key>
+			<real>0.5</real>
+			<key>name</key>
+			<string>GameWon</string>
+			<key>offset</key>
+			<real>0.0</real>
+			<key>position</key>
+			<real>0.5</real>
+			<key>resolution</key>
+			<real>30</real>
+			<key>scale</key>
+			<real>128</real>
+			<key>sequenceId</key>
+			<integer>2</integer>
 			<key>soundChannel</key>
 			<dict>
 				<key>isExpanded</key>

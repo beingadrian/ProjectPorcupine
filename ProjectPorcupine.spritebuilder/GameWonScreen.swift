@@ -9,9 +9,11 @@
 
 class GameWonScreen: CCNode {
     
-    weak var star1: CCNode!
-    weak var star2: CCNode!
-    weak var star3: CCNode!
+    weak var homeBtn: CCButton!
+    
+    weak var star1: CCSprite!
+    weak var star2: CCSprite!
+    weak var star3: CCSprite!
     
     var starArray: [CCNode] = []
     
@@ -22,10 +24,6 @@ class GameWonScreen: CCNode {
     func didLoadFromCCB() {
         
         starArray = [star1, star2, star3]
-        
-        for star in starArray {
-            star.visible = false
-        }
         
     }
     
@@ -40,7 +38,7 @@ class GameWonScreen: CCNode {
     func displayStars() {
         
         for i in 0..<(totalStarsAwarded) {
-            starArray[i].visible = true
+            starArray[i].opacity = 1
         }
         
     }
@@ -50,6 +48,13 @@ class GameWonScreen: CCNode {
         GameManager.sharedInstance.currentLevel++
         loadGame()
     
+    }
+    
+    func returnHome() {
+        
+        let mainScene = CCBReader.loadAsScene("MainScene")
+        CCDirector.sharedDirector().presentScene(mainScene)
+        
     }
     
 }

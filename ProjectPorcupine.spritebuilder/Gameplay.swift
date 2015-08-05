@@ -25,7 +25,6 @@ class Gameplay: CCScene {
     weak var hubDisplay: HubDisplay!
     weak var gravityTimer: GravityTimer!
     weak var hurtLayer: CCNode!
-    weak var pauseButton: CCButton!
     
     // hub display
     var moonCount = 0 {
@@ -223,10 +222,15 @@ class Gameplay: CCScene {
         
         paused = true
         
+        animationManager.runAnimationsForSequenceNamed("GameWon")
+        
         updateLevelDict()
         
-        // hide pause button
+        self.scheduleOnce("showWinningScreen", delay: 0.5)
         
+    }
+    
+    func showWinningScreen() {
         
         // calculate stars
         switch moonCount {
