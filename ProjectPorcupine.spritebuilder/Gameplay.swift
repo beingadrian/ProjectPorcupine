@@ -97,6 +97,9 @@ class Gameplay: CCScene {
             gameOver()
         }
         
+        // test
+        level.starBackground.physicsBody.velocity.x = -armadillo.physicsBody.velocity.x * 0.03
+        
     }
     
     // MARK: - Touch functions
@@ -335,5 +338,6 @@ extension Gameplay: CCPhysicsCollisionDelegate {
         
     }
     
+   
     
 }

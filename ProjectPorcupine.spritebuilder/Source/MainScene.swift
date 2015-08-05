@@ -44,4 +44,11 @@ class MainScene: CCNode {
         
     }
     
+    func showInfoPage() {
+        
+        let infoPage = CCBReader.load("InfoPage") as! InfoPage
+        addChild(infoPage)
+        
+    }
+    
 }

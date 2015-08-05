@@ -46,7 +46,8 @@ class LevelCard: CCNode {
     func performFadeToBlack() {
         
         // callback calls changeLevel once animation ends
-        parent.animationManager.runAnimationsForSequenceNamed("LevelSelectedAnimation")
+        let levelScreen = parent.parent
+        levelScreen.animationManager.runAnimationsForSequenceNamed("LevelSelectedAnimation")
         
     }
     

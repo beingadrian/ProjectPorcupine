@@ -17,6 +17,7 @@
 		334356EC1B65AD950083FB51 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334356EB1B65AD950083FB51 /* Character.swift */; };
 		334356F01B65B0650083FB51 /* GameWonScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334356EF1B65B0650083FB51 /* GameWonScreen.swift */; };
 		334D75BB1B66A71900EA3733 /* Collectible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334D75BA1B66A71900EA3733 /* Collectible.swift */; };
+		33AD03291B728F9000D3B3B1 /* InfoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AD03281B728F9000D3B3B1 /* InfoPage.swift */; };
 		33BFB5821B6BE244009369E7 /* DeadlyObstacle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BFB5811B6BE244009369E7 /* DeadlyObstacle.swift */; };
 		33BFB5861B6BE338009369E7 /* LightObstacle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BFB5851B6BE338009369E7 /* LightObstacle.swift */; };
 		33BFB5881B6C2031009369E7 /* LevelScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BFB5871B6C2031009369E7 /* LevelScreen.swift */; };
@@ -178,6 +179,7 @@
 		334356EB1B65AD950083FB51 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		334356EF1B65B0650083FB51 /* GameWonScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameWonScreen.swift; sourceTree = "<group>"; };
 		334D75BA1B66A71900EA3733 /* Collectible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collectible.swift; sourceTree = "<group>"; };
+		33AD03281B728F9000D3B3B1 /* InfoPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoPage.swift; sourceTree = "<group>"; };
 		33BFB5811B6BE244009369E7 /* DeadlyObstacle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeadlyObstacle.swift; sourceTree = "<group>"; };
 		33BFB5851B6BE338009369E7 /* LightObstacle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightObstacle.swift; sourceTree = "<group>"; };
 		33BFB5871B6C2031009369E7 /* LevelScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelScreen.swift; sourceTree = "<group>"; };
@@ -352,6 +354,7 @@
 				33BFB5871B6C2031009369E7 /* LevelScreen.swift */,
 				33BFB58B1B6C3471009369E7 /* PauseScreen.swift */,
 				334356EF1B65B0650083FB51 /* GameWonScreen.swift */,
+				33AD03281B728F9000D3B3B1 /* InfoPage.swift */,
 			);
 			name = Screens;
 			sourceTree = "<group>";
@@ -930,6 +933,7 @@
 			files = (
 				33F9513F1B69F6D9004D1042 /* HubDisplay.swift in Sources */,
 				332CD6BA1B6ADDEA00F1E49E /* GravityStone.swift in Sources */,
+				33AD03291B728F9000D3B3B1 /* InfoPage.swift in Sources */,
 				334356E91B65AA430083FB51 /* Joystick.swift in Sources */,
 				334D75BB1B66A71900EA3733 /* Collectible.swift in Sources */,
 				33F951391B6987F4004D1042 /* Star.swift in Sources */,
@@ -1081,7 +1085,7 @@
 				GCC_PREFIX_HEADER = Source/Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					DEBUG,
-					"COCOS2D_DEBUG=1",
+					"COCOS2D_DEBUG=2",
 					"COCOS2D_ANDROID=1",
 				);
 				HEADER_SEARCH_PATHS = (
@@ -1180,7 +1184,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					DEBUG,
-					"COCOS2D_DEBUG=1",
+					"COCOS2D_DEBUG=2",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;

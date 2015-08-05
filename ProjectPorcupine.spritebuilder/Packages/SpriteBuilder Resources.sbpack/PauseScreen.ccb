@@ -16,7 +16,7 @@
 	<key>currentResolution</key>
 	<integer>0</integer>
 	<key>currentSequenceId</key>
-	<integer>1</integer>
+	<integer>0</integer>
 	<key>docDimensionsType</key>
 	<integer>1</integer>
 	<key>fileType</key>
@@ -382,7 +382,7 @@
 										<key>opt</key>
 										<real>2</real>
 										<key>type</key>
-										<integer>3</integer>
+										<integer>2</integer>
 									</dict>
 									<key>name</key>
 									<string>position</string>
@@ -405,7 +405,7 @@
 									<key>name</key>
 									<string>position</string>
 									<key>time</key>
-									<real>0.5</real>
+									<real>0.3333333432674408</real>
 									<key>type</key>
 									<integer>3</integer>
 									<key>value</key>
@@ -510,7 +510,7 @@
 								<key>value</key>
 								<array>
 									<real>0.5</real>
-									<real>0.34999999403953552</real>
+									<real>0.40000000596046448</real>
 									<integer>1</integer>
 									<integer>2</integer>
 									<integer>2</integer>
@@ -844,7 +844,7 @@
 								<key>value</key>
 								<array>
 									<real>0.5</real>
-									<real>0.60000002384185791</real>
+									<real>0.64999997615814209</real>
 									<integer>1</integer>
 									<integer>2</integer>
 									<integer>2</integer>
@@ -1176,7 +1176,7 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>-0.20000000298023224</real>
+							<real>0.0</real>
 							<real>0.0</real>
 							<integer>0</integer>
 							<integer>2</integer>
@@ -1365,13 +1365,13 @@
 			<key>chainedSequenceId</key>
 			<integer>-1</integer>
 			<key>length</key>
-			<real>0.5</real>
+			<real>0.3333333432674408</real>
 			<key>name</key>
 			<string>StartAnimation</string>
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>0.0</real>
+			<real>0.3333333432674408</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>

@@ -13,6 +13,9 @@ class Level: CCNode {
     weak var worldBoundary: CCNode!
     weak var collectibles: CCNode!
     
+    // test
+    weak var starBackground: CCNode!
+    
     var totalMoonCount = 0
     
     func didLoadFromCCB() {
@@ -21,6 +24,9 @@ class Level: CCNode {
         countMoons()
         
         appendToLevelDictionary()
+        
+        // set stars as sensor
+        starBackground.physicsBody.sensor = true
         
     }
     
