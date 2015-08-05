@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>112</integer>
+	<integer>151</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -367,8 +367,8 @@
 						<key>value</key>
 						<array>
 							<real>0.5</real>
-							<real>0.5</real>
-							<integer>0</integer>
+							<real>0.34999999403953552</real>
+							<integer>1</integer>
 							<integer>2</integer>
 							<integer>2</integer>
 						</array>
@@ -1251,7 +1251,7 @@
 						<key>value</key>
 						<array>
 							<real>0.5</real>
-							<real>0.25</real>
+							<real>0.30000001192092896</real>
 							<integer>0</integer>
 							<integer>2</integer>
 							<integer>2</integer>
@@ -1343,8 +1343,8 @@
 				<string>Size</string>
 				<key>value</key>
 				<array>
-					<real>125</real>
-					<real>125</real>
+					<real>135</real>
+					<real>80</real>
 					<integer>0</integer>
 					<integer>0</integer>
 				</array>
@@ -1429,7 +1429,7 @@
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>0.43333333730697632</real>
+			<real>0.0</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
@@ -1465,7 +1465,7 @@
 						<integer>12</integer>
 						<key>value</key>
 						<array>
-							<string>performDarkAnimation</string>
+							<string>performFadeToBlack</string>
 							<integer>1</integer>
 						</array>
 					</dict>

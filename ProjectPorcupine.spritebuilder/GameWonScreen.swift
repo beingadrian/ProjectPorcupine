@@ -27,13 +27,17 @@ class GameWonScreen: CCNode {
         
     }
     
-    // butto selector
+    // MARK: -
+    
+    // button selector
     func loadGame() {
         
         let gameplayScene = CCBReader.loadAsScene("Gameplay")
         CCDirector.sharedDirector().presentScene(gameplayScene)
         
     }
+    
+    // MARK: -
     
     func displayStars() {
         
@@ -50,7 +54,26 @@ class GameWonScreen: CCNode {
     
     }
     
+    // MARK: -
+    
+    func retryLevel() {
+        
+        animationManager.runAnimationsForSequenceNamed("ExitAnimation")
+        
+        loadGame()
+        
+    }
+    
+    // MARK: -
+    
     func returnHome() {
+        
+        animationManager.runAnimationsForSequenceNamed("ExitAnimation")
+        self.scheduleOnce("goToMainScene", delay: 0.5)
+        
+    }
+    
+    func goToMainScene() {
         
         let mainScene = CCBReader.loadAsScene("MainScene")
         CCDirector.sharedDirector().presentScene(mainScene)

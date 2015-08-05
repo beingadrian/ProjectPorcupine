@@ -1142,7 +1142,7 @@
 						<key>value</key>
 						<array>
 							<real>20</real>
-							<real>-50</real>
+							<real>15</real>
 							<integer>2</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -1263,7 +1263,7 @@
 						<key>value</key>
 						<array>
 							<real>30</real>
-							<real>-30</real>
+							<real>25</real>
 							<integer>3</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -1576,7 +1576,7 @@
 						<key>value</key>
 						<array>
 							<real>20</real>
-							<real>-50</real>
+							<real>15</real>
 							<integer>1</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -1672,14 +1672,6 @@
 					</dict>
 					<dict>
 						<key>name</key>
-						<string>togglesSelectedState</string>
-						<key>type</key>
-						<string>Check</string>
-						<key>value</key>
-						<true/>
-					</dict>
-					<dict>
-						<key>name</key>
 						<string>backgroundSpriteFrame|Normal</string>
 						<key>type</key>
 						<string>SpriteFrame</string>
@@ -1740,7 +1732,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>Assets/UI/play_button.png</string>
+							<string>Assets/UI/pause_button.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -1884,6 +1876,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 				<key>seqExpanded</key>
 				<true/>
 			</dict>
@@ -2116,7 +2110,7 @@
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>0.5</real>
+			<real>0.0</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>

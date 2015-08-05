@@ -11,8 +11,6 @@ class LevelScreen: CCNode {
     
     func backButtonPressed() {
         
-        // enable play button back
-        
         animationManager.runAnimationsForSequenceNamed("ExitAnimation")
         // exit animation has a callback that triggers goBackToMenu()
         

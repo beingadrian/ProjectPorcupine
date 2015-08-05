@@ -8,10 +8,16 @@
 
 class PauseScreen: CCNode {
    
-    func goToMainScene() {
+    func returnToMainScene() {
         
         let mainMenu = CCBReader.loadAsScene("MainScene")
         CCDirector.sharedDirector().presentScene(mainMenu)
+        
+    }
+    
+    func performExitAnimation() {
+        
+        animationManager.runAnimationsForSequenceNamed("ExitAnimation")
         
     }
     
@@ -22,6 +28,13 @@ class PauseScreen: CCNode {
         gameplay!.paused = false
 
         self.removeFromParent()
+        
+    }
+    
+    func retryLevel() {
+        
+        let gameplay = CCBReader.loadAsScene("Gameplay")
+        CCDirector.sharedDirector().presentScene(gameplay)
         
     }
     

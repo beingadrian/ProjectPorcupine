@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>16</integer>
+	<integer>17</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -313,7 +313,7 @@
 									<key>value</key>
 									<array>
 										<real>0.5</real>
-										<real>0.0</real>
+										<real>-0.10000000149011612</real>
 									</array>
 								</dict>
 							</array>
@@ -672,8 +672,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 				<key>seqExpanded</key>
 				<true/>
 			</dict>
@@ -1983,7 +1981,7 @@
 			<key>name</key>
 			<string>StartAnimation</string>
 			<key>offset</key>
-			<real>0.0</real>
+			<real>0.021876335144042969</real>
 			<key>position</key>
 			<real>0.96666663885116577</real>
 			<key>resolution</key>
@@ -2021,7 +2019,7 @@
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>0.20000000298023224</real>
+			<real>0.0</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
@@ -2074,7 +2072,7 @@
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>1.6333333253860474</real>
+			<real>0.0</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>

@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>115</integer>
+	<integer>329</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -582,15 +582,261 @@
 			</dict>
 			<dict>
 				<key>UUID</key>
-				<integer>31</integer>
+				<integer>151</integer>
+				<key>animatedProperties</key>
+				<dict>
+					<key>1</key>
+					<dict>
+						<key>scale</key>
+						<dict>
+							<key>keyframes</key>
+							<array>
+								<dict>
+									<key>easing</key>
+									<dict>
+										<key>type</key>
+										<integer>11</integer>
+									</dict>
+									<key>name</key>
+									<string>scale</string>
+									<key>time</key>
+									<real>0.0</real>
+									<key>type</key>
+									<integer>4</integer>
+									<key>value</key>
+									<array>
+										<real>1</real>
+										<real>1</real>
+									</array>
+								</dict>
+								<dict>
+									<key>easing</key>
+									<dict>
+										<key>type</key>
+										<integer>1</integer>
+									</dict>
+									<key>name</key>
+									<string>scale</string>
+									<key>time</key>
+									<real>0.5</real>
+									<key>type</key>
+									<integer>4</integer>
+									<key>value</key>
+									<array>
+										<real>0.0</real>
+										<real>0.0</real>
+									</array>
+								</dict>
+							</array>
+							<key>name</key>
+							<string>scale</string>
+							<key>type</key>
+							<integer>4</integer>
+						</dict>
+					</dict>
+				</dict>
 				<key>baseClass</key>
-				<string>CCBFile</string>
+				<string>CCNode</string>
 				<key>children</key>
-				<array/>
+				<array>
+					<dict>
+						<key>UUID</key>
+						<integer>31</integer>
+						<key>animatedProperties</key>
+						<dict>
+							<key>1</key>
+							<dict/>
+						</dict>
+						<key>baseClass</key>
+						<string>CCBFile</string>
+						<key>children</key>
+						<array/>
+						<key>customClass</key>
+						<string></string>
+						<key>displayName</key>
+						<string>level1</string>
+						<key>memberVarAssignmentName</key>
+						<string></string>
+						<key>memberVarAssignmentType</key>
+						<integer>1</integer>
+						<key>properties</key>
+						<array>
+							<dict>
+								<key>name</key>
+								<string>name</string>
+								<key>type</key>
+								<string>StringSimple</string>
+								<key>value</key>
+								<string>1</string>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>position</string>
+								<key>type</key>
+								<string>Position</string>
+								<key>value</key>
+								<array>
+									<real>0.0</real>
+									<real>0.5</real>
+									<integer>0</integer>
+									<integer>2</integer>
+									<integer>2</integer>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>scale</string>
+								<key>type</key>
+								<string>ScaleLock</string>
+								<key>value</key>
+								<array>
+									<real>1</real>
+									<real>1</real>
+									<false/>
+									<integer>0</integer>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>ccbFile</string>
+								<key>type</key>
+								<string>CCBFile</string>
+								<key>value</key>
+								<string>UI/LevelCard.ccb</string>
+							</dict>
+						</array>
+						<key>seqExpanded</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>UUID</key>
+						<integer>50</integer>
+						<key>baseClass</key>
+						<string>CCBFile</string>
+						<key>children</key>
+						<array/>
+						<key>customClass</key>
+						<string></string>
+						<key>displayName</key>
+						<string>level1</string>
+						<key>memberVarAssignmentName</key>
+						<string></string>
+						<key>memberVarAssignmentType</key>
+						<integer>1</integer>
+						<key>properties</key>
+						<array>
+							<dict>
+								<key>name</key>
+								<string>name</string>
+								<key>type</key>
+								<string>StringSimple</string>
+								<key>value</key>
+								<string>2</string>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>position</string>
+								<key>type</key>
+								<string>Position</string>
+								<key>value</key>
+								<array>
+									<real>0.5</real>
+									<real>0.5</real>
+									<integer>0</integer>
+									<integer>2</integer>
+									<integer>2</integer>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>scale</string>
+								<key>type</key>
+								<string>ScaleLock</string>
+								<key>value</key>
+								<array>
+									<real>1</real>
+									<real>1</real>
+									<false/>
+									<integer>0</integer>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>ccbFile</string>
+								<key>type</key>
+								<string>CCBFile</string>
+								<key>value</key>
+								<string>UI/LevelCard.ccb</string>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>UUID</key>
+						<integer>66</integer>
+						<key>baseClass</key>
+						<string>CCBFile</string>
+						<key>children</key>
+						<array/>
+						<key>customClass</key>
+						<string></string>
+						<key>displayName</key>
+						<string>level1</string>
+						<key>memberVarAssignmentName</key>
+						<string></string>
+						<key>memberVarAssignmentType</key>
+						<integer>1</integer>
+						<key>properties</key>
+						<array>
+							<dict>
+								<key>name</key>
+								<string>name</string>
+								<key>type</key>
+								<string>StringSimple</string>
+								<key>value</key>
+								<string>3</string>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>position</string>
+								<key>type</key>
+								<string>Position</string>
+								<key>value</key>
+								<array>
+									<real>1</real>
+									<real>0.5</real>
+									<integer>0</integer>
+									<integer>2</integer>
+									<integer>2</integer>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>scale</string>
+								<key>type</key>
+								<string>ScaleLock</string>
+								<key>value</key>
+								<array>
+									<real>1</real>
+									<real>1</real>
+									<false/>
+									<integer>0</integer>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>ccbFile</string>
+								<key>type</key>
+								<string>CCBFile</string>
+								<key>value</key>
+								<string>UI/LevelCard.ccb</string>
+							</dict>
+						</array>
+					</dict>
+				</array>
 				<key>customClass</key>
 				<string></string>
 				<key>displayName</key>
-				<string>level1</string>
+				<string>cardContainer</string>
 				<key>memberVarAssignmentName</key>
 				<string></string>
 				<key>memberVarAssignmentType</key>
@@ -603,7 +849,7 @@
 						<key>type</key>
 						<string>StringSimple</string>
 						<key>value</key>
-						<string>1</string>
+						<string></string>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -612,159 +858,58 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>130.834228515625</real>
-							<real>181.26742553710938</real>
+							<real>0.5</real>
+							<real>0.5</real>
 							<integer>0</integer>
+							<integer>2</integer>
+							<integer>2</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>contentSize</string>
+						<key>type</key>
+						<string>Size</string>
+						<key>value</key>
+						<array>
+							<real>300</real>
+							<real>200</real>
 							<integer>0</integer>
 							<integer>0</integer>
 						</array>
 					</dict>
 					<dict>
+						<key>name</key>
+						<string>anchorPoint</string>
+						<key>type</key>
+						<string>Point</string>
+						<key>value</key>
+						<array>
+							<real>0.5</real>
+							<real>0.5</real>
+						</array>
+					</dict>
+					<dict>
+						<key>baseValue</key>
+						<array>
+							<real>1</real>
+							<real>1</real>
+						</array>
 						<key>name</key>
 						<string>scale</string>
 						<key>type</key>
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>1</real>
-							<real>1</real>
-							<false/>
+							<real>0.0</real>
+							<real>0.0</real>
+							<true/>
 							<integer>0</integer>
 						</array>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>ccbFile</string>
-						<key>type</key>
-						<string>CCBFile</string>
-						<key>value</key>
-						<string>UI/LevelCard.ccb</string>
 					</dict>
 				</array>
-			</dict>
-			<dict>
-				<key>UUID</key>
-				<integer>50</integer>
-				<key>baseClass</key>
-				<string>CCBFile</string>
-				<key>children</key>
-				<array/>
-				<key>customClass</key>
-				<string></string>
-				<key>displayName</key>
-				<string>level1</string>
-				<key>memberVarAssignmentName</key>
-				<string></string>
-				<key>memberVarAssignmentType</key>
-				<integer>1</integer>
-				<key>properties</key>
-				<array>
-					<dict>
-						<key>name</key>
-						<string>name</string>
-						<key>type</key>
-						<string>StringSimple</string>
-						<key>value</key>
-						<string>2</string>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>position</string>
-						<key>type</key>
-						<string>Position</string>
-						<key>value</key>
-						<array>
-							<real>284</real>
-							<real>181.26742553710938</real>
-							<integer>0</integer>
-							<integer>0</integer>
-							<integer>0</integer>
-						</array>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>scale</string>
-						<key>type</key>
-						<string>ScaleLock</string>
-						<key>value</key>
-						<array>
-							<real>1</real>
-							<real>1</real>
-							<false/>
-							<integer>0</integer>
-						</array>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>ccbFile</string>
-						<key>type</key>
-						<string>CCBFile</string>
-						<key>value</key>
-						<string>UI/LevelCard.ccb</string>
-					</dict>
-				</array>
-			</dict>
-			<dict>
-				<key>UUID</key>
-				<integer>66</integer>
-				<key>baseClass</key>
-				<string>CCBFile</string>
-				<key>children</key>
-				<array/>
-				<key>customClass</key>
-				<string></string>
-				<key>displayName</key>
-				<string>level1</string>
-				<key>memberVarAssignmentName</key>
-				<string></string>
-				<key>memberVarAssignmentType</key>
-				<integer>1</integer>
-				<key>properties</key>
-				<array>
-					<dict>
-						<key>name</key>
-						<string>name</string>
-						<key>type</key>
-						<string>StringSimple</string>
-						<key>value</key>
-						<string>3</string>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>position</string>
-						<key>type</key>
-						<string>Position</string>
-						<key>value</key>
-						<array>
-							<real>435.3658447265625</real>
-							<real>181.26742553710938</real>
-							<integer>0</integer>
-							<integer>0</integer>
-							<integer>0</integer>
-						</array>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>scale</string>
-						<key>type</key>
-						<string>ScaleLock</string>
-						<key>value</key>
-						<array>
-							<real>1</real>
-							<real>1</real>
-							<false/>
-							<integer>0</integer>
-						</array>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>ccbFile</string>
-						<key>type</key>
-						<string>CCBFile</string>
-						<key>value</key>
-						<string>UI/LevelCard.ccb</string>
-					</dict>
-				</array>
+				<key>seqExpanded</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -914,8 +1059,6 @@
 						<real>0.0</real>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 				<key>seqExpanded</key>
 				<true/>
 			</dict>
@@ -1076,7 +1219,7 @@
 							<integer>0</integer>
 						</dict>
 						<key>time</key>
-						<real>0.1666666716337204</real>
+						<real>0.5</real>
 						<key>type</key>
 						<integer>12</integer>
 						<key>value</key>

@@ -43,7 +43,7 @@ class LevelCard: CCNode {
         
     }
     
-    func performDarkAnimation() {
+    func performFadeToBlack() {
         
         // callback calls changeLevel once animation ends
         parent.animationManager.runAnimationsForSequenceNamed("LevelSelectedAnimation")
