@@ -444,9 +444,11 @@
 								<string>Text</string>
 								<key>value</key>
 								<array>
-									<string>Lorem ipsum font by Lorem Ipsum
-Music by Lorem ipsum 
+									<string>'Cmon Near' font by Dibjuado
+Music by Adrian Wisaksana
 Art by Adrian Wisaksana
+'Grass Vectors' by All-Silhouettes.com from Vectorartbox.com
+'Hand Vector Icon' by Freepik from www.flaticon.com
 
 Copyright © 2015 Adrian Wisaksana
 www.adrianwisaksana.com</string>
@@ -585,6 +587,8 @@ www.adrianwisaksana.com</string>
 								</array>
 							</dict>
 						</array>
+						<key>selected</key>
+						<true/>
 						<key>seqExpanded</key>
 						<true/>
 					</dict>
@@ -1140,7 +1144,7 @@ www.adrianwisaksana.com</string>
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>0.3333333432674408</real>
+			<real>0.0</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>

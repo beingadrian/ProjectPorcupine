@@ -17,19 +17,15 @@ class MainScene: CCNode {
             if GameManager.sharedInstance.levelDictionary[String(i)] == nil {
                 GameManager.sharedInstance.levelDictionary[String(i)] = levelDict
             }
-            
-            // test
-            if GameManager.sharedInstance.levelDictionary2[String(i)] == nil {
-                GameManager.sharedInstance.levelDictionary2[String(i)] = levelDict
-            }
 
         }
         
-        if let data0 = NSUserDefaults.standardUserDefaults().dictionaryForKey("myLevelDictionary") {
-            println(data0["1"]!)
-        }
+        // load game
+        GameManager.sharedInstance.loadGame()
         
     }
+    
+    // MARK: - Animations
     
     func animationDidFinish() {
         
@@ -47,6 +43,9 @@ class MainScene: CCNode {
         
     }
 
+    
+    // MARK: - Level screen
+    
     func showLevelScreen() {
         
         let levelScreen = CCBReader.load("LevelScreen") as! LevelScreen
@@ -56,11 +55,19 @@ class MainScene: CCNode {
         
     }
     
+    
+    // MARK: - Info page
+    
     func showInfoPage() {
         
         let infoPage = CCBReader.load("InfoPage") as! InfoPage
         addChild(infoPage)
         
     }
+    
+    
+    // MARK: - Load game
+    
+    
     
 }

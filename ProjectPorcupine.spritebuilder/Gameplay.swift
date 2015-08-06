@@ -73,8 +73,6 @@ class Gameplay: CCScene {
             userInteractionEnabled = true
         }
 
-
-
     }
     
     func showTutorial() {
@@ -120,7 +118,7 @@ class Gameplay: CCScene {
             gameOver()
         }
         
-        // test
+        // star parallax
         level.starBackground.physicsBody.velocity.x = -armadillo.physicsBody.velocity.x * 0.03
         
     }
@@ -252,6 +250,9 @@ class Gameplay: CCScene {
         
         updateLevelDict()
         
+        // save game
+        saveGame()
+        
         self.scheduleOnce("showWinningScreen", delay: 0.5)
         
     }
@@ -286,9 +287,17 @@ class Gameplay: CCScene {
         
         let currentStarsAwarded = GameManager.sharedInstance.levelDictionary[level.name]!["totalStarsAwarded"]
 
-        if moonCount > currentStarsAwarded {
+        if totalStarsAwarded > currentStarsAwarded {
             GameManager.sharedInstance.levelDictionary[level.name]!["totalStarsAwarded"] = totalStarsAwarded
         }
+        
+    }
+    
+    // MARK: Save game
+    
+    func saveGame() {
+        
+        GameManager.sharedInstance.save()
         
     }
     
