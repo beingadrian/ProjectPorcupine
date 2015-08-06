@@ -12,6 +12,8 @@ class GameManager {
     
     var currentLevel = 0
     
+    var hasSeenTutorial = false
+    
     var levelDictionary: [String: [String: Int]] = [:]    
     
 }

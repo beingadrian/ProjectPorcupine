@@ -42,6 +42,9 @@ class Gameplay: CCScene {
     }
     var totalStarsAwarded = 0
     
+    // tutorial
+    var tutorial: Tutorial?
+    
     
     // MARK: - DidLoadFromCCB
     
@@ -54,7 +57,7 @@ class Gameplay: CCScene {
         CCDirector.sharedDirector().displayStats = false
         
         // touch settings
-        userInteractionEnabled = true
+        userInteractionEnabled = false
         jumpButton.exclusiveTouch = false
         
         gamePhysicsNode.debugDraw = false
@@ -62,7 +65,20 @@ class Gameplay: CCScene {
         gamePhysicsNode.collisionDelegate = self
         
         loadLevel()
+        
+        // schedule tutorial
+        self.scheduleOnce("showTutorial", delay: 1)
 
+
+    }
+    
+    func showTutorial() {
+        
+        userInteractionEnabled = true
+        
+        tutorial = CCBReader.load("Tutorial") as? Tutorial
+        addChild(tutorial)
+        
     }
     
     func loadLevel() {
@@ -146,7 +162,7 @@ class Gameplay: CCScene {
     // MARK: - Touch controls
     
     func createJoystick() {
-        
+    
         if touchPosition!.x < (boundingBox().width / 2) && joystickEnabled {
             
             joystick = CCBReader.load("Controls/Joystick") as? Joystick
