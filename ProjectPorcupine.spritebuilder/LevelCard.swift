@@ -10,6 +10,7 @@ class LevelCard: CCNode {
     
     weak var starSet: CCNode!
     weak var levelButton: CCButton!
+    weak var lockOverlay: CCNodeColor!
     
     weak var star1: CCSprite!
     weak var star2: CCSprite!
@@ -17,6 +18,8 @@ class LevelCard: CCNode {
     
     var starArray: [CCSprite] = []
     var totalStarsAwarded = 0
+    
+    var levelDictionary = GameManager.sharedInstance.levelDictionary
     
     
     func didLoadFromCCB() {
@@ -26,9 +29,28 @@ class LevelCard: CCNode {
         
         starArray = [star1, star2, star3]
         
-        totalStarsAwarded = GameManager.sharedInstance.levelDictionary[self.name]!["totalStarsAwarded"]!
+        totalStarsAwarded = levelDictionary[self.name]!["totalStarsAwarded"]!
+        
+        checkForUnlocked()
         
         showStars()
+        
+    }
+    
+    func checkForUnlocked() {
+        
+        levelDictionary["1"]!["isUnlocked"] = 1
+        
+        if levelDictionary[self.name]!["isUnlocked"]! == 0 {
+            levelButton.enabled = false
+            lockOverlay.visible = true
+        } else {
+            levelButton.visible = true
+            starSet.visible = true
+            levelButton.enabled = true
+            lockOverlay.visible = false
+        }
+        
         
     }
     

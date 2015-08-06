@@ -23,8 +23,6 @@ class Level: CCNode {
         // set total moon count
         countMoons()
         
-        appendToLevelDictionary()
-        
         // set stars as sensor
         starBackground.physicsBody.sensor = true
         
@@ -38,15 +36,6 @@ class Level: CCNode {
                 totalMoonCount++
             }
             
-        }
-        
-    }
-    
-    func appendToLevelDictionary() {
-        
-        if GameManager.sharedInstance.levelDictionary[self.name] == nil {
-            let selfDictionary = ["isCompleted": 0, "totalMoonCount": totalMoonCount, "totalStarsAwarded": 0]
-            GameManager.sharedInstance.levelDictionary[self.name] = selfDictionary
         }
         
     }

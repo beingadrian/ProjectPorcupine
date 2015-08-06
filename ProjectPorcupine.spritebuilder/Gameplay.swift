@@ -42,6 +42,7 @@ class Gameplay: CCScene {
     }
     var totalStarsAwarded = 0
     
+    
     // MARK: - DidLoadFromCCB
     
     func didLoadFromCCB() {
@@ -260,7 +261,8 @@ class Gameplay: CCScene {
             break
         }
         
-        GameManager.sharedInstance.levelDictionary[level.name]!["isCompleted"] = 1
+        let nextLevel = String((level.name.toInt()!) + 1)
+        GameManager.sharedInstance.levelDictionary[nextLevel]!["isUnlocked"] = 1
         
         let currentStarsAwarded = GameManager.sharedInstance.levelDictionary[level.name]!["totalStarsAwarded"]
 
