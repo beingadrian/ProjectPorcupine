@@ -67,14 +67,17 @@ class Gameplay: CCScene {
         loadLevel()
         
         // schedule tutorial
-        self.scheduleOnce("showTutorial", delay: 1)
+        if GameManager.sharedInstance.hasSeenTutorial == false {
+            self.scheduleOnce("showTutorial", delay: 1)
+        } else {
+            userInteractionEnabled = true
+        }
+
 
 
     }
     
     func showTutorial() {
-        
-        userInteractionEnabled = true
         
         tutorial = CCBReader.load("Tutorial") as? Tutorial
         addChild(tutorial)
