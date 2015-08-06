@@ -38,7 +38,7 @@ class GameManager: NSObject, NSCoding {
     
     // MARK: - Load game
     
-    func loadGame() -> [String: [String: Int]]? {
+    func loadLevelDictionary() -> [String: [String: Int]]? {
         
         let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
         let documentsDirectory = paths[0] as! String
@@ -46,17 +46,37 @@ class GameManager: NSObject, NSCoding {
         let fileManager = NSFileManager.defaultManager()
         
         // check if file exists
-        if !fileManager.fileExistsAtPath(path) {
+        if fileManager.fileExistsAtPath(path) {
             // create an empty file if it doesn't exist
-            if let bundle = NSBundle.mainBundle().pathForResource("DefaultFile", ofType: "plist") {
-                fileManager.copyItemAtPath(bundle, toPath: path, error:nil)
+            if let rawData = NSData(contentsOfFile: path) {
+                // do we get serialized data back from the attempted path?
+                if let data = NSKeyedUnarchiver.unarchiveObjectWithData(rawData) as? Dictionary<String, Dictionary<String, Int>> {
+                    levelDictionary = data
+                    return data
+                }
             }
         }
         
-        if let rawData = NSData(contentsOfFile: path) {
-            // do we get serialized data back from the attempted path?
-            if let data = NSKeyedUnarchiver.unarchiveObjectWithData(rawData) as? [String: [String: Int]] {
-                return data
+        return nil
+        
+    }
+    
+    func loadTutorialHistory() -> Bool? {
+        
+        let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
+        let documentsDirectory = paths[0] as! String
+        let path = documentsDirectory.stringByAppendingPathComponent("TutorialHistory.plist")
+        let fileManager = NSFileManager.defaultManager()
+        
+        // check if file exists
+        if fileManager.fileExistsAtPath(path) {
+            // create an empty file if it doesn't exist
+            if let rawData = NSData(contentsOfFile: path) {
+                // do we get serialized data back from the attempted path?
+                if let data = NSKeyedUnarchiver.unarchiveObjectWithData(rawData) as? Bool {
+                    hasSeenTutorial = data
+                    return data
+                }
             }
         }
         
@@ -69,16 +89,24 @@ class GameManager: NSObject, NSCoding {
     
     func save() {
         
-        let saveLevelDictionaryData = NSKeyedArchiver.archivedDataWithRootObject(GameManager.sharedInstance.levelDictionary)
         let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true) as NSArray
         let documentsDirectory = paths.objectAtIndex(0) as! NSString
+        
+        let saveLevelDictionaryData = NSKeyedArchiver.archivedDataWithRootObject(GameManager.sharedInstance.levelDictionary)
         let path = documentsDirectory.stringByAppendingPathComponent("GameManager.plist")
         
+        let saveTutorialHistoryData = NSKeyedArchiver.archivedDataWithRootObject(GameManager.sharedInstance.hasSeenTutorial)
+        let path2 = documentsDirectory.stringByAppendingPathComponent("TutorialHistory.plist")
+        
+        
         saveLevelDictionaryData.writeToFile(path, atomically: true)
+        saveTutorialHistoryData.writeToFile(path2, atomically: true)
         
         // test if successful
         let saveSuccessful = NSKeyedArchiver.archiveRootObject(GameManager.sharedInstance.levelDictionary, toFile: path)
+        let saveSuccessful2 = NSKeyedArchiver.archiveRootObject(GameManager.sharedInstance.hasSeenTutorial, toFile: path2)
         println(saveSuccessful)
+        println(saveSuccessful2)
         
     }
 

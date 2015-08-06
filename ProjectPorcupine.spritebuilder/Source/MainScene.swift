@@ -21,7 +21,8 @@ class MainScene: CCNode {
         }
         
         // load game
-        GameManager.sharedInstance.loadGame()
+        GameManager.sharedInstance.loadLevelDictionary()
+        GameManager.sharedInstance.loadTutorialHistory()
         
     }
     
