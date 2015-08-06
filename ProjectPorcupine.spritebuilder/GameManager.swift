@@ -19,9 +19,9 @@ class GameManager {
         }
     }
     
-    var levelDictionary2: [NSObject: AnyObject] = NSUserDefaults.standardUserDefaults().dictionaryForKey("myLevelDictionary") ?? [:] {
+    var levelDictionary: [NSObject: AnyObject] = NSUserDefaults.standardUserDefaults().dictionaryForKey("userLevelDictionary") ?? [:] {
         didSet {
-            NSUserDefaults.standardUserDefaults().setObject(levelDictionary2, forKey: "myLevelDictionary")
+            NSUserDefaults.standardUserDefaults().setObject(levelDictionary, forKey: "userLevelDictionary")
             NSUserDefaults.standardUserDefaults().synchronize()
         }
     }
@@ -30,7 +30,7 @@ class GameManager {
 //    NSUserDefaults.standardUserDefaults().setObject(levelDictionary2, forKey: "userLevelDictionary")
     
     
-    var levelDictionary: [String: [String: Int]] = [:]
+//    var levelDictionary: [String: [String: Int]] = [:]
     
 }
 

@@ -282,12 +282,41 @@ class Gameplay: CCScene {
         
         let nextLevel = String((level.name.toInt()!) + 1)
         
-        GameManager.sharedInstance.levelDictionary[nextLevel]!["isUnlocked"] = 1
+//        GameManager.sharedInstance.levelDictionary[nextLevel]!["isUnlocked"] = 1
+        
+        if let levelDictionary = NSUserDefaults.standardUserDefaults().dictionaryForKey("userLevelDictionary") {
+            
+            if let oneLevelDictionary = levelDictionary["1"] as! [String: Int]? {
+                if var oneDictionary = oneLevelDictionary["test"] as Int? {
+                    oneDictionary = 1
+                }
+//                oneLevelDictionary["1"] = 1
+            }
+            
+            
+            if let nextLevelDictionary = levelDictionary[nextLevel] as! [String: Int]? {
+                if var isUnlocked = nextLevelDictionary["isUnlocked"] as Int? {
+                    isUnlocked = 1
+                } else {
+                    println("isUnlocked not set")
+                }
+            }
+        }
         
         let currentStarsAwarded = GameManager.sharedInstance.levelDictionary[level.name]!["totalStarsAwarded"]
 
-        if moonCount > currentStarsAwarded {
-            GameManager.sharedInstance.levelDictionary[level.name]!["totalStarsAwarded"] = totalStarsAwarded
+        if moonCount > (currentStarsAwarded as! Int)  {
+            
+            if let levelDictionary = NSUserDefaults.standardUserDefaults().dictionaryForKey("userLevelDictionary") {
+                if let thisLevelDictionary = levelDictionary[level.name] as! [String: Int]? {
+                    if var totalStarsAwarded = thisLevelDictionary["totalStarsAwarded"] as Int? {
+                        totalStarsAwarded = 1
+                    } else {
+                        println("Total stars awarded not set")
+                    }
+                }
+            }
+//            GameManager.sharedInstance.levelDictionary[level.name]!["totalStarsAwarded"] = totalStarsAwarded
         }
         
     }
