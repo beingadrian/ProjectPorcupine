@@ -281,11 +281,17 @@ class Gameplay: CCScene {
         }
         
         let nextLevel = String((level.name.toInt()!) + 1)
-        GameManager.sharedInstance.levelDictionary[nextLevel]!["isUnlocked"] = 1
         
-        let currentStarsAwarded = GameManager.sharedInstance.levelDictionary[level.name]!["totalStarsAwarded"]
+        let levelIsUnlocked = GameManager.sharedInstance.levelDictionary[nextLevel]! as! [String: Int]
+        levelIsUnlocked["isUnlocked"]! = 1
+        
+//        GameManager.sharedInstance.levelDictionary[nextLevel]!["isUnlocked"] = 1
+        
+        let currentStarsAwarded = GameManager.sharedInstance.levelDictionary[level.name]!["totalStarsAwarded"] as! Int
 
         if moonCount > currentStarsAwarded {
+            var levelTotalStarsAwarded = GameManager.sharedInstance.levelDictionary[level.name]!["totalStarsAwarded"] as! Int
+            
             GameManager.sharedInstance.levelDictionary[level.name]!["totalStarsAwarded"] = totalStarsAwarded
         }
         

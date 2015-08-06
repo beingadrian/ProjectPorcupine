@@ -19,7 +19,7 @@ class LevelCard: CCNode {
     var starArray: [CCSprite] = []
     var totalStarsAwarded = 0
     
-    var levelDictionary = GameManager.sharedInstance.levelDictionary
+    var levelDictionary = GameManager.sharedInstance.levelDictionary as! [String: [String: Int]]
     
     
     func didLoadFromCCB() {
