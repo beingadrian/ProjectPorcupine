@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		225D346004E15EF7A8F23A8D /* Pods_ProjectArmadillo_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56C7C36EC7BE5235CA02B84B /* Pods_ProjectArmadillo_iOS.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		332CD6B51B6AD9D400F1E49E /* Obstacle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332CD6B41B6AD9D400F1E49E /* Obstacle.swift */; };
 		332CD6BA1B6ADDEA00F1E49E /* GravityStone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332CD6B91B6ADDEA00F1E49E /* GravityStone.swift */; };
 		332CD6BE1B6B3B6D00F1E49E /* GravityTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332CD6BD1B6B3B6D00F1E49E /* GravityTimer.swift */; };
@@ -170,6 +171,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09C559CE91007FADC7005EE4 /* Pods-ProjectArmadillo iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectArmadillo iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProjectArmadillo iOS/Pods-ProjectArmadillo iOS.release.xcconfig"; sourceTree = "<group>"; };
 		332CD6B41B6AD9D400F1E49E /* Obstacle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Obstacle.swift; sourceTree = "<group>"; };
 		332CD6B91B6ADDEA00F1E49E /* GravityStone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GravityStone.swift; sourceTree = "<group>"; };
 		332CD6BD1B6B3B6D00F1E49E /* GravityTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GravityTimer.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 		33F951381B6987F4004D1042 /* Star.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
 		33F9513A1B69A31D004D1042 /* EndGoal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndGoal.swift; sourceTree = "<group>"; };
 		33F9513E1B69F6D9004D1042 /* HubDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubDisplay.swift; sourceTree = "<group>"; };
+		56C7C36EC7BE5235CA02B84B /* Pods_ProjectArmadillo_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectArmadillo_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B12100919748273004C1E1D /* libEGL.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libEGL.so; path = /usr/lib/armv7a/libEGL.so; sourceTree = SDKROOT; };
 		5B12100F197483EE004C1E1D /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
 		5B121011197483EE004C1E1D /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
@@ -202,6 +205,7 @@
 		5B121033197485FE004C1E1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Platforms/Android/Info.plist; sourceTree = "<group>"; };
 		5B121034197485FE004C1E1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Platforms/iOS/Info.plist; sourceTree = "<group>"; };
 		5BA4619E1974C88900785744 /* AndroidManifest.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = AndroidManifest.xml; path = Platforms/Android/AndroidManifest.xml; sourceTree = "<group>"; };
+		6D29C45B95DC33A1F8AECAF4 /* Pods-ProjectArmadillo iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectArmadillo iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProjectArmadillo iOS/Pods-ProjectArmadillo iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		7A046D7519E84C36004C4763 /* MainScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainScene.swift; path = Source/MainScene.swift; sourceTree = "<group>"; };
 		7A4035FF19DDEE84007B6E8F /* ProjectArmadillo Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ProjectArmadillo Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A40360219DDEE84007B6E8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Platforms/Mac/Info.plist; sourceTree = "<group>"; };
@@ -309,6 +313,7 @@
 				B77F1B3E17B978D7009739AE /* Foundation.framework in Frameworks */,
 				B77F1B4017B978D7009739AE /* CoreGraphics.framework in Frameworks */,
 				B77F1B4217B978D7009739AE /* CoreText.framework in Frameworks */,
+				225D346004E15EF7A8F23A8D /* Pods_ProjectArmadillo_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,6 +598,7 @@
 				B77F1CCF17B978D8009739AE /* Supporting Files */,
 				B77F1B3017B978D7009739AE /* Frameworks */,
 				B77F1B2F17B978D7009739AE /* Products */,
+				D8CB38493B7946F503D9647B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -630,6 +636,7 @@
 				B77F1B3D17B978D7009739AE /* Foundation.framework */,
 				B77F1B3F17B978D7009739AE /* CoreGraphics.framework */,
 				B77F1B4117B978D7009739AE /* CoreText.framework */,
+				56C7C36EC7BE5235CA02B84B /* Pods_ProjectArmadillo_iOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -656,6 +663,15 @@
 				B73789861807631A0076A88C /* Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D8CB38493B7946F503D9647B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D29C45B95DC33A1F8AECAF4 /* Pods-ProjectArmadillo iOS.debug.xcconfig */,
+				09C559CE91007FADC7005EE4 /* Pods-ProjectArmadillo iOS.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -702,11 +718,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B77F1CDE17B978D8009739AE /* Build configuration list for PBXNativeTarget "ProjectArmadillo iOS" */;
 			buildPhases = (
+				39B8723974ABEE7982E0B5B6 /* Check Pods Manifest.lock */,
 				D2E0167A18D782EC00927430 /* Run Script */,
 				B77F1B2A17B978D7009739AE /* Sources */,
 				B77F1B2B17B978D7009739AE /* Frameworks */,
 				D352B47A19EC5D8A00829775 /* Compile Metal Shaders */,
 				B77F1B2C17B978D7009739AE /* Resources */,
+				C59FD0CBD3008AE102D6E2EB /* Embed Pods Frameworks */,
+				73FEFF6533BA8776C5E5AF7A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -867,6 +886,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		39B8723974ABEE7982E0B5B6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		73FEFF6533BA8776C5E5AF7A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProjectArmadillo iOS/Pods-ProjectArmadillo iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		927F619B196C771E000F43EF /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -880,6 +929,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "osascript -e 'tell application \"System Events\"' -e 'set ProcessList to name of every process' -e 'if \"SpriteBuilder\" is in ProcessList then' -e 'tell application \"SpriteBuilder\" to publish' -e 'end if' -e 'end tell'";
+		};
+		C59FD0CBD3008AE102D6E2EB /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProjectArmadillo iOS/Pods-ProjectArmadillo iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		D2E0167A18D782EC00927430 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1237,6 +1301,7 @@
 		};
 		B77F1CDF17B978D8009739AE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D29C45B95DC33A1F8AECAF4 /* Pods-ProjectArmadillo iOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_MODULES = YES;
@@ -1272,6 +1337,7 @@
 		};
 		B77F1CE017B978D8009739AE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09C559CE91007FADC7005EE4 /* Pods-ProjectArmadillo iOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_MODULES = YES;

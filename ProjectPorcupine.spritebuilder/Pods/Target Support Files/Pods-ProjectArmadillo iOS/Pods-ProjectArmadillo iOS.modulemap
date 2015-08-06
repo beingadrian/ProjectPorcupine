@@ -1,0 +1,6 @@
+framework module Pods_ProjectArmadillo_iOS {
+  umbrella header "Pods-ProjectArmadillo iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
