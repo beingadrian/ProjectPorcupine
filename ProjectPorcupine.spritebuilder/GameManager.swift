@@ -12,9 +12,21 @@ class GameManager {
     
     var currentLevel = 0
     
-    var hasSeenTutorial = false
+    var hasSeenTutorial: Bool = NSUserDefaults.standardUserDefaults().boolForKey("myTutorialRecord") ?? false {
+        didSet {
+            NSUserDefaults.standardUserDefaults().setObject(hasSeenTutorial, forKey: "myTutorialRecord")
+            NSUserDefaults.standardUserDefaults().synchronize()
+        }
+    }
     
-    var levelDictionary: [String: [String: Int]] = [:]    
+    var levelDictionary2: [String: Dictionary] = NSUserDefaults.standardUserDefaults().dictionaryForKey("test") ?? [:] {
+        didSet {
+            NSUserDefaults.standardUserDefaults().setObject(levelDictionary2, forKey: "test")
+            NSUserDefaults.standardUserDefaults().synchronize()
+        }
+    }
+    
+    var levelDictionary: [String: [String: Int]] = [:]
     
 }
 
