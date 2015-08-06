@@ -1827,7 +1827,7 @@
 						<key>value</key>
 						<array>
 							<real>387.00003051757812</real>
-							<real>185.00001525878906</real>
+							<real>150.00001525878906</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -1855,6 +1855,8 @@
 						<string>Entities/WorldObjects/Trap1.ccb</string>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -1889,7 +1891,7 @@
 						<key>value</key>
 						<array>
 							<real>738</real>
-							<real>190.00001525878906</real>
+							<real>155.00001525878906</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -1917,6 +1919,8 @@
 						<string>Entities/WorldObjects/Trap1.ccb</string>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
@@ -1989,8 +1993,6 @@
 				</array>
 			</dict>
 		</array>
-		<key>selected</key>
-		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>

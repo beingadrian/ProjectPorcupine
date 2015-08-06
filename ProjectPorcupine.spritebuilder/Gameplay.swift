@@ -330,7 +330,8 @@ extension Gameplay: CCPhysicsCollisionDelegate {
         
         // moon collectible
         if let moon = collectible as? Moon {
-            moon.removeFromParent()
+            moon.physicsBody.collisionType = "default"
+            moon.animationManager.runAnimationsForSequenceNamed("Remove")
             moonCount++
         }
         

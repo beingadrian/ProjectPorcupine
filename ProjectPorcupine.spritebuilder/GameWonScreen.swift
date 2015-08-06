@@ -47,15 +47,14 @@ class GameWonScreen: CCNode {
         
     }
     
-    func fadeToBlack() {
+    func fadeToBlack(button: CCButton) {
         
+        button.enabled = false
         animationManager.runAnimationsForSequenceNamed("FadeToBlack")
         
     }
     
     func goToNextLevel() {
-        
-        removeLevel()
         
         GameManager.sharedInstance.currentLevel++
         loadGame()
@@ -85,14 +84,6 @@ class GameWonScreen: CCNode {
         
         let mainScene = CCBReader.loadAsScene("MainScene")
         CCDirector.sharedDirector().presentScene(mainScene)
-        
-    }
-    
-    func removeLevel() {
-        
-        if let level = parent.children[0] as? Level {
-            level.removeFromParent()
-        }
         
     }
     

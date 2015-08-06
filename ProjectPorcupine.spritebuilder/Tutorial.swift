@@ -32,6 +32,20 @@ class Tutorial: CCNode {
         
     }
     
+    func didFinishRightExitAnimation() {
+        
+        animationManager.runAnimationsForSequenceNamed("MiddleStartAnimation")
+        
+        
+    }
+    
+    func didFinishMiddleStartAnimation() {
+        
+        animationManager.runAnimationsForSequenceNamed("MiddleLoopAnimation")
+        nextTutorialButton.enabled = true
+        
+    }
+    
     func nextTutorial() {
         
         tapCount++
@@ -40,6 +54,8 @@ class Tutorial: CCNode {
         if tapCount == 1 {
             animationManager.runAnimationsForSequenceNamed("LeftExitAnimation")
         } else if tapCount == 2 {
+            animationManager.runAnimationsForSequenceNamed("RightExitAnimation")
+        } else if tapCount == 3 {
             animationManager.runAnimationsForSequenceNamed("RemoveTutorial")
         }
         

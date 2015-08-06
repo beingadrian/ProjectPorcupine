@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>572</integer>
+	<integer>575</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -373,7 +373,7 @@
 						<string>Block</string>
 						<key>value</key>
 						<array>
-							<string>fadeToBlack</string>
+							<string>fadeToBlack:</string>
 							<integer>1</integer>
 						</array>
 					</dict>

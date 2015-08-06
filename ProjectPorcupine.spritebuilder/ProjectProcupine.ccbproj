@@ -301,6 +301,21 @@
 			<key>format_ios</key>
 			<integer>3</integer>
 		</dict>
+		<key>Assets/Tutorial/border_dashed.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Assets/Tutorial/left_hand.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Assets/Tutorial/right_hand.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
 		<key>Assets/UI</key>
 		<dict/>
 		<key>Assets/UI/home_btn.png</key>

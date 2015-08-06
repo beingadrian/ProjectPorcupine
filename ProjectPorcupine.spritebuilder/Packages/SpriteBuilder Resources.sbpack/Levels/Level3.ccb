@@ -293,8 +293,6 @@
 						<string>StarsBackground.ccb</string>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -1639,7 +1637,7 @@
 								<key>value</key>
 								<array>
 									<real>409.22677612304688</real>
-									<real>522.81317138671875</real>
+									<real>940.74884033203125</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -1667,6 +1665,8 @@
 								<string>Entities/Collectibles/Moon.ccb</string>
 							</dict>
 						</array>
+						<key>selected</key>
+						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -1988,7 +1988,7 @@
 			<key>name</key>
 			<string>Default Timeline</string>
 			<key>offset</key>
-			<real>0.042708907276391983</real>
+			<real>0.0</real>
 			<key>position</key>
 			<real>1.1000000238418579</real>
 			<key>resolution</key>

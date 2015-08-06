@@ -8,6 +8,10 @@
 
 class Moon: Collectible {
     
-    
+    func didFinishAnimation() {
+        
+        self.removeFromParent()
+        
+    }
     
 }

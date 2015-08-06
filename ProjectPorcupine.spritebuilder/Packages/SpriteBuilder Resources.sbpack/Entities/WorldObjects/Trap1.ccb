@@ -42,6 +42,80 @@
 			<dict>
 				<key>UUID</key>
 				<integer>1</integer>
+				<key>animatedProperties</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>scale</key>
+						<dict>
+							<key>keyframes</key>
+							<array>
+								<dict>
+									<key>easing</key>
+									<dict>
+										<key>opt</key>
+										<real>2</real>
+										<key>type</key>
+										<integer>4</integer>
+									</dict>
+									<key>name</key>
+									<string>scale</string>
+									<key>time</key>
+									<real>0.0</real>
+									<key>type</key>
+									<integer>4</integer>
+									<key>value</key>
+									<array>
+										<real>1</real>
+										<real>1</real>
+									</array>
+								</dict>
+								<dict>
+									<key>easing</key>
+									<dict>
+										<key>opt</key>
+										<real>2</real>
+										<key>type</key>
+										<integer>4</integer>
+									</dict>
+									<key>name</key>
+									<string>scale</string>
+									<key>time</key>
+									<real>0.5</real>
+									<key>type</key>
+									<integer>4</integer>
+									<key>value</key>
+									<array>
+										<real>1.1000000238418579</real>
+										<real>1.1000000238418579</real>
+									</array>
+								</dict>
+								<dict>
+									<key>easing</key>
+									<dict>
+										<key>type</key>
+										<integer>1</integer>
+									</dict>
+									<key>name</key>
+									<string>scale</string>
+									<key>time</key>
+									<real>1</real>
+									<key>type</key>
+									<integer>4</integer>
+									<key>value</key>
+									<array>
+										<real>1</real>
+										<real>1</real>
+									</array>
+								</dict>
+							</array>
+							<key>name</key>
+							<string>scale</string>
+							<key>type</key>
+							<integer>4</integer>
+						</dict>
+					</dict>
+				</dict>
 				<key>baseClass</key>
 				<string>CCSprite</string>
 				<key>children</key>
@@ -86,19 +160,24 @@
 						<key>value</key>
 						<array>
 							<real>0.5</real>
-							<real>0.5</real>
+							<real>0.0</real>
 						</array>
 					</dict>
 					<dict>
+						<key>baseValue</key>
+						<array>
+							<real>1</real>
+							<real>1</real>
+						</array>
 						<key>name</key>
 						<string>scale</string>
 						<key>type</key>
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>1</real>
-							<real>1</real>
-							<false/>
+							<real>1.1000000238418579</real>
+							<real>1.1000000238418579</real>
+							<true/>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -146,6 +225,10 @@
 						<array/>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
+				<key>seqExpanded</key>
+				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
@@ -183,72 +266,72 @@
 			<key>points</key>
 			<array>
 				<array>
-					<real>-40.147567749023438</real>
-					<real>-2.44140625</real>
+					<real>-42.555866241455078</real>
+					<real>38.568809509277344</real>
 				</array>
 				<array>
-					<real>-25.241050720214844</real>
-					<real>31.666688919067383</real>
+					<real>-27.92729377746582</real>
+					<real>73.810371398925781</real>
 				</array>
 				<array>
-					<real>3.914546012878418</real>
-					<real>34.686420440673828</real>
+					<real>5.319460391998291</real>
+					<real>77.799980163574219</real>
 				</array>
 				<array>
-					<real>32</real>
-					<real>32</real>
+					<real>35.241539001464844</real>
+					<real>73.145431518554688</real>
 				</array>
 				<array>
-					<real>41.136562347412109</real>
-					<real>15.296464920043945</real>
+					<real>45.215583801269531</real>
+					<real>56.522056579589844</real>
 				</array>
 				<array>
-					<real>40.147567749023438</real>
-					<real>-7.0642538070678711</real>
+					<real>43.885692596435547</real>
+					<real>30.589590072631836</real>
 				</array>
 				<array>
-					<real>14.247187614440918</real>
-					<real>-36.078559875488281</real>
+					<real>24.602577209472656</real>
+					<real>0.0025872564874589443</real>
 				</array>
 				<array>
-					<real>-13.21109676361084</real>
-					<real>-35.134773254394531</real>
+					<real>-16.623397827148438</real>
+					<real>2.6623275279998779</real>
 				</array>
 			</array>
 			<key>polygons</key>
 			<array>
 				<array>
 					<array>
-						<real>-13.21109676361084</real>
-						<real>-35.134773254394531</real>
+						<real>-16.623397827148438</real>
+						<real>2.6623275279998779</real>
 					</array>
 					<array>
-						<real>14.247187614440918</real>
-						<real>-36.078559875488281</real>
+						<real>24.602577209472656</real>
+						<real>0.0025872564874589443</real>
 					</array>
 					<array>
-						<real>40.147567749023438</real>
-						<real>-7.0642538070678711</real>
+						<real>43.885692596435547</real>
+						<real>30.589590072631836</real>
 					</array>
 					<array>
-						<real>41.136562347412109</real>
-						<real>15.296464920043945</real>
+						<real>45.215583801269531</real>
+						<real>56.522056579589844</real>
 					</array>
 					<array>
-						<real>32</real>
-						<real>32</real>
+						<real>35.241539001464844</real>
+						<real>73.145431518554688</real>
 					</array>
 					<array>
-						<real>3.914546012878418</real>
-						<real>34.686420440673828</real>
+						<real>5.319460391998291</real>
+						<real>77.799980163574219</real>
 					</array>
 					<array>
-						<real>-25.241050720214844</real>
-						<real>31.666688919067383</real>
+						<real>-27.92729377746582</real>
+						<real>73.810371398925781</real>
 					</array>
 					<array>
-						<real>-40.147567749023438</real>
-						<real>-2.44140625</real>
+						<real>-42.555866241455078</real>
+						<real>38.568809509277344</real>
 					</array>
 				</array>
 			</array>
@@ -315,8 +398,6 @@
 				</array>
 			</dict>
 		</array>
-		<key>selected</key>
-		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>
@@ -364,15 +445,15 @@
 				<integer>12</integer>
 			</dict>
 			<key>chainedSequenceId</key>
-			<integer>-1</integer>
+			<integer>0</integer>
 			<key>length</key>
-			<real>10</real>
+			<real>1</real>
 			<key>name</key>
 			<string>Default Timeline</string>
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>0.0</real>
+			<real>0.5</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>

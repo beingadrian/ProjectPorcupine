@@ -459,8 +459,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>159.20281982421875</real>
-									<real>259.05322265625</real>
+									<real>194.20281982421875</real>
+									<real>277.05322265625</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -488,6 +488,8 @@
 								<string>Entities/Collectibles/Moon.ccb</string>
 							</dict>
 						</array>
+						<key>selected</key>
+						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -1835,8 +1837,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>158</real>
-							<real>186.00001525878906</real>
+							<real>201</real>
+							<real>160.80799865722656</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -1936,8 +1938,6 @@
 				</array>
 			</dict>
 		</array>
-		<key>selected</key>
-		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>
@@ -1991,7 +1991,7 @@
 			<key>name</key>
 			<string>Default Timeline</string>
 			<key>offset</key>
-			<real>0.11146309971809387</real>
+			<real>0.0</real>
 			<key>position</key>
 			<real>1.1000000238418579</real>
 			<key>resolution</key>

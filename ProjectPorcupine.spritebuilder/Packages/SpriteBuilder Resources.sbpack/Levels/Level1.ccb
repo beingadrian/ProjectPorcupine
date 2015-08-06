@@ -71,8 +71,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>738.5</real>
-							<real>503.9537353515625</real>
+							<real>238.55230712890625</real>
+							<real>334.92379760742188</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -116,6 +116,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -1019,8 +1021,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>217.41874694824219</real>
-									<real>201.40509033203125</real>
+									<real>744.74456787109375</real>
+									<real>215.68931579589844</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -1290,8 +1292,6 @@
 						<string>StarsBackground.ccb</string>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
@@ -1417,7 +1417,7 @@
 			<key>name</key>
 			<string>Default Timeline</string>
 			<key>offset</key>
-			<real>0.21251296997070312</real>
+			<real>0.0</real>
 			<key>position</key>
 			<real>0.0</real>
 			<key>resolution</key>
