@@ -17,7 +17,16 @@ class MainScene: CCNode {
             if GameManager.sharedInstance.levelDictionary[String(i)] == nil {
                 GameManager.sharedInstance.levelDictionary[String(i)] = levelDict
             }
+            
+            // test
+            if GameManager.sharedInstance.levelDictionary2[String(i)] == nil {
+                GameManager.sharedInstance.levelDictionary2[String(i)] = levelDict
+            }
 
+        }
+        
+        if let data0 = NSUserDefaults.standardUserDefaults().dictionaryForKey("myLevelDictionary") {
+            println(data0["1"]!)
         }
         
     }

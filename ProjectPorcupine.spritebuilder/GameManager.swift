@@ -12,23 +12,25 @@ class GameManager {
     
     var currentLevel = 0
     
-    var hasSeenTutorial: Bool = NSUserDefaults.standardUserDefaults().boolForKey("myTutorialRecord") ?? false {
+    var hasSeenTutorial: Bool = NSUserDefaults.standardUserDefaults().boolForKey("userHasSeenTutorial") ?? false {
         didSet {
-            NSUserDefaults.standardUserDefaults().setObject(hasSeenTutorial, forKey: "myTutorialRecord")
+            NSUserDefaults.standardUserDefaults().setObject(hasSeenTutorial, forKey: "userHasSeenTutorial")
             NSUserDefaults.standardUserDefaults().synchronize()
         }
     }
     
-    var levelDictionary: [NSObject: AnyObject] = (NSUserDefaults.standardUserDefaults().dictionaryForKey("myLevelDictionary")) ?? ["0": ["someKey": 0]] {
+    var levelDictionary2: [NSObject: AnyObject] = NSUserDefaults.standardUserDefaults().dictionaryForKey("myLevelDictionary") ?? [:] {
         didSet {
-            NSUserDefaults.standardUserDefaults().setObject(levelDictionary, forKey: "myLevelDictionary")
+            NSUserDefaults.standardUserDefaults().setObject(levelDictionary2, forKey: "myLevelDictionary")
             NSUserDefaults.standardUserDefaults().synchronize()
         }
     }
     
-//    var levelDictionary: [String: [String: Int]] = [:]
+//    var levelDictionary2: [NSObject: AnyObject] = ["0": ["someKey": 0]]
+//    NSUserDefaults.standardUserDefaults().setObject(levelDictionary2, forKey: "userLevelDictionary")
     
-//    var levelDictionary: [NSObject: AnyObject] = ["0": ["someKey": 0]]
+    
+    var levelDictionary: [String: [String: Int]] = [:]
     
 }
 
