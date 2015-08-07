@@ -18,6 +18,7 @@
 		334356EC1B65AD950083FB51 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334356EB1B65AD950083FB51 /* Character.swift */; };
 		334356F01B65B0650083FB51 /* GameWonScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334356EF1B65B0650083FB51 /* GameWonScreen.swift */; };
 		334D75BB1B66A71900EA3733 /* Collectible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334D75BA1B66A71900EA3733 /* Collectible.swift */; };
+		33847D4F1B743395001949A0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 33847D4E1B743395001949A0 /* GoogleService-Info.plist */; };
 		33AD03291B728F9000D3B3B1 /* InfoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AD03281B728F9000D3B3B1 /* InfoPage.swift */; };
 		33AD032F1B73177300D3B3B1 /* Tutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AD032E1B73177300D3B3B1 /* Tutorial.swift */; };
 		33BFB5821B6BE244009369E7 /* DeadlyObstacle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BFB5811B6BE244009369E7 /* DeadlyObstacle.swift */; };
@@ -182,6 +183,7 @@
 		334356EB1B65AD950083FB51 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		334356EF1B65B0650083FB51 /* GameWonScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameWonScreen.swift; sourceTree = "<group>"; };
 		334D75BA1B66A71900EA3733 /* Collectible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collectible.swift; sourceTree = "<group>"; };
+		33847D4E1B743395001949A0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		33AD03281B728F9000D3B3B1 /* InfoPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoPage.swift; sourceTree = "<group>"; };
 		33AD032E1B73177300D3B3B1 /* Tutorial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutorial.swift; sourceTree = "<group>"; };
 		33BFB5811B6BE244009369E7 /* DeadlyObstacle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeadlyObstacle.swift; sourceTree = "<group>"; };
@@ -592,6 +594,7 @@
 		B77F1B2517B978D7009739AE = {
 			isa = PBXGroup;
 			children = (
+				33847D4E1B743395001949A0 /* GoogleService-Info.plist */,
 				B737893C1807616C0076A88C /* Source */,
 				B77F1B4617B978D7009739AE /* Resources */,
 				9222E2B918734FF800A246C7 /* libs */,
@@ -874,6 +877,7 @@
 				B737893B180761570076A88C /* Published-iOS in Resources */,
 				B71F591A188484E7003F4D28 /* Settings@2x.png in Resources */,
 				B7378976180762440076A88C /* Default-Landscape~ipad.png in Resources */,
+				33847D4F1B743395001949A0 /* GoogleService-Info.plist in Resources */,
 				B71F5915188484E7003F4D28 /* iPhone-old.png in Resources */,
 				B71F5917188484E7003F4D28 /* iPhone.png in Resources */,
 				B7378975180762440076A88C /* Default-568h@2x.png in Resources */,
@@ -1318,6 +1322,7 @@
 					"Source/libs/cocos2d-iphone/external/Chipmunk/include",
 					"\"Source/libs/cocos2d-iphone/cocos2d-ui\"/**",
 					"\"Source/libs/cocos2d-iphone/external/ObjectAL\"/**",
+					"$(inherited)",
 				);
 				INFOPLIST_FILE = Source/Resources/Platforms/iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -1326,6 +1331,7 @@
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-ObjC",
+					"$(inherited)",
 				);
 				PRODUCT_NAME = ProjectArmadillo;
 				PROVISIONING_PROFILE = "";
@@ -1353,6 +1359,7 @@
 					"Source/libs/cocos2d-iphone/external/Chipmunk/include",
 					"\"Source/libs/cocos2d-iphone/cocos2d-ui\"/**",
 					"\"Source/libs/cocos2d-iphone/external/ObjectAL\"/**",
+					"$(inherited)",
 				);
 				INFOPLIST_FILE = Source/Resources/Platforms/iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -1360,6 +1367,7 @@
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-ObjC",
+					"$(inherited)",
 				);
 				PRODUCT_NAME = ProjectArmadillo;
 				PROVISIONING_PROFILE = "";

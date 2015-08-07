@@ -72,7 +72,9 @@ class Gameplay: CCScene {
         } else {
             userInteractionEnabled = true
         }
+        
 
+        
     }
     
     func showTutorial() {
@@ -231,6 +233,9 @@ class Gameplay: CCScene {
     
     func gameOver() {
         
+        // Mixpanel
+        Mixpanel.sharedInstance().track("User death", properties: ["Level": level.name.toInt()!])
+        
         paused = true
         animationManager.runAnimationsForSequenceNamed("GameOver")
         
@@ -254,7 +259,7 @@ class Gameplay: CCScene {
         saveGame()
         
         self.scheduleOnce("showWinningScreen", delay: 0.5)
-        
+    
     }
     
     func showWinningScreen() {
@@ -280,6 +285,13 @@ class Gameplay: CCScene {
         default:
             break
         }
+        
+        // Mixpanel
+        Mixpanel.sharedInstance().track("Level completed", properties: [
+            "Level number": level.name.toInt()!,
+            "Stars awarded": totalStarsAwarded,
+            "Moons awarded": "\(moonCount)/\(level.totalMoonCount)"
+        ])
         
         let nextLevel = String((level.name.toInt()!) + 1)
         

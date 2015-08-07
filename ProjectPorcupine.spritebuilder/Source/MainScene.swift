@@ -3,7 +3,10 @@ class MainScene: CCNode {
     
     weak var playButton: CCButton!
     
+    // debug purposes
+    let memoryStorageAllowed = true
     
+
     func didLoadFromCCB() {
         
         // remove previous textures to free up memory
@@ -21,9 +24,11 @@ class MainScene: CCNode {
         }
         
         // load game
-        GameManager.sharedInstance.loadLevelDictionary()
-        GameManager.sharedInstance.loadTutorialHistory()
-        
+        if memoryStorageAllowed {
+            GameManager.sharedInstance.loadLevelDictionary()
+            GameManager.sharedInstance.loadTutorialHistory()
+        }
+
     }
     
     // MARK: - Animations
@@ -39,9 +44,9 @@ class MainScene: CCNode {
         
         playButton.enabled = false
         
-        animationManager.runAnimationsForSequenceNamed("ExitAnimation")
         // triggers callback showLevelScreen()
-        
+        animationManager.runAnimationsForSequenceNamed("ExitAnimation")
+
     }
 
     

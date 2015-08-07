@@ -16,4 +16,4 @@
 #import "libs/cocos2d-iphone/external/ObjectAL/ObjectAL/ObjectAL/Session/OALAudioSession.h"
 #import "CCPhysics+ObjectiveChipmunk.h"
 #import "CCTextureCache.h"
-
+#import "../Pods/Headers/Private/Mixpanel/Mixpanel.h"
