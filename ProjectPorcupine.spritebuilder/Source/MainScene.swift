@@ -4,7 +4,7 @@ class MainScene: CCNode {
     weak var playButton: CCButton!
     
     // debug purposes
-    let memoryStorageAllowed = false
+    let memoryStorageAllowed = true
     
 
     func didLoadFromCCB() {
@@ -12,15 +12,10 @@ class MainScene: CCNode {
         // remove previous textures to free up memory
         CCTextureCache.sharedTextureCache().removeAllTextures()
         
-        // add level plate
-        for i in 1...5 {
-            
+        // add level plate for level 1
+        if GameManager.sharedInstance.levelDictionary["1"] == nil {
             let levelDict = ["isUnlocked": 0, "totalMoonCount": 0, "totalStarsAwarded": 0]
-            
-            if GameManager.sharedInstance.levelDictionary[String(i)] == nil {
-                GameManager.sharedInstance.levelDictionary[String(i)] = levelDict
-            }
-
+            GameManager.sharedInstance.levelDictionary["1"] = levelDict
         }
         
         // load game

@@ -291,8 +291,14 @@ class Gameplay: CCScene {
             "Moons awarded": "\(moonCount)/\(level.totalMoonCount)"
         ])
         
+        // create dictionary for next level if not nil
         let nextLevel = String((level.name.toInt()!) + 1)
+        if GameManager.sharedInstance.levelDictionary[nextLevel] == nil {
+            let levelDict = ["isUnlocked": 0, "totalMoonCount": 0, "totalStarsAwarded": 0]
+            GameManager.sharedInstance.levelDictionary[nextLevel] = levelDict
+        }
         
+        // unlock next level
         GameManager.sharedInstance.levelDictionary[nextLevel]!["isUnlocked"] = 1
         
         let currentStarsAwarded = GameManager.sharedInstance.levelDictionary[level.name]!["totalStarsAwarded"]

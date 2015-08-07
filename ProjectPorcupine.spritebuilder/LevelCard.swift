@@ -29,11 +29,15 @@ class LevelCard: CCNode {
         
         starArray = [star1, star2, star3]
         
-        totalStarsAwarded = levelDictionary[self.name]!["totalStarsAwarded"]!
-        
-        checkForUnlocked()
+        if levelDictionary[self.name] != nil {
+            totalStarsAwarded = levelDictionary[self.name]!["totalStarsAwarded"]!
+
+            checkForUnlocked()
+            
+        }
         
         showStars()
+
         
     }
     

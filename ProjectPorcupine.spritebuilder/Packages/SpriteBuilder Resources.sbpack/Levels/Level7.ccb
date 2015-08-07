@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>157</integer>
+	<integer>178</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -231,8 +231,68 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
+			</dict>
+			<dict>
+				<key>UUID</key>
+				<integer>168</integer>
+				<key>baseClass</key>
+				<string>CCBFile</string>
+				<key>children</key>
+				<array/>
+				<key>customClass</key>
+				<string></string>
+				<key>displayName</key>
+				<string>starBG</string>
+				<key>memberVarAssignmentName</key>
+				<string>starBackground</string>
+				<key>memberVarAssignmentType</key>
+				<integer>1</integer>
+				<key>properties</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>name</string>
+						<key>type</key>
+						<string>StringSimple</string>
+						<key>value</key>
+						<string></string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>position</string>
+						<key>type</key>
+						<string>Position</string>
+						<key>value</key>
+						<array>
+							<real>0.0</real>
+							<real>0.0</real>
+							<integer>0</integer>
+							<integer>0</integer>
+							<integer>0</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>scale</string>
+						<key>type</key>
+						<string>ScaleLock</string>
+						<key>value</key>
+						<array>
+							<real>1</real>
+							<real>1</real>
+							<false/>
+							<integer>0</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>ccbFile</string>
+						<key>type</key>
+						<string>CCBFile</string>
+						<key>value</key>
+						<string>StarsBackground.ccb</string>
+					</dict>
+				</array>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -3364,7 +3424,7 @@
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>Assets/Levels/Level2/Layer 1.png</string>
+									<string>Assets/Levels/Level7/Layer 1.png</string>
 								</array>
 							</dict>
 							<dict>
@@ -3472,7 +3532,7 @@
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>Assets/Levels/Level2/Layer 2.png</string>
+									<string>Assets/Levels/Level7/Layer 2.png</string>
 								</array>
 							</dict>
 							<dict>
@@ -3580,7 +3640,7 @@
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>Assets/Levels/Level2/Layer 3.png</string>
+									<string>Assets/Levels/Level7/Layer 3.png</string>
 								</array>
 							</dict>
 							<dict>
@@ -3688,7 +3748,7 @@
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>Assets/Levels/Level2/Layer 4.png</string>
+									<string>Assets/Levels/Level7/Layer 4.png</string>
 								</array>
 							</dict>
 							<dict>
@@ -3796,7 +3856,7 @@
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>Assets/Levels/Level2/Layer 5.png</string>
+									<string>Assets/Levels/Level7/Layer 5.png</string>
 								</array>
 							</dict>
 							<dict>
@@ -3866,7 +3926,7 @@
 								<key>value</key>
 								<array>
 									<real>1020.7755126953125</real>
-									<real>211.62118530273438</real>
+									<real>173.62118530273438</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -3984,7 +4044,7 @@
 				<key>type</key>
 				<string>StringSimple</string>
 				<key>value</key>
-				<string></string>
+				<string>7</string>
 			</dict>
 			<dict>
 				<key>name</key>

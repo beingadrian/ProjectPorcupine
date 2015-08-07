@@ -189,6 +189,11 @@
 			<key>format_ios</key>
 			<integer>3</integer>
 		</dict>
+		<key>Assets/Levels/Level4</key>
+		<dict>
+			<key>trimSprites</key>
+			<true/>
+		</dict>
 		<key>Assets/Levels/Level4/base_left.png</key>
 		<dict>
 			<key>format_ios</key>
@@ -205,6 +210,16 @@
 			<integer>3</integer>
 		</dict>
 		<key>Assets/Levels/Level4/grass_right.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
+		<key>Assets/Levels/Level4/left.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
+		<key>Assets/Levels/Level4/right.png</key>
 		<dict>
 			<key>format_ios</key>
 			<integer>3</integer>
@@ -229,15 +244,55 @@
 			<key>format_ios</key>
 			<integer>3</integer>
 		</dict>
-		<key>Assets/Levels/Level70</key>
+		<key>Assets/Levels/Level6/base_left.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
+		<key>Assets/Levels/Level6/base_right.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
+		<key>Assets/Levels/Level6/grass_left.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
+		<key>Assets/Levels/Level6/grass_right.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
+		<key>Assets/Levels/Level7</key>
 		<dict>
 			<key>trimSprites</key>
 			<true/>
 		</dict>
-		<key>Assets/Levels/Level80</key>
+		<key>Assets/Levels/Level7/Layer 1.png</key>
 		<dict>
-			<key>trimSprites</key>
-			<true/>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
+		<key>Assets/Levels/Level7/Layer 2.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
+		<key>Assets/Levels/Level7/Layer 3.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
+		<key>Assets/Levels/Level7/Layer 4.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
+		<key>Assets/Levels/Level7/Layer 5.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
 		</dict>
 		<key>Assets/Menu</key>
 		<dict/>
