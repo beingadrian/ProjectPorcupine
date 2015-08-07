@@ -11,6 +11,7 @@
 		332CD6B51B6AD9D400F1E49E /* Obstacle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332CD6B41B6AD9D400F1E49E /* Obstacle.swift */; };
 		332CD6BA1B6ADDEA00F1E49E /* GravityStone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332CD6B91B6ADDEA00F1E49E /* GravityStone.swift */; };
 		332CD6BE1B6B3B6D00F1E49E /* GravityTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332CD6BD1B6B3B6D00F1E49E /* GravityTimer.swift */; };
+		333347321B74936400CC4ACE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 333347311B74936400CC4ACE /* Images.xcassets */; };
 		334356D31B6584040083FB51 /* Gameplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334356D21B6584040083FB51 /* Gameplay.swift */; };
 		334356DF1B6585320083FB51 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334356DE1B6585320083FB51 /* Level.swift */; };
 		334356E21B6586BE0083FB51 /* Armadillo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334356E11B6586BE0083FB51 /* Armadillo.swift */; };
@@ -18,7 +19,6 @@
 		334356EC1B65AD950083FB51 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334356EB1B65AD950083FB51 /* Character.swift */; };
 		334356F01B65B0650083FB51 /* GameWonScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334356EF1B65B0650083FB51 /* GameWonScreen.swift */; };
 		334D75BB1B66A71900EA3733 /* Collectible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334D75BA1B66A71900EA3733 /* Collectible.swift */; };
-		33847D4F1B743395001949A0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 33847D4E1B743395001949A0 /* GoogleService-Info.plist */; };
 		33AD03291B728F9000D3B3B1 /* InfoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AD03281B728F9000D3B3B1 /* InfoPage.swift */; };
 		33AD032F1B73177300D3B3B1 /* Tutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AD032E1B73177300D3B3B1 /* Tutorial.swift */; };
 		33BFB5821B6BE244009369E7 /* DeadlyObstacle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BFB5811B6BE244009369E7 /* DeadlyObstacle.swift */; };
@@ -176,6 +176,7 @@
 		332CD6B41B6AD9D400F1E49E /* Obstacle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Obstacle.swift; sourceTree = "<group>"; };
 		332CD6B91B6ADDEA00F1E49E /* GravityStone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GravityStone.swift; sourceTree = "<group>"; };
 		332CD6BD1B6B3B6D00F1E49E /* GravityTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GravityTimer.swift; sourceTree = "<group>"; };
+		333347311B74936400CC4ACE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "ProjectArmadillo iOS/Images.xcassets"; sourceTree = SOURCE_ROOT; };
 		334356D21B6584040083FB51 /* Gameplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gameplay.swift; sourceTree = "<group>"; };
 		334356DE1B6585320083FB51 /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
 		334356E11B6586BE0083FB51 /* Armadillo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Armadillo.swift; sourceTree = "<group>"; };
@@ -183,7 +184,6 @@
 		334356EB1B65AD950083FB51 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		334356EF1B65B0650083FB51 /* GameWonScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameWonScreen.swift; sourceTree = "<group>"; };
 		334D75BA1B66A71900EA3733 /* Collectible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collectible.swift; sourceTree = "<group>"; };
-		33847D4E1B743395001949A0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		33AD03281B728F9000D3B3B1 /* InfoPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoPage.swift; sourceTree = "<group>"; };
 		33AD032E1B73177300D3B3B1 /* Tutorial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutorial.swift; sourceTree = "<group>"; };
 		33BFB5811B6BE244009369E7 /* DeadlyObstacle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeadlyObstacle.swift; sourceTree = "<group>"; };
@@ -594,7 +594,6 @@
 		B77F1B2517B978D7009739AE = {
 			isa = PBXGroup;
 			children = (
-				33847D4E1B743395001949A0 /* GoogleService-Info.plist */,
 				B737893C1807616C0076A88C /* Source */,
 				B77F1B4617B978D7009739AE /* Resources */,
 				9222E2B918734FF800A246C7 /* libs */,
@@ -647,6 +646,7 @@
 		B77F1B4617B978D7009739AE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				333347311B74936400CC4ACE /* Images.xcassets */,
 				7A40366119DDF8C2007B6E8F /* Platforms */,
 				5B12100D197483EE004C1E1D /* res */,
 				B73789911807667A0076A88C /* Icons */,
@@ -869,6 +869,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B71F5919188484E7003F4D28 /* Settings.png in Resources */,
+				333347321B74936400CC4ACE /* Images.xcassets in Resources */,
 				B7378978180762440076A88C /* Default@2x.png in Resources */,
 				B71F5914188484E7003F4D28 /* iPad@2x.png in Resources */,
 				B71F5913188484E7003F4D28 /* iPad.png in Resources */,
@@ -877,7 +878,6 @@
 				B737893B180761570076A88C /* Published-iOS in Resources */,
 				B71F591A188484E7003F4D28 /* Settings@2x.png in Resources */,
 				B7378976180762440076A88C /* Default-Landscape~ipad.png in Resources */,
-				33847D4F1B743395001949A0 /* GoogleService-Info.plist in Resources */,
 				B71F5915188484E7003F4D28 /* iPhone-old.png in Resources */,
 				B71F5917188484E7003F4D28 /* iPhone.png in Resources */,
 				B7378975180762440076A88C /* Default-568h@2x.png in Resources */,
@@ -1308,6 +1308,8 @@
 			baseConfigurationReference = 6D29C45B95DC33A1F8AECAF4 /* Pods-ProjectArmadillo iOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1346,6 +1348,8 @@
 			baseConfigurationReference = 09C559CE91007FADC7005EE4 /* Pods-ProjectArmadillo iOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

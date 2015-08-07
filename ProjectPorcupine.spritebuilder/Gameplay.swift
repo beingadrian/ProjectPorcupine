@@ -72,9 +72,7 @@ class Gameplay: CCScene {
         } else {
             userInteractionEnabled = true
         }
-        
-
-        
+    
     }
     
     func showTutorial() {
@@ -234,7 +232,7 @@ class Gameplay: CCScene {
     func gameOver() {
         
         // Mixpanel
-        Mixpanel.sharedInstance().track("User death", properties: ["Level": level.name.toInt()!])
+        Mixpanel.sharedInstance().track("User death", properties: ["Level": level.name])
         
         paused = true
         animationManager.runAnimationsForSequenceNamed("GameOver")

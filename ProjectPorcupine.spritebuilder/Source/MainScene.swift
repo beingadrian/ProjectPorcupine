@@ -4,7 +4,7 @@ class MainScene: CCNode {
     weak var playButton: CCButton!
     
     // debug purposes
-    let memoryStorageAllowed = true
+    let memoryStorageAllowed = false
     
 
     func didLoadFromCCB() {
@@ -70,10 +70,5 @@ class MainScene: CCNode {
         addChild(infoPage)
         
     }
-    
-    
-    // MARK: - Load game
-    
-    
     
 }
