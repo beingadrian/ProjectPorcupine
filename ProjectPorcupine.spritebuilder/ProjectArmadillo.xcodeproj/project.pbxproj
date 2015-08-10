@@ -1337,7 +1337,7 @@
 					"$(inherited)",
 				);
 				PRODUCT_NAME = ProjectArmadillo;
-				PROVISIONING_PROFILE = "2ad2c7ae-fe06-41f9-8962-5cb49f3510ea";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Source/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1376,7 +1376,7 @@
 					"$(inherited)",
 				);
 				PRODUCT_NAME = ProjectArmadillo;
-				PROVISIONING_PROFILE = "2ad2c7ae-fe06-41f9-8962-5cb49f3510ea";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Source/Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;

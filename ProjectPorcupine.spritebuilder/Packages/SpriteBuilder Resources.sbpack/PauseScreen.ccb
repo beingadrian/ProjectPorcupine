@@ -51,7 +51,7 @@
 				<key>displayName</key>
 				<string>continueGameBtn</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>continueButton</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>properties</key>
@@ -364,6 +364,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>

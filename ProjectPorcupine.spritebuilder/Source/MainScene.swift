@@ -18,7 +18,7 @@ class MainScene: CCNode {
             GameManager.sharedInstance.levelDictionary["1"] = levelDict
         }
         
-        // load game
+        // load game if memoryStorageAllowed
         if memoryStorageAllowed {
             GameManager.sharedInstance.loadLevelDictionary()
             GameManager.sharedInstance.loadTutorialHistory()

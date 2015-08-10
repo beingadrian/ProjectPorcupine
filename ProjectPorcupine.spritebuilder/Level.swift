@@ -12,8 +12,6 @@ class Level: CCNode {
     weak var startingPoint: CCNode!
     weak var worldBoundary: CCNode!
     weak var collectibles: CCNode!
-    
-    // test
     weak var starBackground: CCNode!
     
     var totalMoonCount = 0

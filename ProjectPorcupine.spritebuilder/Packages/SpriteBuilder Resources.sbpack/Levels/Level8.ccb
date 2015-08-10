@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>184</integer>
+	<integer>398</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -149,7 +149,7 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>-1.0028300285339355</real>
+							<real>-1</real>
 							<real>0.0</real>
 							<integer>0</integer>
 							<integer>2</integer>
@@ -163,7 +163,7 @@
 						<string>Size</string>
 						<key>value</key>
 						<array>
-							<real>9</real>
+							<real>5</real>
 							<real>5</real>
 							<integer>2</integer>
 							<integer>2</integer>
@@ -243,6 +243,8 @@
 				<string></string>
 				<key>displayName</key>
 				<string>starBG</string>
+				<key>locked</key>
+				<true/>
 				<key>memberVarAssignmentName</key>
 				<string>starBackground</string>
 				<key>memberVarAssignmentType</key>
@@ -305,6 +307,8 @@
 				<string></string>
 				<key>displayName</key>
 				<string>endGoal</string>
+				<key>locked</key>
+				<true/>
 				<key>memberVarAssignmentName</key>
 				<string></string>
 				<key>memberVarAssignmentType</key>
@@ -326,8 +330,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>3973.89794921875</real>
-							<real>157.0201416015625</real>
+							<real>1577.6488037109375</real>
+							<real>154.05003356933594</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -353,6 +357,827 @@
 						<string>CCBFile</string>
 						<key>value</key>
 						<string>Entities/Collectibles/EndGoal.ccb</string>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>UUID</key>
+				<integer>145</integer>
+				<key>baseClass</key>
+				<string>CCNode</string>
+				<key>children</key>
+				<array>
+					<dict>
+						<key>UUID</key>
+						<integer>152</integer>
+						<key>baseClass</key>
+						<string>CCBFile</string>
+						<key>children</key>
+						<array/>
+						<key>customClass</key>
+						<string></string>
+						<key>displayName</key>
+						<string>Trap1</string>
+						<key>locked</key>
+						<true/>
+						<key>memberVarAssignmentName</key>
+						<string></string>
+						<key>memberVarAssignmentType</key>
+						<integer>1</integer>
+						<key>properties</key>
+						<array>
+							<dict>
+								<key>name</key>
+								<string>name</string>
+								<key>type</key>
+								<string>StringSimple</string>
+								<key>value</key>
+								<string></string>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>position</string>
+								<key>type</key>
+								<string>Position</string>
+								<key>value</key>
+								<array>
+									<real>508.82183837890625</real>
+									<real>163.7379150390625</real>
+									<integer>0</integer>
+									<integer>0</integer>
+									<integer>0</integer>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>scale</string>
+								<key>type</key>
+								<string>ScaleLock</string>
+								<key>value</key>
+								<array>
+									<real>1</real>
+									<real>1</real>
+									<false/>
+									<integer>0</integer>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>ccbFile</string>
+								<key>type</key>
+								<string>CCBFile</string>
+								<key>value</key>
+								<string>Entities/WorldObjects/Trap1.ccb</string>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>UUID</key>
+						<integer>239</integer>
+						<key>baseClass</key>
+						<string>CCBFile</string>
+						<key>children</key>
+						<array/>
+						<key>customClass</key>
+						<string></string>
+						<key>displayName</key>
+						<string>Trap1</string>
+						<key>locked</key>
+						<true/>
+						<key>memberVarAssignmentName</key>
+						<string></string>
+						<key>memberVarAssignmentType</key>
+						<integer>1</integer>
+						<key>properties</key>
+						<array>
+							<dict>
+								<key>name</key>
+								<string>name</string>
+								<key>type</key>
+								<string>StringSimple</string>
+								<key>value</key>
+								<string></string>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>position</string>
+								<key>type</key>
+								<string>Position</string>
+								<key>value</key>
+								<array>
+									<real>593.47027587890625</real>
+									<real>147.72334289550781</real>
+									<integer>0</integer>
+									<integer>0</integer>
+									<integer>0</integer>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>scale</string>
+								<key>type</key>
+								<string>ScaleLock</string>
+								<key>value</key>
+								<array>
+									<real>1</real>
+									<real>1</real>
+									<false/>
+									<integer>0</integer>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>ccbFile</string>
+								<key>type</key>
+								<string>CCBFile</string>
+								<key>value</key>
+								<string>Entities/WorldObjects/Trap1.ccb</string>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>UUID</key>
+						<integer>262</integer>
+						<key>baseClass</key>
+						<string>CCBFile</string>
+						<key>children</key>
+						<array/>
+						<key>customClass</key>
+						<string></string>
+						<key>displayName</key>
+						<string>Trap1</string>
+						<key>locked</key>
+						<true/>
+						<key>memberVarAssignmentName</key>
+						<string></string>
+						<key>memberVarAssignmentType</key>
+						<integer>1</integer>
+						<key>properties</key>
+						<array>
+							<dict>
+								<key>name</key>
+								<string>name</string>
+								<key>type</key>
+								<string>StringSimple</string>
+								<key>value</key>
+								<string></string>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>position</string>
+								<key>type</key>
+								<string>Position</string>
+								<key>value</key>
+								<array>
+									<real>1714.62158203125</real>
+									<real>163.7379150390625</real>
+									<integer>0</integer>
+									<integer>0</integer>
+									<integer>0</integer>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>scale</string>
+								<key>type</key>
+								<string>ScaleLock</string>
+								<key>value</key>
+								<array>
+									<real>1</real>
+									<real>1</real>
+									<false/>
+									<integer>0</integer>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>ccbFile</string>
+								<key>type</key>
+								<string>CCBFile</string>
+								<key>value</key>
+								<string>Entities/WorldObjects/Trap1.ccb</string>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>UUID</key>
+						<integer>197</integer>
+						<key>baseClass</key>
+						<string>CCSprite</string>
+						<key>children</key>
+						<array/>
+						<key>customClass</key>
+						<string></string>
+						<key>displayName</key>
+						<string>base_left</string>
+						<key>locked</key>
+						<true/>
+						<key>memberVarAssignmentName</key>
+						<string></string>
+						<key>memberVarAssignmentType</key>
+						<integer>1</integer>
+						<key>properties</key>
+						<array>
+							<dict>
+								<key>name</key>
+								<string>name</string>
+								<key>type</key>
+								<string>StringSimple</string>
+								<key>value</key>
+								<string></string>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>position</string>
+								<key>type</key>
+								<string>Position</string>
+								<key>value</key>
+								<array>
+									<real>0.0</real>
+									<real>-8</real>
+									<integer>0</integer>
+									<integer>0</integer>
+									<integer>0</integer>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>anchorPoint</string>
+								<key>type</key>
+								<string>Point</string>
+								<key>value</key>
+								<array>
+									<real>0.0</real>
+									<real>0.0</real>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>scale</string>
+								<key>type</key>
+								<string>ScaleLock</string>
+								<key>value</key>
+								<array>
+									<real>1</real>
+									<real>1</real>
+									<false/>
+									<integer>0</integer>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>spriteFrame</string>
+								<key>type</key>
+								<string>SpriteFrame</string>
+								<key>value</key>
+								<array>
+									<string></string>
+									<string>Assets/Levels/Level8/base_left.png</string>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>normalMapSpriteFrame</string>
+								<key>type</key>
+								<string>SpriteFrame</string>
+								<key>value</key>
+								<array>
+									<string></string>
+									<string></string>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>color</string>
+								<key>type</key>
+								<string>Color3</string>
+								<key>value</key>
+								<array>
+									<real>1</real>
+									<real>1</real>
+									<real>1</real>
+									<real>1</real>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>effects</string>
+								<key>type</key>
+								<string>EffectControl</string>
+								<key>value</key>
+								<array/>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>UUID</key>
+						<integer>198</integer>
+						<key>baseClass</key>
+						<string>CCSprite</string>
+						<key>children</key>
+						<array/>
+						<key>customClass</key>
+						<string></string>
+						<key>displayName</key>
+						<string>base_right</string>
+						<key>locked</key>
+						<true/>
+						<key>memberVarAssignmentName</key>
+						<string></string>
+						<key>memberVarAssignmentType</key>
+						<integer>1</integer>
+						<key>properties</key>
+						<array>
+							<dict>
+								<key>name</key>
+								<string>name</string>
+								<key>type</key>
+								<string>StringSimple</string>
+								<key>value</key>
+								<string></string>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>position</string>
+								<key>type</key>
+								<string>Position</string>
+								<key>value</key>
+								<array>
+									<real>1252</real>
+									<real>-8</real>
+									<integer>0</integer>
+									<integer>0</integer>
+									<integer>0</integer>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>anchorPoint</string>
+								<key>type</key>
+								<string>Point</string>
+								<key>value</key>
+								<array>
+									<real>0.0</real>
+									<real>0.0</real>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>scale</string>
+								<key>type</key>
+								<string>ScaleLock</string>
+								<key>value</key>
+								<array>
+									<real>1</real>
+									<real>1</real>
+									<false/>
+									<integer>0</integer>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>spriteFrame</string>
+								<key>type</key>
+								<string>SpriteFrame</string>
+								<key>value</key>
+								<array>
+									<string></string>
+									<string>Assets/Levels/Level8/base_right.png</string>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>normalMapSpriteFrame</string>
+								<key>type</key>
+								<string>SpriteFrame</string>
+								<key>value</key>
+								<array>
+									<string></string>
+									<string></string>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>color</string>
+								<key>type</key>
+								<string>Color3</string>
+								<key>value</key>
+								<array>
+									<real>1</real>
+									<real>1</real>
+									<real>1</real>
+									<real>1</real>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>effects</string>
+								<key>type</key>
+								<string>EffectControl</string>
+								<key>value</key>
+								<array/>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>UUID</key>
+						<integer>255</integer>
+						<key>baseClass</key>
+						<string>CCSprite</string>
+						<key>children</key>
+						<array/>
+						<key>customClass</key>
+						<string></string>
+						<key>displayName</key>
+						<string>grass_left</string>
+						<key>locked</key>
+						<true/>
+						<key>memberVarAssignmentName</key>
+						<string></string>
+						<key>memberVarAssignmentType</key>
+						<integer>1</integer>
+						<key>properties</key>
+						<array>
+							<dict>
+								<key>name</key>
+								<string>name</string>
+								<key>type</key>
+								<string>StringSimple</string>
+								<key>value</key>
+								<string></string>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>position</string>
+								<key>type</key>
+								<string>Position</string>
+								<key>value</key>
+								<array>
+									<real>0.0</real>
+									<real>126.11404418945312</real>
+									<integer>0</integer>
+									<integer>0</integer>
+									<integer>0</integer>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>anchorPoint</string>
+								<key>type</key>
+								<string>Point</string>
+								<key>value</key>
+								<array>
+									<real>0.0</real>
+									<real>0.0</real>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>scale</string>
+								<key>type</key>
+								<string>ScaleLock</string>
+								<key>value</key>
+								<array>
+									<real>1</real>
+									<real>1</real>
+									<false/>
+									<integer>0</integer>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>spriteFrame</string>
+								<key>type</key>
+								<string>SpriteFrame</string>
+								<key>value</key>
+								<array>
+									<string></string>
+									<string>Assets/Levels/Level8/grass_left.png</string>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>normalMapSpriteFrame</string>
+								<key>type</key>
+								<string>SpriteFrame</string>
+								<key>value</key>
+								<array>
+									<string></string>
+									<string></string>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>color</string>
+								<key>type</key>
+								<string>Color3</string>
+								<key>value</key>
+								<array>
+									<real>1</real>
+									<real>1</real>
+									<real>1</real>
+									<real>1</real>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>effects</string>
+								<key>type</key>
+								<string>EffectControl</string>
+								<key>value</key>
+								<array/>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>UUID</key>
+						<integer>256</integer>
+						<key>baseClass</key>
+						<string>CCSprite</string>
+						<key>children</key>
+						<array/>
+						<key>customClass</key>
+						<string></string>
+						<key>displayName</key>
+						<string>grass_right</string>
+						<key>locked</key>
+						<true/>
+						<key>memberVarAssignmentName</key>
+						<string></string>
+						<key>memberVarAssignmentType</key>
+						<integer>1</integer>
+						<key>properties</key>
+						<array>
+							<dict>
+								<key>name</key>
+								<string>name</string>
+								<key>type</key>
+								<string>StringSimple</string>
+								<key>value</key>
+								<string></string>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>position</string>
+								<key>type</key>
+								<string>Position</string>
+								<key>value</key>
+								<array>
+									<real>1277.9732666015625</real>
+									<real>147.72334289550781</real>
+									<integer>0</integer>
+									<integer>0</integer>
+									<integer>0</integer>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>anchorPoint</string>
+								<key>type</key>
+								<string>Point</string>
+								<key>value</key>
+								<array>
+									<real>0.0</real>
+									<real>0.0</real>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>scale</string>
+								<key>type</key>
+								<string>ScaleLock</string>
+								<key>value</key>
+								<array>
+									<real>1</real>
+									<real>1</real>
+									<false/>
+									<integer>0</integer>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>spriteFrame</string>
+								<key>type</key>
+								<string>SpriteFrame</string>
+								<key>value</key>
+								<array>
+									<string></string>
+									<string>Assets/Levels/Level8/grass_right.png</string>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>normalMapSpriteFrame</string>
+								<key>type</key>
+								<string>SpriteFrame</string>
+								<key>value</key>
+								<array>
+									<string></string>
+									<string></string>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>color</string>
+								<key>type</key>
+								<string>Color3</string>
+								<key>value</key>
+								<array>
+									<real>1</real>
+									<real>1</real>
+									<real>1</real>
+									<real>1</real>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>effects</string>
+								<key>type</key>
+								<string>EffectControl</string>
+								<key>value</key>
+								<array/>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>UUID</key>
+						<integer>272</integer>
+						<key>baseClass</key>
+						<string>CCSprite</string>
+						<key>children</key>
+						<array/>
+						<key>customClass</key>
+						<string></string>
+						<key>displayName</key>
+						<string>trees</string>
+						<key>locked</key>
+						<true/>
+						<key>memberVarAssignmentName</key>
+						<string></string>
+						<key>memberVarAssignmentType</key>
+						<integer>1</integer>
+						<key>properties</key>
+						<array>
+							<dict>
+								<key>name</key>
+								<string>name</string>
+								<key>type</key>
+								<string>StringSimple</string>
+								<key>value</key>
+								<string></string>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>position</string>
+								<key>type</key>
+								<string>Position</string>
+								<key>value</key>
+								<array>
+									<real>1224</real>
+									<real>467.61404418945312</real>
+									<integer>0</integer>
+									<integer>0</integer>
+									<integer>0</integer>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>anchorPoint</string>
+								<key>type</key>
+								<string>Point</string>
+								<key>value</key>
+								<array>
+									<real>0.5</real>
+									<real>0.5</real>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>scale</string>
+								<key>type</key>
+								<string>ScaleLock</string>
+								<key>value</key>
+								<array>
+									<real>1</real>
+									<real>1</real>
+									<false/>
+									<integer>0</integer>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>spriteFrame</string>
+								<key>type</key>
+								<string>SpriteFrame</string>
+								<key>value</key>
+								<array>
+									<string></string>
+									<string>Assets/Levels/Level8/trees.png</string>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>normalMapSpriteFrame</string>
+								<key>type</key>
+								<string>SpriteFrame</string>
+								<key>value</key>
+								<array>
+									<string></string>
+									<string></string>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>color</string>
+								<key>type</key>
+								<string>Color3</string>
+								<key>value</key>
+								<array>
+									<real>1</real>
+									<real>1</real>
+									<real>1</real>
+									<real>1</real>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>effects</string>
+								<key>type</key>
+								<string>EffectControl</string>
+								<key>value</key>
+								<array/>
+							</dict>
+						</array>
+					</dict>
+				</array>
+				<key>customClass</key>
+				<string></string>
+				<key>displayName</key>
+				<string>World</string>
+				<key>memberVarAssignmentName</key>
+				<string></string>
+				<key>memberVarAssignmentType</key>
+				<integer>1</integer>
+				<key>properties</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>name</string>
+						<key>type</key>
+						<string>StringSimple</string>
+						<key>value</key>
+						<string></string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>position</string>
+						<key>type</key>
+						<string>Position</string>
+						<key>value</key>
+						<array>
+							<real>0.0</real>
+							<real>0.0</real>
+							<integer>0</integer>
+							<integer>0</integer>
+							<integer>0</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>contentSize</string>
+						<key>type</key>
+						<string>Size</string>
+						<key>value</key>
+						<array>
+							<real>0.0</real>
+							<real>0.0</real>
+							<integer>0</integer>
+							<integer>0</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>anchorPoint</string>
+						<key>type</key>
+						<string>Point</string>
+						<key>value</key>
+						<array>
+							<real>0.0</real>
+							<real>0.0</real>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>scale</string>
+						<key>type</key>
+						<string>ScaleLock</string>
+						<key>value</key>
+						<array>
+							<real>1</real>
+							<real>1</real>
+							<false/>
+							<integer>0</integer>
+						</array>
 					</dict>
 				</array>
 			</dict>
@@ -405,158 +1230,500 @@
 							<key>points</key>
 							<array>
 								<array>
-									<real>-60.901775360107422</real>
-									<real>-80.09637451171875</real>
+									<real>-580.12347412109375</real>
+									<real>-82.260398864746094</real>
 								</array>
 								<array>
-									<real>-77.00091552734375</real>
-									<real>-22.186220169067383</real>
+									<real>-611.37060546875</real>
+									<real>51.589046478271484</real>
 								</array>
 								<array>
-									<real>-89.856849670410156</real>
-									<real>28.406898498535156</real>
+									<real>-608.87066650390625</real>
+									<real>69.542411804199219</real>
 								</array>
 								<array>
-									<real>-97.173881530761719</real>
-									<real>74.504600524902344</real>
+									<real>-596.37091064453125</real>
+									<real>84.655540466308594</real>
 								</array>
 								<array>
-									<real>-84.630996704101562</real>
-									<real>98.442520141601562</real>
+									<real>-580.2369384765625</real>
+									<real>92.949386596679688</real>
 								</array>
 								<array>
-									<real>-65.710227966308594</real>
-									<real>104.08577728271484</real>
+									<real>-525.129150390625</real>
+									<real>85.336112976074219</real>
 								</array>
 								<array>
-									<real>0.2474052906036377</real>
-									<real>96.768745422363281</real>
+									<real>-465.02142333984375</real>
+									<real>87.382347106933594</real>
 								</array>
 								<array>
-									<real>24.289676666259766</real>
-									<real>94.886268615722656</real>
+									<real>-422.97598266601562</real>
+									<real>88.062911987304688</real>
 								</array>
 								<array>
-									<real>50.736175537109375</real>
-									<real>102.51634979248047</real>
+									<real>-410.48077392578125</real>
+									<real>105.22228240966797</real>
 								</array>
 								<array>
-									<real>71.017669677734375</real>
-									<real>82.343376159667969</real>
+									<real>-395.25418090820312</real>
+									<real>146.92294311523438</real>
 								</array>
 								<array>
-									<real>85.021453857421875</real>
-									<real>74.504600524902344</real>
+									<real>-375.14120483398438</real>
+									<real>209.7574462890625</real>
 								</array>
 								<array>
-									<real>84.291000366210938</real>
-									<real>31.332876205444336</real>
+									<real>-352.98641967773438</real>
+									<real>262.13848876953125</real>
 								</array>
 								<array>
-									<real>77.182670593261719</real>
-									<real>-11.42146110534668</real>
+									<real>-339.007568359375</real>
+									<real>283.04550170898438</real>
 								</array>
 								<array>
-									<real>58.261905670166016</real>
-									<real>-57.101776123046875</real>
+									<real>-311.73956298828125</real>
+									<real>283.95294189453125</real>
 								</array>
 								<array>
-									<real>60.666133880615234</real>
-									<real>-76.648658752441406</real>
+									<real>-281.0595703125</real>
+									<real>281.90667724609375</real>
+								</array>
+								<array>
+									<real>-247.65277099609375</real>
+									<real>286.79315185546875</real>
+								</array>
+								<array>
+									<real>-224.93089294433594</real>
+									<real>289.97369384765625</real>
+								</array>
+								<array>
+									<real>-198.45683288574219</real>
+									<real>282.24697875976562</real>
+								</array>
+								<array>
+									<real>-172.54989624023438</real>
+									<real>271.22625732421875</real>
+								</array>
+								<array>
+									<real>-161.86953735351562</real>
+									<real>239.41203308105469</real>
+								</array>
+								<array>
+									<real>-151.52944946289062</real>
+									<real>183.73709106445312</real>
+								</array>
+								<array>
+									<real>-139.02969360351562</real>
+									<real>128.28446960449219</real>
+								</array>
+								<array>
+									<real>39.133705139160156</real>
+									<real>122.37715148925781</real>
+								</array>
+								<array>
+									<real>50.966510772705078</real>
+									<real>192.97456359863281</real>
+								</array>
+								<array>
+									<real>65.734817504882812</real>
+									<real>253.88079833984375</real>
+								</array>
+								<array>
+									<real>75.961479187011719</real>
+									<real>273.98928833007812</real>
+								</array>
+								<array>
+									<real>107.54887390136719</real>
+									<real>275.58181762695312</real>
+								</array>
+								<array>
+									<real>138.86073303222656</real>
+									<real>276.51846313476562</real>
+								</array>
+								<array>
+									<real>179.43771362304688</real>
+									<real>274.84304809570312</real>
+								</array>
+								<array>
+									<real>201.55339050292969</real>
+									<real>266.15444946289062</real>
+								</array>
+								<array>
+									<real>217.54685974121094</real>
+									<real>231.99537658691406</real>
+								</array>
+								<array>
+									<real>251.09095764160156</real>
+									<real>136.87820434570312</real>
+								</array>
+								<array>
+									<real>268.05026245117188</real>
+									<real>102.51018524169922</real>
+								</array>
+								<array>
+									<real>284.14227294921875</real>
+									<real>84.344566345214844</real>
+								</array>
+								<array>
+									<real>327.876953125</real>
+									<real>76.345863342285156</real>
+								</array>
+								<array>
+									<real>408.8968505859375</real>
+									<real>66.947685241699219</real>
+								</array>
+								<array>
+									<real>469.61447143554688</real>
+									<real>74.646781921386719</real>
+								</array>
+								<array>
+									<real>501.32937622070312</real>
+									<real>80.173728942871094</real>
+								</array>
+								<array>
+									<real>531.83404541015625</real>
+									<real>75.829437255859375</real>
+								</array>
+								<array>
+									<real>543.48321533203125</real>
+									<real>63.687492370605469</real>
+								</array>
+								<array>
+									<real>548.1231689453125</real>
+									<real>43.842502593994141</real>
+								</array>
+								<array>
+									<real>537.56207275390625</real>
+									<real>11.067131996154785</real>
+								</array>
+								<array>
+									<real>534.79461669921875</real>
+									<real>-54.881771087646484</real>
+								</array>
+								<array>
+									<real>538.0548095703125</real>
+									<real>-86.671600341796875</real>
 								</array>
 							</array>
 							<key>polygons</key>
 							<array>
 								<array>
 									<array>
-										<real>-60.901775360107422</real>
-										<real>-80.09637451171875</real>
+										<real>531.83404541015625</real>
+										<real>75.829437255859375</real>
 									</array>
 									<array>
-										<real>60.666133880615234</real>
-										<real>-76.648658752441406</real>
+										<real>501.32937622070312</real>
+										<real>80.173728942871094</real>
 									</array>
 									<array>
-										<real>58.261905670166016</real>
-										<real>-57.101776123046875</real>
-									</array>
-								</array>
-								<array>
-									<array>
-										<real>71.017669677734375</real>
-										<real>82.343376159667969</real>
+										<real>534.79461669921875</real>
+										<real>-54.881771087646484</real>
 									</array>
 									<array>
-										<real>50.736175537109375</real>
-										<real>102.51634979248047</real>
-									</array>
-									<array>
-										<real>24.289676666259766</real>
-										<real>94.886268615722656</real>
+										<real>537.56207275390625</real>
+										<real>11.067131996154785</real>
 									</array>
 								</array>
 								<array>
 									<array>
-										<real>71.017669677734375</real>
-										<real>82.343376159667969</real>
+										<real>537.56207275390625</real>
+										<real>11.067131996154785</real>
 									</array>
 									<array>
-										<real>24.289676666259766</real>
-										<real>94.886268615722656</real>
+										<real>548.1231689453125</real>
+										<real>43.842502593994141</real>
 									</array>
 									<array>
-										<real>0.2474052906036377</real>
-										<real>96.768745422363281</real>
+										<real>543.48321533203125</real>
+										<real>63.687492370605469</real>
+									</array>
+									<array>
+										<real>531.83404541015625</real>
+										<real>75.829437255859375</real>
 									</array>
 								</array>
 								<array>
 									<array>
-										<real>0.2474052906036377</real>
-										<real>96.768745422363281</real>
+										<real>534.79461669921875</real>
+										<real>-54.881771087646484</real>
 									</array>
 									<array>
-										<real>-65.710227966308594</real>
-										<real>104.08577728271484</real>
+										<real>501.32937622070312</real>
+										<real>80.173728942871094</real>
 									</array>
 									<array>
-										<real>-84.630996704101562</real>
-										<real>98.442520141601562</real>
+										<real>469.61447143554688</real>
+										<real>74.646781921386719</real>
+									</array>
+								</array>
+								<array>
+									<array>
+										<real>534.79461669921875</real>
+										<real>-54.881771087646484</real>
 									</array>
 									<array>
-										<real>-97.173881530761719</real>
-										<real>74.504600524902344</real>
+										<real>469.61447143554688</real>
+										<real>74.646781921386719</real>
 									</array>
 									<array>
-										<real>-89.856849670410156</real>
-										<real>28.406898498535156</real>
+										<real>408.8968505859375</real>
+										<real>66.947685241699219</real>
+									</array>
+								</array>
+								<array>
+									<array>
+										<real>534.79461669921875</real>
+										<real>-54.881771087646484</real>
 									</array>
 									<array>
-										<real>-77.00091552734375</real>
-										<real>-22.186220169067383</real>
+										<real>408.8968505859375</real>
+										<real>66.947685241699219</real>
 									</array>
 									<array>
-										<real>-60.901775360107422</real>
-										<real>-80.09637451171875</real>
+										<real>327.876953125</real>
+										<real>76.345863342285156</real>
+									</array>
+								</array>
+								<array>
+									<array>
+										<real>39.133705139160156</real>
+										<real>122.37715148925781</real>
 									</array>
 									<array>
-										<real>58.261905670166016</real>
-										<real>-57.101776123046875</real>
+										<real>284.14227294921875</real>
+										<real>84.344566345214844</real>
 									</array>
 									<array>
-										<real>77.182670593261719</real>
-										<real>-11.42146110534668</real>
+										<real>268.05026245117188</real>
+										<real>102.51018524169922</real>
+									</array>
+								</array>
+								<array>
+									<array>
+										<real>251.09095764160156</real>
+										<real>136.87820434570312</real>
 									</array>
 									<array>
-										<real>84.291000366210938</real>
-										<real>31.332876205444336</real>
+										<real>217.54685974121094</real>
+										<real>231.99537658691406</real>
 									</array>
 									<array>
-										<real>85.021453857421875</real>
-										<real>74.504600524902344</real>
+										<real>201.55339050292969</real>
+										<real>266.15444946289062</real>
 									</array>
 									<array>
-										<real>71.017669677734375</real>
-										<real>82.343376159667969</real>
+										<real>179.43771362304688</real>
+										<real>274.84304809570312</real>
+									</array>
+								</array>
+								<array>
+									<array>
+										<real>179.43771362304688</real>
+										<real>274.84304809570312</real>
+									</array>
+									<array>
+										<real>138.86073303222656</real>
+										<real>276.51846313476562</real>
+									</array>
+									<array>
+										<real>107.54887390136719</real>
+										<real>275.58181762695312</real>
+									</array>
+									<array>
+										<real>75.961479187011719</real>
+										<real>273.98928833007812</real>
+									</array>
+									<array>
+										<real>65.734817504882812</real>
+										<real>253.88079833984375</real>
+									</array>
+									<array>
+										<real>50.966510772705078</real>
+										<real>192.97456359863281</real>
+									</array>
+									<array>
+										<real>39.133705139160156</real>
+										<real>122.37715148925781</real>
+									</array>
+									<array>
+										<real>268.05026245117188</real>
+										<real>102.51018524169922</real>
+									</array>
+									<array>
+										<real>251.09095764160156</real>
+										<real>136.87820434570312</real>
+									</array>
+								</array>
+								<array>
+									<array>
+										<real>-151.52944946289062</real>
+										<real>183.73709106445312</real>
+									</array>
+									<array>
+										<real>-161.86953735351562</real>
+										<real>239.41203308105469</real>
+									</array>
+									<array>
+										<real>-172.54989624023438</real>
+										<real>271.22625732421875</real>
+									</array>
+								</array>
+								<array>
+									<array>
+										<real>-281.0595703125</real>
+										<real>281.90667724609375</real>
+									</array>
+									<array>
+										<real>-311.73956298828125</real>
+										<real>283.95294189453125</real>
+									</array>
+									<array>
+										<real>-339.007568359375</real>
+										<real>283.04550170898438</real>
+									</array>
+									<array>
+										<real>-352.98641967773438</real>
+										<real>262.13848876953125</real>
+									</array>
+								</array>
+								<array>
+									<array>
+										<real>-352.98641967773438</real>
+										<real>262.13848876953125</real>
+									</array>
+									<array>
+										<real>-375.14120483398438</real>
+										<real>209.7574462890625</real>
+									</array>
+									<array>
+										<real>-395.25418090820312</real>
+										<real>146.92294311523438</real>
+									</array>
+								</array>
+								<array>
+									<array>
+										<real>-395.25418090820312</real>
+										<real>146.92294311523438</real>
+									</array>
+									<array>
+										<real>-410.48077392578125</real>
+										<real>105.22228240966797</real>
+									</array>
+									<array>
+										<real>-139.02969360351562</real>
+										<real>128.28446960449219</real>
+									</array>
+									<array>
+										<real>-151.52944946289062</real>
+										<real>183.73709106445312</real>
+									</array>
+									<array>
+										<real>-172.54989624023438</real>
+										<real>271.22625732421875</real>
+									</array>
+									<array>
+										<real>-198.45683288574219</real>
+										<real>282.24697875976562</real>
+									</array>
+									<array>
+										<real>-224.93089294433594</real>
+										<real>289.97369384765625</real>
+									</array>
+									<array>
+										<real>-247.65277099609375</real>
+										<real>286.79315185546875</real>
+									</array>
+									<array>
+										<real>-281.0595703125</real>
+										<real>281.90667724609375</real>
+									</array>
+									<array>
+										<real>-352.98641967773438</real>
+										<real>262.13848876953125</real>
+									</array>
+								</array>
+								<array>
+									<array>
+										<real>284.14227294921875</real>
+										<real>84.344566345214844</real>
+									</array>
+									<array>
+										<real>39.133705139160156</real>
+										<real>122.37715148925781</real>
+									</array>
+									<array>
+										<real>-139.02969360351562</real>
+										<real>128.28446960449219</real>
+									</array>
+									<array>
+										<real>-410.48077392578125</real>
+										<real>105.22228240966797</real>
+									</array>
+									<array>
+										<real>-422.97598266601562</real>
+										<real>88.062911987304688</real>
+									</array>
+								</array>
+								<array>
+									<array>
+										<real>-525.129150390625</real>
+										<real>85.336112976074219</real>
+									</array>
+									<array>
+										<real>-580.2369384765625</real>
+										<real>92.949386596679688</real>
+									</array>
+									<array>
+										<real>-596.37091064453125</real>
+										<real>84.655540466308594</real>
+									</array>
+									<array>
+										<real>-608.87066650390625</real>
+										<real>69.542411804199219</real>
+									</array>
+								</array>
+								<array>
+									<array>
+										<real>-608.87066650390625</real>
+										<real>69.542411804199219</real>
+									</array>
+									<array>
+										<real>-611.37060546875</real>
+										<real>51.589046478271484</real>
+									</array>
+									<array>
+										<real>-580.12347412109375</real>
+										<real>-82.260398864746094</real>
+									</array>
+									<array>
+										<real>538.0548095703125</real>
+										<real>-86.671600341796875</real>
+									</array>
+									<array>
+										<real>534.79461669921875</real>
+										<real>-54.881771087646484</real>
+									</array>
+									<array>
+										<real>327.876953125</real>
+										<real>76.345863342285156</real>
+									</array>
+									<array>
+										<real>284.14227294921875</real>
+										<real>84.344566345214844</real>
+									</array>
+									<array>
+										<real>-422.97598266601562</real>
+										<real>88.062911987304688</real>
+									</array>
+									<array>
+										<real>-465.02142333984375</real>
+										<real>87.382347106933594</real>
+									</array>
+									<array>
+										<real>-525.129150390625</real>
+										<real>85.336112976074219</real>
 									</array>
 								</array>
 							</array>
@@ -578,8 +1745,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>-40.959938049316406</real>
-									<real>77.107589721679688</real>
+									<real>475.86175537109375</real>
+									<real>87.142959594726562</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -626,7 +1793,7 @@
 					</dict>
 					<dict>
 						<key>UUID</key>
-						<integer>134</integer>
+						<integer>370</integer>
 						<key>baseClass</key>
 						<string>CCNode</string>
 						<key>children</key>
@@ -666,772 +1833,664 @@
 							<key>points</key>
 							<array>
 								<array>
-									<real>-86.5927734375</real>
-									<real>-135.45204162597656</real>
+									<real>-140.4071044921875</real>
+									<real>41.366065979003906</real>
 								</array>
 								<array>
-									<real>-104.99180603027344</real>
-									<real>-125.83514404296875</real>
+									<real>-106.79598999023438</real>
+									<real>71.851036071777344</real>
 								</array>
 								<array>
-									<real>-119.31280517578125</real>
-									<real>-66.464096069335938</real>
+									<real>-91.989128112792969</real>
+									<real>94.360939025878906</real>
 								</array>
 								<array>
-									<real>-126.21243286132812</real>
-									<real>-26.113985061645508</real>
+									<real>-88.039054870605469</real>
+									<real>126.94314575195312</real>
 								</array>
 								<array>
-									<real>-144.61143493652344</real>
-									<real>0.85424727201461792</real>
+									<real>-94.25982666015625</real>
+									<real>176.80003356933594</real>
 								</array>
 								<array>
-									<real>-161.12380981445312</real>
-									<real>21.970541000366211</real>
+									<real>-104.22962951660156</real>
+									<real>226.95257568359375</real>
 								</array>
 								<array>
-									<real>-149.45329284667969</real>
-									<real>29.312652587890625</real>
+									<real>-109.76052093505859</real>
+									<real>248.27587890625</real>
 								</array>
 								<array>
-									<real>-97.499443054199219</real>
-									<real>46.977027893066406</real>
+									<real>-129.89723205566406</real>
+									<real>270.09591674804688</real>
 								</array>
 								<array>
-									<real>-42.306571960449219</real>
-									<real>90.148765563964844</real>
+									<real>-156.98402404785156</real>
+									<real>292.85812377929688</real>
 								</array>
 								<array>
-									<real>-17.116447448730469</real>
-									<real>132.2769775390625</real>
+									<real>-185.21798706054688</real>
+									<real>311.41793823242188</real>
 								</array>
 								<array>
-									<real>-1.0173089504241943</real>
-									<real>217.57278442382812</real>
+									<real>-202.20094299316406</real>
+									<real>329.58355712890625</real>
 								</array>
 								<array>
-									<real>1.5830984115600586</real>
-									<real>299.2706298828125</real>
+									<real>-206.84091186523438</real>
+									<real>354.65982055664062</real>
 								</array>
 								<array>
-									<real>-11.377188682556152</real>
-									<real>425.5426025390625</real>
+									<real>-203.38360595703125</real>
+									<real>375.4903564453125</real>
 								</array>
 								<array>
-									<real>-21.912378311157227</real>
-									<real>526.96258544921875</real>
+									<real>-181.16935729980469</real>
+									<real>398.88726806640625</real>
 								</array>
 								<array>
-									<real>-26.616481781005859</real>
-									<real>611.423583984375</real>
+									<real>-170.706787109375</real>
+									<real>413.59951782226562</real>
 								</array>
 								<array>
-									<real>-25.677330017089844</real>
-									<real>657.208251953125</real>
+									<real>-161.82109069824219</real>
+									<real>443.31576538085938</real>
 								</array>
 								<array>
-									<real>-17.312623977661133</real>
-									<real>657.8385009765625</real>
+									<real>-150.27047729492188</real>
+									<real>460.09765625</real>
 								</array>
 								<array>
-									<real>-0.58738434314727783</real>
-									<real>638.2874755859375</real>
+									<real>-136.84336853027344</real>
+									<real>465.52999877929688</real>
 								</array>
 								<array>
-									<real>16.97265625</real>
-									<real>687.419677734375</real>
+									<real>-113.14686584472656</real>
+									<real>456.93997192382812</real>
 								</array>
 								<array>
-									<real>40.075775146484375</real>
-									<real>711.46197509765625</real>
+									<real>-76.125755310058594</real>
+									<real>451.59829711914062</real>
 								</array>
 								<array>
-									<real>52.618663787841797</real>
-									<real>720.13555908203125</real>
+									<real>-51.049476623535156</real>
+									<real>449.4261474609375</real>
 								</array>
 								<array>
-									<real>71.435081481933594</real>
-									<real>772.298095703125</real>
+									<real>-14.521140098571777</real>
+									<real>442.11734008789062</real>
 								</array>
 								<array>
-									<real>81.586250305175781</real>
-									<real>777.002197265625</real>
+									<real>33.845596313476562</real>
+									<real>450.269775390625</real>
 								</array>
 								<array>
-									<real>103.74604797363281</real>
-									<real>769.580810546875</real>
+									<real>81.431777954101562</real>
+									<real>443.65478515625</real>
 								</array>
 								<array>
-									<real>126.53194427490234</real>
-									<real>772.1937255859375</real>
+									<real>105.81422424316406</real>
+									<real>410.0870361328125</real>
 								</array>
 								<array>
-									<real>152.66539001464844</real>
-									<real>787.87548828125</real>
+									<real>115.70906066894531</real>
+									<real>378.90036010742188</real>
 								</array>
 								<array>
-									<real>168.55583190917969</real>
-									<real>788.29290771484375</real>
+									<real>122.12694549560547</real>
+									<real>353.42987060546875</real>
 								</array>
 								<array>
-									<real>214.75788879394531</real>
-									<real>774.3892822265625</real>
+									<real>150.97589111328125</real>
+									<real>300.3482666015625</real>
 								</array>
 								<array>
-									<real>260.4173583984375</real>
-									<real>775.921142578125</real>
+									<real>167.04820251464844</real>
+									<real>267.04464721679688</real>
 								</array>
 								<array>
-									<real>289.68548583984375</real>
-									<real>774.98199462890625</real>
+									<real>159.23872375488281</real>
+									<real>230.38621520996094</real>
 								</array>
 								<array>
-									<real>340.80035400390625</real>
-									<real>758.15240478515625</real>
+									<real>137.91148376464844</real>
+									<real>180.82499694824219</real>
 								</array>
 								<array>
-									<real>368.883056640625</real>
-									<real>764.48016357421875</real>
+									<real>119.74586486816406</real>
+									<real>125.922119140625</real>
 								</array>
 								<array>
-									<real>394.28604125976562</real>
-									<real>768.87127685546875</real>
+									<real>105.55397796630859</real>
+									<real>96.544914245605469</real>
 								</array>
 								<array>
-									<real>428.46697998046875</real>
-									<real>756.01531982421875</real>
+									<real>96.644630432128906</real>
+									<real>72.0166015625</real>
 								</array>
 								<array>
-									<real>447.08721923828125</real>
-									<real>745.01678466796875</real>
+									<real>88.768135070800781</real>
+									<real>46.293811798095703</real>
 								</array>
 								<array>
-									<real>464.43856811523438</real>
-									<real>741.88214111328125</real>
+									<real>95.481681823730469</real>
+									<real>3.1504793167114258</real>
 								</array>
 								<array>
-									<real>490.572021484375</real>
-									<real>710.5186767578125</real>
+									<real>99.628868103027344</real>
+									<real>-10.375176429748535</real>
 								</array>
 								<array>
-									<real>502.07138061523438</real>
-									<real>674.1422119140625</real>
+									<real>132.18742370605469</real>
+									<real>-16.509223937988281</real>
 								</array>
 								<array>
-									<real>498.41079711914062</real>
-									<real>642.052490234375</real>
+									<real>201.98390197753906</real>
+									<real>1.4592796564102173</real>
 								</array>
 								<array>
-									<real>475.83358764648438</real>
-									<real>595.804443359375</real>
+									<real>238.81184387207031</real>
+									<real>6.9901728630065918</real>
 								</array>
 								<array>
-									<real>472.38168334960938</real>
-									<real>569.46234130859375</real>
+									<real>305.15496826171875</real>
+									<real>-18.283210754394531</real>
 								</array>
 								<array>
-									<real>460.98666381835938</real>
-									<real>551.27203369140625</real>
+									<real>338.32455444335938</real>
+									<real>-47.112449645996094</real>
 								</array>
 								<array>
-									<real>452.54681396484375</real>
-									<real>507.9375</real>
+									<real>360.93301391601562</real>
+									<real>-83.542228698730469</real>
 								</array>
 								<array>
-									<real>444.28646850585938</real>
-									<real>385.947998046875</real>
+									<real>380.04476928710938</real>
+									<real>-119.97202301025391</real>
 								</array>
 								<array>
-									<real>444.703857421875</real>
-									<real>362.95339965820312</real>
+									<real>380.73464965820312</real>
+									<real>-186.01948547363281</real>
 								</array>
 								<array>
-									<real>465.19406127929688</real>
-									<real>296.36550903320312</real>
+									<real>-183.25477600097656</real>
+									<real>-189.25602722167969</real>
 								</array>
 								<array>
-									<real>459.49237060546875</real>
-									<real>259.27944946289062</real>
+									<real>-192.33758544921875</real>
+									<real>-164.47541809082031</real>
 								</array>
 								<array>
-									<real>424.47247314453125</real>
-									<real>244.74974060058594</real>
+									<real>-198.06558227539062</real>
+									<real>-124.59226989746094</real>
 								</array>
 								<array>
-									<real>342.72872924804688</real>
-									<real>226.87667846679688</real>
+									<real>-192.92890930175781</real>
+									<real>-108.79591369628906</real>
 								</array>
 								<array>
-									<real>326.31655883789062</real>
-									<real>216.21206665039062</real>
+									<real>-192.53469848632812</real>
+									<real>-94.477874755859375</real>
 								</array>
 								<array>
-									<real>319.20822143554688</real>
-									<real>187.6785888671875</real>
+									<real>-204.6766357421875</real>
+									<real>-51.732704162597656</real>
 								</array>
 								<array>
-									<real>316.59530639648438</real>
-									<real>157.15406799316406</real>
+									<real>-207.64117431640625</real>
+									<real>-38.798377990722656</real>
 								</array>
 								<array>
-									<real>320.36026000976562</real>
-									<real>121.6124267578125</real>
+									<real>-203.98675537109375</real>
+									<real>-23.494794845581055</real>
 								</array>
 								<array>
-									<real>365.14312744140625</real>
-									<real>108.10531616210938</real>
-								</array>
-								<array>
-									<real>475.42449951171875</real>
-									<real>98.071006774902344</real>
-								</array>
-								<array>
-									<real>503.75347900390625</real>
-									<real>76.01556396484375</real>
-								</array>
-								<array>
-									<real>543.3731689453125</real>
-									<real>62.738067626953125</real>
-								</array>
-								<array>
-									<real>715.24615478515625</real>
-									<real>53.889175415039062</real>
-								</array>
-								<array>
-									<real>847.6873779296875</real>
-									<real>59.949813842773438</real>
-								</array>
-								<array>
-									<real>958.8953857421875</real>
-									<real>55.3751220703125</real>
-								</array>
-								<array>
-									<real>1032.5916748046875</real>
-									<real>52.136093139648438</real>
-								</array>
-								<array>
-									<real>1070.43310546875</real>
-									<real>44.710536956787109</real>
-								</array>
-								<array>
-									<real>1086.832763671875</real>
-									<real>24.028341293334961</real>
-								</array>
-								<array>
-									<real>1094.7760009765625</real>
-									<real>-6.4961600303649902</real>
-								</array>
-								<array>
-									<real>1058.1907958984375</real>
-									<real>-133.71148681640625</real>
+									<real>-177.42822265625</real>
+									<real>7.9008111953735352</real>
 								</array>
 							</array>
 							<key>polygons</key>
 							<array>
 								<array>
 									<array>
-										<real>1086.832763671875</real>
-										<real>24.028341293334961</real>
+										<real>-177.42822265625</real>
+										<real>7.9008111953735352</real>
 									</array>
 									<array>
-										<real>1070.43310546875</real>
-										<real>44.710536956787109</real>
+										<real>-203.98675537109375</real>
+										<real>-23.494794845581055</real>
 									</array>
 									<array>
-										<real>1032.5916748046875</real>
-										<real>52.136093139648438</real>
+										<real>-207.64117431640625</real>
+										<real>-38.798377990722656</real>
 									</array>
 									<array>
-										<real>958.8953857421875</real>
-										<real>55.3751220703125</real>
+										<real>-204.6766357421875</real>
+										<real>-51.732704162597656</real>
 									</array>
 									<array>
-										<real>847.6873779296875</real>
-										<real>59.949813842773438</real>
-									</array>
-									<array>
-										<real>715.24615478515625</real>
-										<real>53.889175415039062</real>
+										<real>-192.53469848632812</real>
+										<real>-94.477874755859375</real>
 									</array>
 								</array>
 								<array>
 									<array>
-										<real>1058.1907958984375</real>
-										<real>-133.71148681640625</real>
+										<real>-192.92890930175781</real>
+										<real>-108.79591369628906</real>
 									</array>
 									<array>
-										<real>1094.7760009765625</real>
-										<real>-6.4961600303649902</real>
+										<real>-198.06558227539062</real>
+										<real>-124.59226989746094</real>
 									</array>
 									<array>
-										<real>1086.832763671875</real>
-										<real>24.028341293334961</real>
-									</array>
-									<array>
-										<real>715.24615478515625</real>
-										<real>53.889175415039062</real>
-									</array>
-									<array>
-										<real>543.3731689453125</real>
-										<real>62.738067626953125</real>
+										<real>-192.33758544921875</real>
+										<real>-164.47541809082031</real>
 									</array>
 								</array>
 								<array>
 									<array>
-										<real>503.75347900390625</real>
-										<real>76.01556396484375</real>
+										<real>360.93301391601562</real>
+										<real>-83.542228698730469</real>
 									</array>
 									<array>
-										<real>475.42449951171875</real>
-										<real>98.071006774902344</real>
+										<real>338.32455444335938</real>
+										<real>-47.112449645996094</real>
 									</array>
 									<array>
-										<real>365.14312744140625</real>
-										<real>108.10531616210938</real>
-									</array>
-								</array>
-								<array>
-									<array>
-										<real>-97.499443054199219</real>
-										<real>46.977027893066406</real>
+										<real>305.15496826171875</real>
+										<real>-18.283210754394531</real>
 									</array>
 									<array>
-										<real>-149.45329284667969</real>
-										<real>29.312652587890625</real>
+										<real>238.81184387207031</real>
+										<real>6.9901728630065918</real>
 									</array>
 									<array>
-										<real>-161.12380981445312</real>
-										<real>21.970541000366211</real>
+										<real>201.98390197753906</real>
+										<real>1.4592796564102173</real>
 									</array>
 									<array>
-										<real>-144.61143493652344</real>
-										<real>0.85424727201461792</real>
+										<real>132.18742370605469</real>
+										<real>-16.509223937988281</real>
 									</array>
 								</array>
 								<array>
 									<array>
-										<real>-97.499443054199219</real>
-										<real>46.977027893066406</real>
+										<real>-177.42822265625</real>
+										<real>7.9008111953735352</real>
 									</array>
 									<array>
-										<real>-144.61143493652344</real>
-										<real>0.85424727201461792</real>
+										<real>-192.53469848632812</real>
+										<real>-94.477874755859375</real>
 									</array>
 									<array>
-										<real>-126.21243286132812</real>
-										<real>-26.113985061645508</real>
-									</array>
-								</array>
-								<array>
-									<array>
-										<real>-126.21243286132812</real>
-										<real>-26.113985061645508</real>
+										<real>-192.92890930175781</real>
+										<real>-108.79591369628906</real>
 									</array>
 									<array>
-										<real>-119.31280517578125</real>
-										<real>-66.464096069335938</real>
+										<real>-192.33758544921875</real>
+										<real>-164.47541809082031</real>
 									</array>
 									<array>
-										<real>-42.306571960449219</real>
-										<real>90.148765563964844</real>
+										<real>-183.25477600097656</real>
+										<real>-189.25602722167969</real>
 									</array>
 									<array>
-										<real>-97.499443054199219</real>
-										<real>46.977027893066406</real>
-									</array>
-								</array>
-								<array>
-									<array>
-										<real>-119.31280517578125</real>
-										<real>-66.464096069335938</real>
+										<real>380.73464965820312</real>
+										<real>-186.01948547363281</real>
 									</array>
 									<array>
-										<real>-104.99180603027344</real>
-										<real>-125.83514404296875</real>
+										<real>380.04476928710938</real>
+										<real>-119.97202301025391</real>
 									</array>
 									<array>
-										<real>-86.5927734375</real>
-										<real>-135.45204162597656</real>
+										<real>360.93301391601562</real>
+										<real>-83.542228698730469</real>
 									</array>
 									<array>
-										<real>1058.1907958984375</real>
-										<real>-133.71148681640625</real>
+										<real>132.18742370605469</real>
+										<real>-16.509223937988281</real>
 									</array>
 									<array>
-										<real>543.3731689453125</real>
-										<real>62.738067626953125</real>
-									</array>
-									<array>
-										<real>503.75347900390625</real>
-										<real>76.01556396484375</real>
-									</array>
-									<array>
-										<real>365.14312744140625</real>
-										<real>108.10531616210938</real>
-									</array>
-									<array>
-										<real>-17.116447448730469</real>
-										<real>132.2769775390625</real>
-									</array>
-									<array>
-										<real>-42.306571960449219</real>
-										<real>90.148765563964844</real>
+										<real>99.628868103027344</real>
+										<real>-10.375176429748535</real>
 									</array>
 								</array>
 								<array>
 									<array>
-										<real>-1.0173089504241943</real>
-										<real>217.57278442382812</real>
+										<real>95.481681823730469</real>
+										<real>3.1504793167114258</real>
 									</array>
 									<array>
-										<real>-17.116447448730469</real>
-										<real>132.2769775390625</real>
+										<real>-91.989128112792969</real>
+										<real>94.360939025878906</real>
 									</array>
 									<array>
-										<real>365.14312744140625</real>
-										<real>108.10531616210938</real>
-									</array>
-									<array>
-										<real>320.36026000976562</real>
-										<real>121.6124267578125</real>
+										<real>-106.79598999023438</real>
+										<real>71.851036071777344</real>
 									</array>
 								</array>
 								<array>
 									<array>
-										<real>-1.0173089504241943</real>
-										<real>217.57278442382812</real>
+										<real>95.481681823730469</real>
+										<real>3.1504793167114258</real>
 									</array>
 									<array>
-										<real>320.36026000976562</real>
-										<real>121.6124267578125</real>
+										<real>-106.79598999023438</real>
+										<real>71.851036071777344</real>
 									</array>
 									<array>
-										<real>316.59530639648438</real>
-										<real>157.15406799316406</real>
-									</array>
-								</array>
-								<array>
-									<array>
-										<real>-1.0173089504241943</real>
-										<real>217.57278442382812</real>
-									</array>
-									<array>
-										<real>316.59530639648438</real>
-										<real>157.15406799316406</real>
-									</array>
-									<array>
-										<real>319.20822143554688</real>
-										<real>187.6785888671875</real>
+										<real>-140.4071044921875</real>
+										<real>41.366065979003906</real>
 									</array>
 								</array>
 								<array>
 									<array>
-										<real>-1.0173089504241943</real>
-										<real>217.57278442382812</real>
+										<real>-140.4071044921875</real>
+										<real>41.366065979003906</real>
 									</array>
 									<array>
-										<real>319.20822143554688</real>
-										<real>187.6785888671875</real>
+										<real>-177.42822265625</real>
+										<real>7.9008111953735352</real>
 									</array>
 									<array>
-										<real>326.31655883789062</real>
-										<real>216.21206665039062</real>
-									</array>
-								</array>
-								<array>
-									<array>
-										<real>342.72872924804688</real>
-										<real>226.87667846679688</real>
+										<real>99.628868103027344</real>
+										<real>-10.375176429748535</real>
 									</array>
 									<array>
-										<real>424.47247314453125</real>
-										<real>244.74974060058594</real>
-									</array>
-									<array>
-										<real>459.49237060546875</real>
-										<real>259.27944946289062</real>
-									</array>
-									<array>
-										<real>465.19406127929688</real>
-										<real>296.36550903320312</real>
-									</array>
-									<array>
-										<real>444.703857421875</real>
-										<real>362.95339965820312</real>
+										<real>95.481681823730469</real>
+										<real>3.1504793167114258</real>
 									</array>
 								</array>
 								<array>
 									<array>
-										<real>342.72872924804688</real>
-										<real>226.87667846679688</real>
+										<real>-91.989128112792969</real>
+										<real>94.360939025878906</real>
 									</array>
 									<array>
-										<real>444.703857421875</real>
-										<real>362.95339965820312</real>
+										<real>95.481681823730469</real>
+										<real>3.1504793167114258</real>
 									</array>
 									<array>
-										<real>444.28646850585938</real>
-										<real>385.947998046875</real>
-									</array>
-								</array>
-								<array>
-									<array>
-										<real>490.572021484375</real>
-										<real>710.5186767578125</real>
-									</array>
-									<array>
-										<real>464.43856811523438</real>
-										<real>741.88214111328125</real>
-									</array>
-									<array>
-										<real>452.54681396484375</real>
-										<real>507.9375</real>
-									</array>
-									<array>
-										<real>460.98666381835938</real>
-										<real>551.27203369140625</real>
+										<real>88.768135070800781</real>
+										<real>46.293811798095703</real>
 									</array>
 								</array>
 								<array>
 									<array>
-										<real>490.572021484375</real>
-										<real>710.5186767578125</real>
+										<real>-91.989128112792969</real>
+										<real>94.360939025878906</real>
 									</array>
 									<array>
-										<real>460.98666381835938</real>
-										<real>551.27203369140625</real>
+										<real>88.768135070800781</real>
+										<real>46.293811798095703</real>
 									</array>
 									<array>
-										<real>472.38168334960938</real>
-										<real>569.46234130859375</real>
-									</array>
-									<array>
-										<real>475.83358764648438</real>
-										<real>595.804443359375</real>
+										<real>96.644630432128906</real>
+										<real>72.0166015625</real>
 									</array>
 								</array>
 								<array>
 									<array>
-										<real>475.83358764648438</real>
-										<real>595.804443359375</real>
+										<real>142.73725891113281</real>
+										<real>199.63978576660156</real>
 									</array>
 									<array>
-										<real>498.41079711914062</real>
-										<real>642.052490234375</real>
+										<real>105.55397796630859</real>
+										<real>96.544914245605469</real>
 									</array>
 									<array>
-										<real>502.07138061523438</real>
-										<real>674.1422119140625</real>
+										<real>119.74586486816406</real>
+										<real>125.922119140625</real>
 									</array>
 									<array>
-										<real>490.572021484375</real>
-										<real>710.5186767578125</real>
-									</array>
-								</array>
-								<array>
-									<array>
-										<real>447.08721923828125</real>
-										<real>745.01678466796875</real>
-									</array>
-									<array>
-										<real>428.46697998046875</real>
-										<real>756.01531982421875</real>
-									</array>
-									<array>
-										<real>394.28604125976562</real>
-										<real>768.87127685546875</real>
-									</array>
-									<array>
-										<real>368.883056640625</real>
-										<real>764.48016357421875</real>
-									</array>
-									<array>
-										<real>340.80035400390625</real>
-										<real>758.15240478515625</real>
+										<real>137.91148376464844</real>
+										<real>180.82499694824219</real>
 									</array>
 								</array>
 								<array>
 									<array>
-										<real>191.44615173339844</real>
-										<real>767.9398193359375</real>
+										<real>137.91148376464844</real>
+										<real>180.82499694824219</real>
 									</array>
 									<array>
-										<real>340.80035400390625</real>
-										<real>758.15240478515625</real>
+										<real>159.23872375488281</real>
+										<real>230.38621520996094</real>
 									</array>
 									<array>
-										<real>289.68548583984375</real>
-										<real>774.98199462890625</real>
+										<real>167.04820251464844</real>
+										<real>267.04464721679688</real>
 									</array>
 									<array>
-										<real>260.4173583984375</real>
-										<real>775.921142578125</real>
-									</array>
-									<array>
-										<real>214.75788879394531</real>
-										<real>774.3892822265625</real>
+										<real>142.73725891113281</real>
+										<real>199.63978576660156</real>
 									</array>
 								</array>
 								<array>
 									<array>
-										<real>214.75788879394531</real>
-										<real>774.3892822265625</real>
+										<real>122.12694549560547</real>
+										<real>353.42987060546875</real>
 									</array>
 									<array>
-										<real>168.55583190917969</real>
-										<real>788.29290771484375</real>
+										<real>115.70906066894531</real>
+										<real>378.90036010742188</real>
 									</array>
 									<array>
-										<real>152.66539001464844</real>
-										<real>787.87548828125</real>
+										<real>105.81422424316406</real>
+										<real>410.0870361328125</real>
 									</array>
 									<array>
-										<real>126.53194427490234</real>
-										<real>772.1937255859375</real>
+										<real>81.431777954101562</real>
+										<real>443.65478515625</real>
 									</array>
 									<array>
-										<real>191.44615173339844</real>
-										<real>767.9398193359375</real>
-									</array>
-								</array>
-								<array>
-									<array>
-										<real>103.74604797363281</real>
-										<real>769.580810546875</real>
-									</array>
-									<array>
-										<real>81.586250305175781</real>
-										<real>777.002197265625</real>
-									</array>
-									<array>
-										<real>71.435081481933594</real>
-										<real>772.298095703125</real>
-									</array>
-									<array>
-										<real>52.618663787841797</real>
-										<real>720.13555908203125</real>
+										<real>33.845596313476562</real>
+										<real>450.269775390625</real>
 									</array>
 								</array>
 								<array>
 									<array>
-										<real>52.618663787841797</real>
-										<real>720.13555908203125</real>
+										<real>-14.521140098571777</real>
+										<real>442.11734008789062</real>
 									</array>
 									<array>
-										<real>40.075775146484375</real>
-										<real>711.46197509765625</real>
+										<real>-51.049476623535156</real>
+										<real>449.4261474609375</real>
 									</array>
 									<array>
-										<real>16.97265625</real>
-										<real>687.419677734375</real>
-									</array>
-									<array>
-										<real>-0.58738434314727783</real>
-										<real>638.2874755859375</real>
+										<real>-76.125755310058594</real>
+										<real>451.59829711914062</real>
 									</array>
 								</array>
 								<array>
 									<array>
-										<real>-0.58738434314727783</real>
-										<real>638.2874755859375</real>
+										<real>-113.14686584472656</real>
+										<real>456.93997192382812</real>
 									</array>
 									<array>
-										<real>-17.312623977661133</real>
-										<real>657.8385009765625</real>
+										<real>-136.84336853027344</real>
+										<real>465.52999877929688</real>
 									</array>
 									<array>
-										<real>-25.677330017089844</real>
-										<real>657.208251953125</real>
-									</array>
-									<array>
-										<real>-26.616481781005859</real>
-										<real>611.423583984375</real>
-									</array>
-									<array>
-										<real>-21.912378311157227</real>
-										<real>526.96258544921875</real>
+										<real>-150.27047729492188</real>
+										<real>460.09765625</real>
 									</array>
 								</array>
 								<array>
 									<array>
-										<real>-0.58738434314727783</real>
-										<real>638.2874755859375</real>
+										<real>-150.27047729492188</real>
+										<real>460.09765625</real>
 									</array>
 									<array>
-										<real>-21.912378311157227</real>
-										<real>526.96258544921875</real>
+										<real>-161.82109069824219</real>
+										<real>443.31576538085938</real>
 									</array>
 									<array>
-										<real>-11.377188682556152</real>
-										<real>425.5426025390625</real>
-									</array>
-								</array>
-								<array>
-									<array>
-										<real>1.5830984115600586</real>
-										<real>299.2706298828125</real>
+										<real>-170.706787109375</real>
+										<real>413.59951782226562</real>
 									</array>
 									<array>
-										<real>-1.0173089504241943</real>
-										<real>217.57278442382812</real>
+										<real>-14.521140098571777</real>
+										<real>442.11734008789062</real>
 									</array>
 									<array>
-										<real>326.31655883789062</real>
-										<real>216.21206665039062</real>
+										<real>-76.125755310058594</real>
+										<real>451.59829711914062</real>
+									</array>
+									<array>
+										<real>-113.14686584472656</real>
+										<real>456.93997192382812</real>
 									</array>
 								</array>
 								<array>
 									<array>
-										<real>326.31655883789062</real>
-										<real>216.21206665039062</real>
+										<real>-181.16935729980469</real>
+										<real>398.88726806640625</real>
 									</array>
 									<array>
-										<real>342.72872924804688</real>
-										<real>226.87667846679688</real>
+										<real>-203.38360595703125</real>
+										<real>375.4903564453125</real>
 									</array>
 									<array>
-										<real>444.28646850585938</real>
-										<real>385.947998046875</real>
+										<real>-206.84091186523438</real>
+										<real>354.65982055664062</real>
+									</array>
+								</array>
+								<array>
+									<array>
+										<real>-206.84091186523438</real>
+										<real>354.65982055664062</real>
 									</array>
 									<array>
-										<real>452.54681396484375</real>
-										<real>507.9375</real>
+										<real>-202.20094299316406</real>
+										<real>329.58355712890625</real>
 									</array>
 									<array>
-										<real>464.43856811523438</real>
-										<real>741.88214111328125</real>
+										<real>-185.21798706054688</real>
+										<real>311.41793823242188</real>
 									</array>
 									<array>
-										<real>447.08721923828125</real>
-										<real>745.01678466796875</real>
+										<real>-156.98402404785156</real>
+										<real>292.85812377929688</real>
+									</array>
+								</array>
+								<array>
+									<array>
+										<real>-206.84091186523438</real>
+										<real>354.65982055664062</real>
 									</array>
 									<array>
-										<real>340.80035400390625</real>
-										<real>758.15240478515625</real>
+										<real>-156.98402404785156</real>
+										<real>292.85812377929688</real>
 									</array>
 									<array>
-										<real>126.53194427490234</real>
-										<real>772.1937255859375</real>
+										<real>-129.89723205566406</real>
+										<real>270.09591674804688</real>
+									</array>
+								</array>
+								<array>
+									<array>
+										<real>-14.521140098571777</real>
+										<real>442.11734008789062</real>
 									</array>
 									<array>
-										<real>103.74604797363281</real>
-										<real>769.580810546875</real>
+										<real>-170.706787109375</real>
+										<real>413.59951782226562</real>
 									</array>
 									<array>
-										<real>52.618663787841797</real>
-										<real>720.13555908203125</real>
+										<real>-181.16935729980469</real>
+										<real>398.88726806640625</real>
 									</array>
 									<array>
-										<real>-0.58738434314727783</real>
-										<real>638.2874755859375</real>
+										<real>-206.84091186523438</real>
+										<real>354.65982055664062</real>
 									</array>
 									<array>
-										<real>-11.377188682556152</real>
-										<real>425.5426025390625</real>
+										<real>-129.89723205566406</real>
+										<real>270.09591674804688</real>
 									</array>
 									<array>
-										<real>1.5830984115600586</real>
-										<real>299.2706298828125</real>
+										<real>-109.76052093505859</real>
+										<real>248.27587890625</real>
+									</array>
+								</array>
+								<array>
+									<array>
+										<real>-14.521140098571777</real>
+										<real>442.11734008789062</real>
+									</array>
+									<array>
+										<real>-109.76052093505859</real>
+										<real>248.27587890625</real>
+									</array>
+									<array>
+										<real>-104.22962951660156</real>
+										<real>226.95257568359375</real>
+									</array>
+								</array>
+								<array>
+									<array>
+										<real>-88.039054870605469</real>
+										<real>126.94314575195312</real>
+									</array>
+									<array>
+										<real>-91.989128112792969</real>
+										<real>94.360939025878906</real>
+									</array>
+									<array>
+										<real>96.644630432128906</real>
+										<real>72.0166015625</real>
+									</array>
+								</array>
+								<array>
+									<array>
+										<real>96.644630432128906</real>
+										<real>72.0166015625</real>
+									</array>
+									<array>
+										<real>105.55397796630859</real>
+										<real>96.544914245605469</real>
+									</array>
+									<array>
+										<real>-94.25982666015625</real>
+										<real>176.80003356933594</real>
+									</array>
+									<array>
+										<real>-88.039054870605469</real>
+										<real>126.94314575195312</real>
+									</array>
+								</array>
+								<array>
+									<array>
+										<real>105.55397796630859</real>
+										<real>96.544914245605469</real>
+									</array>
+									<array>
+										<real>167.04820251464844</real>
+										<real>267.04464721679688</real>
+									</array>
+									<array>
+										<real>150.97589111328125</real>
+										<real>300.3482666015625</real>
+									</array>
+									<array>
+										<real>122.12694549560547</real>
+										<real>353.42987060546875</real>
+									</array>
+									<array>
+										<real>33.845596313476562</real>
+										<real>450.269775390625</real>
+									</array>
+									<array>
+										<real>-14.521140098571777</real>
+										<real>442.11734008789062</real>
+									</array>
+									<array>
+										<real>-104.22962951660156</real>
+										<real>226.95257568359375</real>
+									</array>
+									<array>
+										<real>-94.25982666015625</real>
+										<real>176.80003356933594</real>
 									</array>
 								</array>
 							</array>
@@ -1453,1147 +2512,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>320.216552734375</real>
-									<real>131.60340881347656</real>
-									<integer>0</integer>
-									<integer>0</integer>
-									<integer>0</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>contentSize</string>
-								<key>type</key>
-								<string>Size</string>
-								<key>value</key>
-								<array>
-									<real>0.0</real>
-									<real>0.0</real>
-									<integer>0</integer>
-									<integer>0</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>anchorPoint</string>
-								<key>type</key>
-								<string>Point</string>
-								<key>value</key>
-								<array>
-									<real>0.0</real>
-									<real>0.0</real>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>scale</string>
-								<key>type</key>
-								<string>ScaleLock</string>
-								<key>value</key>
-								<array>
-									<real>1</real>
-									<real>1</real>
-									<false/>
-									<integer>0</integer>
-								</array>
-							</dict>
-						</array>
-					</dict>
-					<dict>
-						<key>UUID</key>
-						<integer>135</integer>
-						<key>baseClass</key>
-						<string>CCNode</string>
-						<key>children</key>
-						<array/>
-						<key>customClass</key>
-						<string></string>
-						<key>displayName</key>
-						<string>ground</string>
-						<key>memberVarAssignmentName</key>
-						<string></string>
-						<key>memberVarAssignmentType</key>
-						<integer>1</integer>
-						<key>physicsBody</key>
-						<dict>
-							<key>affectedByGravity</key>
-							<true/>
-							<key>allowsRotation</key>
-							<true/>
-							<key>bodyShape</key>
-							<integer>0</integer>
-							<key>collisionCategories</key>
-							<array/>
-							<key>collisionMask</key>
-							<array/>
-							<key>collisionType</key>
-							<string>ground</string>
-							<key>cornerRadius</key>
-							<real>0.0</real>
-							<key>density</key>
-							<real>1</real>
-							<key>dynamic</key>
-							<false/>
-							<key>elasticity</key>
-							<real>0.30000001192092896</real>
-							<key>friction</key>
-							<real>1</real>
-							<key>points</key>
-							<array>
-								<array>
-									<real>-60.901775360107422</real>
-									<real>-80.09637451171875</real>
-								</array>
-								<array>
-									<real>-60.77001953125</real>
-									<real>-47.518302917480469</real>
-								</array>
-								<array>
-									<real>-89.856849670410156</real>
-									<real>28.406898498535156</real>
-								</array>
-								<array>
-									<real>-91.294532775878906</real>
-									<real>74.467025756835938</real>
-								</array>
-								<array>
-									<real>-76.764808654785156</real>
-									<real>89.000900268554688</real>
-								</array>
-								<array>
-									<real>-51.361808776855469</real>
-									<real>86.701019287109375</real>
-								</array>
-								<array>
-									<real>-12.059359550476074</real>
-									<real>88.370658874511719</real>
-								</array>
-								<array>
-									<real>20.347627639770508</real>
-									<real>79.275482177734375</real>
-								</array>
-								<array>
-									<real>52.124340057373047</real>
-									<real>85.131629943847656</real>
-								</array>
-								<array>
-									<real>66.967109680175781</real>
-									<real>73.319175720214844</real>
-								</array>
-								<array>
-									<real>84.109756469726562</real>
-									<real>69.975791931152344</real>
-								</array>
-								<array>
-									<real>87.348785400390625</real>
-									<real>30.877874374389648</real>
-								</array>
-								<array>
-									<real>80.662025451660156</real>
-									<real>-8.4245738983154297</real>
-								</array>
-								<array>
-									<real>74.805892944335938</real>
-									<real>-36.231807708740234</real>
-								</array>
-								<array>
-									<real>79.718696594238281</real>
-									<real>-61.839321136474609</real>
-								</array>
-								<array>
-									<real>84.109756469726562</real>
-									<real>-83.373039245605469</real>
-								</array>
-							</array>
-							<key>polygons</key>
-							<array>
-								<array>
-									<array>
-										<real>-60.77001953125</real>
-										<real>-47.518302917480469</real>
-									</array>
-									<array>
-										<real>-60.901775360107422</real>
-										<real>-80.09637451171875</real>
-									</array>
-									<array>
-										<real>84.109756469726562</real>
-										<real>-83.373039245605469</real>
-									</array>
-									<array>
-										<real>79.718696594238281</real>
-										<real>-61.839321136474609</real>
-									</array>
-								</array>
-								<array>
-									<array>
-										<real>66.967109680175781</real>
-										<real>73.319175720214844</real>
-									</array>
-									<array>
-										<real>52.124340057373047</real>
-										<real>85.131629943847656</real>
-									</array>
-									<array>
-										<real>20.347627639770508</real>
-										<real>79.275482177734375</real>
-									</array>
-								</array>
-								<array>
-									<array>
-										<real>20.347627639770508</real>
-										<real>79.275482177734375</real>
-									</array>
-									<array>
-										<real>74.805892944335938</real>
-										<real>-36.231807708740234</real>
-									</array>
-									<array>
-										<real>80.662025451660156</real>
-										<real>-8.4245738983154297</real>
-									</array>
-									<array>
-										<real>87.348785400390625</real>
-										<real>30.877874374389648</real>
-									</array>
-									<array>
-										<real>84.109756469726562</real>
-										<real>69.975791931152344</real>
-									</array>
-									<array>
-										<real>66.967109680175781</real>
-										<real>73.319175720214844</real>
-									</array>
-								</array>
-								<array>
-									<array>
-										<real>-51.361808776855469</real>
-										<real>86.701019287109375</real>
-									</array>
-									<array>
-										<real>-76.764808654785156</real>
-										<real>89.000900268554688</real>
-									</array>
-									<array>
-										<real>-91.294532775878906</real>
-										<real>74.467025756835938</real>
-									</array>
-								</array>
-								<array>
-									<array>
-										<real>-91.294532775878906</real>
-										<real>74.467025756835938</real>
-									</array>
-									<array>
-										<real>-89.856849670410156</real>
-										<real>28.406898498535156</real>
-									</array>
-									<array>
-										<real>-60.77001953125</real>
-										<real>-47.518302917480469</real>
-									</array>
-									<array>
-										<real>79.718696594238281</real>
-										<real>-61.839321136474609</real>
-									</array>
-									<array>
-										<real>74.805892944335938</real>
-										<real>-36.231807708740234</real>
-									</array>
-									<array>
-										<real>20.347627639770508</real>
-										<real>79.275482177734375</real>
-									</array>
-									<array>
-										<real>-12.059359550476074</real>
-										<real>88.370658874511719</real>
-									</array>
-									<array>
-										<real>-51.361808776855469</real>
-										<real>86.701019287109375</real>
-									</array>
-								</array>
-							</array>
-						</dict>
-						<key>properties</key>
-						<array>
-							<dict>
-								<key>name</key>
-								<string>name</string>
-								<key>type</key>
-								<string>StringSimple</string>
-								<key>value</key>
-								<string></string>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>position</string>
-								<key>type</key>
-								<string>Position</string>
-								<key>value</key>
-								<array>
-									<real>1966.7596435546875</real>
-									<real>82.4503173828125</real>
-									<integer>0</integer>
-									<integer>0</integer>
-									<integer>0</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>contentSize</string>
-								<key>type</key>
-								<string>Size</string>
-								<key>value</key>
-								<array>
-									<real>0.0</real>
-									<real>0.0</real>
-									<integer>0</integer>
-									<integer>0</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>anchorPoint</string>
-								<key>type</key>
-								<string>Point</string>
-								<key>value</key>
-								<array>
-									<real>0.0</real>
-									<real>0.0</real>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>scale</string>
-								<key>type</key>
-								<string>ScaleLock</string>
-								<key>value</key>
-								<array>
-									<real>1</real>
-									<real>1</real>
-									<false/>
-									<integer>0</integer>
-								</array>
-							</dict>
-						</array>
-					</dict>
-					<dict>
-						<key>UUID</key>
-						<integer>136</integer>
-						<key>baseClass</key>
-						<string>CCNode</string>
-						<key>children</key>
-						<array/>
-						<key>customClass</key>
-						<string></string>
-						<key>displayName</key>
-						<string>ground</string>
-						<key>memberVarAssignmentName</key>
-						<string></string>
-						<key>memberVarAssignmentType</key>
-						<integer>1</integer>
-						<key>physicsBody</key>
-						<dict>
-							<key>affectedByGravity</key>
-							<true/>
-							<key>allowsRotation</key>
-							<true/>
-							<key>bodyShape</key>
-							<integer>0</integer>
-							<key>collisionCategories</key>
-							<array/>
-							<key>collisionMask</key>
-							<array/>
-							<key>collisionType</key>
-							<string>ground</string>
-							<key>cornerRadius</key>
-							<real>0.0</real>
-							<key>density</key>
-							<real>1</real>
-							<key>dynamic</key>
-							<false/>
-							<key>elasticity</key>
-							<real>0.30000001192092896</real>
-							<key>friction</key>
-							<real>1</real>
-							<key>points</key>
-							<array>
-								<array>
-									<real>-38.935710906982422</real>
-									<real>-82.095787048339844</real>
-								</array>
-								<array>
-									<real>-67.473396301269531</real>
-									<real>-21.363977432250977</real>
-								</array>
-								<array>
-									<real>-74.055801391601562</real>
-									<real>5.6042628288269043</real>
-								</array>
-								<array>
-									<real>-73.534049987792969</real>
-									<real>44.176258087158203</real>
-								</array>
-								<array>
-									<real>-71.768447875976562</real>
-									<real>77.130043029785156</real>
-								</array>
-								<array>
-									<real>-57.656131744384766</real>
-									<real>87.268707275390625</real>
-								</array>
-								<array>
-									<real>11.857776641845703</real>
-									<real>89.15118408203125</real>
-								</array>
-								<array>
-									<real>44.782341003417969</real>
-									<real>79.534271240234375</real>
-								</array>
-								<array>
-									<real>71.750595092773438</real>
-									<real>86.0123291015625</real>
-								</array>
-								<array>
-									<real>87.014938354492188</real>
-									<real>79.008346557617188</real>
-								</array>
-								<array>
-									<real>166.35446166992188</real>
-									<real>78.069190979003906</real>
-								</array>
-								<array>
-									<real>202.83528137207031</real>
-									<real>73.515350341796875</real>
-								</array>
-								<array>
-									<real>295.23944091796875</real>
-									<real>82.610511779785156</real>
-								</array>
-								<array>
-									<real>343.407470703125</real>
-									<real>81.262313842773438</real>
-								</array>
-								<array>
-									<real>332.95574951171875</real>
-									<real>181.06700134277344</real>
-								</array>
-								<array>
-									<real>298.34072875976562</real>
-									<real>392.67657470703125</real>
-								</array>
-								<array>
-									<real>277.7962646484375</real>
-									<real>595.7086181640625</real>
-								</array>
-								<array>
-									<real>280.5135498046875</real>
-									<real>711.2159423828125</real>
-								</array>
-								<array>
-									<real>293.16079711914062</real>
-									<real>766.20013427734375</real>
-								</array>
-								<array>
-									<real>319.29425048828125</real>
-									<real>809.6849365234375</real>
-								</array>
-								<array>
-									<real>359.74871826171875</real>
-									<real>819.30181884765625</real>
-								</array>
-								<array>
-									<real>459.7620849609375</real>
-									<real>826.09710693359375</real>
-								</array>
-								<array>
-									<real>476.696044921875</real>
-									<real>832.0576171875</real>
-								</array>
-								<array>
-									<real>501.05136108398438</real>
-									<real>849.2001953125</real>
-								</array>
-								<array>
-									<real>524.467529296875</real>
-									<real>853.16973876953125</real>
-								</array>
-								<array>
-									<real>570.252197265625</real>
-									<real>837.49212646484375</real>
-								</array>
-								<array>
-									<real>611.84619140625</real>
-									<real>831.8238525390625</real>
-								</array>
-								<array>
-									<real>650.7896728515625</real>
-									<real>837.89703369140625</real>
-								</array>
-								<array>
-									<real>692.1248779296875</real>
-									<real>837.67578125</real>
-								</array>
-								<array>
-									<real>770.683837890625</real>
-									<real>831.62762451171875</real>
-								</array>
-								<array>
-									<real>849.038330078125</real>
-									<real>814.20538330078125</real>
-								</array>
-								<array>
-									<real>879.56280517578125</real>
-									<real>799.98870849609375</real>
-								</array>
-								<array>
-									<real>894.50994873046875</real>
-									<real>728.279296875</real>
-								</array>
-								<array>
-									<real>911.38543701171875</real>
-									<real>521.853759765625</real>
-								</array>
-								<array>
-									<real>919.249267578125</real>
-									<real>370.61697387695312</real>
-								</array>
-								<array>
-									<real>918.30596923828125</real>
-									<real>270.59527587890625</real>
-								</array>
-								<array>
-									<real>925.1011962890625</real>
-									<real>230.03642272949219</real>
-								</array>
-								<array>
-									<real>913.71038818359375</real>
-									<real>174.94789123535156</real>
-								</array>
-								<array>
-									<real>896.1461181640625</real>
-									<real>120.81100463867188</real>
-								</array>
-								<array>
-									<real>896.3548583984375</real>
-									<real>74.295890808105469</real>
-								</array>
-								<array>
-									<real>879.10784912109375</real>
-									<real>34.467536926269531</real>
-								</array>
-								<array>
-									<real>872.20819091796875</real>
-									<real>-24.173101425170898</real>
-								</array>
-								<array>
-									<real>874.50811767578125</real>
-									<real>-78.218124389648438</real>
-								</array>
-							</array>
-							<key>polygons</key>
-							<array>
-								<array>
-									<array>
-										<real>-73.534049987792969</real>
-										<real>44.176258087158203</real>
-									</array>
-									<array>
-										<real>-74.055801391601562</real>
-										<real>5.6042628288269043</real>
-									</array>
-									<array>
-										<real>-67.473396301269531</real>
-										<real>-21.363977432250977</real>
-									</array>
-									<array>
-										<real>-38.935710906982422</real>
-										<real>-82.095787048339844</real>
-									</array>
-									<array>
-										<real>874.50811767578125</real>
-										<real>-78.218124389648438</real>
-									</array>
-									<array>
-										<real>872.20819091796875</real>
-										<real>-24.173101425170898</real>
-									</array>
-									<array>
-										<real>343.407470703125</real>
-										<real>81.262313842773438</real>
-									</array>
-									<array>
-										<real>295.23944091796875</real>
-										<real>82.610511779785156</real>
-									</array>
-									<array>
-										<real>202.83528137207031</real>
-										<real>73.515350341796875</real>
-									</array>
-								</array>
-								<array>
-									<array>
-										<real>-71.768447875976562</real>
-										<real>77.130043029785156</real>
-									</array>
-									<array>
-										<real>-73.534049987792969</real>
-										<real>44.176258087158203</real>
-									</array>
-									<array>
-										<real>202.83528137207031</real>
-										<real>73.515350341796875</real>
-									</array>
-									<array>
-										<real>166.35446166992188</real>
-										<real>78.069190979003906</real>
-									</array>
-									<array>
-										<real>87.014938354492188</real>
-										<real>79.008346557617188</real>
-									</array>
-								</array>
-								<array>
-									<array>
-										<real>44.224315643310547</real>
-										<real>78.502159118652344</real>
-									</array>
-									<array>
-										<real>87.014938354492188</real>
-										<real>79.008346557617188</real>
-									</array>
-									<array>
-										<real>71.750595092773438</real>
-										<real>86.0123291015625</real>
-									</array>
-									<array>
-										<real>44.782341003417969</real>
-										<real>79.534271240234375</real>
-									</array>
-								</array>
-								<array>
-									<array>
-										<real>44.782341003417969</real>
-										<real>79.534271240234375</real>
-									</array>
-									<array>
-										<real>11.857776641845703</real>
-										<real>89.15118408203125</real>
-									</array>
-									<array>
-										<real>-57.656131744384766</real>
-										<real>87.268707275390625</real>
-									</array>
-									<array>
-										<real>-71.768447875976562</real>
-										<real>77.130043029785156</real>
-									</array>
-									<array>
-										<real>44.224315643310547</real>
-										<real>78.502159118652344</real>
-									</array>
-								</array>
-								<array>
-									<array>
-										<real>888.67523193359375</real>
-										<real>178.93318176269531</real>
-									</array>
-									<array>
-										<real>879.10784912109375</real>
-										<real>34.467536926269531</real>
-									</array>
-									<array>
-										<real>896.3548583984375</real>
-										<real>74.295890808105469</real>
-									</array>
-									<array>
-										<real>896.1461181640625</real>
-										<real>120.81100463867188</real>
-									</array>
-								</array>
-								<array>
-									<array>
-										<real>913.71038818359375</real>
-										<real>174.94789123535156</real>
-									</array>
-									<array>
-										<real>925.1011962890625</real>
-										<real>230.03642272949219</real>
-									</array>
-									<array>
-										<real>918.30596923828125</real>
-										<real>270.59527587890625</real>
-									</array>
-								</array>
-								<array>
-									<array>
-										<real>918.30596923828125</real>
-										<real>270.59527587890625</real>
-									</array>
-									<array>
-										<real>919.249267578125</real>
-										<real>370.61697387695312</real>
-									</array>
-									<array>
-										<real>911.38543701171875</real>
-										<real>521.853759765625</real>
-									</array>
-									<array>
-										<real>888.67523193359375</real>
-										<real>178.93318176269531</real>
-									</array>
-									<array>
-										<real>896.1461181640625</real>
-										<real>120.81100463867188</real>
-									</array>
-									<array>
-										<real>913.71038818359375</real>
-										<real>174.94789123535156</real>
-									</array>
-								</array>
-								<array>
-									<array>
-										<real>894.50994873046875</real>
-										<real>728.279296875</real>
-									</array>
-									<array>
-										<real>879.56280517578125</real>
-										<real>799.98870849609375</real>
-									</array>
-									<array>
-										<real>849.038330078125</real>
-										<real>814.20538330078125</real>
-									</array>
-									<array>
-										<real>770.683837890625</real>
-										<real>831.62762451171875</real>
-									</array>
-									<array>
-										<real>692.1248779296875</real>
-										<real>837.67578125</real>
-									</array>
-									<array>
-										<real>650.7896728515625</real>
-										<real>837.89703369140625</real>
-									</array>
-									<array>
-										<real>611.84619140625</real>
-										<real>831.8238525390625</real>
-									</array>
-								</array>
-								<array>
-									<array>
-										<real>570.252197265625</real>
-										<real>837.49212646484375</real>
-									</array>
-									<array>
-										<real>524.467529296875</real>
-										<real>853.16973876953125</real>
-									</array>
-									<array>
-										<real>501.05136108398438</real>
-										<real>849.2001953125</real>
-									</array>
-									<array>
-										<real>476.696044921875</real>
-										<real>832.0576171875</real>
-									</array>
-								</array>
-								<array>
-									<array>
-										<real>611.84619140625</real>
-										<real>831.8238525390625</real>
-									</array>
-									<array>
-										<real>570.252197265625</real>
-										<real>837.49212646484375</real>
-									</array>
-									<array>
-										<real>476.696044921875</real>
-										<real>832.0576171875</real>
-									</array>
-									<array>
-										<real>459.7620849609375</real>
-										<real>826.09710693359375</real>
-									</array>
-								</array>
-								<array>
-									<array>
-										<real>280.5135498046875</real>
-										<real>711.2159423828125</real>
-									</array>
-									<array>
-										<real>277.7962646484375</real>
-										<real>595.7086181640625</real>
-									</array>
-									<array>
-										<real>298.34072875976562</real>
-										<real>392.67657470703125</real>
-									</array>
-									<array>
-										<real>332.95574951171875</real>
-										<real>181.06700134277344</real>
-									</array>
-								</array>
-								<array>
-									<array>
-										<real>332.95574951171875</real>
-										<real>181.06700134277344</real>
-									</array>
-									<array>
-										<real>343.407470703125</real>
-										<real>81.262313842773438</real>
-									</array>
-									<array>
-										<real>872.20819091796875</real>
-										<real>-24.173101425170898</real>
-									</array>
-									<array>
-										<real>879.10784912109375</real>
-										<real>34.467536926269531</real>
-									</array>
-									<array>
-										<real>911.38543701171875</real>
-										<real>521.853759765625</real>
-									</array>
-									<array>
-										<real>894.50994873046875</real>
-										<real>728.279296875</real>
-									</array>
-									<array>
-										<real>611.84619140625</real>
-										<real>831.8238525390625</real>
-									</array>
-									<array>
-										<real>459.7620849609375</real>
-										<real>826.09710693359375</real>
-									</array>
-									<array>
-										<real>359.74871826171875</real>
-										<real>819.30181884765625</real>
-									</array>
-									<array>
-										<real>319.29425048828125</real>
-										<real>809.6849365234375</real>
-									</array>
-									<array>
-										<real>293.16079711914062</real>
-										<real>766.20013427734375</real>
-									</array>
-									<array>
-										<real>280.5135498046875</real>
-										<real>711.2159423828125</real>
-									</array>
-								</array>
-							</array>
-						</dict>
-						<key>properties</key>
-						<array>
-							<dict>
-								<key>name</key>
-								<string>name</string>
-								<key>type</key>
-								<string>StringSimple</string>
-								<key>value</key>
-								<string></string>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>position</string>
-								<key>type</key>
-								<string>Position</string>
-								<key>value</key>
-								<array>
-									<real>2576.899169921875</real>
-									<real>82.4503173828125</real>
-									<integer>0</integer>
-									<integer>0</integer>
-									<integer>0</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>contentSize</string>
-								<key>type</key>
-								<string>Size</string>
-								<key>value</key>
-								<array>
-									<real>0.0</real>
-									<real>0.0</real>
-									<integer>0</integer>
-									<integer>0</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>anchorPoint</string>
-								<key>type</key>
-								<string>Point</string>
-								<key>value</key>
-								<array>
-									<real>0.0</real>
-									<real>0.0</real>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>scale</string>
-								<key>type</key>
-								<string>ScaleLock</string>
-								<key>value</key>
-								<array>
-									<real>1</real>
-									<real>1</real>
-									<false/>
-									<integer>0</integer>
-								</array>
-							</dict>
-						</array>
-					</dict>
-					<dict>
-						<key>UUID</key>
-						<integer>137</integer>
-						<key>baseClass</key>
-						<string>CCNode</string>
-						<key>children</key>
-						<array/>
-						<key>customClass</key>
-						<string></string>
-						<key>displayName</key>
-						<string>ground</string>
-						<key>memberVarAssignmentName</key>
-						<string></string>
-						<key>memberVarAssignmentType</key>
-						<integer>1</integer>
-						<key>physicsBody</key>
-						<dict>
-							<key>affectedByGravity</key>
-							<true/>
-							<key>allowsRotation</key>
-							<true/>
-							<key>bodyShape</key>
-							<integer>0</integer>
-							<key>collisionCategories</key>
-							<array/>
-							<key>collisionMask</key>
-							<array/>
-							<key>collisionType</key>
-							<string>ground</string>
-							<key>cornerRadius</key>
-							<real>0.0</real>
-							<key>density</key>
-							<real>1</real>
-							<key>dynamic</key>
-							<false/>
-							<key>elasticity</key>
-							<real>0.30000001192092896</real>
-							<key>friction</key>
-							<real>1</real>
-							<key>points</key>
-							<array>
-								<array>
-									<real>-72.012428283691406</real>
-									<real>-75.651107788085938</real>
-								</array>
-								<array>
-									<real>-77.238288879394531</real>
-									<real>-39.065940856933594</real>
-								</array>
-								<array>
-									<real>-97.832832336425781</real>
-									<real>13.305304527282715</real>
-								</array>
-								<array>
-									<real>-107.13669586181641</real>
-									<real>64.424362182617188</real>
-								</array>
-								<array>
-									<real>-104.83681488037109</real>
-									<real>83.236610412597656</real>
-								</array>
-								<array>
-									<real>-92.711326599121094</real>
-									<real>93.166572570800781</real>
-								</array>
-								<array>
-									<real>-51.000480651855469</real>
-									<real>94.109901428222656</real>
-								</array>
-								<array>
-									<real>-23.093070983886719</real>
-									<real>91.914375305175781</real>
-								</array>
-								<array>
-									<real>6.5924649238586426</real>
-									<real>83.549659729003906</real>
-								</array>
-								<array>
-									<real>34.712749481201172</real>
-									<real>91.810020446777344</real>
-								</array>
-								<array>
-									<real>50.081439971923828</real>
-									<real>79.997581481933594</real>
-								</array>
-								<array>
-									<real>64.715507507324219</real>
-									<real>77.175956726074219</real>
-								</array>
-								<array>
-									<real>72.136894226074219</real>
-									<real>69.650222778320312</real>
-								</array>
-								<array>
-									<real>69.315261840820312</real>
-									<real>25.013408660888672</real>
-								</array>
-								<array>
-									<real>59.907051086425781</real>
-									<real>-22.236347198486328</real>
-								</array>
-								<array>
-									<real>61.263603210449219</real>
-									<real>-44.604866027832031</real>
-								</array>
-								<array>
-									<real>64.402458190917969</real>
-									<real>-76.485931396484375</real>
-								</array>
-							</array>
-							<key>polygons</key>
-							<array>
-								<array>
-									<array>
-										<real>-72.012428283691406</real>
-										<real>-75.651107788085938</real>
-									</array>
-									<array>
-										<real>64.402458190917969</real>
-										<real>-76.485931396484375</real>
-									</array>
-									<array>
-										<real>61.263603210449219</real>
-										<real>-44.604866027832031</real>
-									</array>
-								</array>
-								<array>
-									<array>
-										<real>59.907051086425781</real>
-										<real>-22.236347198486328</real>
-									</array>
-									<array>
-										<real>69.315261840820312</real>
-										<real>25.013408660888672</real>
-									</array>
-									<array>
-										<real>72.136894226074219</real>
-										<real>69.650222778320312</real>
-									</array>
-									<array>
-										<real>64.715507507324219</real>
-										<real>77.175956726074219</real>
-									</array>
-									<array>
-										<real>50.081439971923828</real>
-										<real>79.997581481933594</real>
-									</array>
-								</array>
-								<array>
-									<array>
-										<real>59.907051086425781</real>
-										<real>-22.236347198486328</real>
-									</array>
-									<array>
-										<real>50.081439971923828</real>
-										<real>79.997581481933594</real>
-									</array>
-									<array>
-										<real>34.712749481201172</real>
-										<real>91.810020446777344</real>
-									</array>
-									<array>
-										<real>6.5924649238586426</real>
-										<real>83.549659729003906</real>
-									</array>
-								</array>
-								<array>
-									<array>
-										<real>-92.711326599121094</real>
-										<real>93.166572570800781</real>
-									</array>
-									<array>
-										<real>-104.83681488037109</real>
-										<real>83.236610412597656</real>
-									</array>
-									<array>
-										<real>-107.13669586181641</real>
-										<real>64.424362182617188</real>
-									</array>
-									<array>
-										<real>-97.832832336425781</real>
-										<real>13.305304527282715</real>
-									</array>
-									<array>
-										<real>-77.238288879394531</real>
-										<real>-39.065940856933594</real>
-									</array>
-								</array>
-								<array>
-									<array>
-										<real>-77.238288879394531</real>
-										<real>-39.065940856933594</real>
-									</array>
-									<array>
-										<real>-72.012428283691406</real>
-										<real>-75.651107788085938</real>
-									</array>
-									<array>
-										<real>61.263603210449219</real>
-										<real>-44.604866027832031</real>
-									</array>
-									<array>
-										<real>59.907051086425781</real>
-										<real>-22.236347198486328</real>
-									</array>
-									<array>
-										<real>6.5924649238586426</real>
-										<real>83.549659729003906</real>
-									</array>
-									<array>
-										<real>-23.093070983886719</real>
-										<real>91.914375305175781</real>
-									</array>
-									<array>
-										<real>-51.000480651855469</real>
-										<real>94.109901428222656</real>
-									</array>
-									<array>
-										<real>-92.711326599121094</real>
-										<real>93.166572570800781</real>
-									</array>
-								</array>
-							</array>
-						</dict>
-						<key>properties</key>
-						<array>
-							<dict>
-								<key>name</key>
-								<string>name</string>
-								<key>type</key>
-								<string>StringSimple</string>
-								<key>value</key>
-								<string></string>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>position</string>
-								<key>type</key>
-								<string>Position</string>
-								<key>value</key>
-								<array>
-									<real>3890.75732421875</real>
-									<real>77.107589721679688</real>
+									<real>1324.878662109375</real>
+									<real>184.07821655273438</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -2642,7 +2562,7 @@
 				<key>customClass</key>
 				<string></string>
 				<key>displayName</key>
-				<string>world objects</string>
+				<string>ground objects</string>
 				<key>locked</key>
 				<true/>
 				<key>memberVarAssignmentName</key>
@@ -2714,127 +2634,6 @@
 			</dict>
 			<dict>
 				<key>UUID</key>
-				<integer>154</integer>
-				<key>animatedProperties</key>
-				<dict>
-					<key>0</key>
-					<dict>
-						<key>rotation</key>
-						<dict>
-							<key>keyframes</key>
-							<array>
-								<dict>
-									<key>easing</key>
-									<dict>
-										<key>type</key>
-										<integer>1</integer>
-									</dict>
-									<key>name</key>
-									<string>rotation</string>
-									<key>time</key>
-									<real>0.0</real>
-									<key>type</key>
-									<integer>2</integer>
-									<key>value</key>
-									<real>0.0</real>
-								</dict>
-							</array>
-							<key>name</key>
-							<string>rotation</string>
-							<key>type</key>
-							<integer>2</integer>
-						</dict>
-					</dict>
-				</dict>
-				<key>baseClass</key>
-				<string>CCNode</string>
-				<key>children</key>
-				<array/>
-				<key>customClass</key>
-				<string></string>
-				<key>displayName</key>
-				<string>gravity objects</string>
-				<key>memberVarAssignmentName</key>
-				<string>gravityObjects</string>
-				<key>memberVarAssignmentType</key>
-				<integer>1</integer>
-				<key>properties</key>
-				<array>
-					<dict>
-						<key>name</key>
-						<string>name</string>
-						<key>type</key>
-						<string>StringSimple</string>
-						<key>value</key>
-						<string></string>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>position</string>
-						<key>type</key>
-						<string>Position</string>
-						<key>value</key>
-						<array>
-							<real>0.0</real>
-							<real>0.0</real>
-							<integer>0</integer>
-							<integer>0</integer>
-							<integer>0</integer>
-						</array>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>contentSize</string>
-						<key>type</key>
-						<string>Size</string>
-						<key>value</key>
-						<array>
-							<real>0.0</real>
-							<real>0.0</real>
-							<integer>0</integer>
-							<integer>0</integer>
-						</array>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>anchorPoint</string>
-						<key>type</key>
-						<string>Point</string>
-						<key>value</key>
-						<array>
-							<real>0.0</real>
-							<real>0.0</real>
-						</array>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>scale</string>
-						<key>type</key>
-						<string>ScaleLock</string>
-						<key>value</key>
-						<array>
-							<real>1</real>
-							<real>1</real>
-							<false/>
-							<integer>0</integer>
-						</array>
-					</dict>
-					<dict>
-						<key>baseValue</key>
-						<real>0.0</real>
-						<key>name</key>
-						<string>rotation</string>
-						<key>type</key>
-						<string>Degrees</string>
-						<key>value</key>
-						<real>0.0</real>
-					</dict>
-				</array>
-				<key>seqExpanded</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>UUID</key>
 				<integer>98</integer>
 				<key>baseClass</key>
 				<string>CCNode</string>
@@ -2872,8 +2671,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>444.60504150390625</real>
-									<real>823.7322998046875</real>
+									<real>337.56106567382812</real>
+									<real>420.64486694335938</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -2904,7 +2703,7 @@
 					</dict>
 					<dict>
 						<key>UUID</key>
-						<integer>127</integer>
+						<integer>316</integer>
 						<key>baseClass</key>
 						<string>CCBFile</string>
 						<key>children</key>
@@ -2934,8 +2733,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>934.2825927734375</real>
-									<real>608.80596923828125</real>
+									<real>558.2679443359375</real>
+									<real>362.85809326171875</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -2966,7 +2765,7 @@
 					</dict>
 					<dict>
 						<key>UUID</key>
-						<integer>130</integer>
+						<integer>325</integer>
 						<key>baseClass</key>
 						<string>CCBFile</string>
 						<key>children</key>
@@ -2996,8 +2795,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>3666.284423828125</real>
-									<real>519.41619873046875</real>
+									<real>1202.2757568359375</real>
+									<real>71.079399108886719</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -3028,7 +2827,7 @@
 					</dict>
 					<dict>
 						<key>UUID</key>
-						<integer>146</integer>
+						<integer>334</integer>
 						<key>baseClass</key>
 						<string>CCBFile</string>
 						<key>children</key>
@@ -3058,8 +2857,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>1304.2598876953125</real>
-									<real>214.40509033203125</real>
+									<real>1336.0806884765625</real>
+									<real>715.01580810546875</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -3090,7 +2889,7 @@
 					</dict>
 					<dict>
 						<key>UUID</key>
-						<integer>149</integer>
+						<integer>343</integer>
 						<key>baseClass</key>
 						<string>CCBFile</string>
 						<key>children</key>
@@ -3120,8 +2919,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>2757.344970703125</real>
-									<real>201.38127136230469</real>
+									<real>1623.7613525390625</real>
+									<real>330.3265380859375</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -3149,132 +2948,6 @@
 								<string>Entities/Collectibles/Moon.ccb</string>
 							</dict>
 						</array>
-					</dict>
-					<dict>
-						<key>UUID</key>
-						<integer>153</integer>
-						<key>baseClass</key>
-						<string>CCBFile</string>
-						<key>children</key>
-						<array/>
-						<key>customClass</key>
-						<string></string>
-						<key>displayName</key>
-						<string>GravityStone</string>
-						<key>memberVarAssignmentName</key>
-						<string></string>
-						<key>memberVarAssignmentType</key>
-						<integer>1</integer>
-						<key>properties</key>
-						<array>
-							<dict>
-								<key>name</key>
-								<string>name</string>
-								<key>type</key>
-								<string>StringSimple</string>
-								<key>value</key>
-								<string></string>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>position</string>
-								<key>type</key>
-								<string>Position</string>
-								<key>value</key>
-								<array>
-									<real>851.42291259765625</real>
-									<real>227.83233642578125</real>
-									<integer>0</integer>
-									<integer>0</integer>
-									<integer>0</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>scale</string>
-								<key>type</key>
-								<string>ScaleLock</string>
-								<key>value</key>
-								<array>
-									<real>1</real>
-									<real>1</real>
-									<false/>
-									<integer>0</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>ccbFile</string>
-								<key>type</key>
-								<string>CCBFile</string>
-								<key>value</key>
-								<string>Entities/Collectibles/GravityStone.ccb</string>
-							</dict>
-						</array>
-					</dict>
-					<dict>
-						<key>UUID</key>
-						<integer>179</integer>
-						<key>baseClass</key>
-						<string>CCBFile</string>
-						<key>children</key>
-						<array/>
-						<key>customClass</key>
-						<string></string>
-						<key>displayName</key>
-						<string>Moon</string>
-						<key>memberVarAssignmentName</key>
-						<string></string>
-						<key>memberVarAssignmentType</key>
-						<integer>1</integer>
-						<key>properties</key>
-						<array>
-							<dict>
-								<key>name</key>
-								<string>name</string>
-								<key>type</key>
-								<string>StringSimple</string>
-								<key>value</key>
-								<string></string>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>position</string>
-								<key>type</key>
-								<string>Position</string>
-								<key>value</key>
-								<array>
-									<real>2094.16162109375</real>
-									<real>206.84803771972656</real>
-									<integer>0</integer>
-									<integer>0</integer>
-									<integer>0</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>scale</string>
-								<key>type</key>
-								<string>ScaleLock</string>
-								<key>value</key>
-								<array>
-									<real>1</real>
-									<real>1</real>
-									<false/>
-									<integer>0</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>ccbFile</string>
-								<key>type</key>
-								<string>CCBFile</string>
-								<key>value</key>
-								<string>Entities/Collectibles/Moon.ccb</string>
-							</dict>
-						</array>
-						<key>selected</key>
-						<true/>
 					</dict>
 				</array>
 				<key>customClass</key>
@@ -3283,687 +2956,6 @@
 				<string>collectibles</string>
 				<key>memberVarAssignmentName</key>
 				<string>collectibles</string>
-				<key>memberVarAssignmentType</key>
-				<integer>1</integer>
-				<key>properties</key>
-				<array>
-					<dict>
-						<key>name</key>
-						<string>name</string>
-						<key>type</key>
-						<string>StringSimple</string>
-						<key>value</key>
-						<string></string>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>position</string>
-						<key>type</key>
-						<string>Position</string>
-						<key>value</key>
-						<array>
-							<real>0.0</real>
-							<real>0.0</real>
-							<integer>0</integer>
-							<integer>0</integer>
-							<integer>0</integer>
-						</array>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>contentSize</string>
-						<key>type</key>
-						<string>Size</string>
-						<key>value</key>
-						<array>
-							<real>0.0</real>
-							<real>0.0</real>
-							<integer>0</integer>
-							<integer>0</integer>
-						</array>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>anchorPoint</string>
-						<key>type</key>
-						<string>Point</string>
-						<key>value</key>
-						<array>
-							<real>0.0</real>
-							<real>0.0</real>
-						</array>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>scale</string>
-						<key>type</key>
-						<string>ScaleLock</string>
-						<key>value</key>
-						<array>
-							<real>1</real>
-							<real>1</real>
-							<false/>
-							<integer>0</integer>
-						</array>
-					</dict>
-				</array>
-			</dict>
-			<dict>
-				<key>UUID</key>
-				<integer>145</integer>
-				<key>baseClass</key>
-				<string>CCNode</string>
-				<key>children</key>
-				<array>
-					<dict>
-						<key>UUID</key>
-						<integer>138</integer>
-						<key>baseClass</key>
-						<string>CCSprite</string>
-						<key>children</key>
-						<array/>
-						<key>customClass</key>
-						<string></string>
-						<key>displayName</key>
-						<string>Layer 1</string>
-						<key>memberVarAssignmentName</key>
-						<string></string>
-						<key>memberVarAssignmentType</key>
-						<integer>1</integer>
-						<key>properties</key>
-						<array>
-							<dict>
-								<key>name</key>
-								<string>name</string>
-								<key>type</key>
-								<string>StringSimple</string>
-								<key>value</key>
-								<string></string>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>position</string>
-								<key>type</key>
-								<string>Position</string>
-								<key>value</key>
-								<array>
-									<real>89.5</real>
-									<real>93.5</real>
-									<integer>0</integer>
-									<integer>0</integer>
-									<integer>0</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>anchorPoint</string>
-								<key>type</key>
-								<string>Point</string>
-								<key>value</key>
-								<array>
-									<real>0.5</real>
-									<real>0.5</real>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>scale</string>
-								<key>type</key>
-								<string>ScaleLock</string>
-								<key>value</key>
-								<array>
-									<real>1</real>
-									<real>1</real>
-									<false/>
-									<integer>0</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>spriteFrame</string>
-								<key>type</key>
-								<string>SpriteFrame</string>
-								<key>value</key>
-								<array>
-									<string></string>
-									<string>Assets/Levels/Level7/Layer 1.png</string>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>normalMapSpriteFrame</string>
-								<key>type</key>
-								<string>SpriteFrame</string>
-								<key>value</key>
-								<array>
-									<string></string>
-									<string></string>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>color</string>
-								<key>type</key>
-								<string>Color3</string>
-								<key>value</key>
-								<array>
-									<real>1</real>
-									<real>1</real>
-									<real>1</real>
-									<real>1</real>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>effects</string>
-								<key>type</key>
-								<string>EffectControl</string>
-								<key>value</key>
-								<array/>
-							</dict>
-						</array>
-					</dict>
-					<dict>
-						<key>UUID</key>
-						<integer>139</integer>
-						<key>baseClass</key>
-						<string>CCSprite</string>
-						<key>children</key>
-						<array/>
-						<key>customClass</key>
-						<string></string>
-						<key>displayName</key>
-						<string>Layer 2</string>
-						<key>memberVarAssignmentName</key>
-						<string></string>
-						<key>memberVarAssignmentType</key>
-						<integer>1</integer>
-						<key>properties</key>
-						<array>
-							<dict>
-								<key>name</key>
-								<string>name</string>
-								<key>type</key>
-								<string>StringSimple</string>
-								<key>value</key>
-								<string></string>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>position</string>
-								<key>type</key>
-								<string>Position</string>
-								<key>value</key>
-								<array>
-									<real>922.5</real>
-									<real>556</real>
-									<integer>0</integer>
-									<integer>0</integer>
-									<integer>0</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>anchorPoint</string>
-								<key>type</key>
-								<string>Point</string>
-								<key>value</key>
-								<array>
-									<real>0.5</real>
-									<real>0.5</real>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>scale</string>
-								<key>type</key>
-								<string>ScaleLock</string>
-								<key>value</key>
-								<array>
-									<real>1</real>
-									<real>1</real>
-									<false/>
-									<integer>0</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>spriteFrame</string>
-								<key>type</key>
-								<string>SpriteFrame</string>
-								<key>value</key>
-								<array>
-									<string></string>
-									<string>Assets/Levels/Level7/Layer 2.png</string>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>normalMapSpriteFrame</string>
-								<key>type</key>
-								<string>SpriteFrame</string>
-								<key>value</key>
-								<array>
-									<string></string>
-									<string></string>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>color</string>
-								<key>type</key>
-								<string>Color3</string>
-								<key>value</key>
-								<array>
-									<real>1</real>
-									<real>1</real>
-									<real>1</real>
-									<real>1</real>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>effects</string>
-								<key>type</key>
-								<string>EffectControl</string>
-								<key>value</key>
-								<array/>
-							</dict>
-						</array>
-					</dict>
-					<dict>
-						<key>UUID</key>
-						<integer>140</integer>
-						<key>baseClass</key>
-						<string>CCSprite</string>
-						<key>children</key>
-						<array/>
-						<key>customClass</key>
-						<string></string>
-						<key>displayName</key>
-						<string>Layer 3</string>
-						<key>memberVarAssignmentName</key>
-						<string></string>
-						<key>memberVarAssignmentType</key>
-						<integer>1</integer>
-						<key>properties</key>
-						<array>
-							<dict>
-								<key>name</key>
-								<string>name</string>
-								<key>type</key>
-								<string>StringSimple</string>
-								<key>value</key>
-								<string></string>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>position</string>
-								<key>type</key>
-								<string>Position</string>
-								<key>value</key>
-								<array>
-									<real>2099.5</real>
-									<real>93</real>
-									<integer>0</integer>
-									<integer>0</integer>
-									<integer>0</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>anchorPoint</string>
-								<key>type</key>
-								<string>Point</string>
-								<key>value</key>
-								<array>
-									<real>0.5</real>
-									<real>0.5</real>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>scale</string>
-								<key>type</key>
-								<string>ScaleLock</string>
-								<key>value</key>
-								<array>
-									<real>1</real>
-									<real>1</real>
-									<false/>
-									<integer>0</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>spriteFrame</string>
-								<key>type</key>
-								<string>SpriteFrame</string>
-								<key>value</key>
-								<array>
-									<string></string>
-									<string>Assets/Levels/Level7/Layer 3.png</string>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>normalMapSpriteFrame</string>
-								<key>type</key>
-								<string>SpriteFrame</string>
-								<key>value</key>
-								<array>
-									<string></string>
-									<string></string>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>color</string>
-								<key>type</key>
-								<string>Color3</string>
-								<key>value</key>
-								<array>
-									<real>1</real>
-									<real>1</real>
-									<real>1</real>
-									<real>1</real>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>effects</string>
-								<key>type</key>
-								<string>EffectControl</string>
-								<key>value</key>
-								<array/>
-							</dict>
-						</array>
-					</dict>
-					<dict>
-						<key>UUID</key>
-						<integer>143</integer>
-						<key>baseClass</key>
-						<string>CCSprite</string>
-						<key>children</key>
-						<array/>
-						<key>customClass</key>
-						<string></string>
-						<key>displayName</key>
-						<string>Layer 4</string>
-						<key>memberVarAssignmentName</key>
-						<string></string>
-						<key>memberVarAssignmentType</key>
-						<integer>1</integer>
-						<key>properties</key>
-						<array>
-							<dict>
-								<key>name</key>
-								<string>name</string>
-								<key>type</key>
-								<string>StringSimple</string>
-								<key>value</key>
-								<string></string>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>position</string>
-								<key>type</key>
-								<string>Position</string>
-								<key>value</key>
-								<array>
-									<real>3135.6142578125</real>
-									<real>557</real>
-									<integer>0</integer>
-									<integer>0</integer>
-									<integer>0</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>anchorPoint</string>
-								<key>type</key>
-								<string>Point</string>
-								<key>value</key>
-								<array>
-									<real>0.5</real>
-									<real>0.5</real>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>scale</string>
-								<key>type</key>
-								<string>ScaleLock</string>
-								<key>value</key>
-								<array>
-									<real>1</real>
-									<real>1</real>
-									<false/>
-									<integer>0</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>spriteFrame</string>
-								<key>type</key>
-								<string>SpriteFrame</string>
-								<key>value</key>
-								<array>
-									<string></string>
-									<string>Assets/Levels/Level7/Layer 4.png</string>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>normalMapSpriteFrame</string>
-								<key>type</key>
-								<string>SpriteFrame</string>
-								<key>value</key>
-								<array>
-									<string></string>
-									<string></string>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>color</string>
-								<key>type</key>
-								<string>Color3</string>
-								<key>value</key>
-								<array>
-									<real>1</real>
-									<real>1</real>
-									<real>1</real>
-									<real>1</real>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>effects</string>
-								<key>type</key>
-								<string>EffectControl</string>
-								<key>value</key>
-								<array/>
-							</dict>
-						</array>
-					</dict>
-					<dict>
-						<key>UUID</key>
-						<integer>144</integer>
-						<key>baseClass</key>
-						<string>CCSprite</string>
-						<key>children</key>
-						<array/>
-						<key>customClass</key>
-						<string></string>
-						<key>displayName</key>
-						<string>Layer 5</string>
-						<key>memberVarAssignmentName</key>
-						<string></string>
-						<key>memberVarAssignmentType</key>
-						<integer>1</integer>
-						<key>properties</key>
-						<array>
-							<dict>
-								<key>name</key>
-								<string>name</string>
-								<key>type</key>
-								<string>StringSimple</string>
-								<key>value</key>
-								<string></string>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>position</string>
-								<key>type</key>
-								<string>Position</string>
-								<key>value</key>
-								<array>
-									<real>4009.39794921875</real>
-									<real>89</real>
-									<integer>0</integer>
-									<integer>0</integer>
-									<integer>0</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>anchorPoint</string>
-								<key>type</key>
-								<string>Point</string>
-								<key>value</key>
-								<array>
-									<real>0.5</real>
-									<real>0.5</real>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>scale</string>
-								<key>type</key>
-								<string>ScaleLock</string>
-								<key>value</key>
-								<array>
-									<real>1</real>
-									<real>1</real>
-									<false/>
-									<integer>0</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>spriteFrame</string>
-								<key>type</key>
-								<string>SpriteFrame</string>
-								<key>value</key>
-								<array>
-									<string></string>
-									<string>Assets/Levels/Level7/Layer 5.png</string>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>normalMapSpriteFrame</string>
-								<key>type</key>
-								<string>SpriteFrame</string>
-								<key>value</key>
-								<array>
-									<string></string>
-									<string></string>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>color</string>
-								<key>type</key>
-								<string>Color3</string>
-								<key>value</key>
-								<array>
-									<real>1</real>
-									<real>1</real>
-									<real>1</real>
-									<real>1</real>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>effects</string>
-								<key>type</key>
-								<string>EffectControl</string>
-								<key>value</key>
-								<array/>
-							</dict>
-						</array>
-					</dict>
-					<dict>
-						<key>UUID</key>
-						<integer>152</integer>
-						<key>baseClass</key>
-						<string>CCBFile</string>
-						<key>children</key>
-						<array/>
-						<key>customClass</key>
-						<string></string>
-						<key>displayName</key>
-						<string>Trap1</string>
-						<key>memberVarAssignmentName</key>
-						<string></string>
-						<key>memberVarAssignmentType</key>
-						<integer>1</integer>
-						<key>properties</key>
-						<array>
-							<dict>
-								<key>name</key>
-								<string>name</string>
-								<key>type</key>
-								<string>StringSimple</string>
-								<key>value</key>
-								<string></string>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>position</string>
-								<key>type</key>
-								<string>Position</string>
-								<key>value</key>
-								<array>
-									<real>1020.7755126953125</real>
-									<real>173.62118530273438</real>
-									<integer>0</integer>
-									<integer>0</integer>
-									<integer>0</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>scale</string>
-								<key>type</key>
-								<string>ScaleLock</string>
-								<key>value</key>
-								<array>
-									<real>1</real>
-									<real>1</real>
-									<false/>
-									<integer>0</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>ccbFile</string>
-								<key>type</key>
-								<string>CCBFile</string>
-								<key>value</key>
-								<string>Entities/WorldObjects/Trap1.ccb</string>
-							</dict>
-						</array>
-					</dict>
-				</array>
-				<key>customClass</key>
-				<string></string>
-				<key>displayName</key>
-				<string>World</string>
-				<key>memberVarAssignmentName</key>
-				<string></string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>properties</key>
@@ -4046,7 +3038,7 @@
 				<key>type</key>
 				<string>StringSimple</string>
 				<key>value</key>
-				<string>7</string>
+				<string>8</string>
 			</dict>
 			<dict>
 				<key>name</key>

@@ -8,6 +8,8 @@
 
 class PauseScreen: CCNode {
    
+    weak var continueButton: CCButton!
+    
     func returnToMainScene() {
         
         let mainMenu = CCBReader.loadAsScene("MainScene")
@@ -17,6 +19,7 @@ class PauseScreen: CCNode {
     
     func performExitAnimation() {
         
+        continueButton.enabled = false
         animationManager.runAnimationsForSequenceNamed("ExitAnimation")
         
     }
