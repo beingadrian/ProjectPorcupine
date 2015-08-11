@@ -118,7 +118,7 @@ class Gameplay: CCScene {
             gameOver()
         }
         
-        // star parallax
+        // star parallax background
         level.starBackground.physicsBody.velocity.x = -armadillo.physicsBody.velocity.x * 0.03
         
     }
@@ -276,9 +276,9 @@ class Gameplay: CCScene {
         switch moonCount {
         case 0...(level.totalMoonCount/3):
             totalStarsAwarded = 1
-        case 0...(level.totalMoonCount/3*2):
+        case (level.totalMoonCount/3)...(2*level.totalMoonCount/3):
             totalStarsAwarded = 2
-        case 0...(level.totalMoonCount):
+        case level.totalMoonCount:
             totalStarsAwarded = 3
         default:
             break
