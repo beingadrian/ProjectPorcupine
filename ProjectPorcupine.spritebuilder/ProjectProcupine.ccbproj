@@ -207,6 +207,7 @@
 		<key>Assets/Levels/Level7/Layer 5.png</key>
 		<dict/>
 		<key>Assets/Levels/Level8/base_left.png</key>
+<<<<<<< HEAD
 		<dict/>
 		<key>Assets/Levels/Level8/base_right.png</key>
 		<dict/>
@@ -232,6 +233,42 @@
 		<dict/>
 		<key>Assets/Levels/Level9/trees_right.png</key>
 		<dict/>
+=======
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+			<key>isDirty</key>
+			<true/>
+		</dict>
+		<key>Assets/Levels/Level8/base_right.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+			<key>isDirty</key>
+			<true/>
+		</dict>
+		<key>Assets/Levels/Level8/grass_left.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+			<key>isDirty</key>
+			<true/>
+		</dict>
+		<key>Assets/Levels/Level8/grass_right.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+			<key>isDirty</key>
+			<true/>
+		</dict>
+		<key>Assets/Levels/Level8/trees.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+			<key>isDirty</key>
+			<true/>
+		</dict>
+>>>>>>> parent of 5aa1869... Level 9 completed.
 		<key>Assets/Menu</key>
 		<dict/>
 		<key>Assets/Menu/armadillo.png</key>

@@ -10,7 +10,7 @@ class EndGoal: Collectible {
     
     func didFinishFadeOut() {
         
-        let gameplayScene = (parent.parent.parent.parent.parent as? Gameplay)
+        let gameplayScene = (parent.parent.parent.parent as? Gameplay)
         gameplayScene?.gameWon()
         self.removeFromParent()
         

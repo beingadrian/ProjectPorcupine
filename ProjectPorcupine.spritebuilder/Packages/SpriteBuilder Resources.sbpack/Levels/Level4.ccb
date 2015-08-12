@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>131</integer>
+	<integer>130</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -234,7 +234,7 @@
 			</dict>
 			<dict>
 				<key>UUID</key>
-				<integer>130</integer>
+				<integer>104</integer>
 				<key>baseClass</key>
 				<string>CCBFile</string>
 				<key>children</key>
@@ -264,8 +264,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>2766.423828125</real>
-							<real>473.21261596679688</real>
+							<real>2766</real>
+							<real>503.9537353515625</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -286,23 +286,13 @@
 					</dict>
 					<dict>
 						<key>name</key>
-						<string>rotation</string>
-						<key>type</key>
-						<string>Degrees</string>
-						<key>value</key>
-						<real>-35</real>
-					</dict>
-					<dict>
-						<key>name</key>
 						<string>ccbFile</string>
 						<key>type</key>
 						<string>CCBFile</string>
 						<key>value</key>
-						<string>Entities/Collectibles/EndGoalSuper.ccb</string>
+						<string>Entities/Collectibles/EndGoal.ccb</string>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -2577,6 +2567,8 @@
 						<string>StarsBackground.ccb</string>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>

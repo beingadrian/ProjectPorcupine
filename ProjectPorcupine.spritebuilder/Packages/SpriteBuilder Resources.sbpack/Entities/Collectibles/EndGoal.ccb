@@ -47,108 +47,7 @@
 					<key>0</key>
 					<dict/>
 					<key>1</key>
-					<dict>
-						<key>scale</key>
-						<dict>
-							<key>keyframes</key>
-							<array>
-								<dict>
-									<key>easing</key>
-									<dict>
-										<key>type</key>
-										<integer>1</integer>
-									</dict>
-									<key>name</key>
-									<string>scale</string>
-									<key>time</key>
-									<real>0.0</real>
-									<key>type</key>
-									<integer>4</integer>
-									<key>value</key>
-									<array>
-										<real>1</real>
-										<real>0.10000000149011612</real>
-									</array>
-								</dict>
-								<dict>
-									<key>easing</key>
-									<dict>
-										<key>type</key>
-										<integer>1</integer>
-									</dict>
-									<key>name</key>
-									<string>scale</string>
-									<key>time</key>
-									<real>0.1666666716337204</real>
-									<key>type</key>
-									<integer>4</integer>
-									<key>value</key>
-									<array>
-										<real>1</real>
-										<real>1</real>
-									</array>
-								</dict>
-								<dict>
-									<key>easing</key>
-									<dict>
-										<key>type</key>
-										<integer>1</integer>
-									</dict>
-									<key>name</key>
-									<string>scale</string>
-									<key>time</key>
-									<real>0.5</real>
-									<key>type</key>
-									<integer>4</integer>
-									<key>value</key>
-									<array>
-										<real>1</real>
-										<real>0.89999997615814209</real>
-									</array>
-								</dict>
-								<dict>
-									<key>easing</key>
-									<dict>
-										<key>type</key>
-										<integer>1</integer>
-									</dict>
-									<key>name</key>
-									<string>scale</string>
-									<key>time</key>
-									<real>0.83333331346511841</real>
-									<key>type</key>
-									<integer>4</integer>
-									<key>value</key>
-									<array>
-										<real>1</real>
-										<real>1</real>
-									</array>
-								</dict>
-								<dict>
-									<key>easing</key>
-									<dict>
-										<key>type</key>
-										<integer>1</integer>
-									</dict>
-									<key>name</key>
-									<string>scale</string>
-									<key>time</key>
-									<real>1</real>
-									<key>type</key>
-									<integer>4</integer>
-									<key>value</key>
-									<array>
-										<real>1</real>
-										<real>0.10000000149011612</real>
-									</array>
-								</dict>
-							</array>
-							<key>name</key>
-							<string>scale</string>
-							<key>type</key>
-							<integer>4</integer>
-						</dict>
-					</dict>
+					<dict/>
 				</dict>
 				<key>baseClass</key>
 				<string>CCSprite</string>
@@ -198,11 +97,6 @@
 						</array>
 					</dict>
 					<dict>
-						<key>baseValue</key>
-						<array>
-							<real>1</real>
-							<real>0.10000000149011612</real>
-						</array>
 						<key>name</key>
 						<string>scale</string>
 						<key>type</key>
@@ -210,7 +104,7 @@
 						<key>value</key>
 						<array>
 							<real>1</real>
-							<real>0.10000000149011612</real>
+							<real>1</real>
 							<false/>
 							<integer>0</integer>
 						</array>
@@ -239,6 +133,14 @@
 					</dict>
 					<dict>
 						<key>name</key>
+						<string>opacity</string>
+						<key>type</key>
+						<string>Float</string>
+						<key>value</key>
+						<real>0.0</real>
+					</dict>
+					<dict>
+						<key>name</key>
 						<string>color</string>
 						<key>type</key>
 						<string>Color3</string>
@@ -247,7 +149,7 @@
 							<real>1</real>
 							<real>1</real>
 							<real>1</real>
-							<real>1</real>
+							<real>0.0</real>
 						</array>
 					</dict>
 					<dict>
@@ -298,40 +200,40 @@
 			<key>points</key>
 			<array>
 				<array>
-					<real>10.731503486633301</real>
-					<real>3.2166037559509277</real>
+					<real>0.0</real>
+					<real>0.0</real>
 				</array>
 				<array>
-					<real>59.945579528808594</real>
-					<real>3.377436637878418</real>
+					<real>-0.00390625</real>
+					<real>51.999969482421875</real>
 				</array>
 				<array>
-					<real>60.009784698486328</real>
-					<real>0.00075389206176623702</real>
+					<real>70.99609375</real>
+					<real>51.999969482421875</real>
 				</array>
 				<array>
-					<real>10.771079063415527</real>
-					<real>-0.18245917558670044</real>
+					<real>71</real>
+					<real>0.0</real>
 				</array>
 			</array>
 			<key>polygons</key>
 			<array>
 				<array>
 					<array>
-						<real>10.771079063415527</real>
-						<real>-0.18245917558670044</real>
+						<real>71</real>
+						<real>0.0</real>
 					</array>
 					<array>
-						<real>60.009784698486328</real>
-						<real>0.00075389206176623702</real>
+						<real>70.99609375</real>
+						<real>51.999969482421875</real>
 					</array>
 					<array>
-						<real>59.945579528808594</real>
-						<real>3.377436637878418</real>
+						<real>-0.00390625</real>
+						<real>51.999969482421875</real>
 					</array>
 					<array>
-						<real>10.731503486633301</real>
-						<real>3.2166037559509277</real>
+						<real>0.0</real>
+						<real>0.0</real>
 					</array>
 				</array>
 			</array>
@@ -380,7 +282,7 @@
 				<string>Point</string>
 				<key>value</key>
 				<array>
-					<real>0.5</real>
+					<real>0.0</real>
 					<real>0.0</real>
 				</array>
 			</dict>

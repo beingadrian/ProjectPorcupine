@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>184</integer>
+	<integer>180</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -298,7 +298,7 @@
 			</dict>
 			<dict>
 				<key>UUID</key>
-				<integer>183</integer>
+				<integer>104</integer>
 				<key>baseClass</key>
 				<string>CCBFile</string>
 				<key>children</key>
@@ -328,8 +328,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>1621.983154296875</real>
-							<real>151.48251342773438</real>
+							<real>1538.0479736328125</real>
+							<real>160.80799865722656</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -354,11 +354,9 @@
 						<key>type</key>
 						<string>CCBFile</string>
 						<key>value</key>
-						<string>Entities/Collectibles/EndGoalSuper.ccb</string>
+						<string>Entities/Collectibles/EndGoal.ccb</string>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -1125,6 +1123,8 @@
 								<array/>
 							</dict>
 						</array>
+						<key>selected</key>
+						<true/>
 					</dict>
 				</array>
 				<key>customClass</key>
