@@ -105,9 +105,24 @@ class GameManager: NSObject, NSCoding {
         // test if successful
         let saveSuccessful = NSKeyedArchiver.archiveRootObject(GameManager.sharedInstance.levelDictionary, toFile: path)
         let saveSuccessful2 = NSKeyedArchiver.archiveRootObject(GameManager.sharedInstance.hasSeenTutorial, toFile: path2)
-        println(saveSuccessful)
-        println(saveSuccessful2)
         
+    }
+
+    
+    // MARK: - Music
+    
+    func playMusic() {
+        // play music
+        
+        if OALSimpleAudio.sharedInstance().bgPlaying == false {
+            OALSimpleAudio.sharedInstance().preloadBg("Assets/Audio/BackgroundMusic.wav")
+            OALSimpleAudio.sharedInstance().playBgWithLoop(true)
+        }
+
+    }
+    
+    func stopMusic() {
+        OALSimpleAudio.sharedInstance().stopBg()
     }
 
 

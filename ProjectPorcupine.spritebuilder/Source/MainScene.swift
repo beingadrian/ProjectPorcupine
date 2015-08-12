@@ -1,4 +1,6 @@
 
+
+
 class MainScene: CCNode {
     
     weak var playButton: CCButton!
@@ -23,6 +25,9 @@ class MainScene: CCNode {
             GameManager.sharedInstance.loadLevelDictionary()
             GameManager.sharedInstance.loadTutorialHistory()
         }
+        
+        // play music
+        GameManager.sharedInstance.playMusic()
 
     }
     
