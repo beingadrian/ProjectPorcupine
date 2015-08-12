@@ -22,7 +22,6 @@
 		33AD03291B728F9000D3B3B1 /* InfoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AD03281B728F9000D3B3B1 /* InfoPage.swift */; };
 		33AD032F1B73177300D3B3B1 /* Tutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AD032E1B73177300D3B3B1 /* Tutorial.swift */; };
 		33BFB5821B6BE244009369E7 /* DeadlyObstacle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BFB5811B6BE244009369E7 /* DeadlyObstacle.swift */; };
-		33BFB5861B6BE338009369E7 /* LightObstacle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BFB5851B6BE338009369E7 /* LightObstacle.swift */; };
 		33BFB5881B6C2031009369E7 /* LevelScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BFB5871B6C2031009369E7 /* LevelScreen.swift */; };
 		33BFB58A1B6C2983009369E7 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BFB5891B6C2983009369E7 /* GameManager.swift */; };
 		33BFB58C1B6C3471009369E7 /* PauseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BFB58B1B6C3471009369E7 /* PauseScreen.swift */; };
@@ -187,7 +186,6 @@
 		33AD03281B728F9000D3B3B1 /* InfoPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoPage.swift; sourceTree = "<group>"; };
 		33AD032E1B73177300D3B3B1 /* Tutorial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutorial.swift; sourceTree = "<group>"; };
 		33BFB5811B6BE244009369E7 /* DeadlyObstacle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeadlyObstacle.swift; sourceTree = "<group>"; };
-		33BFB5851B6BE338009369E7 /* LightObstacle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightObstacle.swift; sourceTree = "<group>"; };
 		33BFB5871B6C2031009369E7 /* LevelScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelScreen.swift; sourceTree = "<group>"; };
 		33BFB5891B6C2983009369E7 /* GameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
 		33BFB58B1B6C3471009369E7 /* PauseScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PauseScreen.swift; sourceTree = "<group>"; };
@@ -326,7 +324,6 @@
 			isa = PBXGroup;
 			children = (
 				332CD6B41B6AD9D400F1E49E /* Obstacle.swift */,
-				33BFB5851B6BE338009369E7 /* LightObstacle.swift */,
 				33BFB5811B6BE244009369E7 /* DeadlyObstacle.swift */,
 			);
 			name = Obstacle;
@@ -1019,7 +1016,6 @@
 				334356E21B6586BE0083FB51 /* Armadillo.swift in Sources */,
 				33AD032F1B73177300D3B3B1 /* Tutorial.swift in Sources */,
 				332CD6BE1B6B3B6D00F1E49E /* GravityTimer.swift in Sources */,
-				33BFB5861B6BE338009369E7 /* LightObstacle.swift in Sources */,
 				33BFB5821B6BE244009369E7 /* DeadlyObstacle.swift in Sources */,
 				334356DF1B6585320083FB51 /* Level.swift in Sources */,
 				5B121038197487F2004C1E1D /* AppDelegate.m in Sources */,

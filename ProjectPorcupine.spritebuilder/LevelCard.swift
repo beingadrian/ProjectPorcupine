@@ -24,11 +24,13 @@ class LevelCard: CCNode {
     
     func didLoadFromCCB() {
         
+        // set levelButton name and title
         levelButton.name = self.name
         levelButton.title = "Level \(self.name.toInt()!)"
         
         starArray = [star1, star2, star3]
         
+        // if levelDictionary exists
         if levelDictionary[self.name] != nil {
             totalStarsAwarded = levelDictionary[self.name]!["totalStarsAwarded"]!
 
@@ -38,23 +40,24 @@ class LevelCard: CCNode {
         
         showStars()
 
-        
     }
     
     func checkForUnlocked() {
         
+        // unlock level 1
         levelDictionary["1"]!["isUnlocked"] = 1
         
         if levelDictionary[self.name]!["isUnlocked"]! == 0 {
+            // level locked
             levelButton.enabled = false
             lockOverlay.visible = true
         } else {
+            // level unlocked
             levelButton.visible = true
             starSet.visible = true
             levelButton.enabled = true
             lockOverlay.visible = false
         }
-        
         
     }
     

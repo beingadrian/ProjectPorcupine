@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>436</integer>
+	<integer>454</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -2032,8 +2032,6 @@
 								<string>Entities/Collectibles/Moon.ccb</string>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -2677,7 +2675,7 @@
 						<string></string>
 						<key>displayName</key>
 						<string>back</string>
-						<key>locked</key>
+						<key>hidden</key>
 						<true/>
 						<key>memberVarAssignmentName</key>
 						<string></string>
@@ -2685,6 +2683,14 @@
 						<integer>1</integer>
 						<key>properties</key>
 						<array>
+							<dict>
+								<key>name</key>
+								<string>visible</string>
+								<key>type</key>
+								<string>Check</string>
+								<key>value</key>
+								<false/>
+							</dict>
 							<dict>
 								<key>name</key>
 								<string>name</string>
@@ -3489,7 +3495,7 @@
 				<key>type</key>
 				<string>StringSimple</string>
 				<key>value</key>
-				<string>7</string>
+				<string>9</string>
 			</dict>
 			<dict>
 				<key>name</key>
@@ -3543,6 +3549,8 @@
 				</array>
 			</dict>
 		</array>
+		<key>selected</key>
+		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>

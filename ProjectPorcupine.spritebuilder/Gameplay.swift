@@ -8,6 +8,8 @@
 
 class Gameplay: CCScene {
    
+    // MARK: - Properties
+    
     // code connections
     weak var gamePhysicsNode: CCPhysicsNode!
     weak var levelNode: CCNode!
@@ -53,10 +55,10 @@ class Gameplay: CCScene {
         // remove previous textures to free up memory
         CCTextureCache.sharedTextureCache().removeAllTextures()
         
-        // display FPS
+        // display FPS (debug)
         CCDirector.sharedDirector().displayStats = false
         
-        // touch settings
+        // touch control settings
         userInteractionEnabled = false
         jumpButton.exclusiveTouch = false
         
@@ -265,9 +267,9 @@ class Gameplay: CCScene {
         let gameWonScreen = CCBReader.load("Screens/GameWonScreen", owner: self) as! GameWonScreen
         gameWonScreen.totalStarsAwarded = totalStarsAwarded
         gameWonScreen.displayStars()
-        addChild(gameWonScreen)
         gameWonScreen.positionInPoints = CGPoint(x: boundingBox().width/2, y: boundingBox().height/2)
-        
+        addChild(gameWonScreen)
+
     }
     
     func updateLevelDict() {
@@ -379,10 +381,6 @@ extension Gameplay: CCPhysicsCollisionDelegate {
         
         if let deadlyObstacle = obstacle as? DeadlyObstacle {
             gameOver()
-        }
-        
-        if let lightObstacle = obstacle as? LightObstacle {
-            hurtLayer.animationManager.runAnimationsForSequenceNamed("Hurt")
         }
         
         return true
