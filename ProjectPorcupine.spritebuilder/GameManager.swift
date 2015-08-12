@@ -50,9 +50,9 @@ class GameManager: NSObject, NSCoding {
             // create an empty file if it doesn't exist
             if let rawData = NSData(contentsOfFile: path) {
                 // do we get serialized data back from the attempted path?
-                if let levelDictionaryData = NSKeyedUnarchiver.unarchiveObjectWithData(rawData) as? Dictionary<String, Dictionary<String, Int>> {
-                    levelDictionary = levelDictionaryData
-                    return levelDictionaryData
+                if let data = NSKeyedUnarchiver.unarchiveObjectWithData(rawData) as? Dictionary<String, Dictionary<String, Int>> {
+                    levelDictionary = data
+                    return data
                 }
             }
         }
@@ -73,9 +73,9 @@ class GameManager: NSObject, NSCoding {
             // create an empty file if it doesn't exist
             if let rawData = NSData(contentsOfFile: path) {
                 // do we get serialized data back from the attempted path?
-                if let tutorialData = NSKeyedUnarchiver.unarchiveObjectWithData(rawData) as? Bool {
-                    hasSeenTutorial = tutorialData
-                    return tutorialData
+                if let data = NSKeyedUnarchiver.unarchiveObjectWithData(rawData) as? Bool {
+                    hasSeenTutorial = data
+                    return data
                 }
             }
         }
@@ -98,8 +98,15 @@ class GameManager: NSObject, NSCoding {
         let saveTutorialHistoryData = NSKeyedArchiver.archivedDataWithRootObject(GameManager.sharedInstance.hasSeenTutorial)
         let path2 = documentsDirectory.stringByAppendingPathComponent("TutorialHistory.plist")
         
+        
         saveLevelDictionaryData.writeToFile(path, atomically: true)
         saveTutorialHistoryData.writeToFile(path2, atomically: true)
+        
+        // test if successful
+        let saveSuccessful = NSKeyedArchiver.archiveRootObject(GameManager.sharedInstance.levelDictionary, toFile: path)
+        let saveSuccessful2 = NSKeyedArchiver.archiveRootObject(GameManager.sharedInstance.hasSeenTutorial, toFile: path2)
+        println(saveSuccessful)
+        println(saveSuccessful2)
         
     }
 

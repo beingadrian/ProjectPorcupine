@@ -39,7 +39,7 @@
 	<key>publishDirectoryAndroid</key>
 	<string>Source/Resources/Published-Android</string>
 	<key>publishEnabledAndroid</key>
-	<false/>
+	<true/>
 	<key>publishEnablediPhone</key>
 	<true/>
 	<key>publishEnvironment</key>
@@ -57,9 +57,9 @@
 	<key>publishResolution_ios_phonehd</key>
 	<true/>
 	<key>publishResolution_ios_tablet</key>
-	<false/>
+	<true/>
 	<key>publishResolution_ios_tablethd</key>
-	<false/>
+	<true/>
 	<key>publishToZipFile</key>
 	<false/>
 	<key>resourceAutoScaleFactor</key>
@@ -82,31 +82,59 @@
 		<dict/>
 		<key>Assets/Armadillo/body.png</key>
 		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
 			<key>scaleFrom</key>
 			<integer>4</integer>
 		</dict>
 		<key>Assets/Armadillo/head.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Armadillo/tail.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Collectibles</key>
 		<dict/>
 		<key>Assets/Collectibles/end_goal.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>2</integer>
+		</dict>
 		<key>Assets/Collectibles/gravity_stone.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Collectibles/moon.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Collectibles/star.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Controls</key>
 		<dict/>
 		<key>Assets/Controls/baseJoystick.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Controls/topJoystick.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Controls/transform_button.png</key>
 		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
 			<key>scaleFrom</key>
 			<integer>2</integer>
 		</dict>
@@ -115,37 +143,52 @@
 		<key>Assets/Levels/Level1</key>
 		<dict/>
 		<key>Assets/Levels/Level1/base.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Levels/Level1/grass.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Levels/Level1/trees.png</key>
-		<dict/>
-		<key>Assets/Levels/Level10/base_left.png</key>
-		<dict/>
-		<key>Assets/Levels/Level10/base_right.png</key>
-		<dict/>
-		<key>Assets/Levels/Level10/grass_left.png</key>
-		<dict/>
-		<key>Assets/Levels/Level10/grass_right.png</key>
-		<dict/>
-		<key>Assets/Levels/Level10/trees_left.png</key>
-		<dict/>
-		<key>Assets/Levels/Level10/trees_right.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Levels/Level2/left.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Levels/Level2/right.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Levels/Level3</key>
 		<dict/>
 		<key>Assets/Levels/Level3/grass_left.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Levels/Level3/grass_right.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Levels/Level3/left.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Levels/Level3/right.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Levels/Level4</key>
 		<dict>
 			<key>trimSprites</key>
@@ -172,138 +215,212 @@
 			<integer>3</integer>
 		</dict>
 		<key>Assets/Levels/Level4/left.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Levels/Level4/right.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Levels/Level5/base_left.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Levels/Level5/base_right.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Levels/Level5/grass_left.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Levels/Level5/grass_right.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Levels/Level6/base_left.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Levels/Level6/base_right.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Levels/Level6/grass_left.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Levels/Level6/grass_right.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Levels/Level7</key>
 		<dict>
 			<key>trimSprites</key>
 			<true/>
 		</dict>
 		<key>Assets/Levels/Level7/Layer 1.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Levels/Level7/Layer 2.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Levels/Level7/Layer 3.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Levels/Level7/Layer 4.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Levels/Level7/Layer 5.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Levels/Level8/base_left.png</key>
-<<<<<<< HEAD
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Levels/Level8/base_right.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Levels/Level8/grass_left.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Levels/Level8/grass_right.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Levels/Level8/trees.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Levels/Level9/back.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Levels/Level9/base_left.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Levels/Level9/base_right.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Levels/Level9/endGoal.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Levels/Level9/grass_left.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Levels/Level9/grass_right.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Levels/Level9/trees_left.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Levels/Level9/trees_right.png</key>
-		<dict/>
-=======
 		<dict>
 			<key>format_ios</key>
 			<integer>3</integer>
-			<key>isDirty</key>
-			<true/>
 		</dict>
-		<key>Assets/Levels/Level8/base_right.png</key>
-		<dict>
-			<key>format_ios</key>
-			<integer>3</integer>
-			<key>isDirty</key>
-			<true/>
-		</dict>
-		<key>Assets/Levels/Level8/grass_left.png</key>
-		<dict>
-			<key>format_ios</key>
-			<integer>3</integer>
-			<key>isDirty</key>
-			<true/>
-		</dict>
-		<key>Assets/Levels/Level8/grass_right.png</key>
-		<dict>
-			<key>format_ios</key>
-			<integer>3</integer>
-			<key>isDirty</key>
-			<true/>
-		</dict>
-		<key>Assets/Levels/Level8/trees.png</key>
-		<dict>
-			<key>format_ios</key>
-			<integer>3</integer>
-			<key>isDirty</key>
-			<true/>
-		</dict>
->>>>>>> parent of 5aa1869... Level 9 completed.
 		<key>Assets/Menu</key>
 		<dict/>
 		<key>Assets/Menu/armadillo.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Menu/back_btn.png</key>
 		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
 			<key>scaleFrom</key>
 			<integer>2</integer>
 		</dict>
 		<key>Assets/Menu/background.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>2</integer>
+		</dict>
 		<key>Assets/Menu/base.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Menu/play_btn.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Menu/tree_1.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Menu/tree_2.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Stars</key>
 		<dict/>
 		<key>Assets/Stars/star_full.png</key>
 		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
 			<key>scaleFrom</key>
 			<integer>2</integer>
 		</dict>
 		<key>Assets/Stars/stars.png</key>
 		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
 			<key>scaleFrom</key>
 			<integer>2</integer>
 		</dict>
 		<key>Assets/Traps</key>
 		<dict/>
 		<key>Assets/Traps/trap1.png</key>
-		<dict/>
+		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
+		</dict>
 		<key>Assets/Tutorial/border_dashed.png</key>
 		<dict>
 			<key>scaleFrom</key>
@@ -323,41 +440,57 @@
 		<dict/>
 		<key>Assets/UI/home_btn.png</key>
 		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
 			<key>scaleFrom</key>
 			<integer>2</integer>
 		</dict>
 		<key>Assets/UI/info_btn.png</key>
 		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
 			<key>scaleFrom</key>
 			<integer>2</integer>
 		</dict>
 		<key>Assets/UI/lock.png</key>
 		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
 			<key>scaleFrom</key>
 			<integer>2</integer>
 		</dict>
 		<key>Assets/UI/locked_bg.png</key>
 		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
 			<key>scaleFrom</key>
 			<integer>2</integer>
 		</dict>
 		<key>Assets/UI/pause_button.png</key>
 		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
 			<key>scaleFrom</key>
 			<integer>4</integer>
 		</dict>
 		<key>Assets/UI/play_button.png</key>
 		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
 			<key>scaleFrom</key>
 			<integer>4</integer>
 		</dict>
 		<key>Assets/UI/retry_btn.png</key>
 		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
 			<key>scaleFrom</key>
 			<integer>2</integer>
 		</dict>
 		<key>Assets/UI/unlocked_bg.png</key>
 		<dict>
+			<key>format_ios</key>
+			<integer>3</integer>
 			<key>scaleFrom</key>
 			<integer>2</integer>
 		</dict>

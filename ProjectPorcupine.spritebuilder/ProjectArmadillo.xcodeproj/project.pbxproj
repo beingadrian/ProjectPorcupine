@@ -21,8 +21,8 @@
 		334D75BB1B66A71900EA3733 /* Collectible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334D75BA1B66A71900EA3733 /* Collectible.swift */; };
 		33AD03291B728F9000D3B3B1 /* InfoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AD03281B728F9000D3B3B1 /* InfoPage.swift */; };
 		33AD032F1B73177300D3B3B1 /* Tutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AD032E1B73177300D3B3B1 /* Tutorial.swift */; };
-		33BA6F231B7BC72B00243FBD /* MainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BA6F221B7BC72B00243FBD /* MainScene.swift */; };
 		33BFB5821B6BE244009369E7 /* DeadlyObstacle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BFB5811B6BE244009369E7 /* DeadlyObstacle.swift */; };
+		33BFB5861B6BE338009369E7 /* LightObstacle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BFB5851B6BE338009369E7 /* LightObstacle.swift */; };
 		33BFB5881B6C2031009369E7 /* LevelScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BFB5871B6C2031009369E7 /* LevelScreen.swift */; };
 		33BFB58A1B6C2983009369E7 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BFB5891B6C2983009369E7 /* GameManager.swift */; };
 		33BFB58C1B6C3471009369E7 /* PauseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BFB58B1B6C3471009369E7 /* PauseScreen.swift */; };
@@ -33,6 +33,8 @@
 		33F9513F1B69F6D9004D1042 /* HubDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F9513E1B69F6D9004D1042 /* HubDisplay.swift */; };
 		5B121030197484FA004C1E1D /* ProjectProcupineActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B12102F197484FA004C1E1D /* ProjectProcupineActivity.m */; };
 		5B121038197487F2004C1E1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B737893E1807617C0076A88C /* AppDelegate.m */; };
+		7A046D7919E84ED5004C4763 /* MainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A046D7519E84C36004C4763 /* MainScene.swift */; };
+		7A10CE5619F32FB0001673C3 /* MainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A046D7519E84C36004C4763 /* MainScene.swift */; };
 		7A40360419DDEE84007B6E8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A40360319DDEE84007B6E8F /* main.m */; };
 		7A4036EB19DE3F8E007B6E8F /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8392007918EE8E3300B6C429 /* GLKit.framework */; };
 		7A4036EC19DE3F90007B6E8F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3117B978D7009739AE /* QuartzCore.framework */; };
@@ -184,8 +186,8 @@
 		334D75BA1B66A71900EA3733 /* Collectible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collectible.swift; sourceTree = "<group>"; };
 		33AD03281B728F9000D3B3B1 /* InfoPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoPage.swift; sourceTree = "<group>"; };
 		33AD032E1B73177300D3B3B1 /* Tutorial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutorial.swift; sourceTree = "<group>"; };
-		33BA6F221B7BC72B00243FBD /* MainScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainScene.swift; path = Source/MainScene.swift; sourceTree = "<group>"; };
 		33BFB5811B6BE244009369E7 /* DeadlyObstacle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeadlyObstacle.swift; sourceTree = "<group>"; };
+		33BFB5851B6BE338009369E7 /* LightObstacle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightObstacle.swift; sourceTree = "<group>"; };
 		33BFB5871B6C2031009369E7 /* LevelScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelScreen.swift; sourceTree = "<group>"; };
 		33BFB5891B6C2983009369E7 /* GameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
 		33BFB58B1B6C3471009369E7 /* PauseScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PauseScreen.swift; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 		5B121034197485FE004C1E1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Platforms/iOS/Info.plist; sourceTree = "<group>"; };
 		5BA4619E1974C88900785744 /* AndroidManifest.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = AndroidManifest.xml; path = Platforms/Android/AndroidManifest.xml; sourceTree = "<group>"; };
 		6D29C45B95DC33A1F8AECAF4 /* Pods-ProjectArmadillo iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectArmadillo iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProjectArmadillo iOS/Pods-ProjectArmadillo iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		7A046D7519E84C36004C4763 /* MainScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainScene.swift; path = Source/MainScene.swift; sourceTree = "<group>"; };
 		7A4035FF19DDEE84007B6E8F /* ProjectArmadillo Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ProjectArmadillo Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A40360219DDEE84007B6E8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Platforms/Mac/Info.plist; sourceTree = "<group>"; };
 		7A40360319DDEE84007B6E8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Source/Platforms/Mac/main.m; sourceTree = "<group>"; };
@@ -323,6 +326,7 @@
 			isa = PBXGroup;
 			children = (
 				332CD6B41B6AD9D400F1E49E /* Obstacle.swift */,
+				33BFB5851B6BE338009369E7 /* LightObstacle.swift */,
 				33BFB5811B6BE244009369E7 /* DeadlyObstacle.swift */,
 			);
 			name = Obstacle;
@@ -549,7 +553,7 @@
 			isa = PBXGroup;
 			children = (
 				7A40362019DDEF0D007B6E8F /* Platforms */,
-				33BA6F221B7BC72B00243FBD /* MainScene.swift */,
+				7A046D7519E84C36004C4763 /* MainScene.swift */,
 				33BFB5891B6C2983009369E7 /* GameManager.swift */,
 				33C249501B714CE800C16800 /* LevelCard.swift */,
 				334356D21B6584040083FB51 /* Gameplay.swift */,
@@ -981,6 +985,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A10CE5619F32FB0001673C3 /* MainScene.swift in Sources */,
 				7A40360419DDEE84007B6E8F /* main.m in Sources */,
 				7A59498E19E3941300F65F90 /* AppDelegate.m in Sources */,
 			);
@@ -1010,16 +1015,17 @@
 				33BFB58C1B6C3471009369E7 /* PauseScreen.swift in Sources */,
 				332CD6B51B6AD9D400F1E49E /* Obstacle.swift in Sources */,
 				33BFB58A1B6C2983009369E7 /* GameManager.swift in Sources */,
+				7A046D7919E84ED5004C4763 /* MainScene.swift in Sources */,
 				334356E21B6586BE0083FB51 /* Armadillo.swift in Sources */,
 				33AD032F1B73177300D3B3B1 /* Tutorial.swift in Sources */,
 				332CD6BE1B6B3B6D00F1E49E /* GravityTimer.swift in Sources */,
+				33BFB5861B6BE338009369E7 /* LightObstacle.swift in Sources */,
 				33BFB5821B6BE244009369E7 /* DeadlyObstacle.swift in Sources */,
 				334356DF1B6585320083FB51 /* Level.swift in Sources */,
 				5B121038197487F2004C1E1D /* AppDelegate.m in Sources */,
 				33BFB5881B6C2031009369E7 /* LevelScreen.swift in Sources */,
 				33C249511B714CE800C16800 /* LevelCard.swift in Sources */,
 				334356F01B65B0650083FB51 /* GameWonScreen.swift in Sources */,
-				33BA6F231B7BC72B00243FBD /* MainScene.swift in Sources */,
 				334356EC1B65AD950083FB51 /* Character.swift in Sources */,
 				33F9513B1B69A31D004D1042 /* EndGoal.swift in Sources */,
 			);
@@ -1261,7 +1267,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1292,7 +1298,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>398</integer>
+	<integer>420</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -298,7 +298,7 @@
 			</dict>
 			<dict>
 				<key>UUID</key>
-				<integer>104</integer>
+				<integer>419</integer>
 				<key>baseClass</key>
 				<string>CCBFile</string>
 				<key>children</key>
@@ -307,8 +307,6 @@
 				<string></string>
 				<key>displayName</key>
 				<string>endGoal</string>
-				<key>locked</key>
-				<true/>
 				<key>memberVarAssignmentName</key>
 				<string></string>
 				<key>memberVarAssignmentType</key>
@@ -330,8 +328,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>1577.6488037109375</real>
-							<real>154.05003356933594</real>
+							<real>1595.8250732421875</real>
+							<real>154.33334350585938</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -356,9 +354,11 @@
 						<key>type</key>
 						<string>CCBFile</string>
 						<key>value</key>
-						<string>Entities/Collectibles/EndGoal.ccb</string>
+						<string>Entities/Collectibles/EndGoalSuper.ccb</string>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>

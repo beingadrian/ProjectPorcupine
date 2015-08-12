@@ -8,8 +8,6 @@
 
 class Gameplay: CCScene {
    
-    // MARK: - Properties
-    
     // code connections
     weak var gamePhysicsNode: CCPhysicsNode!
     weak var levelNode: CCNode!
@@ -55,10 +53,10 @@ class Gameplay: CCScene {
         // remove previous textures to free up memory
         CCTextureCache.sharedTextureCache().removeAllTextures()
         
-        // display FPS (debug)
+        // display FPS
         CCDirector.sharedDirector().displayStats = false
         
-        // touch control settings
+        // touch settings
         userInteractionEnabled = false
         jumpButton.exclusiveTouch = false
         
@@ -120,7 +118,7 @@ class Gameplay: CCScene {
             gameOver()
         }
         
-        // star parallax
+        // star parallax background
         level.starBackground.physicsBody.velocity.x = -armadillo.physicsBody.velocity.x * 0.03
         
     }
@@ -267,9 +265,9 @@ class Gameplay: CCScene {
         let gameWonScreen = CCBReader.load("Screens/GameWonScreen", owner: self) as! GameWonScreen
         gameWonScreen.totalStarsAwarded = totalStarsAwarded
         gameWonScreen.displayStars()
-        gameWonScreen.positionInPoints = CGPoint(x: boundingBox().width/2, y: boundingBox().height/2)
         addChild(gameWonScreen)
-
+        gameWonScreen.positionInPoints = CGPoint(x: boundingBox().width/2, y: boundingBox().height/2)
+        
     }
     
     func updateLevelDict() {
@@ -278,9 +276,9 @@ class Gameplay: CCScene {
         switch moonCount {
         case 0...(level.totalMoonCount/3):
             totalStarsAwarded = 1
-        case 0...(level.totalMoonCount/3*2):
+        case (level.totalMoonCount/3)...(2*level.totalMoonCount/3):
             totalStarsAwarded = 2
-        case 0...(level.totalMoonCount):
+        case level.totalMoonCount:
             totalStarsAwarded = 3
         default:
             break
@@ -381,6 +379,10 @@ extension Gameplay: CCPhysicsCollisionDelegate {
         
         if let deadlyObstacle = obstacle as? DeadlyObstacle {
             gameOver()
+        }
+        
+        if let lightObstacle = obstacle as? LightObstacle {
+            hurtLayer.animationManager.runAnimationsForSequenceNamed("Hurt")
         }
         
         return true
