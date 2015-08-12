@@ -57,7 +57,13 @@ class GameWonScreen: CCNode {
     func goToNextLevel() {
         
         GameManager.sharedInstance.currentLevel++
-        loadGame()
+        if GameManager.sharedInstance.currentLevel != 11 {
+            loadGame()
+        } else {
+            let mainScene = CCBReader.loadAsScene("MainScene")
+            CCDirector.sharedDirector().presentScene(mainScene)
+        }
+        
     
     }
     

@@ -85,16 +85,18 @@ class Gameplay: CCScene {
     func loadLevel() {
         
         // load level and add to levelNode
-        level = CCBReader.load(currentLevelPath) as! Level
-        levelNode.addChild(level)
-        
-        // load armadillo
-        armadillo = CCBReader.load("Entities/Characters/Armadillo") as! Armadillo
-        gamePhysicsNode.addChild(armadillo)
-        armadillo.position = level.startingPoint.position
-        
-        // update moon count label
-        hubDisplay.moonCountLabel.string = "\(moonCount)/\(level.totalMoonCount)"
+        if let loadedLevel = CCBReader.load(currentLevelPath) as? Level {
+            level = loadedLevel
+            levelNode.addChild(level)
+            
+            // load armadillo
+            armadillo = CCBReader.load("Entities/Characters/Armadillo") as! Armadillo
+            gamePhysicsNode.addChild(armadillo)
+            armadillo.position = level.startingPoint.position
+            
+            // update moon count label
+            hubDisplay.moonCountLabel.string = "\(moonCount)/\(level.totalMoonCount)"
+        }
         
     }
     

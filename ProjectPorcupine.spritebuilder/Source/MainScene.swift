@@ -4,7 +4,7 @@ class MainScene: CCNode {
     weak var playButton: CCButton!
     
     // debug purposes
-    let memoryStorageAllowed = false
+    let memoryStorageAllowed = true
     
 
     func didLoadFromCCB() {
