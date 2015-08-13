@@ -223,6 +223,7 @@ class Gameplay: CCScene {
     func pauseGame() {
         
         paused = true
+        gravityTimer.paused = true
         joystickEnabled = false
         let pauseScreen = CCBReader.load("PauseScreen") as! PauseScreen
         addChild(pauseScreen)

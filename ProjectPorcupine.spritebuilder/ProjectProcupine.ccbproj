@@ -89,6 +89,13 @@
 		<dict/>
 		<key>Assets/Armadillo/tail.png</key>
 		<dict/>
+		<key>Assets/Audio/BackgroundMusic.wav</key>
+		<dict>
+			<key>format_android_sound_quality</key>
+			<integer>5</integer>
+			<key>format_ios_sound</key>
+			<integer>0</integer>
+		</dict>
 		<key>Assets/Collectibles</key>
 		<dict/>
 		<key>Assets/Collectibles/end_goal.png</key>
@@ -288,6 +295,16 @@
 			<integer>2</integer>
 		</dict>
 		<key>Assets/UI/locked_bg.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Assets/UI/music_btn.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Assets/UI/music_muted_btn.png</key>
 		<dict>
 			<key>scaleFrom</key>
 			<integer>2</integer>

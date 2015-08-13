@@ -9,6 +9,19 @@
 class PauseScreen: CCNode {
    
     weak var continueButton: CCButton!
+    weak var muteButton: CCButton!
+    
+    func didLoadFromCCB() {
+        
+        // set music state
+        if GameManager.sharedInstance.musicIsMuted {
+            muteButton.selected = true
+        } else {
+            muteButton.selected = false
+        }
+        
+    }
+    
     
     func returnToMainScene() {
         
@@ -29,6 +42,7 @@ class PauseScreen: CCNode {
         let gameplay = parent as? Gameplay
         gameplay!.joystickEnabled = true
         gameplay!.paused = false
+        gameplay!.gravityTimer.paused = false
 
         self.removeFromParent()
         
@@ -38,6 +52,19 @@ class PauseScreen: CCNode {
         
         let gameplay = CCBReader.loadAsScene("Gameplay")
         CCDirector.sharedDirector().presentScene(gameplay)
+        
+    }
+    
+    func toggleMusic() {
+        
+        let gameManager = GameManager.sharedInstance
+        let isMuted = OALSimpleAudio.sharedInstance().muted
+        
+        if isMuted {
+            gameManager.unmuteMusic()
+        } else {
+            gameManager.muteMusic()
+        }
         
     }
     

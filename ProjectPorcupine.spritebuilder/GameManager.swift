@@ -17,6 +17,9 @@ class GameManager: NSObject, NSCoding {
     var currentLevel = 0
     var hasSeenTutorial = false
     var levelDictionary: [String: [String: Int]] = [:]
+    
+    var musicIsMuted = false
+
 
     // MARK: - NSCoding
     
@@ -121,8 +124,15 @@ class GameManager: NSObject, NSCoding {
 
     }
     
-    func stopMusic() {
-        OALSimpleAudio.sharedInstance().stopBg()
+    func muteMusic() {
+        OALSimpleAudio.sharedInstance().muted = true
+        musicIsMuted = true
+
+    }
+    
+    func unmuteMusic() {
+        OALSimpleAudio.sharedInstance().muted = false
+        musicIsMuted = false
     }
 
 
