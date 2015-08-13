@@ -24,7 +24,6 @@ class Gameplay: CCScene {
     // UI
     weak var hubDisplay: HubDisplay!
     weak var gravityTimer: GravityTimer!
-    weak var hurtLayer: CCNode!
     
     // hub display
     var moonCount = 0 {
@@ -382,10 +381,6 @@ extension Gameplay: CCPhysicsCollisionDelegate {
         
         if let deadlyObstacle = obstacle as? DeadlyObstacle {
             gameOver()
-        }
-        
-        if let lightObstacle = obstacle as? LightObstacle {
-            hurtLayer.animationManager.runAnimationsForSequenceNamed("Hurt")
         }
         
         return true

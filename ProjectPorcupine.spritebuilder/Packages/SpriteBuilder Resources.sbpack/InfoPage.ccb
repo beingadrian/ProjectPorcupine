@@ -587,8 +587,6 @@ www.adrianwisaksana.com</string>
 								</array>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 						<key>seqExpanded</key>
 						<true/>
 					</dict>
@@ -604,7 +602,7 @@ www.adrianwisaksana.com</string>
 						<key>displayName</key>
 						<string>exitButton</string>
 						<key>memberVarAssignmentName</key>
-						<string></string>
+						<string>exitBtn</string>
 						<key>memberVarAssignmentType</key>
 						<integer>1</integer>
 						<key>properties</key>
@@ -917,6 +915,8 @@ www.adrianwisaksana.com</string>
 								</array>
 							</dict>
 						</array>
+						<key>selected</key>
+						<true/>
 					</dict>
 				</array>
 				<key>customClass</key>
@@ -1058,10 +1058,10 @@ www.adrianwisaksana.com</string>
 				<string>Size</string>
 				<key>value</key>
 				<array>
-					<real>568</real>
-					<real>320</real>
-					<integer>0</integer>
-					<integer>0</integer>
+					<real>1</real>
+					<real>1</real>
+					<integer>2</integer>
+					<integer>2</integer>
 				</array>
 			</dict>
 			<dict>

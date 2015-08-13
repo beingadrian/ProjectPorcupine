@@ -27,6 +27,7 @@
 		33BFB58A1B6C2983009369E7 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BFB5891B6C2983009369E7 /* GameManager.swift */; };
 		33BFB58C1B6C3471009369E7 /* PauseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BFB58B1B6C3471009369E7 /* PauseScreen.swift */; };
 		33C249511B714CE800C16800 /* LevelCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C249501B714CE800C16800 /* LevelCard.swift */; };
+		33C36A1B1B7D31B400720507 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33C36A1A1B7D31B400720507 /* Launch Screen.xib */; };
 		33F951351B69869E004D1042 /* Moon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F951341B69869E004D1042 /* Moon.swift */; };
 		33F951391B6987F4004D1042 /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F951381B6987F4004D1042 /* Star.swift */; };
 		33F9513B1B69A31D004D1042 /* EndGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F9513A1B69A31D004D1042 /* EndGoal.swift */; };
@@ -192,6 +193,7 @@
 		33BFB5891B6C2983009369E7 /* GameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
 		33BFB58B1B6C3471009369E7 /* PauseScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PauseScreen.swift; sourceTree = "<group>"; };
 		33C249501B714CE800C16800 /* LevelCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelCard.swift; sourceTree = "<group>"; };
+		33C36A1A1B7D31B400720507 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 		33F951341B69869E004D1042 /* Moon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Moon.swift; sourceTree = "<group>"; };
 		33F951381B6987F4004D1042 /* Star.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
 		33F9513A1B69A31D004D1042 /* EndGoal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndGoal.swift; sourceTree = "<group>"; };
@@ -647,6 +649,7 @@
 			isa = PBXGroup;
 			children = (
 				333347311B74936400CC4ACE /* Images.xcassets */,
+				33C36A1A1B7D31B400720507 /* Launch Screen.xib */,
 				7A40366119DDF8C2007B6E8F /* Platforms */,
 				5B12100D197483EE004C1E1D /* res */,
 				B73789911807667A0076A88C /* Icons */,
@@ -747,7 +750,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0610;
-				ORGANIZATIONNAME = Apportable;
+				ORGANIZATIONNAME = BeingAdrian;
 				TargetAttributes = {
 					7A4035FE19DDEE84007B6E8F = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -878,6 +881,7 @@
 				B71F5916188484E7003F4D28 /* iPhone-old@2x.png in Resources */,
 				B737893B180761570076A88C /* Published-iOS in Resources */,
 				B71F591A188484E7003F4D28 /* Settings@2x.png in Resources */,
+				33C36A1B1B7D31B400720507 /* Launch Screen.xib in Resources */,
 				B7378976180762440076A88C /* Default-Landscape~ipad.png in Resources */,
 				B71F5915188484E7003F4D28 /* iPhone-old.png in Resources */,
 				B71F5917188484E7003F4D28 /* iPhone.png in Resources */,

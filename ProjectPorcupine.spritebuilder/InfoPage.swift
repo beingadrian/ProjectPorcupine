@@ -8,8 +8,11 @@
 
 class InfoPage: CCNode {
    
+    weak var exitBtn: CCButton!
+    
     func exitInfoPage() {
         
+        exitBtn.enabled = false
         animationManager.runAnimationsForSequenceNamed("ExitAnimation")
         
     }
