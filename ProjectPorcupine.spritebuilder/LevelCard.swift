@@ -60,6 +60,9 @@ class LevelCard: CCNode {
     
     func selectLevel(button: CCNode) {
         
+        // play sound
+        OALSimpleAudio.sharedInstance().playEffect("Assets/Audio/button_tap.wav")
+        
         button.userInteractionEnabled = false
         
         animationManager.runAnimationsForSequenceNamed("ExitAnimation")

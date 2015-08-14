@@ -80,6 +80,9 @@ class GameWonScreen: CCNode {
     // MARK: -
     
     func returnHome() {
+    
+        // play sound
+        OALSimpleAudio.sharedInstance().playEffect("Assets/Audio/button_tap.wav")
         
         animationManager.runAnimationsForSequenceNamed("ExitAnimation")
         self.scheduleOnce("goToMainScene", delay: 0.5)

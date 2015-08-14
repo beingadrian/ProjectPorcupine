@@ -11,6 +11,9 @@ class LevelScreen: CCNode {
     
     func backButtonPressed() {
         
+        // play sound
+        OALSimpleAudio.sharedInstance().playEffect("Assets/Audio/button_tap.wav")
+        
         animationManager.runAnimationsForSequenceNamed("ExitAnimation")
         // exit animation has a callback that triggers goBackToMenu()
         

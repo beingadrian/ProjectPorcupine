@@ -42,6 +42,9 @@ class MainScene: CCNode {
     // button selector
     func runExitAnimation() {
         
+        // play sound
+        OALSimpleAudio.sharedInstance().playEffect("Assets/Audio/button_tap.wav")
+        
         playButton.enabled = false
         
         // triggers callback showLevelScreen()

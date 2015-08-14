@@ -115,11 +115,12 @@ class GameManager: NSObject, NSCoding {
     // MARK: - Music
     
     func playMusic() {
-        // play music
         
+        // play music
         if OALSimpleAudio.sharedInstance().bgPlaying == false {
             OALSimpleAudio.sharedInstance().preloadBg("Assets/Audio/BackgroundMusic.wav")
             OALSimpleAudio.sharedInstance().playBgWithLoop(true)
+            OALSimpleAudio.sharedInstance().bgVolume = 0.7
         }
 
     }

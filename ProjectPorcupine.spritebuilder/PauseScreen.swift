@@ -25,6 +25,9 @@ class PauseScreen: CCNode {
     
     func returnToMainScene() {
         
+        // play sound
+        OALSimpleAudio.sharedInstance().playEffect("Assets/Audio/button_tap.wav")
+        
         let mainMenu = CCBReader.loadAsScene("MainScene")
         CCDirector.sharedDirector().presentScene(mainMenu)
         
