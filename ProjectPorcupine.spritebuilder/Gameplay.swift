@@ -8,6 +8,8 @@
 
 class Gameplay: CCScene {
    
+    // MARK: - Properties
+    
     // code connections
     weak var gamePhysicsNode: CCPhysicsNode!
     weak var levelNode: CCNode!
@@ -130,7 +132,10 @@ class Gameplay: CCScene {
         
         touchPosition = touch.locationInWorld()
         
+        // touchPosition is already assigned
         createJoystick()
+        
+        // joystick is already created
         armadillo.baseJoystickPosition = joystick!.convertToNodeSpace(touchPosition!)
         
     }
@@ -362,13 +367,11 @@ extension Gameplay: CCPhysicsCollisionDelegate {
         if let gravityStone = collectible as? GravityStone {
             // trigger gravity
             initiateGravityManipulation()
-            
             gravityStone.removeFromParent()
         }
         
         // end goal
         if let endGoal = collectible as? EndGoal {
-            
             armadillo.animationManager.runAnimationsForSequenceNamed("FadeOut")
             endGoal.animationManager.runAnimationsForSequenceNamed("FadeOut")
         }
