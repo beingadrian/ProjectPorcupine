@@ -368,6 +368,8 @@ extension Gameplay: CCPhysicsCollisionDelegate {
         
         // end goal
         if let endGoal = collectible as? EndGoal {
+            
+            armadillo.animationManager.runAnimationsForSequenceNamed("FadeOut")
             endGoal.animationManager.runAnimationsForSequenceNamed("FadeOut")
         }
         

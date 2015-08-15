@@ -50,7 +50,6 @@ class GameManager: NSObject, NSCoding {
         
         // check if file exists
         if fileManager.fileExistsAtPath(path) {
-            // create an empty file if it doesn't exist
             if let rawData = NSData(contentsOfFile: path) {
                 // do we get serialized data back from the attempted path?
                 if let data = NSKeyedUnarchiver.unarchiveObjectWithData(rawData) as? Dictionary<String, Dictionary<String, Int>> {
@@ -116,7 +115,6 @@ class GameManager: NSObject, NSCoding {
     
     func playMusic() {
         
-        // play music
         if OALSimpleAudio.sharedInstance().bgPlaying == false {
             OALSimpleAudio.sharedInstance().preloadBg("Assets/Audio/BackgroundMusic.wav")
             OALSimpleAudio.sharedInstance().playBgWithLoop(true)
@@ -126,12 +124,14 @@ class GameManager: NSObject, NSCoding {
     }
     
     func muteMusic() {
+        
         OALSimpleAudio.sharedInstance().muted = true
         musicIsMuted = true
 
     }
     
     func unmuteMusic() {
+        
         OALSimpleAudio.sharedInstance().muted = false
         musicIsMuted = false
     }

@@ -8,7 +8,8 @@ class MainScene: CCNode {
     // debug purposes
     let memoryStorageAllowed = true
     
-
+    // MARK: - DidLoadFromCCB
+    
     func didLoadFromCCB() {
         
         // remove previous textures to free up memory
